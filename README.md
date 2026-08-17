@@ -13,7 +13,7 @@ As a **[role]**, I want **[what the RAG assistant does]**, so that **[the value 
 
 | Student ID | Name | Role / Skills | Contribution % |
 |---|---|---|---|
-| s4196173 | Ayushi Negi | Team lead, RAG pipeline + evaluation | |
+| s4196173 | Ayushi Negi |  | |
 | _[id]_ | _[name]_ | _[role]_ | |
 | _[id]_ | _[name]_ | _[role]_ | |
 | _[id]_ | _[name]_ | _[role]_ | |
