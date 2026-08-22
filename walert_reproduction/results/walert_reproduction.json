@@ -1,0 +1,238 @@
+{
+  "evaluation_version": "1.0.0",
+  "upstream": {
+    "repository": "https://github.com/rmit-ir/walert",
+    "commit": "9417518ade245771b2d4f1ad919b840cecb2876e"
+  },
+  "dataset": {
+    "passages": 120,
+    "questions": 106,
+    "topics": 43,
+    "known_questions": 84,
+    "inferred_questions": 12,
+    "out_of_kb_questions": 10
+  },
+  "reproduced_bm25": {
+    "implementation": "Python standard library",
+    "k1": 0.9,
+    "b": 0.4,
+    "max_hits": 100,
+    "retrieval_seconds": 0.036649,
+    "mean_milliseconds_per_question": 0.345743
+  },
+  "retrieval": {
+    "known": {
+      "reproduced_bm25_stdlib": {
+        "questions": 84,
+        "queries_with_results": 84,
+        "mrr": 0.667383,
+        "ndcg@1": 0.547619,
+        "hit@1": 0.547619,
+        "ndcg@3": 0.459298,
+        "hit@3": 0.761905,
+        "ndcg@5": 0.424548,
+        "hit@5": 0.821429
+      },
+      "walert_bm25_supplied": {
+        "questions": 84,
+        "queries_with_results": 84,
+        "mrr": 0.637711,
+        "ndcg@1": 0.511905,
+        "hit@1": 0.511905,
+        "ndcg@3": 0.491213,
+        "hit@3": 0.72619,
+        "ndcg@5": 0.473323,
+        "hit@5": 0.785714
+      },
+      "walert_dense_supplied": {
+        "questions": 84,
+        "queries_with_results": 84,
+        "mrr": 0.732899,
+        "ndcg@1": 0.690476,
+        "hit@1": 0.690476,
+        "ndcg@3": 0.611866,
+        "hit@3": 0.75,
+        "ndcg@5": 0.581202,
+        "hit@5": 0.77381
+      },
+      "walert_intent_supplied": {
+        "questions": 84,
+        "queries_with_results": 70,
+        "mrr": 0.642857,
+        "ndcg@1": 0.642857,
+        "hit@1": 0.642857,
+        "ndcg@3": 0.301679,
+        "hit@3": 0.642857,
+        "ndcg@5": 0.218032,
+        "hit@5": 0.642857
+      }
+    },
+    "inferred": {
+      "reproduced_bm25_stdlib": {
+        "questions": 12,
+        "queries_with_results": 12,
+        "mrr": 0.454654,
+        "ndcg@1": 0.25,
+        "hit@1": 0.25,
+        "ndcg@3": 0.379828,
+        "hit@3": 0.666667,
+        "ndcg@5": 0.379828,
+        "hit@5": 0.666667
+      },
+      "walert_bm25_supplied": {
+        "questions": 12,
+        "queries_with_results": 12,
+        "mrr": 0.358882,
+        "ndcg@1": 0.166667,
+        "hit@1": 0.166667,
+        "ndcg@3": 0.256602,
+        "hit@3": 0.416667,
+        "ndcg@5": 0.329101,
+        "hit@5": 0.666667
+      },
+      "walert_dense_supplied": {
+        "questions": 12,
+        "queries_with_results": 12,
+        "mrr": 0.345854,
+        "ndcg@1": 0.25,
+        "hit@1": 0.25,
+        "ndcg@3": 0.238011,
+        "hit@3": 0.333333,
+        "ndcg@5": 0.238011,
+        "hit@5": 0.333333
+      },
+      "walert_intent_supplied": {
+        "questions": 12,
+        "queries_with_results": 2,
+        "mrr": 0.083333,
+        "ndcg@1": 0.083333,
+        "hit@1": 0.083333,
+        "ndcg@3": 0.039107,
+        "hit@3": 0.083333,
+        "ndcg@5": 0.039107,
+        "hit@5": 0.083333
+      }
+    },
+    "all_answerable": {
+      "reproduced_bm25_stdlib": {
+        "questions": 96,
+        "queries_with_results": 96,
+        "mrr": 0.640792,
+        "ndcg@1": 0.510417,
+        "hit@1": 0.510417,
+        "ndcg@3": 0.449364,
+        "hit@3": 0.75,
+        "ndcg@5": 0.418958,
+        "hit@5": 0.802083
+      },
+      "walert_bm25_supplied": {
+        "questions": 96,
+        "queries_with_results": 96,
+        "mrr": 0.602858,
+        "ndcg@1": 0.46875,
+        "hit@1": 0.46875,
+        "ndcg@3": 0.461886,
+        "hit@3": 0.6875,
+        "ndcg@5": 0.455295,
+        "hit@5": 0.770833
+      },
+      "walert_dense_supplied": {
+        "questions": 96,
+        "queries_with_results": 96,
+        "mrr": 0.684518,
+        "ndcg@1": 0.635417,
+        "hit@1": 0.635417,
+        "ndcg@3": 0.565134,
+        "hit@3": 0.697917,
+        "ndcg@5": 0.538303,
+        "hit@5": 0.71875
+      },
+      "walert_intent_supplied": {
+        "questions": 96,
+        "queries_with_results": 72,
+        "mrr": 0.572917,
+        "ndcg@1": 0.572917,
+        "hit@1": 0.572917,
+        "ndcg@3": 0.268858,
+        "hit@3": 0.572917,
+        "ndcg@5": 0.195666,
+        "hit@5": 0.572917
+      }
+    }
+  },
+  "out_of_kb_refusal_audit": [
+    {
+      "system": "walert_intent_supplied",
+      "context_k": 1,
+      "out_of_kb_total": 10,
+      "evaluated": 10,
+      "refusals": 8,
+      "unanswered_rate": 0.8
+    },
+    {
+      "system": "walert_bm25_falcon_supplied",
+      "context_k": 1,
+      "out_of_kb_total": 10,
+      "evaluated": 10,
+      "refusals": 1,
+      "unanswered_rate": 0.1
+    },
+    {
+      "system": "walert_bm25_falcon_supplied",
+      "context_k": 3,
+      "out_of_kb_total": 10,
+      "evaluated": 10,
+      "refusals": 2,
+      "unanswered_rate": 0.2
+    },
+    {
+      "system": "walert_bm25_falcon_supplied",
+      "context_k": 5,
+      "out_of_kb_total": 10,
+      "evaluated": 10,
+      "refusals": 2,
+      "unanswered_rate": 0.2
+    },
+    {
+      "system": "walert_dense_falcon_supplied",
+      "context_k": 1,
+      "out_of_kb_total": 10,
+      "evaluated": 10,
+      "refusals": 0,
+      "unanswered_rate": 0.0
+    },
+    {
+      "system": "walert_dense_falcon_supplied",
+      "context_k": 3,
+      "out_of_kb_total": 10,
+      "evaluated": 10,
+      "refusals": 1,
+      "unanswered_rate": 0.1
+    },
+    {
+      "system": "walert_dense_falcon_supplied",
+      "context_k": 5,
+      "out_of_kb_total": 10,
+      "evaluated": 10,
+      "refusals": 1,
+      "unanswered_rate": 0.1
+    }
+  ],
+  "input_sha256": {
+    "topics": "eb0526a8c1fa6be4525d0cd48df68b1270443f605da1aa955543c35a45d06974",
+    "collection": "7697c7371a0ea58aaa782eb4c50435555072de35fe3150021eb2cac7bcc7e160",
+    "qrels": "b6313148ca858b63a711fae01fdc6d199ae30db883b02bcbbf57a26f42ec38c6",
+    "intent_results": "fdfced7bd73be95632081760e6c3fe6d9310e0f15d5cde1a4856c4a5956e54fc",
+    "intent_run": "e80f562fecb01d8683f37678b3bd7a3b2ff801ac0b0eb68fe22fd93ba5188937",
+    "bm25_run": "6826cb2baa1101fd482b760805532ec8f7786db6a20a47babefaf3427cd3433e",
+    "dense_run": "6b67c03d554efe711bf5bef7175f1f440728a5ad5f65a3d7fffc83f7979ed291",
+    "bm25_answers": "3e85b559a6eee9997da7b1f1e9b6f067431094b48dbb1f7c48c63afd94a9bdaa",
+    "dense_answers": "1b189c4bd8599bfb68238052b928df754ae1367971e8b88879db9fb7da62f6c1"
+  },
+  "limitations": [
+    "The new run reproduces the BM25 retrieval idea, not Pyserini's exact Lucene analyzer.",
+    "Dense retrieval and Falcon generation are audited from Walert's supplied run files; they are not re-executed here.",
+    "NDCG uses linear graded relevance and log2 rank discount, matching conventional TREC evaluation.",
+    "A refusal can be appropriate for out-of-KB questions, but refusal rate alone does not measure answer correctness."
+  ]
+}
