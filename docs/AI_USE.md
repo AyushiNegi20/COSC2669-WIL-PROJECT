@@ -4,7 +4,7 @@ This working log supports completion of the official assessment AI declaration.
 The group must review it, add any other AI use by members and follow the current
 Canvas submission instructions.
 
-## 22 August 2026 — preliminary Walert reproduction
+## 22 August 2026: Preliminary Walert reproduction
 
 **Tool:** OpenAI Codex
 
@@ -12,25 +12,24 @@ Canvas submission instructions.
 create credible preliminary evidence for Milestone 1 and work with the team's
 private GitHub repository.
 
-**AI-assisted outputs:**
+**What Codex helped with:**
 
-- inspected the public Walert repository, source code, datasets and saved runs;
-- proposed and generated a standard-library BM25 reproduction/evaluation script;
-- generated unit tests and reproducibility documentation;
-- calculated retrieval and out-of-knowledge-base refusal metrics by executing the
-  script against official Walert artifacts;
-- drafted a concise results interpretation and updated the project README; and
-- assisted with Git integration after checking that remote teammate work would
-  not be overwritten.
+- It inspected the public Walert repository, source code, datasets and saved runs.
+- It proposed and generated a Python BM25 evaluation script.
+- It generated unit tests and instructions for running the script.
+- It ran the script against official Walert files and calculated retrieval and
+  refusal metrics.
+- It drafted the first version of the results explanation and README changes.
+- It helped integrate the changes into Git after checking the remote branch.
 
-**Verification and human responsibility:**
+**What we checked:**
 
-- Inputs came from `https://github.com/rmit-ir/walert` at commit
+- The input files came from `https://github.com/rmit-ir/walert` at commit
   `9417518ade245771b2d4f1ad919b840cecb2876e`.
-- The evaluator saved SHA-256 hashes for every upstream input.
+- The evaluator saved SHA-256 hashes for each input file.
 - Three unit tests passed, the full script completed successfully and the
   generated results were committed to the repository.
-- The full Falcon-7B/Pyserini pipeline was not claimed as independently rerun;
-  that limitation is stated in the documentation.
+- The documentation states that we did not rerun the full Falcon-7B and Pyserini
+  pipeline.
 - Team members must inspect the code and results, decide whether to use them, and
   revise the final assessment wording in accordance with the current policy.

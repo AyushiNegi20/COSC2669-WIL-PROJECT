@@ -1,20 +1,20 @@
 # Preliminary Walert reproduction
 
-This folder records a small, honest reproduction of the retrieval and evaluation
-ideas in the official [Walert repository](https://github.com/rmit-ir/walert).
-It is intended as Milestone 1 evidence, not as a claim that the complete legacy
-Falcon/Pyserini stack has been rerun.
+This folder contains our preliminary test of the retrieval and evaluation process
+used in the official [Walert repository](https://github.com/rmit-ir/walert).
+For Milestone 1, we rebuilt the BM25 search step and checked Walert's saved result
+files. We did not rerun the full Falcon and Pyserini setup.
 
-## What is reproduced
+## What we tested
 
-- A BM25 index is rebuilt from Walert's 120 public FAQ passages using only the
+- We rebuilt a BM25 index from Walert's 120 public FAQ passages using only the
   Python standard library.
-- All 106 public questions are searched, and a TREC-format run is saved.
-- The new run and Walert's supplied BM25, dense and intent runs are scored against
-  Walert's public relevance judgments using MRR, nDCG@1/3/5 and Hit@1/3/5.
-- Walert's supplied Falcon outputs are audited for the percentage of deliberately
-  out-of-knowledge-base questions that received a refusal.
-- SHA-256 hashes identify every upstream input used.
+- We searched all 106 public questions and saved the rankings in TREC format.
+- We scored our run and Walert's saved BM25, dense and intent runs against the
+  supplied relevance judgments using MRR, nDCG@1/3/5 and Hit@1/3/5.
+- We checked how often Walert's saved Falcon outputs refused questions that could
+  not be answered from the knowledge base.
+- We saved SHA-256 hashes so the exact input files can be checked later.
 
 ## Run it
 
@@ -36,15 +36,15 @@ python walert_reproduction/evaluate_walert.py `
 No Python packages are required. Results are written to
 `walert_reproduction/results/`.
 
-## Interpretation boundary
+## What this result covers
 
-The locally rebuilt BM25 run is the independently executed preliminary baseline.
-The rows labelled `*_supplied` are metrics recalculated from artifacts committed
-by Walert's authors. The original dense retrieval and Falcon-7B generation are not
-re-executed because the research stack targets Python 3.9, Pyserini/Java, a legacy
-dense model and Falcon-7B hardware. A later sprint can reproduce generation with a
-small local Ollama model on the team's bounded finance corpus.
+The locally rebuilt BM25 run is the part we ran ourselves. Rows labelled
+`*_supplied` use result files already provided by Walert's authors. We did not
+rerun the original dense retrieval or Falcon-7B generation because that setup
+depends on Python 3.9, Pyserini, Java and hardware suitable for Falcon-7B. In a
+later sprint, we will test generation with a smaller local Ollama model and our
+finance documents.
 
-Source: S. Pathiyan Cherumanal et al., “Walert: Putting Conversational Information
+Source: S. Pathiyan Cherumanal et al., "Walert: Putting Conversational Information
 Seeking Knowledge into Action by Building and Evaluating a Large Language
-Model-Powered Chatbot,” CHIIR 2024, DOI: 10.1145/3627508.3638309.
+Model-Powered Chatbot," CHIIR 2024, DOI: 10.1145/3627508.3638309.

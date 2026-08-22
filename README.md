@@ -1,4 +1,4 @@
-# FinTrace — Test-Driven Financial RAG
+# FinTrace: Test-Driven Financial RAG
 
 **Course:** COSC2669 / COSC2816 Case Studies in Data Science (PGRD Semester 2 2026)
 **Canvas Group ID:** WIL Project 9
@@ -35,17 +35,17 @@ the supporting evidence before approval.
 
 ## What this project is
 
-A bounded financial-document assistant with two connected capabilities:
+FinTrace is planned as a financial document assistant with two connected features:
 
 1. **Ask mode:** answer questions over corporate reports with page-level evidence.
 2. **Verify mode:** classify a submitted financial statement as supported,
    mismatched, superseded or unable to verify, and show the evidence and
    deterministic calculation used.
 
-The test collection is defined before system tuning. The team will compare
-retrieval and answer variants on the same questions, including unanswerable and
-document-version cases. The graded system will use a small local model without
-additional API cost.
+We will write the test questions before tuning the system. This gives us one fixed
+test set for comparing different retrieval and answer methods. It will include
+questions that cannot be answered and questions involving older document
+versions. We plan to use a small local model so there is no extra API cost.
 
 ## Repository structure
 
@@ -66,9 +66,9 @@ walert_reproduction/  repeatable preliminary Walert baseline and results
 
 ## Preliminary Walert reproduction
 
-The first repeatable baseline has been completed using the official Walert test
-collection. It rebuilds BM25 from 120 passages, searches 106 questions and
-recalculates retrieval and refusal metrics without external Python packages.
+We tested the evaluation process using Walert's official test collection. Our
+script rebuilds BM25 from 120 passages, searches 106 questions and calculates
+retrieval and refusal metrics without external Python packages.
 See [method and commands](walert_reproduction/README.md) and the
 [result summary](walert_reproduction/RESULTS.md).
 
