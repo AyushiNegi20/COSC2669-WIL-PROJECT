@@ -23,15 +23,16 @@ the supporting evidence before approval.
 
 | Student ID | Name | Role / Skills | Contribution % |
 |---|---|---|---|
-| s4196173 | Ayushi Negi | Technical project lead; architecture, Python, Walert reproduction, integration and code review | _[agree]_ |
-| _[id]_ | _[name]_ | RAG and information-retrieval engineering | _[agree]_ |
-| _[id]_ | _[name]_ | Knowledge-base, PDF processing and data provenance | _[agree]_ |
-| _[id]_ | _[name]_ | Test collection and quantitative evaluation | _[agree]_ |
-| _[id]_ | _[name]_ | Financial verification and deterministic computation | _[agree]_ |
-| _[id]_ | _[name]_ | Prototype, responsible AI and quality assurance | _[agree]_ |
+| s4196173 | Ayushi Negi | Technical project lead and integration; architecture, Python, RAG integration and code review | 16.67% |
+| s4188725 | Janhavi Maheshwar Ghate | Test collection and evaluation; gold questions, metrics, citation checks and error analysis | 16.67% |
+| s4162697 | Shriram Varadarajan | Financial intelligence and validation; normalisation, calculations, reconciliation and automated testing | 16.67% |
+| s4188084 | Guruprasad Simimath | RAG and information retrieval; chunking, BM25/vector search, embeddings and model integration | 16.67% |
+| s4177991 | Yash Keswani | Knowledge base, research and data provenance; document extraction, metadata and version tracking | 16.67% |
+| s4196172 | Hashini Santhanakrishnan | Prototype, responsible AI and quality assurance; evidence workflow, usability and human oversight | 16.67% |
+|  |  | **Total after rounding** | **100.02%** |
 
-> The five remaining names/IDs and all agreed contribution percentages must be
-> completed by the team before Milestone 1 submission.
+Contribution shares are equal at one-sixth per member. The displayed total is
+100.02% because each share is rounded to two decimal places.
 
 ## What this project is
 
@@ -47,7 +48,7 @@ test set for comparing different retrieval and answer methods. It will include
 questions that cannot be answered and questions involving older document
 versions. We plan to use a small local model so there is no extra API cost.
 
-## Repository structure
+## Planned project structure
 
 ```
 data/                 knowledge base documents (the corpus)
@@ -72,7 +73,7 @@ retrieval and refusal metrics without external Python packages.
 See [method and commands](walert_reproduction/README.md) and the
 [result summary](walert_reproduction/RESULTS.md).
 
-## How to run (once built)
+## Planned run commands
 
 ```bash
 pip install -r requirements.txt
@@ -85,4 +86,5 @@ python eval/evaluate.py     # run the pipeline over the test set and score it
 
 - Trello board: https://trello.com/invite/b/6a8261255da0dc4322e1f514/ATTI8bd6c39e4e277596afeae19b35a24d83BEC3E26F/cosc2669-wil-project
 - Private GitHub repository: https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT
-- Milestone 1 report: `docs/`
+- [Milestone 1 report](docs/FinTrace_Milestone1_Report.pdf)
+- [Condition 3 AI declaration](docs/Condition3_AI_Declaration.pdf)
