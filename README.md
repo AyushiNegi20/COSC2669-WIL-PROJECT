@@ -28,7 +28,7 @@ the supporting evidence before approval.
 | s4162697 | Shriram Varadarajan | Financial intelligence and validation; normalisation, calculations, reconciliation and automated testing | 16.67% |
 | s4188084 | Guruprasad Simimath | RAG and information retrieval; chunking, BM25/vector search, embeddings and model integration | 16.67% |
 | s4177991 | Yash Keswani | Knowledge base, research and data provenance; document extraction, metadata and version tracking | 16.67% |
-| s4196172 | Hashini Santhanakrishnan | Prototype, responsible AI and quality assurance; evidence workflow, usability and human oversight | 16.67% |
+| s4163868 | Hashini Santhanakrishnan | Prototype, responsible AI and quality assurance; evidence workflow, usability and human oversight | 16.67% |
 |  |  | **Total after rounding** | **100.02%** |
 
 Contribution shares are equal at one-sixth per member. The displayed total is
