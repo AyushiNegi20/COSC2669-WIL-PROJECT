@@ -1,0 +1,11 @@
+{
+  "version": "banking-retrieval-v4",
+  "context_tokens": 2048,
+  "candidate_k": 30,
+  "per_branch": 3,
+  "target_complete_evidence": 0.95,
+  "target_behavior_accuracy": 0.95,
+  "evidence_status": "development_unreviewed",
+  "independent_review": "pending",
+  "selection_policy": "Tune on legacy development and exposed regression. Regression revealed a CET1 tokenisation bug and missing adjacent restatement paragraphs; both informed fixes before the new challenge. Freeze source/config and model choice before scoring the sealed new challenge once. Neither legacy set is a fresh holdout. No answer accuracy or production approval is implied."
+}

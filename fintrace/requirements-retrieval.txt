@@ -1,0 +1,6 @@
+# Tested in the existing local CPU environment. No extraction dependency upgrades.
+torch==2.14.0
+transformers==5.17.0
+numpy==2.3.5
+huggingface_hub==1.32.0
+safetensors==0.8.0

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FinTrace banking retrieval chunk 1.0",
+  "description": "Development contract adapted to the frozen CBA/NAB extraction. Not the historical CBA/BHP illustrative schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "chunking_version", "chunk_id", "kind", "source", "text", "evidence_ids", "anchors", "parent_id", "related_chunk_ids", "relationships", "utf8_bytes", "quality"],
+  "properties": {
+    "schema_version": {"const": "banking-chunk-1.0"},
+    "chunking_version": {"type": "string", "minLength": 1},
+    "chunk_id": {"type": "string", "minLength": 1},
+    "kind": {"enum": ["table_rows", "definition", "passage", "table_parent", "passage_parent"]},
+    "source": {
+      "type": "object",
+      "required": ["document_id", "company", "report_year", "report_period_end", "document_title", "source_url", "source_sha256", "pdf_page", "printed_page"],
+      "properties": {
+        "document_id": {"type": "string", "minLength": 1}, "company": {"enum": ["CBA", "NAB"]},
+        "report_year": {"type": "integer"}, "report_period_end": {"type": "string"},
+        "document_title": {"type": "string", "minLength": 1}, "source_url": {"type": "string", "minLength": 1},
+        "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "pdf_page": {"type": "integer", "minimum": 1}, "printed_page": {"type": "object"}
+      }
+    },
+    "text": {"type": "string", "minLength": 1},
+    "evidence_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "anchors": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object", "additionalProperties": false,
+            "required": ["evidence_id", "type", "start", "end"],
+            "properties": {"evidence_id": {"type": "string"}, "type": {"const": "text_span"}, "start": {"type": "integer", "minimum": 0}, "end": {"type": "integer", "minimum": 1}}
+          },
+          {
+            "type": "object", "additionalProperties": false,
+            "required": ["evidence_id", "type", "rows", "header_rows", "context_rows", "column_paths"],
+            "properties": {
+              "evidence_id": {"type": "string"}, "type": {"const": "table_rows"},
+              "rows": {"$ref": "#/$defs/rows"}, "header_rows": {"$ref": "#/$defs/rows"}, "context_rows": {"$ref": "#/$defs/rows"},
+              "column_paths": {"type": "array", "items": {"type": "array", "items": {"type": "string"}}}
+            }
+          }
+        ]
+      }
+    },
+    "parent_id": {"type": ["string", "null"]},
+    "related_chunk_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "relationships": {
+      "type": "array", "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["type", "evidence_id", "chunk_ids", "method", "review_status"],
+        "properties": {
+          "type": {"const": "following_table_context_candidate"}, "evidence_id": {"type": "string"},
+          "chunk_ids": {"type": "array", "items": {"type": "string"}},
+          "method": {"const": "same_page_until_next_heading_or_table"}, "review_status": {"const": "unreviewed"}
+        }
+      }
+    },
+    "utf8_bytes": {"type": "integer", "minimum": 1},
+    "quality": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "issues", "independent_review", "calculation_ready", "embedding_token_check"],
+      "properties": {
+        "status": {"enum": ["development_unreviewed", "quarantined"]},
+        "issues": {"type": "array", "items": {"type": "string"}},
+        "independent_review": {"const": "pending"}, "calculation_ready": {"const": false},
+        "embedding_token_check": {"const": "pending_model_selection"}
+      }
+    },
+    "numeric_review_cells": {"type": "array", "items": {"type": "object"}}
+  },
+  "$defs": {"rows": {"type": "array", "uniqueItems": true, "items": {"type": "integer", "minimum": 0}}}
+}

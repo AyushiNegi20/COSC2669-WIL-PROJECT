@@ -1,0 +1,8 @@
+{
+  "version": "banking-retrieval-v6-development",
+  "context_tokens": 2048,
+  "max_requests": 12,
+  "per_request_candidates": 4,
+  "status": "development_not_quality_approved",
+  "evaluation_policy": "Old evaluation sets, including fresh_agent_v1, are exposed development data. Never read question keys at runtime. Lock this candidate before the fresh_agent_v2 single pass."
+}

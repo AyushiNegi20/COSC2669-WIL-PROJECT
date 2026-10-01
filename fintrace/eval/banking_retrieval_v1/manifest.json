@@ -1,0 +1,40 @@
+{
+  "version": "banking-retrieval-eval-v1",
+  "created_utc": "2026-09-23T04:28:44.678733+00:00",
+  "status": "sealed_AI_authored_candidate_not_independent_gold",
+  "counts": {
+    "development": 69,
+    "reserved": 28
+  },
+  "capabilities": {
+    "Find": 52,
+    "Compare": 12,
+    "Check a claim": 4,
+    "Define": 10,
+    "Explain": 8,
+    "Reconcile": 3,
+    "Summarise": 2,
+    "Clarify": 2,
+    "Identify missing evidence": 4
+  },
+  "reserved_families": [
+    "basic_cash_eps",
+    "cet1",
+    "credit_impairment",
+    "gross_loans",
+    "nab_lcr_definition",
+    "nab_restatement",
+    "technology_costs"
+  ],
+  "sha256": {
+    "development.json": "a77b8768836b8de9a328e70dbb7d5780bb33efc9ffb0c2bf4528a3c8bcc327a4",
+    "reserved.json": "7cfac79217f59f15d0fe1325e77fb0425ff4ccd9b86146efcbe61e118018d874",
+    "REVIEW.md": "c3302c1f98d044dec5d17f863f5fa73c129a9f5f968b11e5f4f0131dfb134cfc"
+  },
+  "limitations": [
+    "Same known source corpus and previously exposed numeric anchors.",
+    "AI-prepared prose answers are based on existing extraction and need original-PDF review.",
+    "Relevance judgements are source-specific candidate evidence, not exhaustive human judgements.",
+    "Reserved split is a no-tuning protocol, not independent authorship or unseen-company generalisation."
+  ]
+}

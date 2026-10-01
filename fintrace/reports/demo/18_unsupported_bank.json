@@ -1,0 +1,54 @@
+{
+  "id": "18_unsupported_bank",
+  "kind": "guard",
+  "question": "What was Westpac profit in FY2025?",
+  "http_status": 200,
+  "response": {
+    "question": "What was Westpac profit in FY2025?",
+    "answer": {
+      "status": "unable_to_verify",
+      "message": "Requested company is outside the CBA/NAB corpus."
+    },
+    "route": "guard",
+    "generation": {
+      "status": "skipped"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 0.0025267000019084662,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "Requested company is outside the CBA/NAB corpus.",
+          "citations": [],
+          "kind": "limit"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    },
+    "effective_question": "What was Westpac profit in FY2025?",
+    "ui_scope": {
+      "selected": {
+        "company": "all",
+        "year": "all"
+      },
+      "effective": {
+        "company": "all",
+        "year": "2025"
+      },
+      "summary": "Company as specified in the question / FY2025",
+      "notes": [],
+      "effective_question": "What was Westpac profit in FY2025?"
+    },
+    "display_text": "Question scope: Company as specified in the question / FY2025\n\nRequested company is outside the CBA/NAB corpus.\n\n"
+  },
+  "seconds": 0.0062504000088665634,
+  "calls": {
+    "intent": [],
+    "research": [],
+    "definition": []
+  },
+  "pre_generation_evidence": []
+}

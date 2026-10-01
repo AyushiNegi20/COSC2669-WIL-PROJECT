@@ -1,0 +1,11 @@
+{
+  "base_url": "http://127.0.0.1:11434",
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "temperature": 0,
+  "context_tokens": 16384,
+  "output_tokens": 900,
+  "timeout_seconds": 35,
+  "max_evidence_bytes": 10500,
+  "keep_alive": "2m"
+}

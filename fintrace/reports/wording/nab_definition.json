@@ -1,0 +1,406 @@
+{
+  "case": {
+    "id": "nab_definition",
+    "kind": "definition",
+    "question": "What does NAB cash earnings mean in FY2025?"
+  },
+  "response": {
+    "question": "What does NAB cash earnings mean in FY2025?",
+    "full_report_search": true,
+    "answer": {
+      "status": "evidence_answer",
+      "message": "Qwen-generated explanation, with automated checks:\n\nNAB cash earnings in FY2025 is a non-IFRS key financial performance measure used by NAB and the investment community. [NAB FY2025 Full Year Results, PDF page 9]\n\nNAB cash earnings in FY2025 is defined as net profit attributable to owners of the Company from continuing operations adjusted for non-cash items. [NAB FY2025 Full Year Results, PDF page 82]\n\nNAB cash earnings in FY2025 is not a statutory financial measure and is not presented in accordance with Australian Accounting Standards. [NAB FY2025 Full Year Results, PDF page 9]\n\nNAB cash earnings in FY2025 includes adjustments for non-cash items such as hedging, fair value volatility, amortisation of acquired intangible assets, and gains or losses associated with acquisitions, integrations, disposals, or closures of Group businesses. [NAB FY2025 Full Year Results, PDF page 82]\n\nNAB cash earnings in FY2025 is used for internal management reporting and reflects what NAB considers to be the underlying performance of the Group. [NAB FY2025 Full Year Results, PDF page 9]\n\nNAB cash earnings in FY2025 is not audited or reviewed in accordance with Australian Auditing Standards. [NAB FY2025 Full Year Results, PDF page 9]",
+      "source_excerpts": [
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 9,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "document_role": "primary",
+            "report_section": "Group or general disclosure"
+          },
+          "heading": "Full-report prose search. Group or general disclosure. ",
+          "excerpts": [
+            {
+              "source_id": "nab25:full:p009:b001",
+              "quote": "Cash earnings is a non-IFRS key financial performance measure used by NAB and the investment community. NAB also uses cash earnings for its internal management reporting as it better reflects what NAB considers to be the underlying performance of the Group. Cash earnings is not a statutory financial measure, is not presented in accordance with Australian Accounting Standards, and is not audited or reviewed in accordance with Australian Auditing Standards. The 2025 Full Year Results Management Discussion and Analysis provides details of how cash earnings is defined on page 10 and a discussion of non-cash earnings items and full reconciliation of statutory net profit attributable to owners of the Company on pages 72 to 74.",
+              "period_context": ""
+            }
+          ],
+          "retrieval_score": 21.178430223164025,
+          "retrieval_method": "full_report_bm25_definition"
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 82,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "document_role": "primary",
+            "report_section": "Group or general disclosure"
+          },
+          "heading": "Full-report prose search. Group or general disclosure. ",
+          "excerpts": [
+            {
+              "source_id": "nab25:full:p082:b015",
+              "quote": "Cash earnings Cash earnings is a non-IFRS key performance measure used by the Group and the investment community. Cash earnings is defined as net profit attributable to owners of the Company from continuing operations adjusted for non-cash items, including items such as hedging and fair value volatility, the amortisation of acquired intangible assets and gains or losses and certain other items associated with the acquisition, integration, disposal or closure of Group businesses.",
+              "period_context": ""
+            }
+          ],
+          "retrieval_score": 20.860560986504076,
+          "retrieval_method": "full_report_bm25_definition"
+        }
+      ],
+      "limitations": [
+        "These retrieved definitions are report-specific and do not establish equivalence unless the cited disclosure supports it.",
+        "Generated wording can still be wrong. Automated model review is not independent verification; inspect the original evidence below."
+      ],
+      "generated_explanation": {
+        "statements": [
+          {
+            "text": "NAB cash earnings in FY2025 is a non-IFRS key financial performance measure used by NAB and the investment community.",
+            "evidence_ids": [
+              "E1"
+            ],
+            "citations": [
+              {
+                "source_id": "nab25:full:p009:b001",
+                "quote": "Cash earnings is a non-IFRS key financial performance measure used by NAB and the investment community. NAB also uses cash earnings for its internal management reporting as it better reflects what NAB considers to be the underlying performance of the Group. Cash earnings is not a statutory financial measure, is not presented in accordance with Australian Accounting Standards, and is not audited or reviewed in accordance with Australian Auditing Standards. The 2025 Full Year Results Management Discussion and Analysis provides details of how cash earnings is defined on page 10 and a discussion of non-cash earnings items and full reconciliation of statutory net profit attributable to owners of the Company on pages 72 to 74.",
+                "period_context": "",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 9,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "document_role": "primary",
+                  "report_section": "Group or general disclosure"
+                }
+              }
+            ]
+          },
+          {
+            "text": "NAB cash earnings in FY2025 is defined as net profit attributable to owners of the Company from continuing operations adjusted for non-cash items.",
+            "evidence_ids": [
+              "E2"
+            ],
+            "citations": [
+              {
+                "source_id": "nab25:full:p082:b015",
+                "quote": "Cash earnings Cash earnings is a non-IFRS key performance measure used by the Group and the investment community. Cash earnings is defined as net profit attributable to owners of the Company from continuing operations adjusted for non-cash items, including items such as hedging and fair value volatility, the amortisation of acquired intangible assets and gains or losses and certain other items associated with the acquisition, integration, disposal or closure of Group businesses.",
+                "period_context": "",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 82,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "document_role": "primary",
+                  "report_section": "Group or general disclosure"
+                }
+              }
+            ]
+          },
+          {
+            "text": "NAB cash earnings in FY2025 is not a statutory financial measure and is not presented in accordance with Australian Accounting Standards.",
+            "evidence_ids": [
+              "E1"
+            ],
+            "citations": [
+              {
+                "source_id": "nab25:full:p009:b001",
+                "quote": "Cash earnings is a non-IFRS key financial performance measure used by NAB and the investment community. NAB also uses cash earnings for its internal management reporting as it better reflects what NAB considers to be the underlying performance of the Group. Cash earnings is not a statutory financial measure, is not presented in accordance with Australian Accounting Standards, and is not audited or reviewed in accordance with Australian Auditing Standards. The 2025 Full Year Results Management Discussion and Analysis provides details of how cash earnings is defined on page 10 and a discussion of non-cash earnings items and full reconciliation of statutory net profit attributable to owners of the Company on pages 72 to 74.",
+                "period_context": "",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 9,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "document_role": "primary",
+                  "report_section": "Group or general disclosure"
+                }
+              }
+            ]
+          },
+          {
+            "text": "NAB cash earnings in FY2025 includes adjustments for non-cash items such as hedging, fair value volatility, amortisation of acquired intangible assets, and gains or losses associated with acquisitions, integrations, disposals, or closures of Group businesses.",
+            "evidence_ids": [
+              "E2"
+            ],
+            "citations": [
+              {
+                "source_id": "nab25:full:p082:b015",
+                "quote": "Cash earnings Cash earnings is a non-IFRS key performance measure used by the Group and the investment community. Cash earnings is defined as net profit attributable to owners of the Company from continuing operations adjusted for non-cash items, including items such as hedging and fair value volatility, the amortisation of acquired intangible assets and gains or losses and certain other items associated with the acquisition, integration, disposal or closure of Group businesses.",
+                "period_context": "",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 82,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "document_role": "primary",
+                  "report_section": "Group or general disclosure"
+                }
+              }
+            ]
+          },
+          {
+            "text": "NAB cash earnings in FY2025 is used for internal management reporting and reflects what NAB considers to be the underlying performance of the Group.",
+            "evidence_ids": [
+              "E1"
+            ],
+            "citations": [
+              {
+                "source_id": "nab25:full:p009:b001",
+                "quote": "Cash earnings is a non-IFRS key financial performance measure used by NAB and the investment community. NAB also uses cash earnings for its internal management reporting as it better reflects what NAB considers to be the underlying performance of the Group. Cash earnings is not a statutory financial measure, is not presented in accordance with Australian Accounting Standards, and is not audited or reviewed in accordance with Australian Auditing Standards. The 2025 Full Year Results Management Discussion and Analysis provides details of how cash earnings is defined on page 10 and a discussion of non-cash earnings items and full reconciliation of statutory net profit attributable to owners of the Company on pages 72 to 74.",
+                "period_context": "",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 9,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "document_role": "primary",
+                  "report_section": "Group or general disclosure"
+                }
+              }
+            ]
+          },
+          {
+            "text": "NAB cash earnings in FY2025 is not audited or reviewed in accordance with Australian Auditing Standards.",
+            "evidence_ids": [
+              "E1"
+            ],
+            "citations": [
+              {
+                "source_id": "nab25:full:p009:b001",
+                "quote": "Cash earnings is a non-IFRS key financial performance measure used by NAB and the investment community. NAB also uses cash earnings for its internal management reporting as it better reflects what NAB considers to be the underlying performance of the Group. Cash earnings is not a statutory financial measure, is not presented in accordance with Australian Accounting Standards, and is not audited or reviewed in accordance with Australian Auditing Standards. The 2025 Full Year Results Management Discussion and Analysis provides details of how cash earnings is defined on page 10 and a discussion of non-cash earnings items and full reconciliation of statutory net profit attributable to owners of the Company on pages 72 to 74.",
+                "period_context": "",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 9,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "document_role": "primary",
+                  "report_section": "Group or general disclosure"
+                }
+              }
+            ]
+          }
+        ],
+        "validation": {
+          "citation_ids": "passed",
+          "numeric_presence": "passed",
+          "model_support_review": "passed",
+          "independent_semantic_review": "not_performed"
+        }
+      },
+      "evidence_message": "Definitions are grounded in the bank disclosures, not inferred from a nearby KPI."
+    },
+    "definition_request": true,
+    "generation": {
+      "status": "generated",
+      "provider": "local_ollama",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "draft_timing": {
+        "total_duration": 28155897600,
+        "load_duration": 6960400,
+        "prompt_eval_count": 772,
+        "eval_count": 320
+      },
+      "review_timing": {
+        "total_duration": 6422612000,
+        "load_duration": 7219300,
+        "prompt_eval_count": 815,
+        "eval_count": 64
+      },
+      "repair_timing": null,
+      "thinking": false,
+      "review": {
+        "supported": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "complete": true,
+        "reason": "Each statement is fully supported by the cited evidence cards, including details about the definition, purpose, and characteristics of NAB cash earnings in FY2025."
+      },
+      "seconds": 34.683564300008584
+    },
+    "route": "narrative",
+    "version": "fintrace-conversational-development",
+    "seconds": 34.73304340001778,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "NAB cash earnings in FY2025 is a non-IFRS key financial performance measure used by NAB and the investment community.",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 9,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "NAB cash earnings in FY2025 is defined as net profit attributable to owners of the Company from continuing operations adjusted for non-cash items.",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 82,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "NAB cash earnings in FY2025 is not a statutory financial measure and is not presented in accordance with Australian Accounting Standards.",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 9,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "NAB cash earnings in FY2025 includes adjustments for non-cash items such as hedging, fair value volatility, amortisation of acquired intangible assets, and gains or losses associated with acquisitions, integrations, disposals, or closures of Group businesses.",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 82,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "NAB cash earnings in FY2025 is used for internal management reporting and reflects what NAB considers to be the underlying performance of the Group.",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 9,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "NAB cash earnings in FY2025 is not audited or reviewed in accordance with Australian Auditing Standards.",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 9,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            }
+          ],
+          "kind": "narrative"
+        }
+      ],
+      "qualifications": [
+        "Qwen-generated explanation, with automated checks:\n\nNAB cash earnings in FY2025 is a non-IFRS key financial performance measure used by NAB and the investment community. [NAB FY2025 Full Year Results, PDF page 9]\n\nNAB cash earnings in FY2025 is defined as net profit attributable to owners of the Company from continuing operations adjusted for non-cash items. [NAB FY2025 Full Year Results, PDF page 82]\n\nNAB cash earnings in FY2025 is not a statutory financial measure and is not presented in accordance with Australian Accounting Standards. [NAB FY2025 Full Year Results, PDF page 9]\n\nNAB cash earnings in FY2025 includes adjustments for non-cash items such as hedging, fair value volatility, amortisation of acquired intangible assets, and gains or losses associated with acquisitions, integrations, disposals, or closures of Group businesses. [NAB FY2025 Full Year Results, PDF page 82]\n\nNAB cash earnings in FY2025 is used for internal management reporting and reflects what NAB considers to be the underlying performance of the Group. [NAB FY2025 Full Year Results, PDF page 9]\n\nNAB cash earnings in FY2025 is not audited or reviewed in accordance with Australian Auditing Standards. [NAB FY2025 Full Year Results, PDF page 9]",
+        "These retrieved definitions are report-specific and do not establish equivalence unless the cited disclosure supports it.",
+        "Generated wording can still be wrong. Automated model review is not independent verification; inspect the original evidence below."
+      ],
+      "important_notes": [
+        "CBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready."
+      ],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "NAB",
+      "year": "2025"
+    },
+    "summary": "NAB / FY2025",
+    "notes": [],
+    "effective_question": "What does NAB cash earnings mean in FY2025?"
+  },
+  "followup_notes": [],
+  "seconds": 34.73374620001414,
+  "issues": [],
+  "assessment": "needs_manual_review"
+}

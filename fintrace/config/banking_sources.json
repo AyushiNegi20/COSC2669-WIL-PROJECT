@@ -1,0 +1,12 @@
+{
+  "version": "banking-extraction-v1",
+  "scope": "CBA and NAB FY2024/FY2025. Separate from the historical CBA/BHP audit.",
+  "documents": [
+    {"id":"cba24","company":"CBA","report_year":2024,"period_end":"2024-06-30","file":"CBA_FY2024_profit_announcement.pdf","title":"CBA FY2024 Profit Announcement","url":"https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-FY24-Profit-Announcement.pdf","sha256":"1ab9332c8371322b5bfb7a6da65727e0f0f7a4120cfc095923e069a320d538da","role":"primary"},
+    {"id":"cba25","company":"CBA","report_year":2025,"period_end":"2025-06-30","file":"CBA_FY2025_profit_announcement.pdf","title":"CBA FY2025 Profit Announcement","url":"https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf","sha256":"e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f","role":"primary"},
+    {"id":"nab24","company":"NAB","report_year":2024,"period_end":"2024-09-30","file":"NAB_FY2024_results.pdf","title":"NAB FY2024 Full Year Results","url":"https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf","sha256":"ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce","role":"primary"},
+    {"id":"nab25","company":"NAB","report_year":2025,"period_end":"2025-09-30","file":"NAB_FY2025_results.pdf","title":"NAB FY2025 Full Year Results","url":"https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf","sha256":"df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c","role":"primary"},
+    {"id":"nab_ar25","company":"NAB","report_year":2025,"period_end":"2025-09-30","file":"NAB_FY2025_annual_report.pdf","title":"NAB FY2025 Annual Report","url":"https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf","sha256":"14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719","role":"supporting"},
+    {"id":"nab_ar24","company":"NAB","report_year":2024,"period_end":"2024-09-30","file":"NAB_FY2024_annual_report.pdf","title":"NAB FY2024 Annual Report","url":"https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-annual-report.pdf","sha256":"c3ceeab05b174ddc4c2ced32e48f818e72a218365e3204990c3665f102125e1b","role":"supporting"}
+  ]
+}

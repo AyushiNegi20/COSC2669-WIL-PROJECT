@@ -1,0 +1,421 @@
+{
+  "case": {
+    "id": "cba_reason",
+    "kind": "narrative",
+    "question": "Why did CBA staff expenses increase in FY2025?"
+  },
+  "response": {
+    "question": "Why did CBA staff expenses increase in FY2025?",
+    "answer": {
+      "status": "partial_answer",
+      "mode": "report_narrative",
+      "source_excerpts": [
+        {
+          "heading": "CBA FY2025 / spending: Full-report prose search. Group or general disclosure. Year comparison (prior year)",
+          "source": {
+            "company": "CBA",
+            "document_id": "cba25",
+            "document_title": "CBA FY2025 Profit Announcement",
+            "pdf_page": 31,
+            "report_year": 2025,
+            "report_period_end": "2025-06-30",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+            "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+            "report_section": "Group or general disclosure",
+            "document_role": "primary"
+          },
+          "excerpts": [
+            {
+              "source_id": "cba25:full:p031:b022",
+              "quote": "Staff expenses increased by $522 million or 7% to $7,970 million, driven by wage inflation and further investment in additional frontline lenders and technologists, partly offset by productivity initiatives. The average number of FTE increased by 727 from 49,269 to 49,996, primarily due to the Bank’s investment in its technology and engineering capabilities, insourcing to reduce reliance on external vendors and an increase in retail, business and NZ lenders, partly offset by the completion of the PT Bank Commonwealth (PTBC) sale in FY24."
+            }
+          ]
+        },
+        {
+          "heading": "CBA FY2025 / spending: Full-report prose search. Group or general disclosure. Year comparison (prior year)",
+          "source": {
+            "company": "CBA",
+            "document_id": "cba25",
+            "document_title": "CBA FY2025 Profit Announcement",
+            "pdf_page": 26,
+            "report_year": 2025,
+            "report_period_end": "2025-06-30",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+            "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+            "report_section": "Group or general disclosure",
+            "document_role": "primary"
+          },
+          "excerpts": [
+            {
+              "source_id": "cba25:full:p026:b009",
+              "quote": "Operating expenses 2 increased 6% mainly driven by higher staff costs due to inflation, continued insourcing of technology resources, additional frontline lenders and operations resources, as well as additional technology spend to support investment in infrastructure modernisation and AI capabilities, as well as higher transaction and processing volumes, partly offset by productivity initiatives."
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "CBA and NAB prose search includes all six reports. Retrieved passages are not exhaustive; unvalidated tables and image-only content are not calculation-ready.",
+        "Reported priorities and initiatives do not by themselves establish spending amounts, year-on-year increases or a ranking of investment areas."
+      ],
+      "message": "CBA FY2025 reports: \"Staff expenses increased by $522 million or 7% to $7,970 million, driven by wage inflation and further investment in additional frontline lenders and technologists, partly offset by productivity initiatives. The average number of FTE increased by 727 from 49,269 to 49,996, primarily due to the Bank’s investment in its technology and engineering capabilities, insourcing to reduce reliance on external vendors and an increase in retail, business and NZ lenders, partly offset by the completion of the PT Bank Commonwealth (PTBC) sale in FY24.\"\n\nCBA FY2025 reports: \"Operating expenses 2 increased 6% mainly driven by higher staff costs due to inflation, continued insourcing of technology resources, additional frontline lenders and operations resources, as well as additional technology spend to support investment in infrastructure modernisation and AI capabilities, as well as higher transaction and processing volumes, partly offset by productivity initiatives.\"",
+      "generated_explanation": {
+        "statements": [
+          {
+            "text": "CBA FY2025 reports: \"Staff expenses increased by $522 million or 7% to $7,970 million, driven by wage inflation and further investment in additional frontline lenders and technologists, partly offset by productivity initiatives. The average number of FTE increased by 727 from 49,269 to 49,996, primarily due to the Bank’s investment in its technology and engineering capabilities, insourcing to reduce reliance on external vendors and an increase in retail, business and NZ lenders, partly offset by the completion of the PT Bank Commonwealth (PTBC) sale in FY24.\"",
+            "evidence_ids": [
+              "P1"
+            ],
+            "citations": [
+              {
+                "source_id": "cba25:full:p031:b022",
+                "quote": "Staff expenses increased by $522 million or 7% to $7,970 million, driven by wage inflation and further investment in additional frontline lenders and technologists, partly offset by productivity initiatives. The average number of FTE increased by 727 from 49,269 to 49,996, primarily due to the Bank’s investment in its technology and engineering capabilities, insourcing to reduce reliance on external vendors and an increase in retail, business and NZ lenders, partly offset by the completion of the PT Bank Commonwealth (PTBC) sale in FY24.",
+                "period_context": "Year comparison (prior year)",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 31,
+                  "report_year": 2025,
+                  "report_period_end": "2025-06-30",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "report_section": "Group or general disclosure",
+                  "document_role": "primary"
+                }
+              }
+            ],
+            "kind": "quotation"
+          },
+          {
+            "text": "CBA FY2025 reports: \"Operating expenses 2 increased 6% mainly driven by higher staff costs due to inflation, continued insourcing of technology resources, additional frontline lenders and operations resources, as well as additional technology spend to support investment in infrastructure modernisation and AI capabilities, as well as higher transaction and processing volumes, partly offset by productivity initiatives.\"",
+            "evidence_ids": [
+              "P2"
+            ],
+            "citations": [
+              {
+                "source_id": "cba25:full:p026:b009",
+                "quote": "Operating expenses 2 increased 6% mainly driven by higher staff costs due to inflation, continued insourcing of technology resources, additional frontline lenders and operations resources, as well as additional technology spend to support investment in infrastructure modernisation and AI capabilities, as well as higher transaction and processing volumes, partly offset by productivity initiatives.",
+                "period_context": "Year comparison (prior year)",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 26,
+                  "report_year": 2025,
+                  "report_period_end": "2025-06-30",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "report_section": "Group or general disclosure",
+                  "document_role": "primary"
+                }
+              }
+            ],
+            "kind": "quotation"
+          }
+        ],
+        "method": "extractive_selection",
+        "validation": {
+          "literal_source_match": "passed",
+          "selection_relevance": "model_selected_not_independently_verified"
+        }
+      },
+      "important_notes": [
+        "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations."
+      ]
+    },
+    "narrative_request": {
+      "status": "search",
+      "requests": [
+        {
+          "topic": "spending",
+          "company": "CBA",
+          "year": 2025,
+          "query": "Explain CBA FY2025 reported own investment spending, technology and business initiatives.",
+          "followup": "Explain CBA FY2025 disclosures relevant to: Why did CBA staff expenses increase in FY2025?"
+        }
+      ],
+      "notes": [],
+      "comparative": true,
+      "amount_requested": false,
+      "question": "Why did CBA staff expenses increase in FY2025?",
+      "topic": "spending",
+      "company": "CBA",
+      "year": 2025,
+      "search_subject": "CBA staff expenses"
+    },
+    "research_coverage": [
+      {
+        "company": "CBA",
+        "year": 2025,
+        "topic": "spending",
+        "sections": 2
+      }
+    ],
+    "research_searches": [
+      {
+        "query": "Why did CBA staff expenses increase in FY2025?",
+        "scope": "CBA full-report prose",
+        "relevant_sections": 2,
+        "ranked_sources": [
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 31,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 18.174034273409077
+          },
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 34,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 14.369452248829784
+          },
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 98,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 10.184898162132106
+          },
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 31,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 8.743809843468629
+          },
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 26,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 8.483955135851708
+          },
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 35,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 8.073545125118315
+          },
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 26,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 8.037887483303559
+          },
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 34,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 6.0672589817118405
+          },
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 99,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 5.7979198153527305
+          },
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 37,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 5.118177882235543
+          }
+        ]
+      }
+    ],
+    "full_report_search": true,
+    "interpretation": {
+      "retrieval_question": "Explain CBA FY2025 reported own investment spending, technology and business initiatives.",
+      "notes": []
+    },
+    "route": "narrative",
+    "generation": {
+      "status": "source_selected",
+      "model": "qwen3:8b",
+      "method": "extractive_selection",
+      "timing": {
+        "total_duration": 2727259700,
+        "load_duration": 6666100,
+        "prompt_eval_count": 549,
+        "eval_count": 14
+      },
+      "selected_passage_ids": [
+        "P1",
+        "P2"
+      ],
+      "missing_scopes": [],
+      "literal_source_match": true,
+      "seconds": 2.791258499986725
+    },
+    "intent_plan": {
+      "topic": "spending",
+      "task": "explanation",
+      "subject": "CBA staff expenses",
+      "specific_amount": false,
+      "advice": false,
+      "status": "interpreted",
+      "timing": {
+        "total_duration": 4182607800,
+        "load_duration": 7766100,
+        "prompt_eval_count": 611,
+        "eval_count": 43
+      },
+      "model": "qwen3:8b"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 7.0797898999881,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "CBA FY2025 reports: \"Staff expenses increased by $522 million or 7% to $7,970 million, driven by wage inflation and further investment in additional frontline lenders and technologists, partly offset by productivity initiatives. The average number of FTE increased by 727 from 49,269 to 49,996, primarily due to the Bank’s investment in its technology and engineering capabilities, insourcing to reduce reliance on external vendors and an increase in retail, business and NZ lenders, partly offset by the completion of the PT Bank Commonwealth (PTBC) sale in FY24.\"",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 31,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "CBA FY2025 reports: \"Operating expenses 2 increased 6% mainly driven by higher staff costs due to inflation, continued insourcing of technology resources, additional frontline lenders and operations resources, as well as additional technology spend to support investment in infrastructure modernisation and AI capabilities, as well as higher transaction and processing volumes, partly offset by productivity initiatives.\"",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 26,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "narrative"
+        }
+      ],
+      "qualifications": [
+        "Reported priorities and initiatives do not by themselves establish spending amounts, year-on-year increases or a ranking of investment areas."
+      ],
+      "important_notes": [
+        "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations.",
+        "CBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready."
+      ],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "2025"
+    },
+    "summary": "CBA / FY2025",
+    "notes": [],
+    "effective_question": "Why did CBA staff expenses increase in FY2025?"
+  },
+  "followup_notes": [],
+  "seconds": 7.080281399976229,
+  "issues": [],
+  "assessment": "needs_manual_review"
+}

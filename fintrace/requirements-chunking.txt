@@ -1,0 +1,3 @@
+# Chunk construction uses the Python standard library.
+# Schema validation is the only extra chunking dependency.
+jsonschema==4.26.0

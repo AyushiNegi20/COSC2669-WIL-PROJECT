@@ -1,0 +1,467 @@
+{
+  "id": "02_nab_profit",
+  "kind": "numeric",
+  "question": "What was NAB profit in FY2024?",
+  "http_status": 200,
+  "response": {
+    "question": "What was NAB profit in FY2024?",
+    "plan": {
+      "companies": [
+        "NAB"
+      ],
+      "value_years": [
+        2024
+      ],
+      "report_year": null,
+      "annual_report_only": false,
+      "ambiguity": null,
+      "branches": [
+        "NAB"
+      ],
+      "intent": "find",
+      "metrics": [
+        "cash_profit",
+        "statutory_npat"
+      ],
+      "definition_term": null,
+      "behavior": "answer",
+      "reason": null,
+      "original_question": "What was NAB cash profit and statutory net profit after tax in FY2024?",
+      "normalised_question": "What was NAB cash profit and statutory net profit after tax in FY2024?",
+      "corrections": [],
+      "metric_candidates": [
+        {
+          "metric": "statutory_npat",
+          "similarity": 0.5721598863601685
+        },
+        {
+          "metric": "cash_profit",
+          "similarity": 0.5133702158927917
+        },
+        {
+          "metric": "basic_cash_eps",
+          "similarity": 0.3783278465270996
+        }
+      ],
+      "metric_resolution": "explicit",
+      "needs_human_review": true,
+      "semantic_margin": 0.05878967046737671,
+      "search_question": "What was NAB cash profit and statutory net profit after tax in FY2024?\nFinancial concepts: cash profit cash earnings; statutory net profit attributable to owners",
+      "period_note": "Preserve each source period end; CBA and NAB fiscal years do not end on the same date.",
+      "version": "v9",
+      "requests": [
+        {
+          "id": "request-1",
+          "company": "NAB",
+          "metric": "cash_profit",
+          "intent": "find",
+          "scope": null,
+          "value_years": [
+            2024
+          ],
+          "report_year": null,
+          "definition_contrast": false
+        },
+        {
+          "id": "request-2",
+          "company": "NAB",
+          "metric": "statutory_npat",
+          "intent": "find",
+          "scope": null,
+          "value_years": [
+            2024
+          ],
+          "report_year": null,
+          "definition_contrast": false
+        }
+      ],
+      "constraints": {
+        "report_year": null,
+        "entity_scope": "Group",
+        "requested_years": [
+          2024
+        ],
+        "preserve_source_basis": true,
+        "preserve_period_kind": true,
+        "requires_new_calculation": false,
+        "cash_profit_cashflow_distinction": false
+      },
+      "requirements_complete": false,
+      "operation_request": {
+        "kind": "none",
+        "order": null,
+        "expense_magnitude": true,
+        "relative_percent": false
+      }
+    },
+    "operation_request": {
+      "kind": "none",
+      "order": null,
+      "expense_magnitude": true,
+      "relative_percent": false
+    },
+    "answer": {
+      "status": "source_bound_answer",
+      "mode": "source_cell_templates",
+      "parts": [
+        {
+          "request": {
+            "id": "request-1",
+            "company": "NAB",
+            "metric": "cash_profit",
+            "intent": "find",
+            "scope": null,
+            "value_years": [
+              2024
+            ],
+            "report_year": null,
+            "definition_contrast": false
+          },
+          "claims": [
+            {
+              "text": "NAB cash profit: 7,102 AUD million; annual ending 2024-09-30, cash, continuing operations.",
+              "cell": {
+                "metric": "cash_profit",
+                "company": "NAB",
+                "value": "7102",
+                "raw_value": "7,102",
+                "unit": "AUD million",
+                "basis": "cash",
+                "scope": "continuing",
+                "period_kind": "annual",
+                "period_end": "2024-09-30",
+                "report_year": 2024,
+                "column": 1,
+                "source_id": "nab24:p013:b006:r12",
+                "header_ids": [
+                  "nab24:p013:b006:r0",
+                  "nab24:p013:b006:r1"
+                ],
+                "record_id": "v4:nab24:p013:b006:r12",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab24",
+                  "document_title": "NAB FY2024 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2024-09-30",
+                  "report_year": 2024,
+                  "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                },
+                "row_quote": "Cash earnings | 7,102 | 7,731 | (8.1) | 3,554 | 3,548 | 0.2",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              "evidence": [
+                {
+                  "source_id": "nab24:p013:b006:r12",
+                  "quote": "Cash earnings | 7,102 | 7,731 | (8.1) | 3,554 | 3,548 | 0.2",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab24",
+                    "document_title": "NAB FY2024 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2024-09-30",
+                    "report_year": 2024,
+                    "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab24:p013:b006:r0",
+                  "quote": " | Year to |  |  | Half Year to |  | ",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab24",
+                    "document_title": "NAB FY2024 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2024-09-30",
+                    "report_year": 2024,
+                    "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab24:p013:b006:r1",
+                  "quote": " | Sep 24 $m | Sep 23 $m | Sep 24 v Sep 23 % | Sep 24 $m | Mar 24 $m | Sep 24 v Mar 24 %",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab24",
+                    "document_title": "NAB FY2024 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2024-09-30",
+                    "report_year": 2024,
+                    "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                  }
+                }
+              ],
+              "method": "deterministic_template_from_bound_source_cell",
+              "presentation": {
+                "value": "7102",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "7102"
+              }
+            }
+          ],
+          "calculations": [],
+          "issues": []
+        },
+        {
+          "request": {
+            "id": "request-2",
+            "company": "NAB",
+            "metric": "statutory_npat",
+            "intent": "find",
+            "scope": null,
+            "value_years": [
+              2024
+            ],
+            "report_year": null,
+            "definition_contrast": false
+          },
+          "claims": [
+            {
+              "text": "NAB statutory net profit after tax: 6,960 AUD million; annual ending 2024-09-30, statutory, including discontinued operations.",
+              "cell": {
+                "metric": "statutory_npat",
+                "company": "NAB",
+                "value": "6960",
+                "raw_value": "6,960",
+                "unit": "AUD million",
+                "basis": "statutory",
+                "scope": "including_discontinued",
+                "period_kind": "annual",
+                "period_end": "2024-09-30",
+                "report_year": 2024,
+                "column": 1,
+                "source_id": "nab24:p013:b006:r19",
+                "header_ids": [
+                  "nab24:p013:b006:r0",
+                  "nab24:p013:b006:r1"
+                ],
+                "record_id": "v4:nab24:p013:b006:r19",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab24",
+                  "document_title": "NAB FY2024 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2024-09-30",
+                  "report_year": 2024,
+                  "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                },
+                "row_quote": "Net profit attributable to owners of the Company | 6,960 | 7,414 | (6.1) | 3,466 | 3,494 | (0.8)",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              "evidence": [
+                {
+                  "source_id": "nab24:p013:b006:r19",
+                  "quote": "Net profit attributable to owners of the Company | 6,960 | 7,414 | (6.1) | 3,466 | 3,494 | (0.8)",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab24",
+                    "document_title": "NAB FY2024 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2024-09-30",
+                    "report_year": 2024,
+                    "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab24:p013:b006:r0",
+                  "quote": " | Year to |  |  | Half Year to |  | ",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab24",
+                    "document_title": "NAB FY2024 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2024-09-30",
+                    "report_year": 2024,
+                    "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab24:p013:b006:r1",
+                  "quote": " | Sep 24 $m | Sep 23 $m | Sep 24 v Sep 23 % | Sep 24 $m | Mar 24 $m | Sep 24 v Mar 24 %",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab24",
+                    "document_title": "NAB FY2024 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2024-09-30",
+                    "report_year": 2024,
+                    "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                  }
+                }
+              ],
+              "method": "deterministic_template_from_bound_source_cell",
+              "presentation": {
+                "value": "6960",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "6960"
+              }
+            }
+          ],
+          "calculations": [],
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "calculation_coverage": {
+        "required": 0,
+        "completed": 0
+      },
+      "warning": "Development source binding, not independently human-certified financial advice.",
+      "limitations": [
+        "Profit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable."
+      ]
+    },
+    "retrieval": {
+      "tokens": 1274,
+      "omissions": []
+    },
+    "seconds": 0.2402210999862291,
+    "version": "fintrace-conversational-development",
+    "interpretation": {
+      "retrieval_question": "What was NAB cash profit and statutory net profit after tax in FY2024?",
+      "notes": []
+    },
+    "question_contract": {
+      "retrieval_question": "What was NAB cash profit and statutory net profit after tax in FY2024?",
+      "notes": [
+        "Profit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable."
+      ],
+      "metric_mapping": "explicit aliases only for numerical answers"
+    },
+    "binding_validation": {
+      "passed": true,
+      "issues": []
+    },
+    "route": "numeric",
+    "generation": {
+      "status": "skipped",
+      "reason": "Numbers, calculations and guards use source templates; no generative model was called."
+    },
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "NAB's cash profit was 7,102 AUD million for the year ended 30 September 2024 (cash basis, continuing operations).",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab24",
+              "document_title": "NAB FY2024 Full Year Results",
+              "pdf_page": 13,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "11"
+              },
+              "report_period_end": "2024-09-30",
+              "report_year": 2024,
+              "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+            }
+          ],
+          "kind": "numeric"
+        },
+        {
+          "text": "NAB's statutory profit after tax was 6,960 AUD million for the year ended 30 September 2024 (statutory basis, including discontinued operations).",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab24",
+              "document_title": "NAB FY2024 Full Year Results",
+              "pdf_page": 13,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "11"
+              },
+              "report_period_end": "2024-09-30",
+              "report_year": 2024,
+              "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+            }
+          ],
+          "kind": "numeric"
+        }
+      ],
+      "qualifications": [
+        "Profit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable."
+      ],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    },
+    "effective_question": "What was NAB profit in FY2024?",
+    "ui_scope": {
+      "selected": {
+        "company": "all",
+        "year": "all"
+      },
+      "effective": {
+        "company": "NAB",
+        "year": "2024"
+      },
+      "summary": "NAB / FY2024",
+      "notes": [],
+      "effective_question": "What was NAB profit in FY2024?"
+    },
+    "display_text": "Question scope: NAB / FY2024\n\nNAB's cash profit was 7,102 AUD million for the year ended 30 September 2024 (cash basis, continuing operations). [NAB FY2024 Full Year Results, PDF page 13]\n\nNAB's statutory profit after tax was 6,960 AUD million for the year ended 30 September 2024 (statutory basis, including discontinued operations). [NAB FY2024 Full Year Results, PDF page 13]\n\nProfit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable."
+  },
+  "seconds": 0.24948850000509992,
+  "calls": {
+    "intent": [],
+    "research": [],
+    "definition": []
+  },
+  "pre_generation_evidence": []
+}

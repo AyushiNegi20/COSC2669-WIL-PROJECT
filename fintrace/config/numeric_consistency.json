@@ -1,0 +1,7 @@
+{
+  "version": "numeric-consistency-v1",
+  "coordinate_tolerance_points": 1.0,
+  "text_x_tolerance_points": 2.0,
+  "text_y_tolerance_points": 2.0,
+  "policy": "Audit only. Never replace values or declare semantic correctness. Mixed text with digits is explicitly uncheckable by the scalar matcher."
+}

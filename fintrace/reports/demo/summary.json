@@ -1,0 +1,31 @@
+{
+  "method": "Exposed builder-reviewed regression, not independent accuracy. Literal source selection is not free-form synthesis.",
+  "gates": {
+    "no_critical_errors": true,
+    "all_http_200": true,
+    "all_guards_safe": true,
+    "useful_minimum_90_percent": true,
+    "median_within_45_seconds": true,
+    "each_within_90_seconds": true,
+    "retrieval_unchanged": true,
+    "selected_passages_match_pre_generation_sources": true,
+    "python_tests": true,
+    "frontend_tests": true
+  },
+  "bounded_demo_gate_passed": true,
+  "requests": 24,
+  "useful_answerable": 17,
+  "answerable": 17,
+  "safe_guards": 7,
+  "source_selected": 6,
+  "literal_passages_checked": 10,
+  "source_selection_median_seconds": 6.959868649995769,
+  "answerable_median_seconds": 6.4470646000117995,
+  "maximum_seconds": 37.004455600021174,
+  "critical_cases": [],
+  "fallbacks": [],
+  "python_tests": 658,
+  "python_output": "..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 658 tests in 15.370s\n\nOK\n",
+  "frontend_output": "TAP version 13\n# Subtest: scope controls default, restore, and disable during requests\nok 1 - scope controls default, restore, and disable during requests\n  ---\n  duration_ms: 40.1624\n  type: 'test'\n  ...\n# Subtest: scope description preserves precedence notices and handles old answers\nok 2 - scope description preserves precedence notices and handles old answers\n  ---\n  duration_ms: 0.398\n  type: 'test'\n  ...\n# Subtest: formats source strings without rounding or numeric precision loss\nok 3 - formats source strings without rounding or numeric precision loss\n  ---\n  duration_ms: 3.5356\n  type: 'test'\n  ...\n# Subtest: presentation does not overwrite original source signs\nok 4 - presentation does not overwrite original source signs\n  ---\n  duration_ms: 0.3804\n  type: 'test'\n  ...\n# Subtest: percentage differences are labelled percentage points\nok 5 - percentage differences are labelled percentage points\n  ---\n  duration_ms: 0.3428\n  type: 'test'\n  ...\n# Subtest: status labels do not call partial answers verified\nok 6 - status labels do not call partial answers verified\n  ---\n  duration_ms: 0.2254\n  type: 'test'\n  ...\n# Subtest: groups evidence by actual document/page and retains header quotes\nok 7 - groups evidence by actual document/page and retains header quotes\n  ---\n  duration_ms: 0.5865\n  type: 'test'\n  ...\n# Subtest: source links use only the approved local catalog\nok 8 - source links use only the approved local catalog\n  ---\n  duration_ms: 0.456\n  type: 'test'\n  ...\n# Subtest: missing or changed documents never become clickable sources\nok 9 - missing or changed documents never become clickable sources\n  ---\n  duration_ms: 0.1884\n  type: 'test'\n  ...\n# Subtest: invalid responses are rejected, guard-only responses allowed\nok 10 - invalid responses are rejected, guard-only responses allowed\n  ---\n  duration_ms: 6.6345\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 208.5055\n",
+  "external_api_calls": 0
+}

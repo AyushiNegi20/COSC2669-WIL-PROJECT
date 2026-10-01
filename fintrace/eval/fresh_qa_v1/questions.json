@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "set": "fresh_qa_v1",
+    "authorship": "Independently authored by reading the six original issuer PDFs (data/raw) page text. Values and prose anchors verified against original native text, not taken from the system's own output. Not a blind or independent human review, but held out from all existing exposed development and acceptance sets.",
+    "scope": "CBA and NAB FY2024/FY2025, 13-metric families plus prose drivers.",
+    "conventions": "pdf_page one-based. value is the literal reported figure; parentheses denote a negative expense. unit in {AUD million, AUD billion, percent, cents}."
+  },
+  "numeric": [
+    {"id": "c24_cash", "question": "How much cash net profit after tax did CBA report for the 2024 financial year?", "bank": "CBA", "year": 2024, "expect": {"metric": "cash_profit", "value": "9,836", "unit": "AUD million", "document": "cba24", "pdf_page": 18}},
+    {"id": "c25_income", "question": "What was CBA's total operating income on a cash basis in FY2025?", "bank": "CBA", "year": 2025, "expect": {"metric": "operating_income", "value": "28,465", "unit": "AUD million", "document": "cba25", "pdf_page": 27}},
+    {"id": "c24_nim", "question": "What net interest margin did CBA report for FY2024?", "bank": "CBA", "year": 2024, "expect": {"metric": "nim", "value": "1.99", "unit": "percent", "document": "cba24", "pdf_page": 18}},
+    {"id": "c25_eps", "question": "What was CBA's basic cash earnings per share in FY2025?", "bank": "CBA", "year": 2025, "expect": {"metric": "basic_cash_eps", "value": "613.2", "unit": "cents", "document": "cba25", "pdf_page": 19}},
+    {"id": "c25_div", "question": "How large was CBA's full-year dividend per share for FY2025?", "bank": "CBA", "year": 2025, "expect": {"metric": "dividend_per_share", "value": "485", "unit": "cents", "document": "cba25", "pdf_page": 19}},
+    {"id": "c24_cet1", "question": "What was CBA's CET1 capital ratio on an APRA basis at 30 June 2024?", "bank": "CBA", "year": 2024, "expect": {"metric": "cet1", "value": "12.3", "unit": "percent", "document": "cba24", "pdf_page": 19}},
+    {"id": "c25_loans", "question": "What were CBA's gross loans and acceptances in FY2025?", "bank": "CBA", "year": 2025, "expect": {"metric": "gross_loans", "value": "1,015,883", "unit": "AUD million", "document": "cba25", "pdf_page": 45}},
+    {"id": "c24_assets", "question": "What were CBA's total assets at 30 June 2024?", "bank": "CBA", "year": 2024, "expect": {"metric": "total_assets", "value": "1,254,076", "unit": "AUD million", "document": "cba24", "pdf_page": 87}},
+    {"id": "c24_deposits_vintage", "question": "What customer deposits did CBA report in its FY2024 profit announcement?", "bank": "CBA", "year": 2024, "expect": {"metric": "customer_deposits", "value": "834,259", "unit": "AUD million", "document": "cba24", "pdf_page": 51}, "trap": "Must be the FY2024 original 834,259, not the 851,682 comparative shown in the FY2025 table."},
+    {"id": "n25_cash", "question": "What cash earnings did NAB report for FY2025?", "bank": "NAB", "year": 2025, "expect": {"metric": "cash_profit", "value": "7,091", "unit": "AUD million", "document": "nab25", "pdf_page": 13}},
+    {"id": "n24_income_vintage", "question": "According to NAB's FY2024 full-year results, what was its net operating income for that year?", "bank": "NAB", "year": 2024, "expect": {"metric": "operating_income", "value": "20,250", "unit": "AUD million", "document": "nab24", "pdf_page": 13}, "trap": "Must be the FY2024 original 20,250, not the 20,236 restated comparative in the FY2025 report."},
+    {"id": "n25_impair", "question": "What was NAB's credit impairment charge in FY2025?", "bank": "NAB", "year": 2025, "expect": {"metric": "credit_impairment", "value": "(833)", "unit": "AUD million", "document": "nab25", "pdf_page": 13}},
+    {"id": "n25_nim", "question": "What net interest margin did NAB report for FY2025 on a cash earnings basis?", "bank": "NAB", "year": 2025, "expect": {"metric": "nim", "value": "1.74", "unit": "percent", "document": "nab25", "pdf_page": 15}},
+    {"id": "n24_eps", "question": "What was NAB's basic cash earnings per share in FY2024?", "bank": "NAB", "year": 2024, "expect": {"metric": "basic_cash_eps", "value": "229.2", "unit": "cents", "document": "nab24", "pdf_page": 14}},
+    {"id": "n25_div", "question": "What full-year dividend per share did NAB declare for FY2025?", "bank": "NAB", "year": 2025, "expect": {"metric": "dividend_per_share", "value": "170", "unit": "cents", "document": "nab25", "pdf_page": 13}},
+    {"id": "n25_cet1", "question": "What was NAB's Level 2 Group CET1 capital ratio at 30 September 2025?", "bank": "NAB", "year": 2025, "expect": {"metric": "cet1", "value": "11.70", "unit": "percent", "document": "nab25", "pdf_page": 15}},
+    {"id": "n24_loans", "question": "What were NAB's gross loans and acceptances at 30 September 2024?", "bank": "NAB", "year": 2024, "expect": {"metric": "gross_loans", "value": "738.2", "unit": "AUD billion", "document": "nab24", "pdf_page": 16}},
+    {"id": "n25_deposits", "question": "What were NAB's total customer deposits in FY2025?", "bank": "NAB", "year": 2025, "expect": {"metric": "customer_deposits", "value": "658.4", "unit": "AUD billion", "document": "nab25", "pdf_page": 15, "alt_pages": [25]}},
+    {"id": "c25_statutory_disc", "question": "What was CBA's statutory net profit after tax including discontinued operations in FY2025?", "bank": "CBA", "year": 2025, "expect": {"metric": "statutory_npat", "value": "10,116", "unit": "AUD million", "document": "cba25", "pdf_page": 18}},
+    {"id": "n24_statutory", "question": "What statutory net profit attributable to owners did NAB report for FY2024?", "bank": "NAB", "year": 2024, "expect": {"metric": "statutory_npat", "value": "6,960", "unit": "AUD million", "document": "nab24", "pdf_page": 13}}
+  ],
+  "clarify_expected": [
+    {"id": "c24_profit_ambig", "question": "What was CBA's profit in FY2024?", "reason": "Unqualified profit is ambiguous between statutory and cash, and continuing vs including discontinued operations. Should clarify or present labelled alternatives, not silently pick one."},
+    {"id": "n25_profit_ambig", "question": "How much profit did NAB make in FY2025?", "reason": "Unqualified profit is ambiguous between statutory NPAT (6,759) and cash earnings (7,091). Should clarify or show labelled alternatives."}
+  ],
+  "guards": [
+    {"id": "g_roe", "question": "What was CBA's return on equity in FY2025?", "reason": "ROE is an explicitly excluded calculation and outside the 13-metric scope."},
+    {"id": "g_cti", "question": "What was NAB's cost-to-income ratio in FY2024?", "reason": "Cost-to-income ratio is an explicitly excluded calculation."},
+    {"id": "g_payout", "question": "What was CBA's dividend payout ratio in FY2025?", "reason": "Dividend payout ratio is an explicitly excluded calculation."},
+    {"id": "g_fte", "question": "How many full-time equivalent staff did CBA employ at 30 June 2025?", "reason": "Headcount is disclosed on the page but is not one of the 13 supported metrics."},
+    {"id": "g_tax", "question": "What was CBA's effective corporate tax rate in FY2024?", "reason": "Effective tax rate is disclosed on the page but not a supported metric."},
+    {"id": "g_westpac", "question": "What was Westpac's statutory profit in FY2025?", "reason": "Westpac is outside the CBA/NAB universe; must not answer."},
+    {"id": "g_year", "question": "What was NAB's cash earnings in FY2026?", "reason": "FY2026 is outside the FY2024/FY2025 window; must not answer."},
+    {"id": "g_cross", "question": "Did CBA or NAB have the higher net interest margin in FY2025?", "reason": "Cross-company ranking and equivalence are explicitly not supported in the current scope."}
+  ],
+  "narrative": [
+    {"id": "n25_nim_drivers", "question": "Why did NAB's net interest margin rise in FY2025?", "bank": "NAB", "year": 2025, "topic": "general", "gold": [{"document": "nab25", "pages": [17], "anchor": "higher earnings on deposit and capital replicating portfolios"}]},
+    {"id": "n25_nii", "question": "What drove the increase in NAB's net interest income in FY2025?", "bank": "NAB", "year": 2025, "topic": "general", "gold": [{"document": "nab25", "pages": [17], "anchor": "higher average interest earning assets and net interest margin"}]},
+    {"id": "n25_aiea", "question": "Why did NAB's average interest earning assets grow in FY2025?", "bank": "NAB", "year": 2025, "topic": "lending", "gold": [{"document": "nab25", "pages": [17], "anchor": "growth primarily in business lending"}]},
+    {"id": "n25_payroll", "question": "What did NAB spend on payroll review and remediation in FY2025?", "bank": "NAB", "year": 2025, "topic": "spending", "gold": [{"document": "nab25", "pages": [20], "anchor": "payroll review"}]},
+    {"id": "n25_tech", "question": "Why did NAB's technology expenses increase in FY2025?", "bank": "NAB", "year": 2025, "topic": "spending", "gold": [{"document": "nab25", "pages": [20], "anchor": "software licences, maintenance and cloud consumption"}]},
+    {"id": "c25_staff_drivers", "question": "What drove CBA's higher staff expenses in FY2025?", "bank": "CBA", "year": 2025, "topic": "spending", "gold": [{"document": "cba25", "pages": [31], "anchor": "wage inflation and further investment in"}]},
+    {"id": "c25_genai", "question": "Does CBA mention using generative AI in its FY2025 investment programme?", "bank": "CBA", "year": 2025, "topic": "spending", "gold": [{"document": "cba25", "pages": [32], "anchor": "Generative AI models"}]},
+    {"id": "c25_invest_infra", "question": "What did CBA say about infrastructure and branch refurbishment investment in FY2025?", "bank": "CBA", "year": 2025, "topic": "spending", "gold": [{"document": "cba25", "pages": [32], "anchor": "infrastructure and branch refurbishment"}]},
+    {"id": "c25_impair", "question": "By how much did CBA's loan impairment expense fall in FY2025 and why?", "bank": "CBA", "year": 2025, "topic": "general", "gold": [{"document": "cba25", "pages": [34], "anchor": "Loan impairment expense was $726 million, a decrease of"}]},
+    {"id": "c_impair_compare", "question": "Compare why CBA's loan impairment expense changed in FY2024 versus FY2025.", "topic": "general", "scopes": [["CBA", 2024], ["CBA", 2025]], "gold": [{"document": "cba24", "pages": [34], "anchor": "Loan impairment expense was $802 million, a decrease of"}, {"document": "cba25", "pages": [34], "anchor": "Loan impairment expense was $726 million, a decrease of"}]}
+  ]
+}

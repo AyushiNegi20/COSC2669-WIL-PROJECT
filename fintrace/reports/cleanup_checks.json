@@ -1,0 +1,27 @@
+{
+  "purpose": "Repository cleanup and integrity-check migration, not a new answer-quality assessment",
+  "previous_commit": "ba7f42d7fb3b2a117510351ae078265e86c3b70a",
+  "tracked_files_before": 1794,
+  "retired_files_archived": 1662,
+  "local_archive": "FinTrace-Local-History-20260926, alongside the repository",
+  "configured_laptop_tests": {"run":539,"passed":true},
+  "frontend_tests": {"run":10,"passed":true},
+  "clean_staged_code_export": {
+    "run":519,
+    "skipped":3,
+    "passed":true,
+    "note":"Two source-corpus integration classes and one source-cell integration test require generated local data. They run in the configured-laptop suite. The first export check exposed this missing-data prerequisite; explicit skip conditions were then added. No financial test assertion was weakened."
+  },
+  "current_integrity": {"unchanged":true,"errors":[]},
+  "live_gpu_smoke": {
+    "passed":false,
+    "first_case":"01_cba_profit",
+    "error":"HTTP read timed out after 180 seconds",
+    "saved_run":"reports/runs/20260926T113656Z",
+    "observed_environment":"GPU at 100 percent utilisation with about 7.6 GiB of 8 GiB occupied; two existing demo servers and a separate run_fresh_eval.py process were running.",
+    "interpretation":"Resource contention is a plausible contributor, not a proven sole cause. No model or GPU latency pass is claimed for this cleanup run. The other evaluation and servers were not stopped."
+  },
+  "behaviour_changes":"Historical startup-manifest dependencies replaced with a current runtime/data manifest. Retrieval rankings, source-cell binding, arithmetic, prompts and source-selection logic unchanged.",
+  "known_issue":"Sector-versus-internal-spending interpretation remains unresolved.",
+  "unrelated_work":"Untracked fresh-evaluation tools/data were left in place and excluded from the cleanup commit. Any concurrent evaluation must check candidate integrity rather than assume the source tree was frozen during cleanup."
+}

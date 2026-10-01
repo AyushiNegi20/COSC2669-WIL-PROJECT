@@ -1,0 +1,12 @@
+{
+  "version": "banking-chunking-v1",
+  "schema_version": "banking-chunk-1.0",
+  "extraction_release": "releases/banking-extraction-metrics13-v1.json",
+  "child_max_utf8_bytes": 2400,
+  "parent_max_utf8_bytes": 10000,
+  "max_rows_per_child": 3,
+  "quarantined_tables": {
+    "nab_ar25:p153:b007": "Merged Group year headers, combined values and sidebar contamination in existing extraction. Requires source review or extraction repair."
+  },
+  "policy": "Development chunks only. No automatic calculation approval. Byte limits are not model token counts; an exact tokenizer check is required before embedding."
+}

@@ -1,0 +1,15 @@
+{
+  "version": "answer-v1-development",
+  "retrieval_checkpoint": "releases/banking-retrieval-v5-development.json",
+  "provider": "local_ollama",
+  "base_url": "http://127.0.0.1:11434",
+  "model": "qwen3:4b",
+  "temperature": 0,
+  "context_tokens": 16384,
+  "output_tokens": 1200,
+  "max_draft_attempts": 2,
+  "timeout_seconds": 180,
+  "max_question_characters": 2000,
+  "independent_answer_review": "pending",
+  "automatic_calculations": false
+}

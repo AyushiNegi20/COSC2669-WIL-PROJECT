@@ -1,90 +1,96 @@
-# FinTrace: Test-Driven Financial RAG
+# FinTrace: Financial Report Research
 
-**Course:** COSC2669 / COSC2816 Case Studies in Data Science (PGRD Semester 2 2026)
-**Canvas Group ID:** WIL Project 9
+COSC2669 Case Studies in Data Science | WIL Project 9
 
-**Tentative project:** FinTrace
+This is the team's submission repository. It contains the FinTrace demo,
+evaluation tools, setup documentation and earlier Milestone 1 work.
 
-**Tagline:** Ask. Trace. Verify.
+## Problem and scope
 
-## Aim
+Financial analysts reviewing Australian banks need to locate, compare and
+interpret information across lengthy reports. Similar figures can use different
+periods, units, reporting bases or report versions. FinTrace helps users inspect
+the evidence behind an answer instead of relying on an unsupported response.
 
-To develop and evaluate a test-driven RAG system that enables finance and
-investor-relations analysts to ask questions about authoritative corporate
-reports and verify financial statements using traceable page-level evidence,
-deterministic calculations and document-version awareness before human approval.
+The prototype uses six official CBA and NAB reports covering FY2024 and FY2025.
+It combines retrieval, source-bound numerical answers, Python calculations and
+local Qwen3 8B assistance. Answers show source pages and evidence limitations.
+Numerical support is bounded to checked measures; searching a full report does
+not make every table or possible question independently verified.
 
-**Working user story:** As a finance or investor-relations analyst, I want to ask
-questions and verify financial information against authoritative corporate
-documents, so that I can identify potential inconsistencies quickly and review
-the supporting evidence before approval.
+This is a research demo, not investment advice or a production assurance tool.
 
-## Team
+## Run the demo
 
-| Student ID | Name | Role / Skills | Contribution % |
-|---|---|---|---|
-| s4196173 | Ayushi Negi | Technical project lead and integration; architecture, Python, RAG integration and code review | 16.67% |
-| s4188725 | Janhavi Maheshwar Ghate | Test collection and evaluation; gold questions, metrics, citation checks and error analysis | 16.67% |
-| s4162697 | Shriram Varadarajan | Financial intelligence and validation; normalisation, calculations, reconciliation and automated testing | 16.67% |
-| s4188084 | Guruprasad Simimath | RAG and information retrieval; chunking, BM25/vector search, embeddings and model integration | 16.67% |
-| s4177991 | Yash Keswani | Knowledge base, research and data provenance; document extraction, metadata and version tracking | 16.67% |
-| s4163868 | Hashini Santhanakrishnan | Prototype, responsible AI and quality assurance; evidence workflow, usability and human oversight | 16.67% |
-|  |  | **Total after rounding** | **100.02%** |
+The tested configuration is Windows, Python 3.12, an NVIDIA CUDA-capable GPU
+and Ollama. CPU-only, Mac and Linux configurations have not been validated.
+No paid model API or API key is required. Use a local folder outside OneDrive.
+Install Git, GitHub CLI, Python 3.12, Ollama and a compatible NVIDIA driver first.
 
-Contribution shares are equal at one-sixth per member. The displayed total is
-100.02% because each share is rounded to two decimal places.
-
-## What this project is
-
-FinTrace is planned as a financial document assistant with two connected features:
-
-1. **Ask mode:** answer questions over corporate reports with page-level evidence.
-2. **Verify mode:** classify a submitted financial statement as supported,
-   mismatched, superseded or unable to verify, and show the evidence and
-   deterministic calculation used.
-
-We will write the test questions before tuning the system. This gives us one fixed
-test set for comparing different retrieval and answer methods. It will include
-questions that cannot be answered and questions involving older document
-versions. We plan to use a small local model so there is no extra API cost.
-
-## Planned project structure
-
-```
-data/                 knowledge base documents (the corpus)
-src/
-  ingest.py           load, chunk, and embed the documents
-  retriever.py        embedding search over the corpus
-  generate.py         answer generation via a local Ollama model
-  rag.py              end-to-end pipeline
-eval/
-  test_questions.json test set, written before building (test-driven)
-  evaluate.py         metrics: % unanswered, retrieval hit@k, faithfulness
-  results/            output tables and figures
-docs/                 milestone report + AI declaration
-walert_reproduction/  repeatable preliminary Walert baseline and results
+```powershell
+gh auth login
+gh repo clone AyushiNegi20/COSC2669-WIL-PROJECT
+cd COSC2669-WIL-PROJECT\fintrace
+py -3.12 -m venv .venv-retrieval
+.\.venv-retrieval\Scripts\python.exe -m pip install -r requirements-demo.txt
+.\.venv-retrieval\Scripts\python.exe tools/prepare_demo.py
+ollama pull qwen3:8b
 ```
 
-## Preliminary Walert reproduction
+With Ollama running:
 
-We tested the evaluation process using Walert's official test collection. Our
-script rebuilds BM25 from 120 passages, searches 106 questions and calculates
-retrieval and refusal metrics without external Python packages.
-See [method and commands](walert_reproduction/README.md) and the
-[result summary](walert_reproduction/RESULTS.md).
-
-## Planned run commands
-
-```bash
-pip install -r requirements.txt
-ollama pull llama3.2        # free local model
-python src/ingest.py        # build the index
-python eval/evaluate.py     # run the pipeline over the test set and score it
+```powershell
+.\.venv-retrieval\Scripts\python.exe -c "import torch; print('CUDA available:', torch.cuda.is_available())"
+.\.venv-retrieval\Scripts\python.exe -X utf8 scripts/bank_integrity.py
+.\Start-FinTrace-Demo.ps1
 ```
 
-## Links
+CUDA must be available and integrity must report `unchanged: true`. Open
+[the local demo](http://127.0.0.1:8771/). Keep the terminal running.
+Do not regenerate the integrity manifest to bypass missing or changed files.
 
-- Trello board: https://trello.com/invite/b/6a8261255da0dc4322e1f514/ATTI8bd6c39e4e277596afeae19b35a24d83BEC3E26F/cosc2669-wil-project
-- Private GitHub repository: https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT
+The installer downloads the verified evidence bundle from this repository's
+[demo release](https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/releases/tag/fintrace-demo-2026-10-01),
+the original PDFs from their issuers and pinned model files from Hugging Face.
+Access to the separate FinTrace-Backend repository is not needed for setup.
+Allow several GB of disk space. Do not copy another person's virtual environment
+or credentials. See the [setup guide](fintrace/docs/SETUP.md) for details.
+
+## Code, evidence and assessment files
+
+| Location | Contents |
+| --- | --- |
+| [fintrace/](fintrace/) | Application, frontend, source configuration and regression tests |
+| [Architecture](fintrace/docs/ARCHITECTURE.md) | Retrieval and answer pipeline |
+| [Evaluation](fintrace/docs/EVALUATION.md) | Evaluation methods and their limitations |
+| [Migration checks](fintrace/docs/WIL_MIGRATION.md) | Imported release, integrity and WIL checkout checks |
+| [Known limitations](fintrace/docs/LIMITATIONS.md) | Coverage and answer-quality boundaries |
+| [Evaluator handoff](fintrace/docs/EVALUATOR_HANDOFF.md) | Use the configured demo, preserve first responses and score evidence |
+| [walert_reproduction/](walert_reproduction/) | Preliminary BM25 reproduction, tests and results |
+| [docs/](docs/) | Milestone 1 submission and AI-use records |
+
+From `fintrace/`, run the regression suites with:
+
+```powershell
+.\.venv-retrieval\Scripts\python.exe -m unittest discover -s tests
+node --test web/ui-model.test.mjs web/scope-controls.test.mjs
+```
+
+Node.js is required for the frontend tests, not for serving the demo. Passing
+regressions is not a universal accuracy claim. Historical evaluation reports
+retain their original scope and must not be presented as fresh blind results.
+
+## Team and coordination
+
+Ayushi Negi, Janhavi Maheshwar Ghate, Shriram Varadarajan, Guruprasad Simimath,
+Yash Keswani and Hashini Santhanakrishnan.
+
+- [Trello board](https://trello.com/b/TlRdAYBm/cosc2669-wil-project)
 - [Milestone 1 report](docs/FinTrace_Milestone1_Report.pdf)
-- [Condition 3 AI declaration](docs/Condition3_AI_Declaration.pdf)
+- [Milestone 1 planning record and role table](docs/MILESTONE1_README.md)
+- [AI-use working log](docs/AI_USE.md)
+- [Milestone 1 Condition 3 declaration](docs/Condition3_AI_Declaration.pdf)
+
+The historical plan is retained as a record, not as the current installation
+guide or final contribution statement. Final contributions and the assessment
+declaration must reflect the work actually completed by each member.

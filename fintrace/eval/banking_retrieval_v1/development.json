@@ -1,0 +1,2082 @@
+[
+  {
+    "id": "bank-q001",
+    "family": "statutory_npat",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2024 statutory net profit attributable to owners including discontinued operations, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p018:b000:r14",
+            "cba24:p018:b000:r0",
+            "cba24:p018:b000:r1",
+            "cba24:p018:b000:r13"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "9,394",
+      "unit": "AUD million",
+      "basis": "Statutory profit attributable to owners, including discontinued operations. Continuing-only alternatives must be explicitly labelled.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p018:b000:r14",
+        "column": 1,
+        "value": "9,394"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q002",
+    "family": "cash_profit",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2024 cash profit from continuing operations, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p018:b000:r4",
+            "cba24:p018:b000:r0",
+            "cba24:p018:b000:r1",
+            "cba24:p018:b000:r2"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "9,836",
+      "unit": "AUD million",
+      "basis": "Continuing operations, each issuer's disclosed cash basis; not a standardised cross-bank accounting measure.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p018:b000:r4",
+        "column": 1,
+        "value": "9,836"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q003",
+    "family": "operating_income",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2024 Total / net operating income, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p027:b001:r2",
+            "cba24:p027:b001:r0",
+            "cba24:p027:b001:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "27,174",
+      "unit": "AUD million",
+      "basis": "Group cash-basis continuing operations; keep original and restated comparatives separate.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p027:b001:r2",
+        "column": 1,
+        "value": "27,174"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q004",
+    "family": "operating_expenses",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2024 Operating expenses, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p027:b001:r5",
+            "cba24:p027:b001:r0",
+            "cba24:p027:b001:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "(12,218)",
+      "unit": "AUD million",
+      "basis": "Group cash-basis continuing operations. CBA total operating expenses, including restructuring/notable items, not its underlying expense row.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p027:b001:r5",
+        "column": 1,
+        "value": "(12,218)"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q006",
+    "family": "nim",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2024 Net interest margin, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p018:b000:r5",
+            "cba24:p018:b000:r0",
+            "cba24:p018:b000:r1",
+            "cba24:p018:b000:r2"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "1.99",
+      "unit": "percent",
+      "basis": "Group cash-basis NIM, with each bank's definition; not half-year NIM.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p018:b000:r5",
+        "column": 1,
+        "value": "1.99"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q008",
+    "family": "dividend_per_share",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2024 Full-year dividend per share, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p019:b000:r16",
+            "cba24:p019:b000:r0",
+            "cba24:p019:b000:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "465",
+      "unit": "cents/share",
+      "basis": "Full-year dividend for ordinary shareholders, not final dividend alone.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p019:b000:r16",
+        "column": 1,
+        "value": "465"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q010",
+    "family": "customer_deposits",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2024 Customer deposits, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p051:b000:r2",
+            "cba24:p051:b000:r0",
+            "cba24:p051:b000:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "834,259",
+      "unit": "AUD million",
+      "basis": "Issuer-disclosed customer funding deposits, not total deposits and other public borrowings. Report vintage must be retained.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p051:b000:r2",
+        "column": 1,
+        "value": "834,259"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q011",
+    "family": "total_assets",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2024 Total assets, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p087:b000:r16",
+            "cba24:p087:b000:r0"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "1,254,076",
+      "unit": "AUD million",
+      "basis": "Consolidated Group balance sheet, not parent Company or average assets.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p087:b000:r16",
+        "column": 2,
+        "value": "1,254,076"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q013",
+    "family": "lcr",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2024 Liquidity Coverage Ratio, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p019:b000:r26",
+            "cba24:p019:b000:r0",
+            "cba24:p019:b000:r1",
+            "cba24:p019:b000:r25",
+            "cba24:p019:b003"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "136",
+      "unit": "percent",
+      "basis": "Quarterly average for the quarter ending at financial year-end, not an annual average or spot observation.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p019:b000:r26",
+        "column": 1,
+        "value": "136"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q014",
+    "family": "statutory_npat",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2025 statutory net profit attributable to owners including discontinued operations, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p018:b002:r14",
+            "cba25:p018:b002:r0",
+            "cba25:p018:b002:r1",
+            "cba25:p018:b002:r13"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "10,116",
+      "unit": "AUD million",
+      "basis": "Statutory profit attributable to owners, including discontinued operations. Continuing-only alternatives must be explicitly labelled.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p018:b002:r14",
+        "column": 1,
+        "value": "10,116"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q015",
+    "family": "cash_profit",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2025 cash profit from continuing operations, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p018:b002:r4",
+            "cba25:p018:b002:r0",
+            "cba25:p018:b002:r1",
+            "cba25:p018:b002:r2"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "10,252",
+      "unit": "AUD million",
+      "basis": "Continuing operations, each issuer's disclosed cash basis; not a standardised cross-bank accounting measure.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p018:b002:r4",
+        "column": 1,
+        "value": "10,252"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q016",
+    "family": "operating_income",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2025 Total / net operating income, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p027:b003:r2",
+            "cba25:p027:b003:r0",
+            "cba25:p027:b003:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "28,465",
+      "unit": "AUD million",
+      "basis": "Group cash-basis continuing operations; keep original and restated comparatives separate.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p027:b003:r2",
+        "column": 1,
+        "value": "28,465"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q017",
+    "family": "operating_expenses",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2025 Operating expenses, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p027:b003:r5",
+            "cba25:p027:b003:r0",
+            "cba25:p027:b003:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "(12,996)",
+      "unit": "AUD million",
+      "basis": "Group cash-basis continuing operations. CBA total operating expenses, including restructuring/notable items, not its underlying expense row.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p027:b003:r5",
+        "column": 1,
+        "value": "(12,996)"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q019",
+    "family": "nim",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2025 Net interest margin, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p018:b002:r5",
+            "cba25:p018:b002:r0",
+            "cba25:p018:b002:r1",
+            "cba25:p018:b002:r2"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "2.08",
+      "unit": "percent",
+      "basis": "Group cash-basis NIM, with each bank's definition; not half-year NIM.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p018:b002:r5",
+        "column": 1,
+        "value": "2.08"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q021",
+    "family": "dividend_per_share",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2025 Full-year dividend per share, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p019:b002:r16",
+            "cba25:p019:b002:r0",
+            "cba25:p019:b002:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "485",
+      "unit": "cents/share",
+      "basis": "Full-year dividend for ordinary shareholders, not final dividend alone.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p019:b002:r16",
+        "column": 1,
+        "value": "485"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q023",
+    "family": "customer_deposits",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2025 Customer deposits, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p053:b002:r2",
+            "cba25:p053:b002:r0",
+            "cba25:p053:b002:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "908,812",
+      "unit": "AUD million",
+      "basis": "Issuer-disclosed customer funding deposits, not total deposits and other public borrowings. Report vintage must be retained.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p053:b002:r2",
+        "column": 1,
+        "value": "908,812"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q024",
+    "family": "total_assets",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2025 Total assets, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p090:b003:r16",
+            "cba25:p090:b003:r0",
+            "cba25:p090:b003:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "1,353,799",
+      "unit": "AUD million",
+      "basis": "Consolidated Group balance sheet, not parent Company or average assets.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p090:b003:r16",
+        "column": 2,
+        "value": "1,353,799"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q026",
+    "family": "lcr",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was CBA's FY2025 Liquidity Coverage Ratio, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p019:b002:r26",
+            "cba25:p019:b002:r0",
+            "cba25:p019:b002:r1",
+            "cba25:p019:b002:r25",
+            "cba25:p019:b004"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "130",
+      "unit": "percent",
+      "basis": "Quarterly average for the quarter ending at financial year-end, not an annual average or spot observation.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p019:b002:r26",
+        "column": 1,
+        "value": "130"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q027",
+    "family": "statutory_npat",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2024 statutory net profit attributable to owners including discontinued operations, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p013:b006:r19",
+            "nab24:p013:b006:r0",
+            "nab24:p013:b006:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "6,960",
+      "unit": "AUD million",
+      "basis": "Statutory profit attributable to owners, including discontinued operations. Continuing-only alternatives must be explicitly labelled.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p013:b006:r19",
+        "column": 1,
+        "value": "6,960"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q028",
+    "family": "cash_profit",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2024 cash earnings, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p013:b006:r12",
+            "nab24:p013:b006:r0",
+            "nab24:p013:b006:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "7,102",
+      "unit": "AUD million",
+      "basis": "Continuing operations, each issuer's disclosed cash basis; not a standardised cross-bank accounting measure.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p013:b006:r12",
+        "column": 1,
+        "value": "7,102"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q029",
+    "family": "operating_income",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2024 Total / net operating income, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p013:b006:r4",
+            "nab24:p013:b006:r0",
+            "nab24:p013:b006:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "20,250",
+      "unit": "AUD million",
+      "basis": "Group cash-basis continuing operations; keep original and restated comparatives separate.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p013:b006:r4",
+        "column": 1,
+        "value": "20,250"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q030",
+    "family": "operating_expenses",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2024 Operating expenses, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p013:b006:r5",
+            "nab24:p013:b006:r0",
+            "nab24:p013:b006:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "(9,427)",
+      "unit": "AUD million",
+      "basis": "Group cash-basis continuing operations. CBA total operating expenses, including restructuring/notable items, not its underlying expense row.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p013:b006:r5",
+        "column": 1,
+        "value": "(9,427)"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q032",
+    "family": "nim",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2024 Net interest margin, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p016:b002:r13",
+            "nab24:p016:b002:r0",
+            "nab24:p016:b002:r1",
+            "nab24:p016:b002:r8"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "1.71%",
+      "unit": "percent",
+      "basis": "Group cash-basis NIM, with each bank's definition; not half-year NIM.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p016:b002:r13",
+        "column": 1,
+        "value": "1.71%"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q034",
+    "family": "dividend_per_share",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2024 Full-year dividend per share, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p014:b002:r3",
+            "nab24:p014:b002:r0",
+            "nab24:p014:b002:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "169",
+      "unit": "cents/share",
+      "basis": "Full-year dividend for ordinary shareholders, not final dividend alone.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p014:b002:r3",
+        "column": 1,
+        "value": "169"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q036",
+    "family": "customer_deposits",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2024 Customer deposits, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p016:b002:r23",
+            "nab24:p016:b002:r0",
+            "nab24:p016:b002:r1",
+            "nab24:p016:b002:r19"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "612.8",
+      "unit": "AUD billion",
+      "basis": "Issuer-disclosed customer funding deposits, not total deposits and other public borrowings. Report vintage must be retained.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p016:b002:r23",
+        "column": 1,
+        "value": "612.8"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q037",
+    "family": "total_assets",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2024 Total assets, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p060:b001:r16",
+            "nab24:p060:b001:r0",
+            "nab24:p060:b001:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "1,080,248",
+      "unit": "AUD million",
+      "basis": "Consolidated Group balance sheet, not parent Company or average assets.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p060:b001:r16",
+        "column": 1,
+        "value": "1,080,248"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q039",
+    "family": "lcr",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2024 Liquidity Coverage Ratio, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p035:b028:r7",
+            "nab24:p035:b028:r0",
+            "nab24:p035:b028:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "137",
+      "unit": "percent",
+      "basis": "Quarterly average for the quarter ending at financial year-end, not an annual average or spot observation.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p035:b028:r7",
+        "column": 1,
+        "value": "137"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q040",
+    "family": "statutory_npat",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2025 statutory net profit attributable to owners including discontinued operations, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b006:r19",
+            "nab25:p013:b006:r0",
+            "nab25:p013:b006:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "6,759",
+      "unit": "AUD million",
+      "basis": "Statutory profit attributable to owners, including discontinued operations. Continuing-only alternatives must be explicitly labelled.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p013:b006:r19",
+        "column": 1,
+        "value": "6,759"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q041",
+    "family": "cash_profit",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2025 cash earnings, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b006:r12",
+            "nab25:p013:b006:r0",
+            "nab25:p013:b006:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "7,091",
+      "unit": "AUD million",
+      "basis": "Continuing operations, each issuer's disclosed cash basis; not a standardised cross-bank accounting measure.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p013:b006:r12",
+        "column": 1,
+        "value": "7,091"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q042",
+    "family": "operating_income",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2025 Total / net operating income, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b006:r4",
+            "nab25:p013:b006:r0",
+            "nab25:p013:b006:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "20,813",
+      "unit": "AUD million",
+      "basis": "Group cash-basis continuing operations; keep original and restated comparatives separate.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p013:b006:r4",
+        "column": 1,
+        "value": "20,813"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q043",
+    "family": "operating_expenses",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2025 Operating expenses, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b006:r5",
+            "nab25:p013:b006:r0",
+            "nab25:p013:b006:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "(9,848)",
+      "unit": "AUD million",
+      "basis": "Group cash-basis continuing operations. CBA total operating expenses, including restructuring/notable items, not its underlying expense row.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p013:b006:r5",
+        "column": 1,
+        "value": "(9,848)"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q045",
+    "family": "nim",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2025 Net interest margin, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p015:b007:r13",
+            "nab25:p015:b007:r0",
+            "nab25:p015:b007:r1",
+            "nab25:p015:b007:r8"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "1.74%",
+      "unit": "percent",
+      "basis": "Group cash-basis NIM, with each bank's definition; not half-year NIM.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p015:b007:r13",
+        "column": 1,
+        "value": "1.74%"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q047",
+    "family": "dividend_per_share",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2025 Full-year dividend per share, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b010:r3",
+            "nab25:p013:b010:r0",
+            "nab25:p013:b010:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "170",
+      "unit": "cents/share",
+      "basis": "Full-year dividend for ordinary shareholders, not final dividend alone.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p013:b010:r3",
+        "column": 1,
+        "value": "170"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q049",
+    "family": "customer_deposits",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2025 Customer deposits, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p015:b007:r23",
+            "nab25:p015:b007:r0",
+            "nab25:p015:b007:r1",
+            "nab25:p015:b007:r19"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "658.4",
+      "unit": "AUD billion",
+      "basis": "Issuer-disclosed customer funding deposits, not total deposits and other public borrowings. Report vintage must be retained.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p015:b007:r23",
+        "column": 1,
+        "value": "658.4"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q050",
+    "family": "total_assets",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2025 Total assets, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p060:b001:r17",
+            "nab25:p060:b001:r0",
+            "nab25:p060:b001:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "1,109,062",
+      "unit": "AUD million",
+      "basis": "Consolidated Group balance sheet, not parent Company or average assets.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p060:b001:r17",
+        "column": 1,
+        "value": "1,109,062"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q052",
+    "family": "lcr",
+    "capability": "Find",
+    "split": "development",
+    "question": "What was NAB's FY2025 Liquidity Coverage Ratio, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p032:b007:r5",
+            "nab25:p032:b007:r0",
+            "nab25:p032:b007:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "135",
+      "unit": "percent",
+      "basis": "Quarterly average for the quarter ending at financial year-end, not an annual average or spot observation.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p032:b007:r5",
+        "column": 1,
+        "value": "135"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q053",
+    "family": "cash_profit",
+    "capability": "Compare",
+    "split": "development",
+    "question": "Using CBA's FY2025 report, compare its annual Cash profit / cash earnings with the FY2024 comparative. State the change and basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p018:b002:r4",
+            "cba25:p018:b002:r0",
+            "cba25:p018:b002:r1",
+            "cba25:p018:b002:r2"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "current": "10,252",
+      "comparative": "9,836",
+      "absolute_change": "416",
+      "basis_point_change": null,
+      "unit": "AUD million",
+      "basis": "Continuing operations, each issuer's disclosed cash basis; not a standardised cross-bank accounting measure."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q054",
+    "family": "nim",
+    "capability": "Compare",
+    "split": "development",
+    "question": "Using CBA's FY2025 report, compare its annual Net interest margin with the FY2024 comparative. State the change and basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p018:b002:r5",
+            "cba25:p018:b002:r0",
+            "cba25:p018:b002:r1",
+            "cba25:p018:b002:r2"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "current": "2.08",
+      "comparative": "1.99",
+      "absolute_change": "0.09",
+      "basis_point_change": "9.00",
+      "unit": "percent",
+      "basis": "Group cash-basis NIM, with each bank's definition; not half-year NIM."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q056",
+    "family": "dividend_per_share",
+    "capability": "Compare",
+    "split": "development",
+    "question": "Using CBA's FY2025 report, compare its annual Full-year dividend per share with the FY2024 comparative. State the change and basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p019:b002:r16",
+            "cba25:p019:b002:r0",
+            "cba25:p019:b002:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "current": "485",
+      "comparative": "465",
+      "absolute_change": "20",
+      "basis_point_change": null,
+      "unit": "cents/share",
+      "basis": "Full-year dividend for ordinary shareholders, not final dividend alone."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q057",
+    "family": "cash_profit",
+    "capability": "Compare",
+    "split": "development",
+    "question": "Using NAB's FY2025 report, compare its annual Cash profit / cash earnings with the FY2024 comparative. State the change and basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b006:r12",
+            "nab25:p013:b006:r0",
+            "nab25:p013:b006:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "current": "7,091",
+      "comparative": "7,102",
+      "absolute_change": "-11",
+      "basis_point_change": null,
+      "unit": "AUD million",
+      "basis": "Continuing operations, each issuer's disclosed cash basis; not a standardised cross-bank accounting measure."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q058",
+    "family": "nim",
+    "capability": "Compare",
+    "split": "development",
+    "question": "Using NAB's FY2025 report, compare its annual Net interest margin with the FY2024 comparative. State the change and basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p015:b007:r13",
+            "nab25:p015:b007:r0",
+            "nab25:p015:b007:r1",
+            "nab25:p015:b007:r8"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "current": "1.74%",
+      "comparative": "1.71%",
+      "absolute_change": "0.03",
+      "basis_point_change": "3.00",
+      "unit": "percent",
+      "basis": "Group cash-basis NIM, with each bank's definition; not half-year NIM."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q060",
+    "family": "dividend_per_share",
+    "capability": "Compare",
+    "split": "development",
+    "question": "Using NAB's FY2025 report, compare its annual Full-year dividend per share with the FY2024 comparative. State the change and basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b010:r3",
+            "nab25:p013:b010:r0",
+            "nab25:p013:b010:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "current": "170",
+      "comparative": "169",
+      "absolute_change": "1",
+      "basis_point_change": null,
+      "unit": "cents/share",
+      "basis": "Full-year dividend for ordinary shareholders, not final dividend alone."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q061",
+    "family": "nim",
+    "capability": "Compare",
+    "split": "development",
+    "question": "Compare CBA and NAB FY2025 Net interest margin as originally reported. Keep each bank's year-end and basis clear.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p018:b002:r5",
+            "cba25:p018:b002:r0",
+            "cba25:p018:b002:r1",
+            "cba25:p018:b002:r2"
+          ]
+        ]
+      },
+      {
+        "alternatives": [
+          [
+            "nab25:p015:b007:r13",
+            "nab25:p015:b007:r0",
+            "nab25:p015:b007:r1",
+            "nab25:p015:b007:r8"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "CBA": "2.08",
+      "NAB": "1.74%",
+      "caveat": "CBA ends 30 June; NAB ends 30 September. Issuer definitions can differ."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q063",
+    "family": "dividend_per_share",
+    "capability": "Compare",
+    "split": "development",
+    "question": "Compare CBA and NAB FY2025 Full-year dividend per share as originally reported. Keep each bank's year-end and basis clear.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p019:b002:r16",
+            "cba25:p019:b002:r0",
+            "cba25:p019:b002:r1"
+          ]
+        ]
+      },
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b010:r3",
+            "nab25:p013:b010:r0",
+            "nab25:p013:b010:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "CBA": "485",
+      "NAB": "170",
+      "caveat": "CBA ends 30 June; NAB ends 30 September. Issuer definitions can differ."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q065",
+    "family": "nim",
+    "capability": "Check a claim",
+    "split": "development",
+    "question": "Check this claim against CBA's FY2025 report: Net interest margin was 2.18 percent.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p018:b002:r5",
+            "cba25:p018:b002:r0",
+            "cba25:p018:b002:r1",
+            "cba25:p018:b002:r2"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "supported": false,
+      "correct_value": "2.08",
+      "unit": "percent"
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q067",
+    "family": "cash_profit",
+    "capability": "Check a claim",
+    "split": "development",
+    "question": "Check this claim against CBA's FY2025 report: Cash profit / cash earnings was 10,116 AUD million.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p018:b002:r4",
+            "cba25:p018:b002:r0",
+            "cba25:p018:b002:r1",
+            "cba25:p018:b002:r2"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "supported": false,
+      "correct_value": "10,252",
+      "unit": "AUD million"
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q068",
+    "family": "dividend_per_share",
+    "capability": "Check a claim",
+    "split": "development",
+    "question": "Check this claim against NAB's FY2025 report: Full-year dividend per share was 170 cents/share.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b010:r3",
+            "nab25:p013:b010:r0",
+            "nab25:p013:b010:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "supported": true,
+      "correct_value": "170",
+      "unit": "cents/share"
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q069",
+    "family": "cash_profit",
+    "capability": "Define",
+    "split": "development",
+    "question": "According to CBA's FY2025 report, what does cash-basis net profit mean?",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p148:b003:r15"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_definition": "Net profit after tax ('cash basis') | Represents net profit after tax and non-controlling interests before non-cash items including hedging and IFRS volatility, and gains or losses on acquisitions, disposal, closure, capital repatriation and demerger of controlled business. This is management's preferred measure of the Group's financial performance."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q070",
+    "family": "statutory_npat",
+    "capability": "Define",
+    "split": "development",
+    "question": "According to CBA's FY2025 report, what does statutory-basis net profit mean?",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p149:b002:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_definition": "Net profit after tax ('statutory basis') | Represents net profit after tax and non-controlling interests, calculated in accordance with Australian Accounting Standards. This is equivalent to the statutory item 'Net profit attributable to equity holders of the Bank'."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q072",
+    "family": "cash_profit",
+    "capability": "Define",
+    "split": "development",
+    "question": "According to NAB's FY2025 report, what does cash earnings mean?",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p082:b029",
+            "nab25:p082:b030"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_definition": "Cash earnings\nCash earnings is a non-IFRS key performance measure used by the Group and the investment community. Cash earnings is defined as net profit attributable to owners of the Company from continuing operations adjusted for non-cash items, including items such as hedging and fair value volatility, the amortisation of acquired intangible assets and gains or losses and certain other items associated with the acquisition, integration, disposal or closure of Group businesses."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q074",
+    "family": "customer_deposits",
+    "capability": "Define",
+    "split": "development",
+    "question": "According to NAB's FY2025 report, what does customer deposits mean?",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p082:b053",
+            "nab25:p082:b054"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_definition": "Customer deposits\nThe sum of interest bearing, non-interest bearing and term deposits (including retail and corporate deposits)."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q077",
+    "family": "nim",
+    "capability": "Define",
+    "split": "development",
+    "question": "According to NAB's FY2025 report, what does net interest margin mean?",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p083:b035",
+            "nab25:p083:b036"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_definition": "Net interest margin (NIM)\nNet interest income derived on a cash earnings basis expressed as a percentage of average interest earning assets."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q078",
+    "family": "statutory_npat",
+    "capability": "Define",
+    "split": "development",
+    "question": "According to NAB's FY2025 report, what does statutory net profit mean?",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p083:b061",
+            "nab25:p083:b062"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_definition": "Statutory net profit\nNet profit attributable to owners of the Company."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q079",
+    "family": "interest_income_drivers",
+    "capability": "Explain",
+    "split": "development",
+    "question": "In CBA's FY2025 report: Why did net interest income increase over the prior year? Attribute the explanation to management.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p028:b006"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_explanation": "Net interest income was $24,023 million, an increase of $1,199 million or 5% on the prior year. The result was driven by a 9 basis point increase in net interest margin to 2.08% and a $9 billion or 1% increase in average interest earning assets to $1,154 billion."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q080",
+    "family": "nim_drivers",
+    "capability": "Explain",
+    "split": "development",
+    "question": "In CBA's FY2025 report: How did deposit pricing affect the change in net interest margin? Attribute the explanation to management.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p028:b051"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_explanation": "Funding costs: Decreased margin by 7 basis points driven by increased deposit price competition."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q081",
+    "family": "staff_costs",
+    "capability": "Explain",
+    "split": "development",
+    "question": "In CBA's FY2025 report: Why did staff expenses increase over the prior year? Attribute the explanation to management.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p031:b026"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_explanation": "Staff expenses increased by $522 million or 7% to $7,970 million, driven by wage inflation and further investment in additional frontline lenders and technologists, partly offset by productivity initiatives. The average number of FTE increased by 727 from 49,269 to 49,996, primarily due to the Bank's investment in its technology and engineering capabilities, insourcing to reduce reliance on external vendors and an increase in retail, business and NZ lenders, partly offset by the completion of the PT Bank Commonwealth (PTBC) sale in FY24."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q083",
+    "family": "interest_income_drivers",
+    "capability": "Explain",
+    "split": "development",
+    "question": "In NAB's FY2025 report: What drove annual net interest income growth, excluding economic hedge movements? Attribute the explanation to management.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p017:b028"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_explanation": "Net interest income increased by $644 million or 3.8%. This includes a decrease of $74 million due to movements in economic hedges, offset in other operating income. Excluding this movement, the underlying increase of $718 million or 4.3% was due to higher average interest earning assets and net interest margin."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q084",
+    "family": "nim_drivers",
+    "capability": "Explain",
+    "split": "development",
+    "question": "In NAB's FY2025 report: What annual deposit-margin pressure did management attribute to competitive pricing and mix? Attribute the explanation to management.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p017:b035"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_explanation": "a decrease of 7 basis points mainly driven by higher deposit costs including competitive pressures, combined with deposit mix impacts,"
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q085",
+    "family": "staff_costs",
+    "capability": "Explain",
+    "split": "development",
+    "question": "In NAB's FY2025 report: What drove annual personnel expense growth, excluding payroll review and remediation? Attribute the explanation to management.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p020:b005"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_explanation": "Personnel expenses increased by $271 million or 4.8%. Excluding an increase of $101 million for payroll review and remediation costs, personnel expenses increased by $170 million or 3.0%. The increase was driven by salary expense inflation, investment in additional bankers and resources to support growth, and continued investment in technology and financial crime related capabilities. These impacts were partially offset by productivity benefits achieved through continued process improvements and simplification of the Group's operations and lower EU related costs."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q088",
+    "family": "cash_profit",
+    "capability": "Reconcile",
+    "split": "development",
+    "question": "In NAB's FY2025 report, identify the non-cash adjustments linking cash earnings to statutory profit, including discontinued operations.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b006:r0",
+            "nab25:p013:b006:r1",
+            "nab25:p013:b006:r12",
+            "nab25:p013:b006:r13",
+            "nab25:p013:b006:r14",
+            "nab25:p013:b006:r15",
+            "nab25:p013:b006:r16",
+            "nab25:p013:b006:r17",
+            "nab25:p013:b006:r18",
+            "nab25:p013:b006:r19"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "answer": "Cash earnings 7,091; hedging 28; amortisation (36); acquisitions/integration/disposals/closures (295); continuing NPAT 6,788; discontinued loss (29); total NPAT 6,759. AUD million."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q089",
+    "family": "customer_deposits",
+    "capability": "Reconcile",
+    "split": "development",
+    "question": "Compare the CBA FY2024 customer deposits originally reported with the FY2024 comparative in its FY2025 report. Do not invent an explanation for the difference.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p051:b000:r2",
+            "cba24:p051:b000:r0",
+            "cba24:p051:b000:r1"
+          ]
+        ]
+      },
+      {
+        "alternatives": [
+          [
+            "cba25:p053:b002:r2",
+            "cba25:p053:b002:r0",
+            "cba25:p053:b002:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "original": "834,259",
+      "later_comparative": "851,682",
+      "unit": "AUD million",
+      "explanation": "Not established by these table anchors."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q090",
+    "family": "bounded_summary",
+    "capability": "Summarise",
+    "split": "development",
+    "question": "Summarise CBA's FY2025 cash profit or cash earnings, annual net interest margin and full-year dividend per share as originally reported.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p018:b002:r4",
+            "cba25:p018:b002:r0",
+            "cba25:p018:b002:r1",
+            "cba25:p018:b002:r2"
+          ]
+        ]
+      },
+      {
+        "alternatives": [
+          [
+            "cba25:p018:b002:r5",
+            "cba25:p018:b002:r0",
+            "cba25:p018:b002:r1",
+            "cba25:p018:b002:r2"
+          ]
+        ]
+      },
+      {
+        "alternatives": [
+          [
+            "cba25:p019:b002:r16",
+            "cba25:p019:b002:r0",
+            "cba25:p019:b002:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "metrics": {
+        "cash_profit": "10,252",
+        "nim": "2.08",
+        "dividend_per_share": "485"
+      }
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q091",
+    "family": "bounded_summary",
+    "capability": "Summarise",
+    "split": "development",
+    "question": "Summarise NAB's FY2025 cash profit or cash earnings, annual net interest margin and full-year dividend per share as originally reported.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b006:r12",
+            "nab25:p013:b006:r0",
+            "nab25:p013:b006:r1"
+          ]
+        ]
+      },
+      {
+        "alternatives": [
+          [
+            "nab25:p015:b007:r13",
+            "nab25:p015:b007:r0",
+            "nab25:p015:b007:r1",
+            "nab25:p015:b007:r8"
+          ]
+        ]
+      },
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b010:r3",
+            "nab25:p013:b010:r0",
+            "nab25:p013:b010:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "metrics": {
+        "cash_profit": "7,091",
+        "nim": "1.74%",
+        "dividend_per_share": "170"
+      }
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q092",
+    "family": "ambiguous_profit",
+    "capability": "Clarify",
+    "split": "development",
+    "question": "How much did CBA profit grow in FY2025?",
+    "expected_behavior": "clarify",
+    "required_evidence_groups": [],
+    "expected_answer": {
+      "answer": "Clarify cash versus statutory, operations scope and comparison period, or show labelled alternatives."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q093",
+    "family": "ambiguous_profit",
+    "capability": "Clarify",
+    "split": "development",
+    "question": "How much did NAB profit grow in FY2025?",
+    "expected_behavior": "clarify",
+    "required_evidence_groups": [],
+    "expected_answer": {
+      "answer": "Clarify cash versus statutory, operations scope and comparison period, or show labelled alternatives."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q094",
+    "family": "unsupported_future",
+    "capability": "Identify missing evidence",
+    "split": "development",
+    "question": "What will CBA net profit be in FY2027?",
+    "expected_behavior": "abstain",
+    "required_evidence_groups": [],
+    "expected_answer": {
+      "answer": "The frozen FY2024/FY2025 corpus does not establish the future realised figure."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q095",
+    "family": "unsupported_future",
+    "capability": "Identify missing evidence",
+    "split": "development",
+    "question": "What will NAB net profit be in FY2027?",
+    "expected_behavior": "abstain",
+    "required_evidence_groups": [],
+    "expected_answer": {
+      "answer": "The frozen FY2024/FY2025 corpus does not establish the future realised figure."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q096",
+    "family": "unsupported_company",
+    "capability": "Identify missing evidence",
+    "split": "development",
+    "question": "What was ANZ FY2025 cash profit?",
+    "expected_behavior": "abstain",
+    "required_evidence_groups": [],
+    "expected_answer": {
+      "answer": "ANZ is outside the frozen source corpus."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q097",
+    "family": "unsupported_personal",
+    "capability": "Identify missing evidence",
+    "split": "development",
+    "question": "What is the current balance in my NAB savings account?",
+    "expected_behavior": "abstain",
+    "required_evidence_groups": [],
+    "expected_answer": {
+      "answer": "Public corporate reports do not contain personal account information."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  }
+]

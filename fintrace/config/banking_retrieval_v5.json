@@ -1,0 +1,12 @@
+{
+  "version": "banking-retrieval-v5",
+  "context_tokens": 2048,
+  "candidate_k": 40,
+  "per_branch": 4,
+  "rrf_constant": 60,
+  "semantic_metric_min": 0.36,
+  "semantic_metric_margin": 0.025,
+  "status": "experimental_not_frozen",
+  "independent_review": "pending",
+  "selection_policy": "All earlier questions including the indirect audit are exposed development data. Measure semantic planning, hybrid ranking and optional reranking separately. Do not change previous snapshots or claim independent validation."
+}

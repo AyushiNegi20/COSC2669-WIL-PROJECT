@@ -1,0 +1,55 @@
+{
+  "runtime_unchanged": true,
+  "protocol_unchanged": true,
+  "retrieval_unchanged": true,
+  "completed": [
+    "01_cba_profit",
+    "02_nab_profit",
+    "03_eps_change",
+    "04_nim_change",
+    "05_nab_cash_change",
+    "06_cba_definition",
+    "07_nab_definition",
+    "08_cba_false_premise",
+    "09_nab_staff",
+    "10_cross_year",
+    "11_nab_infrastructure",
+    "12_cba_performance",
+    "13_nab_strategy",
+    "14_vague_money",
+    "15_banks_compare",
+    "16_followup",
+    "17_filter_override",
+    "18_unsupported_bank",
+    "19_future",
+    "20_advice",
+    "21_private",
+    "22_payback",
+    "23_ai_budget",
+    "24_injection"
+  ],
+  "loaded_models_after": {
+    "models": [
+      {
+        "name": "qwen3:8b",
+        "model": "qwen3:8b",
+        "size": 7812121885,
+        "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "8.2B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-09-26T15:35:44.320592+10:00",
+        "size_vram": 6285783203,
+        "context_length": 16384
+      }
+    ]
+  },
+  "external_api_calls": 0
+}

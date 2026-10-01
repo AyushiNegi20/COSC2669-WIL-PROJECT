@@ -1,0 +1,54 @@
+{
+  "statutory_npat": {
+    "label": "statutory net profit attributable to owners",
+    "description": "Accounting profit after tax attributable to ordinary shareholders under financial reporting standards. Statutory NPAT may include discontinued operations; continuing and total scopes must be labelled separately."
+  },
+  "cash_profit": {
+    "label": "cash profit cash earnings",
+    "description": "Management's adjusted cash-basis earnings performance measure. Removes specified non-cash accounting adjustments from statutory net profit. This is not cash on hand or operating cash flow. Continuing operations and discontinued operations differ."
+  },
+  "operating_income": {
+    "label": "total net operating income",
+    "description": "Bank revenue from net interest income and other operating income before operating expenses, impairment charges and income tax. Net interest income already deducts interest expense. This is not net profit."
+  },
+  "operating_expenses": {
+    "label": "total operating expenses",
+    "description": "Total costs of running the banking business: employee costs, technology, occupancy and other administrative expenses. Total operating expenses can include restructuring and notable items rather than only underlying expenses."
+  },
+  "credit_impairment": {
+    "label": "credit loan impairment charge",
+    "description": "Income-statement expense recognised for credit losses or deterioration of loans during the reporting period. Lending-loss charge, not the balance-sheet stock of impairment allowances or provisions."
+  },
+  "nim": {
+    "label": "net interest margin NIM",
+    "description": "Net interest income divided by average interest-earning assets, expressed as a percentage. Measures the bank's interest earnings after funding costs relative to its earning asset base. Not simply lending interest rate minus deposit interest rate."
+  },
+  "basic_cash_eps": {
+    "label": "basic cash earnings per share EPS",
+    "description": "Cash-basis earnings allocated to each ordinary share using the basic weighted-average share count. Commonly reported in cents per share. Not diluted earnings per share or the cash dividend paid to shareholders."
+  },
+  "dividend_per_share": {
+    "label": "full year dividend per share DPS",
+    "description": "Ordinary shareholder distribution per share for the whole financial year, including interim and final instalments. Reported in cents per ordinary share. Not earnings per share, total dollars paid or the final instalment alone."
+  },
+  "gross_loans": {
+    "label": "gross loans and acceptances",
+    "description": "Total lending outstanding including acceptances before subtracting credit impairment allowances. A year-end balance, not a loan-loss expense or just home lending."
+  },
+  "customer_deposits": {
+    "label": "customer deposits",
+    "description": "Money placed with the bank by customers and owed back to them, including relevant transaction, savings and term deposit accounts. Bank funding liability, not deposits the bank holds with other banks or an individual's account balance."
+  },
+  "total_assets": {
+    "label": "total assets",
+    "description": "Sum of all recognised assets on the consolidated balance sheet at the reporting date. Accounting carrying amount of the asset base, not risk-weighted assets or the average balance during the year."
+  },
+  "cet1": {
+    "label": "common equity tier 1 CET1 capital ratio",
+    "description": "Highest-quality regulatory common equity capital divided by risk-weighted assets. A loss-absorbing capital ratio under APRA rules; reported and pro-forma or internationally comparable alternatives differ. Not a short-term liquidity ratio."
+  },
+  "lcr": {
+    "label": "liquidity coverage ratio LCR",
+    "description": "High-quality liquid assets relative to net cash outflows in a thirty-day stress scenario. Regulatory short-term liquidity percentage. Retain whether the bank reports a quarterly average rather than a single-day balance."
+  }
+}

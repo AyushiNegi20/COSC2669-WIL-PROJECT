@@ -1,0 +1,364 @@
+{
+  "case": {
+    "id": "cba_definition",
+    "kind": "definition",
+    "question": "Could you explain what cash profit means in CBA FY2025?"
+  },
+  "response": {
+    "question": "Could you explain what cash profit means in CBA FY2025?",
+    "full_report_search": true,
+    "answer": {
+      "status": "evidence_answer",
+      "message": "Qwen-generated explanation, with automated checks:\n\nCash profit in CBA FY2025 represents the net profit after tax presented on a cash basis, as disclosed in the Profit Announcement. [CBA FY2025 Profit Announcement, PDF page 17]\n\nThe cash basis is used by management to present a clear view of the Bank’s operating results, as stated in the Profit Announcement. [CBA FY2025 Profit Announcement, PDF page 17]\n\nCash profit excludes items such as hedging, IFRS volatility, and gains or losses on acquisition, disposal, closure, capital repatriation, and demerger of businesses. [CBA FY2025 Profit Announcement, PDF page 17]\n\nThe items excluded from cash profit are calculated consistently with the prior year and prior half disclosures. [CBA FY2025 Profit Announcement, PDF page 17]\n\nThe cash basis is not a measure based on cash accounting or cash flows, as explained in the Profit Announcement. [CBA FY2025 Profit Announcement, PDF page 17]",
+      "source_excerpts": [
+        {
+          "source": {
+            "company": "CBA",
+            "document_id": "cba25",
+            "document_title": "CBA FY2025 Profit Announcement",
+            "pdf_page": 17,
+            "report_year": 2025,
+            "report_period_end": "2025-06-30",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+            "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+            "report_section": "Group or general disclosure",
+            "document_role": "primary"
+          },
+          "heading": "Full-report prose search. Group or general disclosure. ",
+          "excerpts": [
+            {
+              "source_id": "cba25:full:p017:b003",
+              "quote": "The Profit Announcement discloses the net profit after tax on both a statutory and cash basis. The statutory basis is prepared in accordance with the Corporations Act and the Australian Accounting Standards, which comply with International Financial Reporting Standards (IFRS). The cash basis is used by management to present a clear view of the Bank’s operating results. It is not a measure based on cash accounting or cash flows. The items excluded from cash profit, such as hedging and IFRS volatility and gains or losses on acquisition, disposal, closure, capital repatriation and demerger of businesses are calculated consistently with the prior year and prior half disclosures and do not discriminate between positive and negative adjustments. A list of items excluded from cash profit is provided in the table below.",
+              "period_context": ""
+            }
+          ],
+          "retrieval_score": 12.90951759076474,
+          "retrieval_method": "full_report_bm25_definition"
+        }
+      ],
+      "limitations": [
+        "These retrieved definitions are report-specific and do not establish equivalence unless the cited disclosure supports it.",
+        "Generated wording can still be wrong. Automated model review is not independent verification; inspect the original evidence below.",
+        "Wording interpreted as: explain what cash profit means in CBA FY2025?"
+      ],
+      "generated_explanation": {
+        "statements": [
+          {
+            "text": "Cash profit in CBA FY2025 represents the net profit after tax presented on a cash basis, as disclosed in the Profit Announcement.",
+            "evidence_ids": [
+              "E1"
+            ],
+            "citations": [
+              {
+                "source_id": "cba25:full:p017:b003",
+                "quote": "The Profit Announcement discloses the net profit after tax on both a statutory and cash basis. The statutory basis is prepared in accordance with the Corporations Act and the Australian Accounting Standards, which comply with International Financial Reporting Standards (IFRS). The cash basis is used by management to present a clear view of the Bank’s operating results. It is not a measure based on cash accounting or cash flows. The items excluded from cash profit, such as hedging and IFRS volatility and gains or losses on acquisition, disposal, closure, capital repatriation and demerger of businesses are calculated consistently with the prior year and prior half disclosures and do not discriminate between positive and negative adjustments. A list of items excluded from cash profit is provided in the table below.",
+                "period_context": "",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 17,
+                  "report_year": 2025,
+                  "report_period_end": "2025-06-30",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "report_section": "Group or general disclosure",
+                  "document_role": "primary"
+                }
+              }
+            ]
+          },
+          {
+            "text": "The cash basis is used by management to present a clear view of the Bank’s operating results, as stated in the Profit Announcement.",
+            "evidence_ids": [
+              "E1"
+            ],
+            "citations": [
+              {
+                "source_id": "cba25:full:p017:b003",
+                "quote": "The Profit Announcement discloses the net profit after tax on both a statutory and cash basis. The statutory basis is prepared in accordance with the Corporations Act and the Australian Accounting Standards, which comply with International Financial Reporting Standards (IFRS). The cash basis is used by management to present a clear view of the Bank’s operating results. It is not a measure based on cash accounting or cash flows. The items excluded from cash profit, such as hedging and IFRS volatility and gains or losses on acquisition, disposal, closure, capital repatriation and demerger of businesses are calculated consistently with the prior year and prior half disclosures and do not discriminate between positive and negative adjustments. A list of items excluded from cash profit is provided in the table below.",
+                "period_context": "",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 17,
+                  "report_year": 2025,
+                  "report_period_end": "2025-06-30",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "report_section": "Group or general disclosure",
+                  "document_role": "primary"
+                }
+              }
+            ]
+          },
+          {
+            "text": "Cash profit excludes items such as hedging, IFRS volatility, and gains or losses on acquisition, disposal, closure, capital repatriation, and demerger of businesses.",
+            "evidence_ids": [
+              "E1"
+            ],
+            "citations": [
+              {
+                "source_id": "cba25:full:p017:b003",
+                "quote": "The Profit Announcement discloses the net profit after tax on both a statutory and cash basis. The statutory basis is prepared in accordance with the Corporations Act and the Australian Accounting Standards, which comply with International Financial Reporting Standards (IFRS). The cash basis is used by management to present a clear view of the Bank’s operating results. It is not a measure based on cash accounting or cash flows. The items excluded from cash profit, such as hedging and IFRS volatility and gains or losses on acquisition, disposal, closure, capital repatriation and demerger of businesses are calculated consistently with the prior year and prior half disclosures and do not discriminate between positive and negative adjustments. A list of items excluded from cash profit is provided in the table below.",
+                "period_context": "",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 17,
+                  "report_year": 2025,
+                  "report_period_end": "2025-06-30",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "report_section": "Group or general disclosure",
+                  "document_role": "primary"
+                }
+              }
+            ]
+          },
+          {
+            "text": "The items excluded from cash profit are calculated consistently with the prior year and prior half disclosures.",
+            "evidence_ids": [
+              "E1"
+            ],
+            "citations": [
+              {
+                "source_id": "cba25:full:p017:b003",
+                "quote": "The Profit Announcement discloses the net profit after tax on both a statutory and cash basis. The statutory basis is prepared in accordance with the Corporations Act and the Australian Accounting Standards, which comply with International Financial Reporting Standards (IFRS). The cash basis is used by management to present a clear view of the Bank’s operating results. It is not a measure based on cash accounting or cash flows. The items excluded from cash profit, such as hedging and IFRS volatility and gains or losses on acquisition, disposal, closure, capital repatriation and demerger of businesses are calculated consistently with the prior year and prior half disclosures and do not discriminate between positive and negative adjustments. A list of items excluded from cash profit is provided in the table below.",
+                "period_context": "",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 17,
+                  "report_year": 2025,
+                  "report_period_end": "2025-06-30",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "report_section": "Group or general disclosure",
+                  "document_role": "primary"
+                }
+              }
+            ]
+          },
+          {
+            "text": "The cash basis is not a measure based on cash accounting or cash flows, as explained in the Profit Announcement.",
+            "evidence_ids": [
+              "E1"
+            ],
+            "citations": [
+              {
+                "source_id": "cba25:full:p017:b003",
+                "quote": "The Profit Announcement discloses the net profit after tax on both a statutory and cash basis. The statutory basis is prepared in accordance with the Corporations Act and the Australian Accounting Standards, which comply with International Financial Reporting Standards (IFRS). The cash basis is used by management to present a clear view of the Bank’s operating results. It is not a measure based on cash accounting or cash flows. The items excluded from cash profit, such as hedging and IFRS volatility and gains or losses on acquisition, disposal, closure, capital repatriation and demerger of businesses are calculated consistently with the prior year and prior half disclosures and do not discriminate between positive and negative adjustments. A list of items excluded from cash profit is provided in the table below.",
+                "period_context": "",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 17,
+                  "report_year": 2025,
+                  "report_period_end": "2025-06-30",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "report_section": "Group or general disclosure",
+                  "document_role": "primary"
+                }
+              }
+            ]
+          }
+        ],
+        "validation": {
+          "citation_ids": "passed",
+          "numeric_presence": "passed",
+          "model_support_review": "passed",
+          "independent_semantic_review": "not_performed"
+        }
+      },
+      "evidence_message": "Definitions are grounded in the bank disclosures, not inferred from a nearby KPI."
+    },
+    "definition_request": true,
+    "generation": {
+      "status": "generated",
+      "provider": "local_ollama",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "draft_timing": {
+        "total_duration": 16915228500,
+        "load_duration": 8488900,
+        "prompt_eval_count": 623,
+        "eval_count": 198
+      },
+      "review_timing": {
+        "total_duration": 6091274100,
+        "load_duration": 6558000,
+        "prompt_eval_count": 592,
+        "eval_count": 87
+      },
+      "repair_timing": null,
+      "thinking": false,
+      "review": {
+        "supported": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "complete": true,
+        "reason": "Each statement is fully supported by the cited evidence cards, including all aspects of meaning, number-to-metric association, units, company, period, basis, scope, signs, comparison direction, causality, and negations. There are no gaps in evidence that are disguised as complete answers."
+      },
+      "seconds": 23.110780799994245
+    },
+    "route": "narrative",
+    "intent_plan": {
+      "topic": "existing",
+      "task": "definition",
+      "subject": "cash profit",
+      "specific_amount": false,
+      "advice": false,
+      "status": "interpreted",
+      "timing": {
+        "total_duration": 3662531400,
+        "load_duration": 9476700,
+        "prompt_eval_count": 611,
+        "eval_count": 39
+      },
+      "model": "qwen3:8b"
+    },
+    "query_normalisation": {
+      "question": "explain what cash profit means in CBA FY2025?",
+      "changes": [
+        {
+          "original": "Could you ",
+          "normalised": ""
+        }
+      ]
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 26.87318170000799,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "Cash profit in CBA FY2025 represents the net profit after tax presented on a cash basis, as disclosed in the Profit Announcement.",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 17,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "The cash basis is used by management to present a clear view of the Bank’s operating results, as stated in the Profit Announcement.",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 17,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "Cash profit excludes items such as hedging, IFRS volatility, and gains or losses on acquisition, disposal, closure, capital repatriation, and demerger of businesses.",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 17,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "The items excluded from cash profit are calculated consistently with the prior year and prior half disclosures.",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 17,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "The cash basis is not a measure based on cash accounting or cash flows, as explained in the Profit Announcement.",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 17,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "narrative"
+        }
+      ],
+      "qualifications": [
+        "Qwen-generated explanation, with automated checks:\n\nCash profit in CBA FY2025 represents the net profit after tax presented on a cash basis, as disclosed in the Profit Announcement. [CBA FY2025 Profit Announcement, PDF page 17]\n\nThe cash basis is used by management to present a clear view of the Bank’s operating results, as stated in the Profit Announcement. [CBA FY2025 Profit Announcement, PDF page 17]\n\nCash profit excludes items such as hedging, IFRS volatility, and gains or losses on acquisition, disposal, closure, capital repatriation, and demerger of businesses. [CBA FY2025 Profit Announcement, PDF page 17]\n\nThe items excluded from cash profit are calculated consistently with the prior year and prior half disclosures. [CBA FY2025 Profit Announcement, PDF page 17]\n\nThe cash basis is not a measure based on cash accounting or cash flows, as explained in the Profit Announcement. [CBA FY2025 Profit Announcement, PDF page 17]",
+        "These retrieved definitions are report-specific and do not establish equivalence unless the cited disclosure supports it.",
+        "Generated wording can still be wrong. Automated model review is not independent verification; inspect the original evidence below.",
+        "Wording interpreted as: explain what cash profit means in CBA FY2025?"
+      ],
+      "important_notes": [
+        "CBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready."
+      ],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "2025"
+    },
+    "summary": "CBA / FY2025",
+    "notes": [],
+    "effective_question": "Could you explain what cash profit means in CBA FY2025?"
+  },
+  "followup_notes": [],
+  "seconds": 26.87381920000189,
+  "issues": [],
+  "assessment": "needs_manual_review"
+}

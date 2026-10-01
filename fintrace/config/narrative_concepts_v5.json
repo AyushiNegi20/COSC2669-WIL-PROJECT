@@ -1,0 +1,18 @@
+{
+  "net_interest_income": {
+    "label": "net interest income growth drivers",
+    "description": "Management explanation of changes in interest revenue less interest expense, lending volumes, asset yields and cost of funding. The amount of income is different from its margin percentage."
+  },
+  "deposit_margin": {
+    "label": "deposit margin competitive pricing and deposit mix",
+    "description": "Management commentary about competition for deposits, interest rates offered on transaction savings and term accounts, and how the mix of customer funding affects deposit margins and net interest margin."
+  },
+  "personnel": {
+    "label": "staff personnel employee expenses growth",
+    "description": "Management discussion of payroll, salaries, wage inflation, headcount, staffing levels, employee costs and the reasons for changes in personnel expenses."
+  },
+  "technology": {
+    "label": "technology information technology services expenses growth",
+    "description": "Management discussion of IT operating costs, software licensing, cloud computing, amortisation, systems investment and technology expense movements."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "22_payback",
+  "kind": "guard",
+  "question": "Which NAB technology project had the highest return on investment in FY2025?",
+  "http_status": 200,
+  "response": {
+    "question": "Which NAB technology project had the highest return on investment in FY2025?",
+    "answer": {
+      "status": "unable_to_verify",
+      "message": "I cannot verify project payback or return-on-investment rankings from the checked evidence. That requires project-level costs, benefits and timing. Spending amounts or spending growth are not a substitute for investment returns."
+    },
+    "route": "guard",
+    "generation": {
+      "status": "skipped"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 0.0029955999925732613,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "I cannot verify project payback or return-on-investment rankings from the checked evidence. That requires project-level costs, benefits and timing. Spending amounts or spending growth are not a substitute for investment returns.",
+          "citations": [],
+          "kind": "limit"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    },
+    "effective_question": "Which NAB technology project had the highest return on investment in FY2025?",
+    "ui_scope": {
+      "selected": {
+        "company": "all",
+        "year": "all"
+      },
+      "effective": {
+        "company": "NAB",
+        "year": "2025"
+      },
+      "summary": "NAB / FY2025",
+      "notes": [],
+      "effective_question": "Which NAB technology project had the highest return on investment in FY2025?"
+    },
+    "display_text": "Question scope: NAB / FY2025\n\nI cannot verify project payback or return-on-investment rankings from the checked evidence. That requires project-level costs, benefits and timing. Spending amounts or spending growth are not a substitute for investment returns.\n\n"
+  },
+  "seconds": 0.006285600014962256,
+  "calls": {
+    "intent": [],
+    "research": [],
+    "definition": []
+  },
+  "pre_generation_evidence": []
+}

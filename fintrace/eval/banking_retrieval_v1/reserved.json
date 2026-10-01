@@ -1,0 +1,876 @@
+[
+  {
+    "id": "bank-q005",
+    "family": "credit_impairment",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was CBA's FY2024 Credit impairment charge, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p027:b001:r8",
+            "cba24:p027:b001:r0",
+            "cba24:p027:b001:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "(802)",
+      "unit": "AUD million",
+      "basis": "Group cash-basis loan/credit impairment expense, not a credit-loss ratio.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p027:b001:r8",
+        "column": 1,
+        "value": "(802)"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q007",
+    "family": "basic_cash_eps",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was CBA's FY2024 basic cash EPS from continuing operations, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p019:b000:r5",
+            "cba24:p019:b000:r0",
+            "cba24:p019:b000:r1",
+            "cba24:p019:b000:r2"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "587.8",
+      "unit": "cents/share",
+      "basis": "Continuing operations, cash basis, basic not diluted; cents per share.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p019:b000:r5",
+        "column": 1,
+        "value": "587.8"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q009",
+    "family": "gross_loans",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was CBA's FY2024 Gross loans and acceptances, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p043:b000:r2",
+            "cba24:p043:b000:r0",
+            "cba24:p043:b000:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "949,948",
+      "unit": "AUD million",
+      "basis": "Issuer-disclosed group gross loans and acceptances, not net loans or a narrower advances series.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p043:b000:r2",
+        "column": 1,
+        "value": "949,948"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q012",
+    "family": "cet1",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was CBA's FY2024 CET1 capital ratio, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba24:p019:b000:r22",
+            "cba24:p019:b000:r0",
+            "cba24:p019:b000:r1",
+            "cba24:p019:b000:r21"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "12.3",
+      "unit": "percent",
+      "basis": "Reported APRA regulatory capital basis; NAB explicitly Level 2 Group. Not pro-forma or internationally comparable alternative.",
+      "report_year": 2024,
+      "period_end": "2024-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba24:p019:b000:r22",
+        "column": 1,
+        "value": "12.3"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q018",
+    "family": "credit_impairment",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was CBA's FY2025 Credit impairment charge, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p027:b003:r7",
+            "cba25:p027:b003:r0",
+            "cba25:p027:b003:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "(726)",
+      "unit": "AUD million",
+      "basis": "Group cash-basis loan/credit impairment expense, not a credit-loss ratio.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p027:b003:r7",
+        "column": 1,
+        "value": "(726)"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q020",
+    "family": "basic_cash_eps",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was CBA's FY2025 basic cash EPS from continuing operations, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p019:b002:r5",
+            "cba25:p019:b002:r0",
+            "cba25:p019:b002:r1",
+            "cba25:p019:b002:r2"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "613.2",
+      "unit": "cents/share",
+      "basis": "Continuing operations, cash basis, basic not diluted; cents per share.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p019:b002:r5",
+        "column": 1,
+        "value": "613.2"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q022",
+    "family": "gross_loans",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was CBA's FY2025 Gross loans and acceptances, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p045:b003:r3",
+            "cba25:p045:b003:r0",
+            "cba25:p045:b003:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "1,015,883",
+      "unit": "AUD million",
+      "basis": "Issuer-disclosed group gross loans and acceptances, not net loans or a narrower advances series.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p045:b003:r3",
+        "column": 1,
+        "value": "1,015,883"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q025",
+    "family": "cet1",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was CBA's FY2025 CET1 capital ratio, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p019:b002:r22",
+            "cba25:p019:b002:r0",
+            "cba25:p019:b002:r1",
+            "cba25:p019:b002:r21"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "12.3",
+      "unit": "percent",
+      "basis": "Reported APRA regulatory capital basis; NAB explicitly Level 2 Group. Not pro-forma or internationally comparable alternative.",
+      "report_year": 2025,
+      "period_end": "2025-06-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "cba25:p019:b002:r22",
+        "column": 1,
+        "value": "12.3"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q031",
+    "family": "credit_impairment",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was NAB's FY2024 Credit impairment charge, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p013:b006:r7",
+            "nab24:p013:b006:r0",
+            "nab24:p013:b006:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "(728)",
+      "unit": "AUD million",
+      "basis": "Group cash-basis loan/credit impairment expense, not a credit-loss ratio.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p013:b006:r7",
+        "column": 1,
+        "value": "(728)"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q033",
+    "family": "basic_cash_eps",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was NAB's FY2024 basic cash EPS from continuing operations, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p014:b002:r14",
+            "nab24:p014:b002:r0",
+            "nab24:p014:b002:r1",
+            "nab24:p014:b002:r9"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "229.2",
+      "unit": "cents/share",
+      "basis": "Continuing operations, cash basis, basic not diluted; cents per share.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p014:b002:r14",
+        "column": 1,
+        "value": "229.2"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q035",
+    "family": "gross_loans",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was NAB's FY2024 Gross loans and acceptances, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p016:b002:r20",
+            "nab24:p016:b002:r0",
+            "nab24:p016:b002:r1",
+            "nab24:p016:b002:r19"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "738.2",
+      "unit": "AUD billion",
+      "basis": "Issuer-disclosed group gross loans and acceptances, not net loans or a narrower advances series.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p016:b002:r20",
+        "column": 1,
+        "value": "738.2"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q038",
+    "family": "cet1",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was NAB's FY2024 CET1 capital ratio, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab24:p016:b002:r15",
+            "nab24:p016:b002:r0",
+            "nab24:p016:b002:r1",
+            "nab24:p016:b002:r14"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "12.35%",
+      "unit": "percent",
+      "basis": "Reported APRA regulatory capital basis; NAB explicitly Level 2 Group. Not pro-forma or internationally comparable alternative.",
+      "report_year": 2024,
+      "period_end": "2024-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab24:p016:b002:r15",
+        "column": 1,
+        "value": "12.35%"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q044",
+    "family": "credit_impairment",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was NAB's FY2025 Credit impairment charge, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b006:r7",
+            "nab25:p013:b006:r0",
+            "nab25:p013:b006:r1"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "(833)",
+      "unit": "AUD million",
+      "basis": "Group cash-basis loan/credit impairment expense, not a credit-loss ratio.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p013:b006:r7",
+        "column": 1,
+        "value": "(833)"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q046",
+    "family": "basic_cash_eps",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was NAB's FY2025 basic cash EPS from continuing operations, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b010:r14",
+            "nab25:p013:b010:r0",
+            "nab25:p013:b010:r1",
+            "nab25:p013:b010:r9"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "231.8",
+      "unit": "cents/share",
+      "basis": "Continuing operations, cash basis, basic not diluted; cents per share.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p013:b010:r14",
+        "column": 1,
+        "value": "231.8"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q048",
+    "family": "gross_loans",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was NAB's FY2025 Gross loans and acceptances, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p015:b007:r20",
+            "nab25:p015:b007:r0",
+            "nab25:p015:b007:r1",
+            "nab25:p015:b007:r19"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "781.5",
+      "unit": "AUD billion",
+      "basis": "Issuer-disclosed group gross loans and acceptances, not net loans or a narrower advances series.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p015:b007:r20",
+        "column": 1,
+        "value": "781.5"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q051",
+    "family": "cet1",
+    "capability": "Find",
+    "split": "reserved",
+    "question": "What was NAB's FY2025 CET1 capital ratio, as originally reported? Include the unit and reporting basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p015:b007:r15",
+            "nab25:p015:b007:r0",
+            "nab25:p015:b007:r1",
+            "nab25:p015:b007:r14"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "value": "11.70%",
+      "unit": "percent",
+      "basis": "Reported APRA regulatory capital basis; NAB explicitly Level 2 Group. Not pro-forma or internationally comparable alternative.",
+      "report_year": 2025,
+      "period_end": "2025-09-30"
+    },
+    "numeric_anchors": [
+      {
+        "unit": "nab25:p015:b007:r15",
+        "column": 1,
+        "value": "11.70%"
+      }
+    ],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q055",
+    "family": "basic_cash_eps",
+    "capability": "Compare",
+    "split": "reserved",
+    "question": "Using CBA's FY2025 report, compare its annual Basic cash earnings per share with the FY2024 comparative. State the change and basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p019:b002:r5",
+            "cba25:p019:b002:r0",
+            "cba25:p019:b002:r1",
+            "cba25:p019:b002:r2"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "current": "613.2",
+      "comparative": "587.8",
+      "absolute_change": "25.4",
+      "basis_point_change": null,
+      "unit": "cents/share",
+      "basis": "Continuing operations, cash basis, basic not diluted; cents per share."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q059",
+    "family": "basic_cash_eps",
+    "capability": "Compare",
+    "split": "reserved",
+    "question": "Using NAB's FY2025 report, compare its annual Basic cash earnings per share with the FY2024 comparative. State the change and basis.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b010:r14",
+            "nab25:p013:b010:r0",
+            "nab25:p013:b010:r1",
+            "nab25:p013:b010:r9"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "current": "231.8",
+      "comparative": "229.2",
+      "absolute_change": "2.6",
+      "basis_point_change": null,
+      "unit": "cents/share",
+      "basis": "Continuing operations, cash basis, basic not diluted; cents per share."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q062",
+    "family": "basic_cash_eps",
+    "capability": "Compare",
+    "split": "reserved",
+    "question": "Compare CBA and NAB FY2025 Basic cash earnings per share as originally reported. Keep each bank's year-end and basis clear.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p019:b002:r5",
+            "cba25:p019:b002:r0",
+            "cba25:p019:b002:r1",
+            "cba25:p019:b002:r2"
+          ]
+        ]
+      },
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b010:r14",
+            "nab25:p013:b010:r0",
+            "nab25:p013:b010:r1",
+            "nab25:p013:b010:r9"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "CBA": "613.2",
+      "NAB": "231.8",
+      "caveat": "CBA ends 30 June; NAB ends 30 September. Issuer definitions can differ."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q064",
+    "family": "cet1",
+    "capability": "Compare",
+    "split": "reserved",
+    "question": "Compare CBA and NAB FY2025 CET1 capital ratio as originally reported. Keep each bank's year-end and basis clear.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p019:b002:r22",
+            "cba25:p019:b002:r0",
+            "cba25:p019:b002:r1",
+            "cba25:p019:b002:r21"
+          ]
+        ]
+      },
+      {
+        "alternatives": [
+          [
+            "nab25:p015:b007:r15",
+            "nab25:p015:b007:r0",
+            "nab25:p015:b007:r1",
+            "nab25:p015:b007:r14"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "CBA": "12.3",
+      "NAB": "11.70%",
+      "caveat": "CBA ends 30 June; NAB ends 30 September. Issuer definitions can differ."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q066",
+    "family": "basic_cash_eps",
+    "capability": "Check a claim",
+    "split": "reserved",
+    "question": "Check this claim against NAB's FY2025 report: Basic cash earnings per share was 231.8 cents/share.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p013:b010:r14",
+            "nab25:p013:b010:r0",
+            "nab25:p013:b010:r1",
+            "nab25:p013:b010:r9"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "supported": true,
+      "correct_value": "231.8",
+      "unit": "cents/share"
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q071",
+    "family": "basic_cash_eps",
+    "capability": "Define",
+    "split": "reserved",
+    "question": "According to CBA's FY2025 report, what does basic earnings per share mean?",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p148:b003:r11"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_definition": "Earnings per share (EPS) (basic) | Basic earnings per share is the net profit attributable to ordinary equity holders of the Bank, divided by the weighted average number of ordinary shares on issue during the year per the requirements of relevant accounting standards."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q073",
+    "family": "cet1",
+    "capability": "Define",
+    "split": "reserved",
+    "question": "According to NAB's FY2025 report, what does Common Equity Tier 1 capital ratio mean?",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p082:b041",
+            "nab25:p082:b042"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_definition": "Common Equity Tier 1 capital ratio\nCET1 capital divided by risk-weighted assets."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q075",
+    "family": "gross_loans",
+    "capability": "Define",
+    "split": "reserved",
+    "question": "According to NAB's FY2025 report, what does gross loans and acceptances mean?",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p083:b005",
+            "nab25:p083:b006"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_definition": "Gross loans and acceptances (GLAs)\nTotal loans, advances and acceptances, including unearned and deferred fee income, excluding associated provisions for expected credit losses. Calculated as the sum of 'Acceptances', 'Loans and advances at fair value' and 'Loans and advances at amortised cost'."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q076",
+    "family": "nab_lcr_definition",
+    "capability": "Define",
+    "split": "reserved",
+    "question": "According to NAB's FY2025 report, what does Liquidity Coverage Ratio and its stress period mean?",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p083:b023",
+            "nab25:p083:b024"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_definition": "Liquidity Coverage Ratio (LCR)\nA metric that measures the adequacy of HQLA available to meet net cash outflows over a 30-day period during a severe liquidity stress scenario."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q082",
+    "family": "technology_costs",
+    "capability": "Explain",
+    "split": "reserved",
+    "question": "In CBA's FY2025 report: What drove the annual increase in information technology services expenses? Attribute the explanation to management.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "cba25:p031:b028"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_explanation": "Information technology services expenses increased by $164 million or 7% to $2,389 million, primarily due to investment in infrastructure modernisation and AI capabilities, increased software licensing and cloud computing volumes, and higher IT vendor inflation, partly offset by productivity initiatives including reduction in the use of third party service providers and contractors."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q086",
+    "family": "technology_costs",
+    "capability": "Explain",
+    "split": "reserved",
+    "question": "In NAB's FY2025 report: Why did annual technology expenses increase? Attribute the explanation to management.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab25:p020:b007"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "source_explanation": "Technology expenses increased by $71 million or 3.5%. The increase was primarily due to costs associated with software licences, maintenance and cloud consumption, combined with higher software amortisation. These impacts were partially offset by productivity benefits achieved through continued process improvements and simplification of the Group's operations and technology efficiency."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  },
+  {
+    "id": "bank-q087",
+    "family": "nab_restatement",
+    "capability": "Reconcile",
+    "split": "reserved",
+    "question": "Why are NAB's FY2024 operating income and expense comparatives different in its FY2025 disclosures? Find the reclassification and its Group amount.",
+    "expected_behavior": "answer",
+    "required_evidence_groups": [
+      {
+        "alternatives": [
+          [
+            "nab_ar25:p156:b021",
+            "nab_ar25:p156:b022",
+            "nab_ar25:p156:b023"
+          ]
+        ]
+      }
+    ],
+    "expected_answer": {
+      "answer": "Presentation change applied retrospectively. Other operating income and operating expenses each decrease by AUD 14 million for the Group; Company is AUD 25 million."
+    },
+    "numeric_anchors": [],
+    "review_status": "AI_prepared_source_linked_human_review_pending"
+  }
+]

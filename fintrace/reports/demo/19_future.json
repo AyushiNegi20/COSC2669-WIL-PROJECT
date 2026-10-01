@@ -1,0 +1,54 @@
+{
+  "id": "19_future",
+  "kind": "guard",
+  "question": "Will CBA profit keep growing next year?",
+  "http_status": 200,
+  "response": {
+    "question": "Will CBA profit keep growing next year?",
+    "answer": {
+      "status": "unable_to_verify",
+      "message": "The reports cannot establish a future realised financial outcome."
+    },
+    "route": "guard",
+    "generation": {
+      "status": "skipped"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 0.0019628999871201813,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "The reports cannot establish a future realised financial outcome.",
+          "citations": [],
+          "kind": "limit"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    },
+    "effective_question": "Will CBA profit keep growing next year?",
+    "ui_scope": {
+      "selected": {
+        "company": "all",
+        "year": "all"
+      },
+      "effective": {
+        "company": "CBA",
+        "year": "all"
+      },
+      "summary": "CBA / Period as specified in the question",
+      "notes": [],
+      "effective_question": "Will CBA profit keep growing next year?"
+    },
+    "display_text": "Question scope: CBA / Period as specified in the question\n\nThe reports cannot establish a future realised financial outcome.\n\n"
+  },
+  "seconds": 0.005261599988443777,
+  "calls": {
+    "intent": [],
+    "research": [],
+    "definition": []
+  },
+  "pre_generation_evidence": []
+}

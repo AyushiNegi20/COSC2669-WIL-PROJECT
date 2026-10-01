@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "set": "reasoning_qa_v1",
+    "purpose": "Mentor-style reasoning / behavioural questions (not the 13 numeric lookups). Each has a reference answer written by reading the original PDFs directly, to compare against what the Qwen-synthesis RAG returns.",
+    "reference_basis": "Source PDFs; figures verified against source pages."
+  },
+  "questions": [
+    {"id": "r_nim_why", "question": "Why did NAB's net interest margin increase in FY2025?", "kind": "causal", "evidence": ["nab25 p17"],
+     "reference_answer": "NIM rose 3 bps to 1.74%. Increases: +9 bps from higher earnings on deposit and capital replicating portfolios, +2 bps from a lower mix of low-yielding liquid assets, +2 bps in Markets & Treasury. Partly offset by: -7 bps higher deposit costs (competition and mix), -2 bps higher wholesale funding costs, -1 bp lending-margin competition."},
+    {"id": "r_it_premise", "question": "Did CBA reduce its information technology costs in FY2025?", "kind": "premise_check", "evidence": ["cba25 p31"],
+     "reference_answer": "No. IT services expenses INCREASED by $164m (+7%) to $2,389m, driven by infrastructure modernisation and AI capabilities, higher software licensing and cloud volumes, and IT vendor inflation, partly offset by productivity initiatives."},
+    {"id": "r_opex_drivers", "question": "What were the main drivers of CBA's operating expense growth in FY2025?", "kind": "multi_factor", "evidence": ["cba25 p31"],
+     "reference_answer": "Underlying opex rose 6% ($737m) to $12,866m. Staff +$522m (+7%: wage inflation, more frontline lenders and technologists). IT +$164m (+7%: infrastructure modernisation, AI, cloud). Other +$89m. Occupancy fell $38m. Productivity initiatives partly offset the rises."},
+    {"id": "r_profit_direction", "question": "Did NAB's profit rise or fall in FY2025?", "kind": "direction_ambiguous", "evidence": ["nab25 p13"],
+     "reference_answer": "Depends on the measure. Statutory net profit FELL 2.9% to $6,759m. Cash earnings were roughly flat, down 0.2% to $7,091m. Underlying profit ROSE 1.3% to $10,965m. A good answer names the measure rather than giving one number."},
+    {"id": "r_impair_why", "question": "Why did CBA's loan impairment expense fall in FY2025?", "kind": "causal", "evidence": ["cba25 p34"],
+     "reference_answer": "It fell $76m (-9%) to $726m. Driven by decreases in Business Banking (-$84m, lower individual and collective provisions), Retail (-$45m, lower collective provisions reflecting declining rates and improved serviceability) and New Zealand (-$9m); partly offset by an increase in Institutional Banking and Markets (+$52m, higher individual provisions for single-name exposures)."},
+    {"id": "r_invest_which", "question": "Which category did CBA invest the most in during FY2025?", "kind": "comparison", "evidence": ["cba25 p32"],
+     "reference_answer": "Of CBA's own investment spending by category (not lending): Productivity and growth was largest at $1,023m of $2,297m total. The largest year-on-year increase was a different category, Infrastructure and branch refurbishment (+$128m)."},
+    {"id": "r_dividend_backed", "question": "Was CBA's FY2025 dividend increase supported by higher earnings?", "kind": "cross_metric", "evidence": ["cba25 p18", "cba25 p19"],
+     "reference_answer": "Yes. Dividend per share rose 4% to 485 cents, while cash NPAT rose 4% to $10,252m and cash EPS rose 4% to 613.2 cents. The cash-basis payout ratio was steady at 79%, so the dividend growth tracked earnings growth."},
+    {"id": "r_cost_mgmt", "question": "What is CBA doing to manage its costs?", "kind": "qualitative", "evidence": ["cba25 p31", "cba25 p32"],
+     "reference_answer": "Productivity initiatives partly offsetting inflation; insourcing to reduce reliance on external vendors and contractors; exits from commercial and retail premises (occupancy down 4%); and investment in automation, digitisation and generative AI to reduce operating costs."},
+    {"id": "r_nab_opex_why", "question": "What drove the increase in NAB's operating expenses in FY2025?", "kind": "multi_factor", "evidence": ["nab25 p20"],
+     "reference_answer": "Opex rose $435m (+4.6%) to $9,848m. Personnel +$271m (+4.8%: salary inflation, more bankers, technology and financial-crime capability, including a $101m payroll review and remediation charge). Technology +$71m (+3.5%: software licences, maintenance, cloud, amortisation). General +$81m. Productivity benefits partly offset the rises."},
+    {"id": "r_cross_company", "question": "Which bank grew customer deposits faster in FY2025, CBA or NAB?", "kind": "cross_company_decline_expected", "evidence": ["cba25 p19", "nab25 p15"],
+     "reference_answer": "Out of current scope (cross-company comparison). The system should decline. For reference from the sources: CBA customer deposits 908,812m vs 834,259m prior (about +9%); NAB 658.4bn vs 612.8bn (+7.4%). CBA grew faster, but the system is not scoped to assert cross-company rankings."}
+  ]
+}

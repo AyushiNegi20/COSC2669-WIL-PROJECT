@@ -1,0 +1,330 @@
+{
+  "id": "17_filter_override",
+  "kind": "filter",
+  "question": "What was CBA statutory profit in FY2024?",
+  "scope": {
+    "company": "NAB",
+    "year": "2025"
+  },
+  "http_status": 200,
+  "response": {
+    "question": "What was CBA statutory profit in FY2024?",
+    "plan": {
+      "companies": [
+        "CBA"
+      ],
+      "value_years": [
+        2024
+      ],
+      "report_year": null,
+      "annual_report_only": false,
+      "ambiguity": null,
+      "branches": [
+        "CBA"
+      ],
+      "intent": "find",
+      "metrics": [
+        "statutory_npat"
+      ],
+      "definition_term": null,
+      "behavior": "answer",
+      "reason": null,
+      "original_question": "What was CBA statutory net profit after tax in FY2024?",
+      "normalised_question": "What was CBA statutory net profit after tax in FY2024?",
+      "corrections": [],
+      "metric_candidates": [
+        {
+          "metric": "statutory_npat",
+          "similarity": 0.6152204275131226
+        },
+        {
+          "metric": "cash_profit",
+          "similarity": 0.39806047081947327
+        },
+        {
+          "metric": "operating_income",
+          "similarity": 0.3526582717895508
+        }
+      ],
+      "metric_resolution": "explicit",
+      "needs_human_review": true,
+      "semantic_margin": 0.2171599566936493,
+      "search_question": "What was CBA statutory net profit after tax in FY2024?\nFinancial concepts: statutory net profit attributable to owners",
+      "period_note": "Preserve each source period end; CBA and NAB fiscal years do not end on the same date.",
+      "version": "v9",
+      "requests": [
+        {
+          "id": "request-1",
+          "company": "CBA",
+          "metric": "statutory_npat",
+          "intent": "find",
+          "scope": null,
+          "value_years": [
+            2024
+          ],
+          "report_year": null,
+          "definition_contrast": false
+        }
+      ],
+      "constraints": {
+        "report_year": null,
+        "entity_scope": "Group",
+        "requested_years": [
+          2024
+        ],
+        "preserve_source_basis": true,
+        "preserve_period_kind": true,
+        "requires_new_calculation": false,
+        "cash_profit_cashflow_distinction": false
+      },
+      "requirements_complete": false,
+      "operation_request": {
+        "kind": "none",
+        "order": null,
+        "expense_magnitude": true,
+        "relative_percent": false
+      }
+    },
+    "operation_request": {
+      "kind": "none",
+      "order": null,
+      "expense_magnitude": true,
+      "relative_percent": false
+    },
+    "answer": {
+      "status": "source_bound_answer",
+      "mode": "source_cell_templates",
+      "parts": [
+        {
+          "request": {
+            "id": "request-1",
+            "company": "CBA",
+            "metric": "statutory_npat",
+            "intent": "find",
+            "scope": null,
+            "value_years": [
+              2024
+            ],
+            "report_year": null,
+            "definition_contrast": false
+          },
+          "claims": [
+            {
+              "text": "CBA statutory net profit after tax: 9,394 AUD million; annual ending 2024-06-30, statutory, including discontinued operations.",
+              "cell": {
+                "metric": "statutory_npat",
+                "company": "CBA",
+                "value": "9394",
+                "raw_value": "9,394",
+                "unit": "AUD million",
+                "basis": "statutory",
+                "scope": "including_discontinued",
+                "period_kind": "annual",
+                "period_end": "2024-06-30",
+                "report_year": 2024,
+                "column": 1,
+                "source_id": "cba24:p018:b000:r14",
+                "header_ids": [
+                  "cba24:p018:b000:r0",
+                  "cba24:p018:b000:r1",
+                  "cba24:p018:b000:r13"
+                ],
+                "record_id": "v4:cba24:p018:b000:r14",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba24",
+                  "document_title": "CBA FY2024 Profit Announcement",
+                  "pdf_page": 18,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "4"
+                  },
+                  "report_period_end": "2024-06-30",
+                  "report_year": 2024,
+                  "source_sha256": "1ab9332c8371322b5bfb7a6da65727e0f0f7a4120cfc095923e069a320d538da",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-FY24-Profit-Announcement.pdf"
+                },
+                "row_quote": "Statutory net profit after tax ($M) | 9,394 | 9,998 | (6) | 4,635 | 4,759 | (3)",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              "evidence": [
+                {
+                  "source_id": "cba24:p018:b000:r14",
+                  "quote": "Statutory net profit after tax ($M) | 9,394 | 9,998 | (6) | 4,635 | 4,759 | (3)",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba24",
+                    "document_title": "CBA FY2024 Profit Announcement",
+                    "pdf_page": 18,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "4"
+                    },
+                    "report_period_end": "2024-06-30",
+                    "report_year": 2024,
+                    "source_sha256": "1ab9332c8371322b5bfb7a6da65727e0f0f7a4120cfc095923e069a320d538da",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-FY24-Profit-Announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba24:p018:b000:r0",
+                  "quote": " | Full Year Ended ¹ |  |  | Half Year Ended |  | ",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba24",
+                    "document_title": "CBA FY2024 Profit Announcement",
+                    "pdf_page": 18,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "4"
+                    },
+                    "report_period_end": "2024-06-30",
+                    "report_year": 2024,
+                    "source_sha256": "1ab9332c8371322b5bfb7a6da65727e0f0f7a4120cfc095923e069a320d538da",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-FY24-Profit-Announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba24:p018:b000:r1",
+                  "quote": "Key Performance Indicators ² | 30 Jun 24 | 30 Jun 23 | Jun 24 vs Jun 23 % | 30 Jun 24 | 31 Dec 23 | Jun 24 vs Dec 23 %",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba24",
+                    "document_title": "CBA FY2024 Profit Announcement",
+                    "pdf_page": 18,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "4"
+                    },
+                    "report_period_end": "2024-06-30",
+                    "report_year": 2024,
+                    "source_sha256": "1ab9332c8371322b5bfb7a6da65727e0f0f7a4120cfc095923e069a320d538da",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-FY24-Profit-Announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba24:p018:b000:r13",
+                  "quote": "Group Performance including discontinued operations |  |  |  |  |  | ",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba24",
+                    "document_title": "CBA FY2024 Profit Announcement",
+                    "pdf_page": 18,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "4"
+                    },
+                    "report_period_end": "2024-06-30",
+                    "report_year": 2024,
+                    "source_sha256": "1ab9332c8371322b5bfb7a6da65727e0f0f7a4120cfc095923e069a320d538da",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-FY24-Profit-Announcement.pdf"
+                  }
+                }
+              ],
+              "method": "deterministic_template_from_bound_source_cell",
+              "presentation": {
+                "value": "9394",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "9394"
+              }
+            }
+          ],
+          "calculations": [],
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "calculation_coverage": {
+        "required": 0,
+        "completed": 0
+      },
+      "warning": "Development source binding, not independently human-certified financial advice.",
+      "limitations": []
+    },
+    "retrieval": {
+      "tokens": 798,
+      "omissions": []
+    },
+    "seconds": 0.1594426000083331,
+    "version": "fintrace-conversational-development",
+    "interpretation": {
+      "retrieval_question": "What was CBA statutory net profit after tax in FY2024?",
+      "notes": []
+    },
+    "question_contract": {
+      "retrieval_question": "What was CBA statutory net profit after tax in FY2024?",
+      "notes": [],
+      "metric_mapping": "explicit aliases only for numerical answers"
+    },
+    "binding_validation": {
+      "passed": true,
+      "issues": []
+    },
+    "route": "numeric",
+    "generation": {
+      "status": "skipped",
+      "reason": "Numbers, calculations and guards use source templates; no generative model was called."
+    },
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "CBA's statutory profit after tax was 9,394 AUD million for the year ended 30 June 2024 (statutory basis, including discontinued operations).",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba24",
+              "document_title": "CBA FY2024 Profit Announcement",
+              "pdf_page": 18,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "4"
+              },
+              "report_period_end": "2024-06-30",
+              "report_year": 2024,
+              "source_sha256": "1ab9332c8371322b5bfb7a6da65727e0f0f7a4120cfc095923e069a320d538da",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-FY24-Profit-Announcement.pdf"
+            }
+          ],
+          "kind": "numeric"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    },
+    "effective_question": "What was CBA statutory profit in FY2024?",
+    "ui_scope": {
+      "selected": {
+        "company": "NAB",
+        "year": "2025"
+      },
+      "effective": {
+        "company": "CBA",
+        "year": "2024"
+      },
+      "summary": "CBA / FY2024",
+      "notes": [
+        "The company named in your question takes precedence over the company filter.",
+        "The period in your question takes precedence over the year filter."
+      ],
+      "effective_question": "What was CBA statutory profit in FY2024?"
+    },
+    "display_text": "Question scope: CBA / FY2024\nThe company named in your question takes precedence over the company filter.\nThe period in your question takes precedence over the year filter.\n\nCBA's statutory profit after tax was 9,394 AUD million for the year ended 30 June 2024 (statutory basis, including discontinued operations). [CBA FY2024 Profit Announcement, PDF page 18]\n\n"
+  },
+  "seconds": 0.16436669998802245,
+  "calls": {
+    "intent": [],
+    "research": [],
+    "definition": []
+  },
+  "pre_generation_evidence": []
+}

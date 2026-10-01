@@ -1,0 +1,60 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/grok-api.txt
+/releases/**/candidate.zip
+/reports/**/source.zip
+/reports/runs/
+
+# Local evaluation runs retained on disk, not application dependencies.
+/reports/fresh_qa_v1/
+/reports/fresh_qa_v1_run1/
+/reports/reasoning_qa_v1/
+/reports/reasoning_qa_v1_run1/
+/reports/comprehensive_v1/
+/reports/comprehensive_v1_run1/
+/reports/numeric_lookup_routing_fix.md
+
+# Python environments and caches
+.venv/
+.venv-retrieval/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Source documents and generated artifacts stay local
+*.pdf
+data/raw/
+data/processed/
+data/indexes/
+data/qa/
+models/
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.npy
+*.npz
+*.sqlite
+*.sqlite3
+*.db
+logs/
+*.log
+tmp/
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

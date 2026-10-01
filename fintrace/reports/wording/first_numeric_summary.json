@@ -1,0 +1,2434 @@
+{
+  "method": "Developer-authored metamorphic regression, not independent accuracy. Matching a canonical answer does not prove it correct.",
+  "counts": {
+    "pass": 248,
+    "fail": 8
+  },
+  "cases": [
+    {
+      "case": {
+        "id": "CBA_2024_cash_profit_canonical",
+        "question": "What was CBA cash profit in FY2024?"
+      },
+      "seconds": 65.70818390001659,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_cash_profit_variant1",
+        "question": "what is CBA cash profit in year 2024"
+      },
+      "seconds": 0.2884548000001814,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_cash_profit_variant2",
+        "question": "CBA FY24 cash profit?"
+      },
+      "seconds": 0.18576050002593547,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_cash_profit_variant3",
+        "question": "Could you please tell me CBA cash profit for 2024?"
+      },
+      "seconds": 0.15236010000808164,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_statutory_npat_canonical",
+        "question": "What was CBA statutory net profit after tax in FY2024?"
+      },
+      "seconds": 0.17728810000699013,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_statutory_npat_variant1",
+        "question": "what is CBA statutory net profit after tax in year 2024"
+      },
+      "seconds": 0.21342819998972118,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_statutory_npat_variant2",
+        "question": "CBA FY24 statutory net profit after tax?"
+      },
+      "seconds": 0.17800759998499416,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_statutory_npat_variant3",
+        "question": "Could you please tell me CBA statutory net profit after tax for 2024?"
+      },
+      "seconds": 0.15375500000664033,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_operating_income_canonical",
+        "question": "What was CBA total operating income in FY2024?"
+      },
+      "seconds": 0.15070870000636205,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_operating_income_variant1",
+        "question": "what is CBA total operating income in year 2024"
+      },
+      "seconds": 0.1470487999904435,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_operating_income_variant2",
+        "question": "CBA FY24 total operating income?"
+      },
+      "seconds": 0.20539290001033805,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_operating_income_variant3",
+        "question": "Could you please tell me CBA total operating income for 2024?"
+      },
+      "seconds": 0.1540565999748651,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_operating_expenses_canonical",
+        "question": "What was CBA operating expenses in FY2024?"
+      },
+      "seconds": 0.17942409997340292,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_operating_expenses_variant1",
+        "question": "what is CBA operating expenses in year 2024"
+      },
+      "seconds": 0.16229780000867322,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_operating_expenses_variant2",
+        "question": "CBA FY24 operating expenses?"
+      },
+      "seconds": 0.15043579999473877,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_operating_expenses_variant3",
+        "question": "Could you please tell me CBA operating expenses for 2024?"
+      },
+      "seconds": 0.1569342000002507,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_credit_impairment_canonical",
+        "question": "What was CBA credit impairment charge in FY2024?"
+      },
+      "seconds": 0.15504720000899397,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_credit_impairment_variant1",
+        "question": "what is CBA credit impairment charge in year 2024"
+      },
+      "seconds": 0.17808730000979267,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_credit_impairment_variant2",
+        "question": "CBA FY24 credit impairment charge?"
+      },
+      "seconds": 0.14704369998071343,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_credit_impairment_variant3",
+        "question": "Could you please tell me CBA credit impairment charge for 2024?"
+      },
+      "seconds": 0.14603469998110086,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_nim_canonical",
+        "question": "What was CBA net interest margin in FY2024?"
+      },
+      "seconds": 0.3302611000253819,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_nim_variant1",
+        "question": "what is CBA net interest margin in year 2024"
+      },
+      "seconds": 0.33825589998741634,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_nim_variant2",
+        "question": "CBA FY24 net interest margin?"
+      },
+      "seconds": 0.3156394000106957,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_nim_variant3",
+        "question": "Could you please tell me CBA net interest margin for 2024?"
+      },
+      "seconds": 0.32847099998616613,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_basic_cash_eps_canonical",
+        "question": "What was CBA basic cash EPS in FY2024?"
+      },
+      "seconds": 0.19047780000255443,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_basic_cash_eps_variant1",
+        "question": "what is CBA basic cash EPS in year 2024"
+      },
+      "seconds": 0.16581200002110563,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_basic_cash_eps_variant2",
+        "question": "CBA FY24 basic cash EPS?"
+      },
+      "seconds": 0.16086580001865514,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_basic_cash_eps_variant3",
+        "question": "Could you please tell me CBA basic cash EPS for 2024?"
+      },
+      "seconds": 0.15844250001828186,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_dividend_per_share_canonical",
+        "question": "What was CBA dividend per share in FY2024?"
+      },
+      "seconds": 0.1603993000171613,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_dividend_per_share_variant1",
+        "question": "what is CBA dividend per share in year 2024"
+      },
+      "seconds": 0.16948450001655146,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_dividend_per_share_variant2",
+        "question": "CBA FY24 dividend per share?"
+      },
+      "seconds": 0.1782277000020258,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_dividend_per_share_variant3",
+        "question": "Could you please tell me CBA dividend per share for 2024?"
+      },
+      "seconds": 0.1654726999986451,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_total_assets_canonical",
+        "question": "What was CBA total assets in FY2024?"
+      },
+      "seconds": 0.1760884000104852,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_total_assets_variant1",
+        "question": "what is CBA total assets in year 2024"
+      },
+      "seconds": 0.16142179997405037,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_total_assets_variant2",
+        "question": "CBA FY24 total assets?"
+      },
+      "seconds": 0.18314530001953244,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_total_assets_variant3",
+        "question": "Could you please tell me CBA total assets for 2024?"
+      },
+      "seconds": 0.17507100000511855,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_gross_loans_canonical",
+        "question": "What was CBA gross loans and acceptances in FY2024?"
+      },
+      "seconds": 0.15544060000684112,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_gross_loans_variant1",
+        "question": "what is CBA gross loans and acceptances in year 2024"
+      },
+      "seconds": 0.1952428999939002,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_gross_loans_variant2",
+        "question": "CBA FY24 gross loans and acceptances?"
+      },
+      "seconds": 0.15405939999618568,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_gross_loans_variant3",
+        "question": "Could you please tell me CBA gross loans and acceptances for 2024?"
+      },
+      "seconds": 0.16803649999201298,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_customer_deposits_canonical",
+        "question": "What was CBA customer deposits in FY2024?"
+      },
+      "seconds": 0.1596247000270523,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_customer_deposits_variant1",
+        "question": "what is CBA customer deposits in year 2024"
+      },
+      "seconds": 0.18489440000848845,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_customer_deposits_variant2",
+        "question": "CBA FY24 customer deposits?"
+      },
+      "seconds": 0.18219930000486784,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_customer_deposits_variant3",
+        "question": "Could you please tell me CBA customer deposits for 2024?"
+      },
+      "seconds": 0.1764518000127282,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_cet1_canonical",
+        "question": "What was CBA CET1 in FY2024?"
+      },
+      "seconds": 0.16578989999834448,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_cet1_variant1",
+        "question": "what is CBA CET1 in year 2024"
+      },
+      "seconds": 0.157433399988804,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_cet1_variant2",
+        "question": "CBA FY24 CET1?"
+      },
+      "seconds": 0.16638660000171512,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_cet1_variant3",
+        "question": "Could you please tell me CBA CET1 for 2024?"
+      },
+      "seconds": 0.19804099999601021,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_lcr_canonical",
+        "question": "What was CBA LCR in FY2024?"
+      },
+      "seconds": 0.17659300001105294,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_lcr_variant1",
+        "question": "what is CBA LCR in year 2024"
+      },
+      "seconds": 0.16930360000696965,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_lcr_variant2",
+        "question": "CBA FY24 LCR?"
+      },
+      "seconds": 0.1699877000064589,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2024_lcr_variant3",
+        "question": "Could you please tell me CBA LCR for 2024?"
+      },
+      "seconds": 0.14617630001157522,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_cash_profit_canonical",
+        "question": "What was CBA cash profit in FY2025?"
+      },
+      "seconds": 0.155276799981948,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_cash_profit_variant1",
+        "question": "what is CBA cash profit in year 2025"
+      },
+      "seconds": 0.16327499999897555,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_cash_profit_variant2",
+        "question": "CBA FY25 cash profit?"
+      },
+      "seconds": 0.1500870999880135,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_cash_profit_variant3",
+        "question": "Could you please tell me CBA cash profit for 2025?"
+      },
+      "seconds": 0.14711019999231212,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_statutory_npat_canonical",
+        "question": "What was CBA statutory net profit after tax in FY2025?"
+      },
+      "seconds": 0.17080689998692833,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_statutory_npat_variant1",
+        "question": "what is CBA statutory net profit after tax in year 2025"
+      },
+      "seconds": 0.14558449998730794,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_statutory_npat_variant2",
+        "question": "CBA FY25 statutory net profit after tax?"
+      },
+      "seconds": 0.1629356000048574,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_statutory_npat_variant3",
+        "question": "Could you please tell me CBA statutory net profit after tax for 2025?"
+      },
+      "seconds": 0.16206840000813827,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_operating_income_canonical",
+        "question": "What was CBA total operating income in FY2025?"
+      },
+      "seconds": 0.17647669999860227,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_operating_income_variant1",
+        "question": "what is CBA total operating income in year 2025"
+      },
+      "seconds": 0.17214869998861104,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_operating_income_variant2",
+        "question": "CBA FY25 total operating income?"
+      },
+      "seconds": 0.15239600001950748,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_operating_income_variant3",
+        "question": "Could you please tell me CBA total operating income for 2025?"
+      },
+      "seconds": 0.13965729999472387,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_operating_expenses_canonical",
+        "question": "What was CBA operating expenses in FY2025?"
+      },
+      "seconds": 0.15599810000276193,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_operating_expenses_variant1",
+        "question": "what is CBA operating expenses in year 2025"
+      },
+      "seconds": 0.16105279998737387,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_operating_expenses_variant2",
+        "question": "CBA FY25 operating expenses?"
+      },
+      "seconds": 0.15278060000855476,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_operating_expenses_variant3",
+        "question": "Could you please tell me CBA operating expenses for 2025?"
+      },
+      "seconds": 0.16134799999417737,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_credit_impairment_canonical",
+        "question": "What was CBA credit impairment charge in FY2025?"
+      },
+      "seconds": 0.17218140000477433,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_credit_impairment_variant1",
+        "question": "what is CBA credit impairment charge in year 2025"
+      },
+      "seconds": 0.16208489998825826,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_credit_impairment_variant2",
+        "question": "CBA FY25 credit impairment charge?"
+      },
+      "seconds": 0.16783019999274984,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_credit_impairment_variant3",
+        "question": "Could you please tell me CBA credit impairment charge for 2025?"
+      },
+      "seconds": 0.14532030001282692,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_nim_canonical",
+        "question": "What was CBA net interest margin in FY2025?"
+      },
+      "seconds": 0.2987254999752622,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_nim_variant1",
+        "question": "what is CBA net interest margin in year 2025"
+      },
+      "seconds": 0.3839774999942165,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_nim_variant2",
+        "question": "CBA FY25 net interest margin?"
+      },
+      "seconds": 0.3659891000133939,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_nim_variant3",
+        "question": "Could you please tell me CBA net interest margin for 2025?"
+      },
+      "seconds": 0.35405769999488257,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_basic_cash_eps_canonical",
+        "question": "What was CBA basic cash EPS in FY2025?"
+      },
+      "seconds": 0.1750191999890376,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_basic_cash_eps_variant1",
+        "question": "what is CBA basic cash EPS in year 2025"
+      },
+      "seconds": 0.1646279999986291,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_basic_cash_eps_variant2",
+        "question": "CBA FY25 basic cash EPS?"
+      },
+      "seconds": 0.2222050999989733,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_basic_cash_eps_variant3",
+        "question": "Could you please tell me CBA basic cash EPS for 2025?"
+      },
+      "seconds": 0.2123794000071939,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_dividend_per_share_canonical",
+        "question": "What was CBA dividend per share in FY2025?"
+      },
+      "seconds": 0.1787795999844093,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_dividend_per_share_variant1",
+        "question": "what is CBA dividend per share in year 2025"
+      },
+      "seconds": 0.17504589998861775,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_dividend_per_share_variant2",
+        "question": "CBA FY25 dividend per share?"
+      },
+      "seconds": 0.1749843999859877,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_dividend_per_share_variant3",
+        "question": "Could you please tell me CBA dividend per share for 2025?"
+      },
+      "seconds": 0.14662010001484305,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_total_assets_canonical",
+        "question": "What was CBA total assets in FY2025?"
+      },
+      "seconds": 0.16028770001139492,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_total_assets_variant1",
+        "question": "what is CBA total assets in year 2025"
+      },
+      "seconds": 0.19947820002562366,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_total_assets_variant2",
+        "question": "CBA FY25 total assets?"
+      },
+      "seconds": 0.22100630000932142,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_total_assets_variant3",
+        "question": "Could you please tell me CBA total assets for 2025?"
+      },
+      "seconds": 0.19361889999709092,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_gross_loans_canonical",
+        "question": "What was CBA gross loans and acceptances in FY2025?"
+      },
+      "seconds": 0.1457356000028085,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_gross_loans_variant1",
+        "question": "what is CBA gross loans and acceptances in year 2025"
+      },
+      "seconds": 0.18538599999737926,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_gross_loans_variant2",
+        "question": "CBA FY25 gross loans and acceptances?"
+      },
+      "seconds": 0.16150840002228506,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_gross_loans_variant3",
+        "question": "Could you please tell me CBA gross loans and acceptances for 2025?"
+      },
+      "seconds": 0.16340439999476075,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_customer_deposits_canonical",
+        "question": "What was CBA customer deposits in FY2025?"
+      },
+      "seconds": 0.16896300000371411,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_customer_deposits_variant1",
+        "question": "what is CBA customer deposits in year 2025"
+      },
+      "seconds": 0.18589459999930114,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_customer_deposits_variant2",
+        "question": "CBA FY25 customer deposits?"
+      },
+      "seconds": 0.16401090001454577,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_customer_deposits_variant3",
+        "question": "Could you please tell me CBA customer deposits for 2025?"
+      },
+      "seconds": 0.1576706999912858,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_cet1_canonical",
+        "question": "What was CBA CET1 in FY2025?"
+      },
+      "seconds": 0.16995899999164976,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_cet1_variant1",
+        "question": "what is CBA CET1 in year 2025"
+      },
+      "seconds": 0.17054610000923276,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_cet1_variant2",
+        "question": "CBA FY25 CET1?"
+      },
+      "seconds": 0.1784746999910567,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_cet1_variant3",
+        "question": "Could you please tell me CBA CET1 for 2025?"
+      },
+      "seconds": 0.20568479999201372,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_lcr_canonical",
+        "question": "What was CBA LCR in FY2025?"
+      },
+      "seconds": 0.16914820001693442,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_lcr_variant1",
+        "question": "what is CBA LCR in year 2025"
+      },
+      "seconds": 0.1888094000169076,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_lcr_variant2",
+        "question": "CBA FY25 LCR?"
+      },
+      "seconds": 0.18570499998168088,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_2025_lcr_variant3",
+        "question": "Could you please tell me CBA LCR for 2025?"
+      },
+      "seconds": 0.1837117999966722,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_cash_profit_canonical",
+        "question": "What was NAB cash profit in FY2024?"
+      },
+      "seconds": 0.19453850001445971,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_cash_profit_variant1",
+        "question": "what is NAB cash profit in year 2024"
+      },
+      "seconds": 0.18610399999306537,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_cash_profit_variant2",
+        "question": "NAB FY24 cash profit?"
+      },
+      "seconds": 0.2029855000146199,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_cash_profit_variant3",
+        "question": "Could you please tell me NAB cash profit for 2024?"
+      },
+      "seconds": 0.18813180000870489,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_statutory_npat_canonical",
+        "question": "What was NAB statutory net profit after tax in FY2024?"
+      },
+      "seconds": 0.22085270000388846,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_statutory_npat_variant1",
+        "question": "what is NAB statutory net profit after tax in year 2024"
+      },
+      "seconds": 0.17708689998835325,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_statutory_npat_variant2",
+        "question": "NAB FY24 statutory net profit after tax?"
+      },
+      "seconds": 0.19392879999941215,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_statutory_npat_variant3",
+        "question": "Could you please tell me NAB statutory net profit after tax for 2024?"
+      },
+      "seconds": 0.17220739999902435,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_operating_income_canonical",
+        "question": "What was NAB total operating income in FY2024?"
+      },
+      "seconds": 0.19230679998872802,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_operating_income_variant1",
+        "question": "what is NAB total operating income in year 2024"
+      },
+      "seconds": 0.20292320000589825,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_operating_income_variant2",
+        "question": "NAB FY24 total operating income?"
+      },
+      "seconds": 0.17111100000329316,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_operating_income_variant3",
+        "question": "Could you please tell me NAB total operating income for 2024?"
+      },
+      "seconds": 0.18018310001934879,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_operating_expenses_canonical",
+        "question": "What was NAB operating expenses in FY2024?"
+      },
+      "seconds": 0.18179949998739175,
+      "issues": [
+        "Missing requested metric"
+      ],
+      "assessment": "fail"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_operating_expenses_variant1",
+        "question": "what is NAB operating expenses in year 2024"
+      },
+      "seconds": 0.1636900000157766,
+      "issues": [
+        "Missing requested metric",
+        "Canonical request failed; equivalence alone is not a pass"
+      ],
+      "assessment": "fail"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_operating_expenses_variant2",
+        "question": "NAB FY24 operating expenses?"
+      },
+      "seconds": 0.1471847000066191,
+      "issues": [
+        "Financial output differs from canonical wording",
+        "Canonical request failed; equivalence alone is not a pass"
+      ],
+      "assessment": "fail"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_operating_expenses_variant3",
+        "question": "Could you please tell me NAB operating expenses for 2024?"
+      },
+      "seconds": 0.15814189999946393,
+      "issues": [
+        "Missing requested metric",
+        "Canonical request failed; equivalence alone is not a pass"
+      ],
+      "assessment": "fail"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_credit_impairment_canonical",
+        "question": "What was NAB credit impairment charge in FY2024?"
+      },
+      "seconds": 0.18266180000500754,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_credit_impairment_variant1",
+        "question": "what is NAB credit impairment charge in year 2024"
+      },
+      "seconds": 0.16484300000593066,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_credit_impairment_variant2",
+        "question": "NAB FY24 credit impairment charge?"
+      },
+      "seconds": 0.16427939999266528,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_credit_impairment_variant3",
+        "question": "Could you please tell me NAB credit impairment charge for 2024?"
+      },
+      "seconds": 0.16209499997785315,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_nim_canonical",
+        "question": "What was NAB net interest margin in FY2024?"
+      },
+      "seconds": 0.3180325000139419,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_nim_variant1",
+        "question": "what is NAB net interest margin in year 2024"
+      },
+      "seconds": 0.3522360000060871,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_nim_variant2",
+        "question": "NAB FY24 net interest margin?"
+      },
+      "seconds": 0.3327078000002075,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_nim_variant3",
+        "question": "Could you please tell me NAB net interest margin for 2024?"
+      },
+      "seconds": 0.29184670001268387,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_basic_cash_eps_canonical",
+        "question": "What was NAB basic cash EPS in FY2024?"
+      },
+      "seconds": 0.19254820002242923,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_basic_cash_eps_variant1",
+        "question": "what is NAB basic cash EPS in year 2024"
+      },
+      "seconds": 0.1952179000072647,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_basic_cash_eps_variant2",
+        "question": "NAB FY24 basic cash EPS?"
+      },
+      "seconds": 0.16967050000675954,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_basic_cash_eps_variant3",
+        "question": "Could you please tell me NAB basic cash EPS for 2024?"
+      },
+      "seconds": 0.16389980001258664,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_dividend_per_share_canonical",
+        "question": "What was NAB dividend per share in FY2024?"
+      },
+      "seconds": 0.16063929998199455,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_dividend_per_share_variant1",
+        "question": "what is NAB dividend per share in year 2024"
+      },
+      "seconds": 0.17859510000562295,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_dividend_per_share_variant2",
+        "question": "NAB FY24 dividend per share?"
+      },
+      "seconds": 0.20219599999836646,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_dividend_per_share_variant3",
+        "question": "Could you please tell me NAB dividend per share for 2024?"
+      },
+      "seconds": 0.18727019999641925,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_total_assets_canonical",
+        "question": "What was NAB total assets in FY2024?"
+      },
+      "seconds": 0.18684789998224005,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_total_assets_variant1",
+        "question": "what is NAB total assets in year 2024"
+      },
+      "seconds": 0.1644687999796588,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_total_assets_variant2",
+        "question": "NAB FY24 total assets?"
+      },
+      "seconds": 0.17947189998812973,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_total_assets_variant3",
+        "question": "Could you please tell me NAB total assets for 2024?"
+      },
+      "seconds": 0.1576778999879025,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_gross_loans_canonical",
+        "question": "What was NAB gross loans and acceptances in FY2024?"
+      },
+      "seconds": 0.17913999999291264,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_gross_loans_variant1",
+        "question": "what is NAB gross loans and acceptances in year 2024"
+      },
+      "seconds": 0.1889851999876555,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_gross_loans_variant2",
+        "question": "NAB FY24 gross loans and acceptances?"
+      },
+      "seconds": 0.1730616000131704,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_gross_loans_variant3",
+        "question": "Could you please tell me NAB gross loans and acceptances for 2024?"
+      },
+      "seconds": 0.16539349997765385,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_customer_deposits_canonical",
+        "question": "What was NAB customer deposits in FY2024?"
+      },
+      "seconds": 0.15257549998932518,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_customer_deposits_variant1",
+        "question": "what is NAB customer deposits in year 2024"
+      },
+      "seconds": 0.16523769998457283,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_customer_deposits_variant2",
+        "question": "NAB FY24 customer deposits?"
+      },
+      "seconds": 0.18302930000936612,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_customer_deposits_variant3",
+        "question": "Could you please tell me NAB customer deposits for 2024?"
+      },
+      "seconds": 0.16074580000713468,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_cet1_canonical",
+        "question": "What was NAB CET1 in FY2024?"
+      },
+      "seconds": 0.20128110001678579,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_cet1_variant1",
+        "question": "what is NAB CET1 in year 2024"
+      },
+      "seconds": 0.1764248999825213,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_cet1_variant2",
+        "question": "NAB FY24 CET1?"
+      },
+      "seconds": 0.1738519000064116,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_cet1_variant3",
+        "question": "Could you please tell me NAB CET1 for 2024?"
+      },
+      "seconds": 0.19902400000137277,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_lcr_canonical",
+        "question": "What was NAB LCR in FY2024?"
+      },
+      "seconds": 0.1415543000039179,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_lcr_variant1",
+        "question": "what is NAB LCR in year 2024"
+      },
+      "seconds": 0.17876280000200495,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_lcr_variant2",
+        "question": "NAB FY24 LCR?"
+      },
+      "seconds": 0.18918509999639355,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2024_lcr_variant3",
+        "question": "Could you please tell me NAB LCR for 2024?"
+      },
+      "seconds": 0.17472260000067763,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_cash_profit_canonical",
+        "question": "What was NAB cash profit in FY2025?"
+      },
+      "seconds": 0.19089290002011694,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_cash_profit_variant1",
+        "question": "what is NAB cash profit in year 2025"
+      },
+      "seconds": 0.2052796999923885,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_cash_profit_variant2",
+        "question": "NAB FY25 cash profit?"
+      },
+      "seconds": 0.1484053000167478,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_cash_profit_variant3",
+        "question": "Could you please tell me NAB cash profit for 2025?"
+      },
+      "seconds": 0.16420740002649836,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_statutory_npat_canonical",
+        "question": "What was NAB statutory net profit after tax in FY2025?"
+      },
+      "seconds": 0.19695230000070296,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_statutory_npat_variant1",
+        "question": "what is NAB statutory net profit after tax in year 2025"
+      },
+      "seconds": 0.18902630000957288,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_statutory_npat_variant2",
+        "question": "NAB FY25 statutory net profit after tax?"
+      },
+      "seconds": 0.17368510001688264,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_statutory_npat_variant3",
+        "question": "Could you please tell me NAB statutory net profit after tax for 2025?"
+      },
+      "seconds": 0.21772059999057092,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_operating_income_canonical",
+        "question": "What was NAB total operating income in FY2025?"
+      },
+      "seconds": 0.15871639997931197,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_operating_income_variant1",
+        "question": "what is NAB total operating income in year 2025"
+      },
+      "seconds": 0.18768000000272878,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_operating_income_variant2",
+        "question": "NAB FY25 total operating income?"
+      },
+      "seconds": 0.1736483999993652,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_operating_income_variant3",
+        "question": "Could you please tell me NAB total operating income for 2025?"
+      },
+      "seconds": 0.18487279998953454,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_operating_expenses_canonical",
+        "question": "What was NAB operating expenses in FY2025?"
+      },
+      "seconds": 0.17652179999276996,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_operating_expenses_variant1",
+        "question": "what is NAB operating expenses in year 2025"
+      },
+      "seconds": 0.18926660000579432,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_operating_expenses_variant2",
+        "question": "NAB FY25 operating expenses?"
+      },
+      "seconds": 0.1561058000079356,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_operating_expenses_variant3",
+        "question": "Could you please tell me NAB operating expenses for 2025?"
+      },
+      "seconds": 0.1611484000168275,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_credit_impairment_canonical",
+        "question": "What was NAB credit impairment charge in FY2025?"
+      },
+      "seconds": 0.16003339999588206,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_credit_impairment_variant1",
+        "question": "what is NAB credit impairment charge in year 2025"
+      },
+      "seconds": 0.17076609999639913,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_credit_impairment_variant2",
+        "question": "NAB FY25 credit impairment charge?"
+      },
+      "seconds": 0.17004440000164323,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_credit_impairment_variant3",
+        "question": "Could you please tell me NAB credit impairment charge for 2025?"
+      },
+      "seconds": 0.16453000000910833,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_nim_canonical",
+        "question": "What was NAB net interest margin in FY2025?"
+      },
+      "seconds": 0.32789419998880476,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_nim_variant1",
+        "question": "what is NAB net interest margin in year 2025"
+      },
+      "seconds": 0.3271328000118956,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_nim_variant2",
+        "question": "NAB FY25 net interest margin?"
+      },
+      "seconds": 0.3397226000088267,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_nim_variant3",
+        "question": "Could you please tell me NAB net interest margin for 2025?"
+      },
+      "seconds": 0.3067264000128489,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_basic_cash_eps_canonical",
+        "question": "What was NAB basic cash EPS in FY2025?"
+      },
+      "seconds": 0.14723819997743703,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_basic_cash_eps_variant1",
+        "question": "what is NAB basic cash EPS in year 2025"
+      },
+      "seconds": 0.18507060001138598,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_basic_cash_eps_variant2",
+        "question": "NAB FY25 basic cash EPS?"
+      },
+      "seconds": 0.16488229998503812,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_basic_cash_eps_variant3",
+        "question": "Could you please tell me NAB basic cash EPS for 2025?"
+      },
+      "seconds": 0.168943800003035,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_dividend_per_share_canonical",
+        "question": "What was NAB dividend per share in FY2025?"
+      },
+      "seconds": 0.17459079998661764,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_dividend_per_share_variant1",
+        "question": "what is NAB dividend per share in year 2025"
+      },
+      "seconds": 0.19591450001462363,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_dividend_per_share_variant2",
+        "question": "NAB FY25 dividend per share?"
+      },
+      "seconds": 0.15198070000042208,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_dividend_per_share_variant3",
+        "question": "Could you please tell me NAB dividend per share for 2025?"
+      },
+      "seconds": 0.19028919999254867,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_total_assets_canonical",
+        "question": "What was NAB total assets in FY2025?"
+      },
+      "seconds": 0.13937829999485984,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_total_assets_variant1",
+        "question": "what is NAB total assets in year 2025"
+      },
+      "seconds": 0.15318069999921136,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_total_assets_variant2",
+        "question": "NAB FY25 total assets?"
+      },
+      "seconds": 0.18055889999959618,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_total_assets_variant3",
+        "question": "Could you please tell me NAB total assets for 2025?"
+      },
+      "seconds": 0.1545754999970086,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_gross_loans_canonical",
+        "question": "What was NAB gross loans and acceptances in FY2025?"
+      },
+      "seconds": 0.1677878999907989,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_gross_loans_variant1",
+        "question": "what is NAB gross loans and acceptances in year 2025"
+      },
+      "seconds": 0.15527909999946132,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_gross_loans_variant2",
+        "question": "NAB FY25 gross loans and acceptances?"
+      },
+      "seconds": 0.1847733999893535,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_gross_loans_variant3",
+        "question": "Could you please tell me NAB gross loans and acceptances for 2025?"
+      },
+      "seconds": 0.15561210000305437,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_customer_deposits_canonical",
+        "question": "What was NAB customer deposits in FY2025?"
+      },
+      "seconds": 0.19103859999449924,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_customer_deposits_variant1",
+        "question": "what is NAB customer deposits in year 2025"
+      },
+      "seconds": 0.171881599992048,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_customer_deposits_variant2",
+        "question": "NAB FY25 customer deposits?"
+      },
+      "seconds": 0.15504370001144707,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_customer_deposits_variant3",
+        "question": "Could you please tell me NAB customer deposits for 2025?"
+      },
+      "seconds": 0.17409509999561124,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_cet1_canonical",
+        "question": "What was NAB CET1 in FY2025?"
+      },
+      "seconds": 0.1584590999991633,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_cet1_variant1",
+        "question": "what is NAB CET1 in year 2025"
+      },
+      "seconds": 0.16843210000661202,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_cet1_variant2",
+        "question": "NAB FY25 CET1?"
+      },
+      "seconds": 0.17809070000657812,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_cet1_variant3",
+        "question": "Could you please tell me NAB CET1 for 2025?"
+      },
+      "seconds": 0.2115543000109028,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_lcr_canonical",
+        "question": "What was NAB LCR in FY2025?"
+      },
+      "seconds": 0.18485099999816157,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_lcr_variant1",
+        "question": "what is NAB LCR in year 2025"
+      },
+      "seconds": 0.19390159999602474,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_lcr_variant2",
+        "question": "NAB FY25 LCR?"
+      },
+      "seconds": 0.19517289998475462,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_2025_lcr_variant3",
+        "question": "Could you please tell me NAB LCR for 2025?"
+      },
+      "seconds": 0.16572739998809993,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_change_cash_profit_canonical",
+        "question": "Calculate the change in CBA cash profit from FY2024 to FY2025."
+      },
+      "seconds": 0.15120560000650585,
+      "issues": [
+        "Missing calculation"
+      ],
+      "assessment": "fail"
+    },
+    {
+      "case": {
+        "id": "CBA_change_cash_profit_variant1",
+        "question": "How did CBA cash profit change from FY2024 to FY2025?"
+      },
+      "seconds": 0.14987789999577217,
+      "issues": [
+        "Financial output differs from canonical wording",
+        "Canonical request failed; equivalence alone is not a pass"
+      ],
+      "assessment": "fail"
+    },
+    {
+      "case": {
+        "id": "CBA_change_cash_profit_variant2",
+        "question": "Please work out the change in CBA cash profit between FY24 and FY25."
+      },
+      "seconds": 0.16005070001119748,
+      "issues": [
+        "Canonical request failed; equivalence alone is not a pass"
+      ],
+      "assessment": "fail"
+    },
+    {
+      "case": {
+        "id": "CBA_change_basic_cash_eps_canonical",
+        "question": "Calculate the change in CBA basic cash EPS from FY2024 to FY2025."
+      },
+      "seconds": 0.16894610002054833,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_change_basic_cash_eps_variant1",
+        "question": "How did CBA basic cash EPS change from FY2024 to FY2025?"
+      },
+      "seconds": 0.1737800000119023,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_change_basic_cash_eps_variant2",
+        "question": "Please work out the change in CBA basic cash EPS between FY24 and FY25."
+      },
+      "seconds": 0.18370369999320246,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_change_nim_canonical",
+        "question": "Calculate the change in CBA net interest margin from FY2024 to FY2025."
+      },
+      "seconds": 0.33955669999704696,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_change_nim_variant1",
+        "question": "How did CBA net interest margin change from FY2024 to FY2025?"
+      },
+      "seconds": 0.31918469999800436,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_change_nim_variant2",
+        "question": "Please work out the change in CBA net interest margin between FY24 and FY25."
+      },
+      "seconds": 0.3553392000030726,
+      "issues": [
+        "Financial output differs from canonical wording"
+      ],
+      "assessment": "fail"
+    },
+    {
+      "case": {
+        "id": "CBA_change_gross_loans_canonical",
+        "question": "Calculate the change in CBA gross loans and acceptances from FY2024 to FY2025."
+      },
+      "seconds": 0.2019424999889452,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_change_gross_loans_variant1",
+        "question": "How did CBA gross loans and acceptances change from FY2024 to FY2025?"
+      },
+      "seconds": 0.19301039999118075,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_change_gross_loans_variant2",
+        "question": "Please work out the change in CBA gross loans and acceptances between FY24 and FY25."
+      },
+      "seconds": 0.16773080002167262,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_cash_profit_canonical",
+        "question": "Calculate the change in NAB cash profit from FY2024 to FY2025."
+      },
+      "seconds": 0.18085999999311753,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_cash_profit_variant1",
+        "question": "How did NAB cash profit change from FY2024 to FY2025?"
+      },
+      "seconds": 0.1796487999963574,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_cash_profit_variant2",
+        "question": "Please work out the change in NAB cash profit between FY24 and FY25."
+      },
+      "seconds": 0.1981497000087984,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_basic_cash_eps_canonical",
+        "question": "Calculate the change in NAB basic cash EPS from FY2024 to FY2025."
+      },
+      "seconds": 0.18252770000253804,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_basic_cash_eps_variant1",
+        "question": "How did NAB basic cash EPS change from FY2024 to FY2025?"
+      },
+      "seconds": 0.18191350001143292,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_basic_cash_eps_variant2",
+        "question": "Please work out the change in NAB basic cash EPS between FY24 and FY25."
+      },
+      "seconds": 0.1922259999846574,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_nim_canonical",
+        "question": "Calculate the change in NAB net interest margin from FY2024 to FY2025."
+      },
+      "seconds": 0.3617761999776121,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_nim_variant1",
+        "question": "How did NAB net interest margin change from FY2024 to FY2025?"
+      },
+      "seconds": 0.3770203000167385,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_nim_variant2",
+        "question": "Please work out the change in NAB net interest margin between FY24 and FY25."
+      },
+      "seconds": 0.3247720999934245,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_gross_loans_canonical",
+        "question": "Calculate the change in NAB gross loans and acceptances from FY2024 to FY2025."
+      },
+      "seconds": 0.1754293999983929,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_gross_loans_variant1",
+        "question": "How did NAB gross loans and acceptances change from FY2024 to FY2025?"
+      },
+      "seconds": 0.15559989999746904,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_change_gross_loans_variant2",
+        "question": "Please work out the change in NAB gross loans and acceptances between FY24 and FY25."
+      },
+      "seconds": 0.18715410001459531,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_unsupported_net_interest_income",
+        "kind": "guard",
+        "question": "please tell me CBA net interest income in FY2025"
+      },
+      "seconds": 0.9013589999813121,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_unsupported_housing_lending",
+        "kind": "guard",
+        "question": "please tell me CBA housing lending in FY2025"
+      },
+      "seconds": 0.00334399999701418,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_unsupported_underlying_profit",
+        "kind": "guard",
+        "question": "please tell me CBA underlying profit in FY2025"
+      },
+      "seconds": 0.0028996999899391085,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_unsupported_statutory_EPS",
+        "kind": "guard",
+        "question": "please tell me CBA statutory EPS in FY2025"
+      },
+      "seconds": 0.002470900013577193,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_unsupported_individually_assessed_credit_impairment_charge",
+        "kind": "guard",
+        "question": "please tell me CBA individually assessed credit impairment charge in FY2025"
+      },
+      "seconds": 0.0029744000057689846,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_future",
+        "kind": "guard",
+        "question": "What will CBA profit be next year?"
+      },
+      "seconds": 0.0020699999877251685,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_period",
+        "kind": "guard",
+        "question": "CBA cash profit FY2026?"
+      },
+      "seconds": 0.002337400015676394,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_typo",
+        "kind": "lookup",
+        "metrics": [
+          "cash_profit",
+          "statutory_npat"
+        ],
+        "bank": "CBA",
+        "year": 2025,
+        "question": "whats CBA proift fy25"
+      },
+      "seconds": 0.1988545000203885,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "CBA_typo_basis",
+        "kind": "lookup",
+        "metrics": [
+          "statutory_npat"
+        ],
+        "bank": "CBA",
+        "year": 2024,
+        "question": "CBA statutroy profit fy24?"
+      },
+      "seconds": 0.16486790002090856,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_unsupported_net_interest_income",
+        "kind": "guard",
+        "question": "please tell me NAB net interest income in FY2025"
+      },
+      "seconds": 0.0032179999980144203,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_unsupported_housing_lending",
+        "kind": "guard",
+        "question": "please tell me NAB housing lending in FY2025"
+      },
+      "seconds": 0.002841999987140298,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_unsupported_underlying_profit",
+        "kind": "guard",
+        "question": "please tell me NAB underlying profit in FY2025"
+      },
+      "seconds": 0.0021917000121902674,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_unsupported_statutory_EPS",
+        "kind": "guard",
+        "question": "please tell me NAB statutory EPS in FY2025"
+      },
+      "seconds": 0.0025452999980188906,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_unsupported_individually_assessed_credit_impairment_charge",
+        "kind": "guard",
+        "question": "please tell me NAB individually assessed credit impairment charge in FY2025"
+      },
+      "seconds": 0.0029795000154990703,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_future",
+        "kind": "guard",
+        "question": "What will NAB profit be next year?"
+      },
+      "seconds": 0.0019224999996367842,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_period",
+        "kind": "guard",
+        "question": "NAB cash profit FY2026?"
+      },
+      "seconds": 0.002116899995598942,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_typo",
+        "kind": "lookup",
+        "metrics": [
+          "cash_profit",
+          "statutory_npat"
+        ],
+        "bank": "NAB",
+        "year": 2025,
+        "question": "whats NAB proift fy25"
+      },
+      "seconds": 0.213094499980798,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "NAB_typo_basis",
+        "kind": "lookup",
+        "metrics": [
+          "statutory_npat"
+        ],
+        "bank": "NAB",
+        "year": 2024,
+        "question": "NAB statutroy profit fy24?"
+      },
+      "seconds": 0.18917279999004677,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "other_bank",
+        "kind": "guard",
+        "question": "What is Westpac profit in 2025?"
+      },
+      "seconds": 0.002082099992549047,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "alias_override",
+        "kind": "lookup",
+        "metrics": [
+          "cash_profit",
+          "statutory_npat"
+        ],
+        "bank": "CBA",
+        "year": 2025,
+        "question": "whats commbank profit fy25",
+        "scope": {
+          "company": "NAB",
+          "year": "2024"
+        }
+      },
+      "seconds": 0.19830869999714196,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "filter_context",
+        "kind": "lookup",
+        "metrics": [
+          "cash_profit",
+          "statutory_npat"
+        ],
+        "bank": "NAB",
+        "year": 2024,
+        "question": "tell me profit",
+        "scope": {
+          "company": "NAB",
+          "year": "2024"
+        }
+      },
+      "seconds": 0.20075980000547133,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "follow_bank",
+        "kind": "lookup",
+        "metrics": [
+          "cash_profit",
+          "statutory_npat"
+        ],
+        "bank": "NAB",
+        "year": 2025,
+        "question": "And NAB?",
+        "previous_question": "what is CBA profit in year 2025"
+      },
+      "seconds": 0.25638539998908527,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "follow_year",
+        "kind": "lookup",
+        "metrics": [
+          "cash_profit",
+          "statutory_npat"
+        ],
+        "bank": "CBA",
+        "year": 2024,
+        "question": "And in 2024?",
+        "previous_question": "what is CBA profit in year 2025"
+      },
+      "seconds": 0.199947000015527,
+      "issues": [],
+      "assessment": "pass"
+    },
+    {
+      "case": {
+        "id": "new_subject",
+        "kind": "lookup",
+        "metrics": [
+          "cash_profit",
+          "statutory_npat"
+        ],
+        "bank": "CBA",
+        "year": 2025,
+        "question": "what is CBA profit in year 2025",
+        "previous_question": "Where is NAB putting more money in 2024?"
+      },
+      "seconds": 0.1976505000202451,
+      "issues": [],
+      "assessment": "pass"
+    }
+  ],
+  "integrity_before": {
+    "release_id": "current",
+    "unchanged": true,
+    "errors": [],
+    "quality_approved": false
+  },
+  "integrity_after": {
+    "release_id": "current",
+    "unchanged": false,
+    "errors": [
+      "Changed: scripts/bank_contract_v12.py"
+    ],
+    "quality_approved": false
+  }
+}

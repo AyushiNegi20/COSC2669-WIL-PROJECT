@@ -1,0 +1,54 @@
+{
+  "id": "20_advice",
+  "kind": "guard",
+  "question": "Should I put my savings into NAB shares?",
+  "http_status": 200,
+  "response": {
+    "question": "Should I put my savings into NAB shares?",
+    "answer": {
+      "status": "unable_to_verify",
+      "message": "I can explain the historical reports, but cannot recommend buying shares or moving your savings. Reported profit growth alone does not establish whether an investment is suitable for you."
+    },
+    "route": "guard",
+    "generation": {
+      "status": "skipped"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 0.0030841999978292733,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "I can explain the historical reports, but cannot recommend buying shares or moving your savings. Reported profit growth alone does not establish whether an investment is suitable for you.",
+          "citations": [],
+          "kind": "limit"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    },
+    "effective_question": "Should I put my savings into NAB shares?",
+    "ui_scope": {
+      "selected": {
+        "company": "all",
+        "year": "all"
+      },
+      "effective": {
+        "company": "NAB",
+        "year": "all"
+      },
+      "summary": "NAB / FY2024 and FY2025",
+      "notes": [],
+      "effective_question": "Should I put my savings into NAB shares?"
+    },
+    "display_text": "Question scope: NAB / FY2024 and FY2025\n\nI can explain the historical reports, but cannot recommend buying shares or moving your savings. Reported profit growth alone does not establish whether an investment is suitable for you.\n\n"
+  },
+  "seconds": 0.0063236000132746994,
+  "calls": {
+    "intent": [],
+    "research": [],
+    "definition": []
+  },
+  "pre_generation_evidence": []
+}

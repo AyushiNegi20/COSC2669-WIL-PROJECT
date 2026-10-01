@@ -1,0 +1,831 @@
+{
+  "case": {
+    "id": "nab_mixed",
+    "kind": "mixed",
+    "metrics": [
+      "cash_profit",
+      "statutory_npat"
+    ],
+    "bank": "NAB",
+    "year": 2025,
+    "question": "Tell me NAB profit in FY2025 and explain the reported reasons for the change."
+  },
+  "response": {
+    "question": "Tell me NAB profit in FY2025 and explain the reported reasons for the change.",
+    "plan": {
+      "companies": [
+        "NAB"
+      ],
+      "value_years": [
+        2025
+      ],
+      "report_year": null,
+      "annual_report_only": false,
+      "ambiguity": null,
+      "branches": [
+        "NAB"
+      ],
+      "intent": "find",
+      "metrics": [
+        "cash_profit",
+        "statutory_npat"
+      ],
+      "definition_term": null,
+      "behavior": "answer",
+      "reason": null,
+      "original_question": "Tell me NAB cash profit and statutory net profit after tax in FY2025?",
+      "normalised_question": "Tell me NAB cash profit and statutory net profit after tax in FY2025?",
+      "corrections": [],
+      "metric_candidates": [
+        {
+          "metric": "statutory_npat",
+          "similarity": 0.5910654067993164
+        },
+        {
+          "metric": "cash_profit",
+          "similarity": 0.4971364736557007
+        },
+        {
+          "metric": "basic_cash_eps",
+          "similarity": 0.3627053499221802
+        }
+      ],
+      "metric_resolution": "explicit",
+      "needs_human_review": true,
+      "semantic_margin": 0.09392893314361572,
+      "search_question": "Tell me NAB cash profit and statutory net profit after tax in FY2025?\nFinancial concepts: cash profit cash earnings; statutory net profit attributable to owners",
+      "period_note": "Preserve each source period end; CBA and NAB fiscal years do not end on the same date.",
+      "version": "v9",
+      "requests": [
+        {
+          "id": "request-1",
+          "company": "NAB",
+          "metric": "cash_profit",
+          "intent": "find",
+          "scope": null,
+          "value_years": [
+            2025
+          ],
+          "report_year": null,
+          "definition_contrast": false
+        },
+        {
+          "id": "request-2",
+          "company": "NAB",
+          "metric": "statutory_npat",
+          "intent": "find",
+          "scope": null,
+          "value_years": [
+            2025
+          ],
+          "report_year": null,
+          "definition_contrast": false
+        }
+      ],
+      "constraints": {
+        "report_year": null,
+        "entity_scope": "Group",
+        "requested_years": [
+          2025
+        ],
+        "preserve_source_basis": true,
+        "preserve_period_kind": true,
+        "requires_new_calculation": false,
+        "cash_profit_cashflow_distinction": false
+      },
+      "requirements_complete": false,
+      "operation_request": {
+        "kind": "none",
+        "order": null,
+        "expense_magnitude": true,
+        "relative_percent": false
+      }
+    },
+    "operation_request": {
+      "kind": "none",
+      "order": null,
+      "expense_magnitude": true,
+      "relative_percent": false
+    },
+    "answer": {
+      "status": "partial_answer",
+      "mode": "source_cell_templates",
+      "parts": [
+        {
+          "request": {
+            "id": "request-1",
+            "company": "NAB",
+            "metric": "cash_profit",
+            "intent": "find",
+            "scope": null,
+            "value_years": [
+              2025
+            ],
+            "report_year": null,
+            "definition_contrast": false
+          },
+          "claims": [
+            {
+              "text": "NAB cash profit: 7,091 AUD million; annual ending 2025-09-30, cash, continuing operations.",
+              "cell": {
+                "metric": "cash_profit",
+                "company": "NAB",
+                "value": "7091",
+                "raw_value": "7,091",
+                "unit": "AUD million",
+                "basis": "cash",
+                "scope": "continuing",
+                "period_kind": "annual",
+                "period_end": "2025-09-30",
+                "report_year": 2025,
+                "column": 1,
+                "source_id": "nab25:p013:b006:r12",
+                "header_ids": [
+                  "nab25:p013:b006:r0",
+                  "nab25:p013:b006:r1"
+                ],
+                "record_id": "v4:nab25:p013:b006:r12",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                },
+                "row_quote": "Cash earnings | 7,091 | 7,102 | (0.2) | 3,508 | 3,583 | (2.1)",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              "evidence": [
+                {
+                  "source_id": "nab25:p013:b006:r12",
+                  "quote": "Cash earnings | 7,091 | 7,102 | (0.2) | 3,508 | 3,583 | (2.1)",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab25",
+                    "document_title": "NAB FY2025 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-09-30",
+                    "report_year": 2025,
+                    "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab25:p013:b006:r0",
+                  "quote": " | Year to |  |  | Half Year to |  | ",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab25",
+                    "document_title": "NAB FY2025 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-09-30",
+                    "report_year": 2025,
+                    "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab25:p013:b006:r1",
+                  "quote": " | Sep 25 $m | Sep 24 $m | Sep 25 v Sep 24 % | Sep 25 $m | Mar 25 $m | Sep 25 v Mar 25 %",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab25",
+                    "document_title": "NAB FY2025 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-09-30",
+                    "report_year": 2025,
+                    "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                  }
+                }
+              ],
+              "method": "deterministic_template_from_bound_source_cell",
+              "presentation": {
+                "value": "7091",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "7091"
+              }
+            }
+          ],
+          "calculations": [],
+          "issues": []
+        },
+        {
+          "request": {
+            "id": "request-2",
+            "company": "NAB",
+            "metric": "statutory_npat",
+            "intent": "find",
+            "scope": null,
+            "value_years": [
+              2025
+            ],
+            "report_year": null,
+            "definition_contrast": false
+          },
+          "claims": [
+            {
+              "text": "NAB statutory net profit after tax: 6,759 AUD million; annual ending 2025-09-30, statutory, including discontinued operations.",
+              "cell": {
+                "metric": "statutory_npat",
+                "company": "NAB",
+                "value": "6759",
+                "raw_value": "6,759",
+                "unit": "AUD million",
+                "basis": "statutory",
+                "scope": "including_discontinued",
+                "period_kind": "annual",
+                "period_end": "2025-09-30",
+                "report_year": 2025,
+                "column": 1,
+                "source_id": "nab25:p013:b006:r19",
+                "header_ids": [
+                  "nab25:p013:b006:r0",
+                  "nab25:p013:b006:r1"
+                ],
+                "record_id": "v4:nab25:p013:b006:r19",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                },
+                "row_quote": "Net profit attributable to owners of the Company | 6,759 | 6,960 | (2.9) | 3,352 | 3,407 | (1.6)",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              "evidence": [
+                {
+                  "source_id": "nab25:p013:b006:r19",
+                  "quote": "Net profit attributable to owners of the Company | 6,759 | 6,960 | (2.9) | 3,352 | 3,407 | (1.6)",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab25",
+                    "document_title": "NAB FY2025 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-09-30",
+                    "report_year": 2025,
+                    "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab25:p013:b006:r0",
+                  "quote": " | Year to |  |  | Half Year to |  | ",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab25",
+                    "document_title": "NAB FY2025 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-09-30",
+                    "report_year": 2025,
+                    "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab25:p013:b006:r1",
+                  "quote": " | Sep 25 $m | Sep 24 $m | Sep 25 v Sep 24 % | Sep 25 $m | Mar 25 $m | Sep 25 v Mar 25 %",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab25",
+                    "document_title": "NAB FY2025 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-09-30",
+                    "report_year": 2025,
+                    "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                  }
+                }
+              ],
+              "method": "deterministic_template_from_bound_source_cell",
+              "presentation": {
+                "value": "6759",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "6759"
+              }
+            }
+          ],
+          "calculations": [],
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "calculation_coverage": {
+        "required": 0,
+        "completed": 0
+      },
+      "warning": "Development source binding, not independently human-certified financial advice.",
+      "limitations": [
+        "Profit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable.",
+        "Full question coverage is not automatically certified.",
+        "Profit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable.",
+        "At least one part of the combined request could not be fully answered."
+      ],
+      "source_excerpts": [
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 14,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "12"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "Review of Group performance results September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p014:b001",
+              "quote": "Review of Group performance results September 2025 v September 2024"
+            },
+            {
+              "source_id": "nab25:p014:b002",
+              "quote": "Statutory net profit decreased by $201 million or 2.9%."
+            }
+          ]
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 14,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "12"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "Review of Group performance results September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p014:b003",
+              "quote": "Cash earnings decreased by $11 million or 0.2%."
+            }
+          ]
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 14,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "12"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "Review of Group performance results September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p014:b004",
+              "quote": "Net interest income increased by $644 million or 3.8%. This includes a decrease of $74 million due to movements in economic hedges, offset in other operating income. Excluding this movement, the underlying increase of $718 million or 4.3% was due to higher average interest earning assets and net interest margin. The higher net interest margin was primarily due to higher earnings on deposit and capital replicating portfolios, higher Markets and Treasury income and lower mix of liquid assets. These increases were partially offset by deposit impacts, higher wholesale funding costs and lower lending margins."
+            }
+          ]
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 14,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "12"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "Review of Group performance results September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p014:b005",
+              "quote": "Other operating income decreased by $67 million or 1.9%. This includes an increase of $74 million due to movements in economic hedges, offset in net interest income, and an increase in customer-related remediation of $67 million, together with the fee reduction impact from the winding down and disposal of Group businesses of $66 million. Excluding these movements, the underlying decrease was $8 million or 0.3%. This was primarily due to lower trading income, partially offset by higher earnings relating to the investment in MLC Life and FirstCape NZ."
+            }
+          ]
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 14,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "12"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "Review of Group performance results September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p014:b006",
+              "quote": "Operating expenses increased by $435 million or 4.6%. Excluding an increase of $130 million for payroll review and remediation costs, operating expenses increased by $305 million or 3.2%. This was primarily driven by salary expense inflation, continued investment in technology and financial crime related capabilities, and investment in additional bankers and resources to support growth. These impacts were partially offset by productivity benefits achieved through continued process improvements and simplification of the Group's operations and technology efficiency, combined with lower costs related to the enforceable undertaking (EU) with Australian Transaction Reports and Analysis Centre (AUSTRAC)."
+            }
+          ]
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 14,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "12"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "Review of Group performance results September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p014:b007",
+              "quote": "Credit impairment charge increased by $105 million or 14.4%, driven by a higher level of individually assessed credit impairment charge primarily in Corporate and Institutional Banking. This was partially offset by a lower level of collective credit impairment charge."
+            }
+          ]
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 14,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "12"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "Review of Group performance results September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p014:b008",
+              "quote": "Income tax expense increased by $27 million or 0.9% due to higher cash earnings before income tax and a higher effective tax rate."
+            }
+          ]
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 20,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "18"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p020:b000",
+              "quote": "Operating expenses"
+            },
+            {
+              "source_id": "nab25:p020:b003",
+              "quote": "September 2025 v September 2024"
+            },
+            {
+              "source_id": "nab25:p020:b004",
+              "quote": "Operating expenses increased by $435 million or 4.6%. Excluding an increase of $130 million for payroll review and remediation costs, operating expenses increased by $305 million or 3.2%."
+            }
+          ]
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 20,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "18"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p020:b005",
+              "quote": "Personnel expenses increased by $271 million or 4.8%. Excluding an increase of $101 million for payroll review and remediation costs, personnel expenses increased by $170 million or 3.0%. The increase was driven by salary expense inflation, investment in additional bankers and resources to support growth, and continued investment in technology and financial crime related capabilities. These impacts were partially offset by productivity benefits achieved through continued process improvements and simplification of the Group's operations and lower EU related costs."
+            }
+          ]
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 20,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "18"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p020:b006",
+              "quote": "Occupancy and depreciation expenses increased by $12 million or 2.0%. This was driven by lease and facility costs associated with commercial buildings."
+            }
+          ]
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 20,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "18"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p020:b007",
+              "quote": "Technology expenses increased by $71 million or 3.5%. The increase was primarily due to costs associated with software licences, maintenance and cloud consumption, combined with higher software amortisation. These impacts were partially offset by productivity benefits achieved through continued process improvements and simplification of the Group's operations and technology efficiency."
+            }
+          ]
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 20,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "18"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          },
+          "heading": "September 2025 v September 2024",
+          "excerpts": [
+            {
+              "source_id": "nab25:p020:b008",
+              "quote": "General expenses increased by $81 million or 6.8%. Excluding an increase of $29 million for payroll review and remediation costs, general expenses increased $52 million or 4.3%. This was primarily due to continued investment in technology capabilities. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group's operations."
+            }
+          ]
+        }
+      ],
+      "message": "Report explanation: Local generation was unavailable or did not pass checks. Showing the original source-based answer.\nAccording to the company's report, the disclosures below are source excerpts, not independently proven causal explanations."
+    },
+    "retrieval": {
+      "tokens": 1172,
+      "omissions": [],
+      "numeric_binding_search": "All indexed financial rows matching the requested bank and metric, followed by strict cell binding; not top-k retrieval accuracy."
+    },
+    "seconds": 35.819382500019856,
+    "version": "fintrace-conversational-development",
+    "interpretation": {
+      "retrieval_question": "Tell me NAB cash profit and statutory net profit after tax in FY2025?",
+      "notes": []
+    },
+    "question_contract": {
+      "retrieval_question": "Tell me NAB cash profit and statutory net profit after tax in FY2025?",
+      "notes": [
+        "Profit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable."
+      ],
+      "metric_mapping": "explicit aliases only for numerical answers"
+    },
+    "binding_validation": {
+      "passed": true,
+      "issues": []
+    },
+    "route": "mixed",
+    "generation": {
+      "status": "fallback",
+      "reason": "timed out",
+      "model": "qwen3:8b",
+      "seconds": 35.065662400011206
+    },
+    "subquestions": {
+      "numeric": "Tell me NAB profit in FY2025?",
+      "narrative": "Explain the reported reasons concerning NAB profit in FY2025. explain the reported reasons for the change."
+    },
+    "branch_status": {
+      "numeric": "source_bound_answer",
+      "narrative": "evidence_answer"
+    },
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "NAB's cash profit was 7,091 AUD million for the year ended 30 September 2025 (cash basis, continuing operations).",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 13,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "11"
+              },
+              "report_period_end": "2025-09-30",
+              "report_year": 2025,
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+            }
+          ],
+          "kind": "numeric"
+        },
+        {
+          "text": "NAB's statutory profit after tax was 6,759 AUD million for the year ended 30 September 2025 (statutory basis, including discontinued operations).",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 13,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "11"
+              },
+              "report_period_end": "2025-09-30",
+              "report_year": 2025,
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+            }
+          ],
+          "kind": "numeric"
+        },
+        {
+          "text": "NAB's FY2025 report states: \"Review of Group performance results September 2025 v September 2024\"",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 14,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "12"
+              },
+              "report_period_end": "2025-09-30",
+              "report_year": 2025,
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+            }
+          ],
+          "kind": "quotation"
+        },
+        {
+          "text": "NAB's FY2025 report states: \"Net interest income increased by $644 million or 3.8%. This includes a decrease of $74 million due to movements in economic hedges, offset in other operating income. Excluding this movement, the underlying increase of $718 million or 4.3% was due to higher average interest earning assets and net interest margin. The higher net interest margin was primarily due to higher earnings on deposit and capital replicating portfolios, higher Markets and Treasury income and lower mix of liquid assets. These increases were partially offset by deposit impacts, higher wholesale funding costs and lower lending margins.\"",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 14,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "12"
+              },
+              "report_period_end": "2025-09-30",
+              "report_year": 2025,
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+            }
+          ],
+          "kind": "quotation"
+        }
+      ],
+      "qualifications": [
+        "Report explanation: Local generation was unavailable or did not pass checks. Showing the original source-based answer.\nAccording to the company's report, the disclosures below are source excerpts, not independently proven causal explanations.",
+        "Profit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable.",
+        "Full question coverage is not automatically certified.",
+        "At least one part of the combined request could not be fully answered."
+      ],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "NAB",
+      "year": "2025"
+    },
+    "summary": "NAB / FY2025",
+    "notes": [],
+    "effective_question": "Tell me NAB profit in FY2025 and explain the reported reasons for the change."
+  },
+  "followup_notes": [],
+  "seconds": 35.82025550000253,
+  "issues": [],
+  "assessment": "needs_manual_review"
+}

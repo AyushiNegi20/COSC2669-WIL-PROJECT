@@ -1,0 +1,98 @@
+{
+  "/": {
+    "status": 200,
+    "bytes": 4959,
+    "content_type": "text/html; charset=utf-8"
+  },
+  "/health": {
+    "status": 200,
+    "bytes": 249,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "status": "ready",
+      "version": "fintrace-conversational-development",
+      "scope": "CBA/NAB FY2024/FY2025",
+      "ambiguity_policy": "labelled supported alternatives",
+      "startup_fingerprint": "267839e96b0d777d806b56751af81491e5628541c744eaef468345dc2023ed2c"
+    }
+  },
+  "/documents": {
+    "status": 200,
+    "bytes": 1187,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "documents": [
+        {
+          "id": "cba24",
+          "company": "CBA",
+          "report_year": 2024,
+          "period_end": "2024-06-30",
+          "title": "CBA FY2024 Profit Announcement",
+          "role": "primary",
+          "available": true,
+          "path": "/reports/cba24.pdf"
+        },
+        {
+          "id": "cba25",
+          "company": "CBA",
+          "report_year": 2025,
+          "period_end": "2025-06-30",
+          "title": "CBA FY2025 Profit Announcement",
+          "role": "primary",
+          "available": true,
+          "path": "/reports/cba25.pdf"
+        },
+        {
+          "id": "nab24",
+          "company": "NAB",
+          "report_year": 2024,
+          "period_end": "2024-09-30",
+          "title": "NAB FY2024 Full Year Results",
+          "role": "primary",
+          "available": true,
+          "path": "/reports/nab24.pdf"
+        },
+        {
+          "id": "nab25",
+          "company": "NAB",
+          "report_year": 2025,
+          "period_end": "2025-09-30",
+          "title": "NAB FY2025 Full Year Results",
+          "role": "primary",
+          "available": true,
+          "path": "/reports/nab25.pdf"
+        },
+        {
+          "id": "nab_ar25",
+          "company": "NAB",
+          "report_year": 2025,
+          "period_end": "2025-09-30",
+          "title": "NAB FY2025 Annual Report",
+          "role": "supporting",
+          "available": true,
+          "path": "/reports/nab_ar25.pdf"
+        },
+        {
+          "id": "nab_ar24",
+          "company": "NAB",
+          "report_year": 2024,
+          "period_end": "2024-09-30",
+          "title": "NAB FY2024 Annual Report",
+          "role": "supporting",
+          "available": true,
+          "path": "/reports/nab_ar24.pdf"
+        }
+      ]
+    }
+  },
+  "/conversation.mjs": {
+    "status": 200,
+    "bytes": 12461,
+    "content_type": "text/javascript; charset=utf-8"
+  },
+  "/conversation.css": {
+    "status": 200,
+    "bytes": 9048,
+    "content_type": "text/css; charset=utf-8"
+  }
+}

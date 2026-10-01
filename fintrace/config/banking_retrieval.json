@@ -1,0 +1,23 @@
+{
+  "version": "banking-retrieval-v3",
+  "search_view": "full_evidence",
+  "query_cleanup": false,
+  "lexical_normalisation": false,
+  "chunk_release": "releases/banking-chunking-v1.json",
+  "mode": "development_unreviewed",
+  "bm25": {"k1": 1.5, "b": 0.75, "idf": "log(1+(N-df+0.5)/(df+0.5))"},
+  "candidate_k": 20,
+  "final_k": 5,
+  "rrf_constant": 60,
+  "context_tokens": 2048,
+  "threads": 4,
+  "device": "cuda",
+  "batch_size": 8,
+  "models": {
+    "bge": {"id": "BAAI/bge-small-en-v1.5", "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a", "limit": 512, "pooling": "cls", "query_prefix": "Represent this sentence for searching relevant passages: "},
+    "qwen": {"id": "Qwen/Qwen3-Embedding-0.6B", "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3", "limit": 32768, "pooling": "last", "query_prefix": "Instruct: Retrieve financial report passages that provide evidence answering the question.\nQuery: "},
+    "reranker": {"id": "cross-encoder/ms-marco-MiniLM-L6-v2", "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a", "limit": 512}
+  },
+  "selection_policy": "Select on development only: highest complete evidence coverage at final context budget, then evidence-group recall, then MRR@5; ties prefer fewer model stages, then lower measured search latency. Reserved results are not used for tuning.",
+  "release_policy": "A reproducible development freeze is allowed after software and provenance checks. Independent source review and held-out human evaluation remain required before claiming validated quality."
+}

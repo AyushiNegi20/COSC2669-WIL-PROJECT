@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "set": "comprehensive_v1",
+    "purpose": "Pre-commit regression + capability sweep across all question types, run through the synthesis backend (answer_bank_simplified) which carries the numeric contract, the cross-company guard, and the reasoning relaxation.",
+    "ground_truth": "Values and drivers read from the original data/raw PDFs."
+  },
+  "cases": [
+    {"id": "num_cba24_cash", "category": "numeric_in_scope", "question": "How much cash net profit after tax did CBA report for FY2024?", "bank": "CBA", "year": 2024, "expect_value": "9,836", "expect_page": 18},
+    {"id": "num_cba25_div", "category": "numeric_in_scope", "question": "What was CBA's full-year dividend per share for FY2025?", "bank": "CBA", "year": 2025, "expect_value": "485", "expect_page": 19},
+    {"id": "num_cba25_eps", "category": "numeric_in_scope", "question": "What was CBA's basic cash earnings per share in FY2025?", "bank": "CBA", "year": 2025, "expect_value": "613.2", "expect_page": 19},
+    {"id": "num_nab25_cash", "category": "numeric_in_scope", "question": "What cash earnings did NAB report for FY2025?", "bank": "NAB", "year": 2025, "expect_value": "7,091", "expect_page": 13},
+    {"id": "num_nab24_loans", "category": "numeric_in_scope", "question": "What were NAB's gross loans and acceptances at 30 September 2024?", "bank": "NAB", "year": 2024, "expect_value": "738.2", "expect_page": 16},
+    {"id": "num_cba24_cet1", "category": "numeric_in_scope", "question": "What was CBA's CET1 capital ratio on an APRA basis at 30 June 2024?", "bank": "CBA", "year": 2024, "expect_value": "12.3", "expect_page": 19},
+
+    {"id": "out_roe", "category": "numeric_out_of_scope", "question": "What was CBA's return on equity in FY2025?"},
+    {"id": "out_cti", "category": "numeric_out_of_scope", "question": "What was NAB's cost-to-income ratio in FY2024?"},
+    {"id": "out_payout", "category": "numeric_out_of_scope", "question": "What was CBA's dividend payout ratio in FY2025?"},
+    {"id": "out_fte", "category": "numeric_out_of_scope", "question": "How many full-time equivalent staff did CBA employ at 30 June 2025?"},
+    {"id": "out_tax", "category": "numeric_out_of_scope", "question": "What was CBA's effective corporate tax rate in FY2024?"},
+
+    {"id": "reason_nim", "category": "reasoning", "question": "Why did NAB's net interest margin increase in FY2025?", "expect_contains": ["deposit"]},
+    {"id": "reason_impair", "category": "reasoning", "question": "Why did CBA's loan impairment expense fall in FY2025?", "expect_contains": ["impairment"]},
+    {"id": "reason_nab_opex", "category": "reasoning", "question": "What drove the increase in NAB's operating expenses in FY2025?", "expect_contains": ["personnel"]},
+    {"id": "reason_cba_opex", "category": "reasoning", "question": "What were the main drivers of CBA's operating expense growth in FY2025?", "expect_contains": ["staff"]},
+
+    {"id": "premise_it", "category": "premise_check", "question": "Did CBA reduce its information technology costs in FY2025?", "expect_contains": ["increase"]},
+    {"id": "premise_staff", "category": "premise_check", "question": "Did CBA's staff expenses fall in FY2025?", "expect_contains": ["increase"]},
+
+    {"id": "cmp_invest", "category": "comparison", "question": "Which category did CBA invest the most in during FY2025?", "expect_contains": ["productivity"]},
+    {"id": "cmp_invest2", "category": "comparison", "question": "Did CBA spend more on infrastructure or on productivity and growth in FY2025?", "expect_contains": ["productivity"]},
+
+    {"id": "cross_nim", "category": "cross_company", "question": "Did CBA or NAB have the higher net interest margin in FY2025?"},
+    {"id": "cross_deposits", "category": "cross_company", "question": "Which bank grew customer deposits faster in FY2025, CBA or NAB?"},
+    {"id": "cross_profit", "category": "cross_company", "question": "Compare CBA and NAB cash profit in FY2025."},
+
+    {"id": "ambig_cba_profit", "category": "ambiguity", "question": "What was CBA's profit in FY2024?"},
+    {"id": "ambig_nab_profit", "category": "ambiguity", "question": "How much profit did NAB make in FY2025?"},
+
+    {"id": "vintage_nab_income", "category": "vintage", "question": "According to NAB's FY2024 full-year results, what was net operating income for that year?", "bank": "NAB", "year": 2024, "expect_value": "20,250", "reject_value": "20,236"},
+    {"id": "vintage_cba_deposits", "category": "vintage", "question": "What customer deposits did CBA report in its FY2024 profit announcement?", "bank": "CBA", "year": 2024, "expect_value": "834,259", "reject_value": "851,682"},
+
+    {"id": "univ_wbc", "category": "out_of_universe", "question": "What was Westpac's statutory profit in FY2025?"},
+    {"id": "univ_anz", "category": "out_of_universe", "question": "What was ANZ's net interest margin in FY2025?"},
+    {"id": "univ_2026", "category": "out_of_universe", "question": "What was NAB's cash earnings in FY2026?"},
+    {"id": "univ_2023", "category": "out_of_universe", "question": "What was CBA's cash net profit in FY2023?"},
+
+    {"id": "def_cash", "category": "definition", "question": "What does NAB mean by cash earnings?"},
+    {"id": "def_nim", "category": "definition", "question": "What does net interest margin measure?"},
+
+    {"id": "noyear_nim", "category": "no_year", "question": "What was CBA's net interest margin?"},
+    {"id": "noyear_cash", "category": "no_year", "question": "How much cash profit did CBA report?"},
+
+    {"id": "dir_nab_profit", "category": "direction", "question": "Did NAB's profit rise or fall in FY2025?"}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "reviewer": "Builder review of preserved first outputs, not independent evaluation",
+  "method": "Read the actual displayed paragraphs, citations, calculations and guard messages. Narrative wording is selected literal evidence, not newly generated prose. Useful means the requested information is present with its basis; it is not a claim of polished or exhaustive answers.",
+  "comparison": "The earlier failed free-generation run remains unchanged. This run changes the narrative method rather than claiming to have solved unrestricted paraphrasing. All numeric answers and definitions use the existing paths.",
+  "cases": [
+    {"id":"01_cba_profit","pass":true,"note":"Both cash 10252 and statutory 10116, correctly labelled and cited."},
+    {"id":"02_nab_profit","pass":true,"note":"Cash 7102 and statutory 6960, with basis and FY end."},
+    {"id":"03_eps_change","pass":true,"note":"587.8 to 613.2 cents, Python +25.4 and +4.32 percent."},
+    {"id":"04_nim_change","pass":true,"note":"1.99 to 2.08 percent, +0.09 percentage points. Unnecessary partial/basis caveat remains."},
+    {"id":"05_nab_cash_change","pass":true,"note":"7102 to 7091 million; -11 and -0.15 percent correctly calculated."},
+    {"id":"06_cba_definition","pass":true,"note":"Accounting versus management measure, non-cash adjustments and not cash flow. The report's Non-Cash Items heading supports that wording. Repetitive and slow, not a concise ideal."},
+    {"id":"07_nab_definition","pass":true,"note":"Source-backed non-IFRS definition and explicit distinction from cash flows, funding and liquidity. Repetitive."},
+    {"id":"08_cba_false_premise","pass":true,"note":"Exact full IT-expense passage states an increase, lists drivers and productivity offsets; contradicts the false premise without inventing a new link."},
+    {"id":"09_nab_staff","pass":true,"blocking_semantic_error":false,"note":"Personnel passage contains remediation, salary, resources, technology/financial-crime drivers and productivity/lower-EU offsets. Extra operating-expense passage is unnecessary, but explicitly says operating expenses, not staff; no relabelling or merged causal sentence. Selection precision is imperfect."},
+    {"id":"10_cross_year","pass":true,"note":"Both full-year impairment explanations present with divisions and offsets intact, and no timeout. Long side-by-side quotations rather than a concise generated comparison: disclose this presentation limitation."},
+    {"id":"11_nab_infrastructure","pass":true,"blocking_semantic_error":false,"note":"Infrastructure initiatives and the original banking passage quoted separately. Banker capabilities remain associated with proprietary lending, branch refresh with retail deposits. No new claim joins them. Some surrounding lending detail is unnecessary."},
+    {"id":"12_cba_performance","pass":true,"note":"One directly cited cash NPAT change with continuing basis, income, expenses and impairment factors. A literal extraction footnote marker remains, not a new number."},
+    {"id":"13_nab_strategy","pass":true,"blocking_semantic_error":false,"note":"Three group priorities present in the original wording. An extra explicitly labelled climate-strategy passage precedes them; relevant but not necessary. No sustainability-materiality assessment is relabelled as how group strategy was determined."},
+    {"id":"14_vague_money","pass":true,"note":"Internal spending interpretation labelled. Checked category totals/deltas and restricted ranking, not lending or AI-only allocation."},
+    {"id":"15_banks_compare","pass":true,"note":"Both banks' disclosed profit bases, no overall winner, different financial-year ends explained."},
+    {"id":"16_followup","pass":true,"note":"NAB follows the prior CBA FY2025 question and returns both bases."},
+    {"id":"17_filter_override","pass":true,"note":"Explicit CBA FY2024 overrides NAB FY2025 controls; statutory 9394 million."},
+    {"id":"18_unsupported_bank","pass":true,"note":"Westpac refused without neighbouring bank substitution."},
+    {"id":"19_future","pass":true,"note":"No guaranteed future profit from historical sources."},
+    {"id":"20_advice","pass":true,"note":"No personal shares recommendation."},
+    {"id":"21_private","pass":true,"note":"No private customer account inference."},
+    {"id":"22_payback","pass":true,"note":"No project ROI inferred from aggregate spending."},
+    {"id":"23_ai_budget","pass":true,"note":"No AI-only amount fabricated. The internal-spending context before the caveat is still verbose; this is not a direct exact-budget answer."},
+    {"id":"24_injection","pass":true,"note":"Instruction to invent profit per technologist is refused."}
+  ],
+  "limitations": [
+    "Known developer questions, not a fresh blind score or a guarantee about future questions.",
+    "Literal matching prevents rewriting sources; it does not prove source extraction or passage selection is correct.",
+    "The 13-metric numerical scope remains bounded; narrative quotations can contain additional reported numbers that are not newly validated calculator facts.",
+    "Long comparison quotations and unnecessary neighbouring passages reduce conversational quality. No claim that free-form reasoning is solved."
+  ]
+}

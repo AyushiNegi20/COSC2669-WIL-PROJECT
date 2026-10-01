@@ -1,0 +1,19 @@
+{
+  "status":"Post-selection source-transcribed acceptance checks. Not a sealed holdout; the funding-page checks motivated the logged invisible-bracket fix. Independent review pending.",
+  "cases":[
+    {"doc":"cba25","page":28,"label":"^Net interest income$","columns":[1,2],"values":["24,023","22,824"],"context":["30 Jun 25","30 Jun 24","continuing operations"]},
+    {"doc":"cba25","page":30,"label":"^Other operating income$","columns":[1,2],"values":["4,442","4,350"],"context":["30 Jun 25","30 Jun 24","cash basis"]},
+    {"doc":"cba24","page":51,"label":"^Customer deposits$","columns":[1,2,3],"values":["834,259","824,575","818,974"],"context":["30 Jun 24","31 Dec 23","30 Jun 23"]},
+    {"doc":"cba25","page":53,"label":"^Customer deposits$","columns":[1,2,3],"values":["908,812","873,532","851,682"],"context":["30 Jun 25","31 Dec 24","30 Jun 24"]},
+    {"doc":"cba25","page":53,"label":"^IFRS MTM and derivative FX revaluations$","columns":[1,2,3],"values":["(5,956)","(6,277)","(7,549)"],"context":["Shareholders","excluded"]},
+    {"doc":"cba25","page":45,"label":"^Gross loans and acceptances","columns":[1,2],"values":["1,015,883","949,948"],"context":["30 Jun 25","30 Jun 24","$M"]},
+    {"doc":"cba25","page":90,"label":"^Total assets$","columns":[2,3,4],"values":["1,353,799","1,308,566","1,254,076"],"context":["30 Jun 25","31 Dec 24","30 Jun 24"]},
+    {"doc":"cba25","page":90,"label":"^Total liabilities$","columns":[2,3,4],"values":["1,275,023","1,233,302","1,180,988"],"context":["30 Jun 25","31 Dec 24","30 Jun 24"]},
+    {"doc":"cba25","page":90,"label":"^Total shareholders. equity$","columns":[2,3,4],"values":["78,776","75,264","73,088"],"context":["30 Jun 25","31 Dec 24","30 Jun 24"]},
+    {"doc":"nab24","page":60,"label":"^Total assets$","columns":[1,2,3],"values":["1,080,248","1,071,005","1,059,083"],"context":["30 Sep 24","31 Mar 24","30 Sep 23"]},
+    {"doc":"nab25","page":60,"label":"^Total assets$","columns":[1,2,3],"values":["1,109,062","1,095,639","1,080,248"],"context":["30 Sep 25","31 Mar 25","30 Sep 24"]},
+    {"doc":"nab25","page":60,"label":"^Total liabilities$","columns":[1,2,3],"values":["1,045,415","1,032,720","1,018,035"],"context":["30 Sep 25","31 Mar 25","30 Sep 24"]},
+    {"doc":"nab25","page":60,"label":"^Total equity$","columns":[1,2,3],"values":["63,647","62,919","62,213"],"context":["Non-controlling interests"]},
+    {"doc":"nab25","page":32,"label":"^Quarterly average LCR","columns":[1,2,3],"values":["135","139","137"],"context":["30 Sep 25","31 Mar 25","30 Sep 24","Quarterly average"]}
+  ]
+}

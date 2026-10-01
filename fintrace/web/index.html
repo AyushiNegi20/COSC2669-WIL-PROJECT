@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#132d46">
+  <title>FinTrace | Financial report workbench</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/app.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+<a class="skip-link" href="#question">Skip to question</a>
+<header class="topbar">
+  <a class="brand" href="/" aria-label="FinTrace home"><span class="brand-mark" aria-hidden="true">ft</span><span>FinTrace<small>Ask. Trace. Verify.</small></span></a>
+  <div class="top-meta"><span class="demo-label">Research demo</span><button class="quiet mobile-scope" id="scope-toggle-mobile" aria-expanded="false" aria-controls="scope-details">Scope</button><span class="connection" id="connection" role="status">Connecting</span><button class="quiet" id="reconnect" hidden>Reconnect</button></div>
+</header>
+<div class="workspace">
+  <nav class="rail" aria-label="Workspace">
+    <div class="rail-top"><span class="nav-active">Report workbench</span><button class="rail-button" id="scope-toggle" aria-expanded="false" aria-controls="scope-details">Scope &amp; limitations</button></div>
+    <section class="history-section" aria-labelledby="history-title"><h2 id="history-title">This session</h2><p class="muted small" id="history-empty">Your questions will appear here.</p><ol id="history"></ol><button class="quiet clear-history" id="clear-history" hidden>Clear history</button></section>
+    <div class="rail-bottom"><span class="local-symbol" aria-hidden="true"></span><div>Runs on this laptop<small>History stays in this tab.</small></div></div>
+  </nav>
+  <main id="main" class="main">
+    <div class="page-heading"><div><p class="context-line">CBA and NAB / FY2024 &amp; FY2025</p><h1>Financial reports,<br>with the workings.</h1></div><span class="year-note">CBA year-end: 30 June<br>NAB year-end: 30 September</span></div>
+    <section id="scope-details" class="scope-box" hidden aria-label="Scope and limitations">
+      <h2>A focused research prototype</h2><p>Two banks, two financial years and 13 financial measures. Answers use selected pages from six official reports, not every page or every public disclosure.</p>
+      <p>Supported: finding figures, compatible year-on-year changes, same-period cash/statutory profit gaps and report excerpts. Currency conversions, calculating new ratios, cross-company rankings and automatic claim verdicts are not enabled.</p>
+      <p>Explanations are source excerpts, not generated summaries. Cash profit and cash flow are different concepts. Wording can still be misinterpreted, so review the source before relying on an answer.</p>
+      <p class="small">This is not financial advice or an independently certified system. Successful development tests are not a claim of accuracy on unseen questions.</p>
+    </section>
+    <form id="question-form" class="composer">
+      <label for="question">What would you like to check?</label>
+      <textarea id="question" name="question" rows="3" maxlength="2000" required placeholder="Ask about a bank, financial year and measure..."></textarea>
+      <div class="composer-footer"><span class="input-hint"><span id="char-count">0</span>/2000 <span class="shortcut">Ctrl + Enter to ask</span></span><button id="ask-button" class="primary" type="submit" disabled>Ask FinTrace</button></div>
+      <p id="input-error" class="input-error" role="alert" hidden></p>
+    </form>
+    <section class="examples" id="examples" aria-labelledby="example-title">
+      <h2 id="example-title">A few places to start</h2>
+      <div class="example-grid">
+        <button class="example" data-example="expense"><span>Compare years</span><strong>How much did NAB's credit impairment charge grow?</strong><small>FY2024 to FY2025, with the calculation</small></button>
+        <button class="example" data-example="profit"><span>Compare reporting bases</span><strong>CBA cash profit vs statutory profit</strong><small>Same year, same scope, both sources</small></button>
+        <button class="example" data-example="find"><span>Find a figure</span><strong>What was CBA's annual dividend per share?</strong><small>FY2025, in the report's original unit</small></button>
+        <button class="example" data-example="explain"><span>Read the explanation</span><strong>What does CBA mean by cash profit?</strong><small>The company's disclosure, in its own words</small></button>
+      </div>
+      <p class="scope-hint">Be specific about “profit”: cash and statutory profit are different measures.</p>
+    </section>
+    <section id="result" class="result" aria-label="Answer" tabindex="-1" hidden></section>
+    <p class="bottom-note">A figure is only useful with its year, basis and source.</p>
+  </main>
+  <aside class="evidence-panel" id="evidence-panel" aria-labelledby="evidence-title">
+    <div class="evidence-heading"><h2 id="evidence-title">Source desk</h2><span id="source-count" class="count">0</span></div>
+    <div id="evidence-content"><div class="evidence-empty"><div class="document-drawing" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></div><h3>Keep the report in view.</h3><p>Ask a question to see the source rows, date headers and report pages behind the answer.</p></div></div>
+    <details class="library"><summary>Available reports <span>6 sources</span></summary><div id="document-list"><p class="muted small">Loading source list...</p></div></details>
+    <p class="evidence-note">Page references are PDF page numbers. Printed page numbers can differ.</p>
+  </aside>
+</div>
+<div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,432 @@
+{
+  "case": {
+    "id": "nab_reason",
+    "kind": "narrative",
+    "question": "Please explain why NAB staff expenses increased in FY2025."
+  },
+  "response": {
+    "question": "Please explain why NAB staff expenses increased in FY2025.",
+    "answer": {
+      "status": "partial_answer",
+      "mode": "report_narrative",
+      "source_excerpts": [
+        {
+          "heading": "NAB FY2025 / spending: Full-report prose search. Group or general disclosure. Year comparison: September 2025 v September 2024",
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 20,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "document_role": "primary",
+            "report_section": "Group or general disclosure"
+          },
+          "excerpts": [
+            {
+              "source_id": "nab25:full:p020:b013",
+              "quote": "Personnel expenses increased by $271 million or 4.8%. Excluding an increase of $101 million for payroll review and remediation costs, personnel expenses increased by $170 million or 3.0%. The increase was driven by salary expense inflation, investment in additional bankers and resources to support growth, and continued investment in technology and financial crime related capabilities. These impacts were partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations and lower EU related costs."
+            }
+          ]
+        },
+        {
+          "heading": "NAB FY2025 / spending: Full-report prose search. Group or general disclosure. Year comparison: September 2025 v September 2024",
+          "source": {
+            "company": "NAB",
+            "document_id": "nab_ar25",
+            "document_title": "NAB FY2025 Annual Report",
+            "pdf_page": 93,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+            "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+            "document_role": "supporting",
+            "report_section": "Group or general disclosure"
+          },
+          "excerpts": [
+            {
+              "source_id": "nab_ar25:full:p093:b023",
+              "quote": "Operating expenses increased by $336 million or 3.4%. This was primarily driven by payroll review and remediation costs and higher personnel expenses due to an increase in average FTE and salary and related costs, together with continued investment in technology and compliance capabilities including fraud and cyber security. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations, and decreased spend associated with the acquisition, integration and closure of Group businesses, combined with lower costs related to the enforceable undertaking (EU) with AUSTRAC."
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "CBA and NAB prose search includes all six reports. Retrieved passages are not exhaustive; unvalidated tables and image-only content are not calculation-ready.",
+        "Reported priorities and initiatives do not by themselves establish spending amounts, year-on-year increases or a ranking of investment areas.",
+        "Wording interpreted as: explain why NAB staff expenses increased in FY2025."
+      ],
+      "message": "NAB FY2025 reports: \"Personnel expenses increased by $271 million or 4.8%. Excluding an increase of $101 million for payroll review and remediation costs, personnel expenses increased by $170 million or 3.0%. The increase was driven by salary expense inflation, investment in additional bankers and resources to support growth, and continued investment in technology and financial crime related capabilities. These impacts were partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations and lower EU related costs.\"\n\nNAB FY2025 reports: \"Operating expenses increased by $336 million or 3.4%. This was primarily driven by payroll review and remediation costs and higher personnel expenses due to an increase in average FTE and salary and related costs, together with continued investment in technology and compliance capabilities including fraud and cyber security. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations, and decreased spend associated with the acquisition, integration and closure of Group businesses, combined with lower costs related to the enforceable undertaking (EU) with AUSTRAC.\"",
+      "generated_explanation": {
+        "statements": [
+          {
+            "text": "NAB FY2025 reports: \"Personnel expenses increased by $271 million or 4.8%. Excluding an increase of $101 million for payroll review and remediation costs, personnel expenses increased by $170 million or 3.0%. The increase was driven by salary expense inflation, investment in additional bankers and resources to support growth, and continued investment in technology and financial crime related capabilities. These impacts were partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations and lower EU related costs.\"",
+            "evidence_ids": [
+              "P1"
+            ],
+            "citations": [
+              {
+                "source_id": "nab25:full:p020:b013",
+                "quote": "Personnel expenses increased by $271 million or 4.8%. Excluding an increase of $101 million for payroll review and remediation costs, personnel expenses increased by $170 million or 3.0%. The increase was driven by salary expense inflation, investment in additional bankers and resources to support growth, and continued investment in technology and financial crime related capabilities. These impacts were partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations and lower EU related costs.",
+                "period_context": "Year comparison: September 2025 v September 2024",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 20,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "document_role": "primary",
+                  "report_section": "Group or general disclosure"
+                }
+              }
+            ],
+            "kind": "quotation"
+          },
+          {
+            "text": "NAB FY2025 reports: \"Operating expenses increased by $336 million or 3.4%. This was primarily driven by payroll review and remediation costs and higher personnel expenses due to an increase in average FTE and salary and related costs, together with continued investment in technology and compliance capabilities including fraud and cyber security. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations, and decreased spend associated with the acquisition, integration and closure of Group businesses, combined with lower costs related to the enforceable undertaking (EU) with AUSTRAC.\"",
+            "evidence_ids": [
+              "P2"
+            ],
+            "citations": [
+              {
+                "source_id": "nab_ar25:full:p093:b023",
+                "quote": "Operating expenses increased by $336 million or 3.4%. This was primarily driven by payroll review and remediation costs and higher personnel expenses due to an increase in average FTE and salary and related costs, together with continued investment in technology and compliance capabilities including fraud and cyber security. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations, and decreased spend associated with the acquisition, integration and closure of Group businesses, combined with lower costs related to the enforceable undertaking (EU) with AUSTRAC.",
+                "period_context": "Year comparison: September 2025 v September 2024",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab_ar25",
+                  "document_title": "NAB FY2025 Annual Report",
+                  "pdf_page": 93,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                  "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                  "document_role": "supporting",
+                  "report_section": "Group or general disclosure"
+                }
+              }
+            ],
+            "kind": "quotation"
+          }
+        ],
+        "method": "extractive_selection",
+        "validation": {
+          "literal_source_match": "passed",
+          "selection_relevance": "model_selected_not_independently_verified"
+        }
+      },
+      "important_notes": [
+        "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations."
+      ]
+    },
+    "narrative_request": {
+      "status": "search",
+      "requests": [
+        {
+          "topic": "spending",
+          "company": "NAB",
+          "year": 2025,
+          "query": "Explain NAB FY2025 reported own investment spending, technology and business initiatives.",
+          "followup": "Explain NAB FY2025 disclosures relevant to: explain why NAB staff expenses increased in FY2025."
+        }
+      ],
+      "notes": [],
+      "comparative": true,
+      "amount_requested": false,
+      "question": "explain why NAB staff expenses increased in FY2025.",
+      "topic": "spending",
+      "company": "NAB",
+      "year": 2025,
+      "search_subject": "NAB staff expenses"
+    },
+    "research_coverage": [
+      {
+        "company": "NAB",
+        "year": 2025,
+        "topic": "spending",
+        "sections": 2
+      }
+    ],
+    "research_searches": [
+      {
+        "query": "explain why NAB staff expenses increased in FY2025.",
+        "scope": "NAB full-report prose",
+        "relevant_sections": 2,
+        "ranked_sources": [
+          {
+            "source": {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 20,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            },
+            "score": 25.462874144407436
+          },
+          {
+            "source": {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 14,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            },
+            "score": 17.76349254843712
+          },
+          {
+            "source": {
+              "company": "NAB",
+              "document_id": "nab_ar25",
+              "document_title": "NAB FY2025 Annual Report",
+              "pdf_page": 93,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+              "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+              "document_role": "supporting",
+              "report_section": "Group or general disclosure"
+            },
+            "score": 17.13260845463475
+          },
+          {
+            "source": {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 20,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            },
+            "score": 16.57678721789251
+          },
+          {
+            "source": {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 25,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            },
+            "score": 16.11622849533626
+          },
+          {
+            "source": {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 5,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            },
+            "score": 15.409163290608301
+          },
+          {
+            "source": {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 20,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            },
+            "score": 14.071737680313912
+          },
+          {
+            "source": {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 17,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            },
+            "score": 13.898398878475522
+          },
+          {
+            "source": {
+              "company": "NAB",
+              "document_id": "nab_ar25",
+              "document_title": "NAB FY2025 Annual Report",
+              "pdf_page": 16,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+              "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+              "document_role": "supporting",
+              "report_section": "Group or general disclosure"
+            },
+            "score": 13.645521554381725
+          },
+          {
+            "source": {
+              "company": "NAB",
+              "document_id": "nab_ar25",
+              "document_title": "NAB FY2025 Annual Report",
+              "pdf_page": 94,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+              "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+              "document_role": "supporting",
+              "report_section": "Group or general disclosure"
+            },
+            "score": 13.457278065281752
+          }
+        ]
+      }
+    ],
+    "full_report_search": true,
+    "interpretation": {
+      "retrieval_question": "Explain NAB FY2025 reported own investment spending, technology and business initiatives.",
+      "notes": []
+    },
+    "route": "narrative",
+    "generation": {
+      "status": "source_selected",
+      "model": "qwen3:8b",
+      "method": "extractive_selection",
+      "timing": {
+        "total_duration": 2703531300,
+        "load_duration": 7086500,
+        "prompt_eval_count": 600,
+        "eval_count": 12
+      },
+      "selected_passage_ids": [
+        "P1",
+        "P2"
+      ],
+      "missing_scopes": [],
+      "literal_source_match": true,
+      "seconds": 2.7738823000108823
+    },
+    "intent_plan": {
+      "topic": "spending",
+      "task": "explanation",
+      "subject": "NAB staff expenses",
+      "specific_amount": false,
+      "advice": false,
+      "status": "interpreted",
+      "timing": {
+        "total_duration": 4174754000,
+        "load_duration": 8642900,
+        "prompt_eval_count": 611,
+        "eval_count": 43
+      },
+      "model": "qwen3:8b"
+    },
+    "query_normalisation": {
+      "question": "explain why NAB staff expenses increased in FY2025.",
+      "changes": [
+        {
+          "original": "Please ",
+          "normalised": ""
+        }
+      ]
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 7.067343000002438,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "NAB FY2025 reports: \"Personnel expenses increased by $271 million or 4.8%. Excluding an increase of $101 million for payroll review and remediation costs, personnel expenses increased by $170 million or 3.0%. The increase was driven by salary expense inflation, investment in additional bankers and resources to support growth, and continued investment in technology and financial crime related capabilities. These impacts were partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations and lower EU related costs.\"",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 20,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "document_role": "primary",
+              "report_section": "Group or general disclosure"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "NAB FY2025 reports: \"Operating expenses increased by $336 million or 3.4%. This was primarily driven by payroll review and remediation costs and higher personnel expenses due to an increase in average FTE and salary and related costs, together with continued investment in technology and compliance capabilities including fraud and cyber security. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations, and decreased spend associated with the acquisition, integration and closure of Group businesses, combined with lower costs related to the enforceable undertaking (EU) with AUSTRAC.\"",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab_ar25",
+              "document_title": "NAB FY2025 Annual Report",
+              "pdf_page": 93,
+              "report_year": 2025,
+              "report_period_end": "2025-09-30",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+              "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+              "document_role": "supporting",
+              "report_section": "Group or general disclosure"
+            }
+          ],
+          "kind": "narrative"
+        }
+      ],
+      "qualifications": [
+        "Reported priorities and initiatives do not by themselves establish spending amounts, year-on-year increases or a ranking of investment areas.",
+        "Wording interpreted as: explain why NAB staff expenses increased in FY2025."
+      ],
+      "important_notes": [
+        "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations.",
+        "CBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready."
+      ],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "NAB",
+      "year": "2025"
+    },
+    "summary": "NAB / FY2025",
+    "notes": [],
+    "effective_question": "Please explain why NAB staff expenses increased in FY2025."
+  },
+  "followup_notes": [],
+  "seconds": 7.067973400000483,
+  "issues": [],
+  "assessment": "needs_manual_review"
+}

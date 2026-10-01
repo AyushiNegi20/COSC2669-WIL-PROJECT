@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#18191b"><title>FinTrace | Report conversation</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/conversation.css"><script type="module" src="/conversation.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#question">Skip to question</a>
+<aside class="sidebar" aria-label="Session navigation">
+  <a class="brand" href="/">FinTrace<span>Financial report research</span></a>
+  <button id="new-session" class="new-session" type="button">New conversation <span aria-hidden="true">+</span></button>
+  <h2>In this session</h2><p id="history-empty" class="muted">Your questions stay in this tab.</p><ol id="history"></ol>
+  <div class="sidebar-bottom"><button id="show-library" type="button">Report library <span>6 sources</span></button><button id="show-scope" type="button">Scope and limitations</button><p>Built for source checking.<br>Not investment advice.</p></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><span>FinTrace <span class="prototype">Report conversation / Research prototype</span></span><div><span id="connection" role="status">Connecting</span><button id="reconnect" hidden>Reconnect</button><button id="mobile-new" class="mobile-only" type="button">New</button></div></header>
+  <main id="main">
+    <section id="welcome" class="welcome"><p class="context">CBA and NAB / FY2024 and FY2025</p><h1>Ask the reports.</h1><p>Explore a result. Understand a change.<br>Follow the answer back to its source.</p>
+      <div class="suggestions" aria-label="Example questions">
+        <button data-question="What was CBA profit in FY2025?">What was CBA's profit?</button>
+        <button data-question="Choose a major change in CBA's financial performance in FY2025">Find a notable financial change</button>
+        <button data-question="Compare NAB cash profit in FY2024 and FY2025">Compare NAB across years</button>
+        <button data-question="What does CBA mean by cash profit?">Explain cash profit</button>
+      </div>
+    </section>
+    <section id="conversation" aria-label="Conversation"></section>
+    <div class="composer-wrap"><form id="question-form">
+      <div class="filters"><div><label for="company-filter">Company</label><select id="company-filter" aria-label="Company"><option value="all">All companies</option><option value="CBA">CBA</option><option value="NAB">NAB</option></select></div><div><label for="year-filter">Financial year</label><select id="year-filter" aria-label="Financial year"><option value="all">All available years</option><option value="2024">FY2024</option><option value="2025">FY2025</option></select></div></div>
+      <label class="sr-only" for="question">Ask about the reports</label><textarea id="question" rows="2" maxlength="2000" required placeholder="Ask a question, or follow up with a bank or year..."></textarea>
+      <div class="composer-footer"><span><span id="char-count">0</span>/2000 <span class="keyboard">Ctrl + Enter to send</span></span><button id="ask" type="submit" disabled>Ask FinTrace</button></div>
+      <p id="input-error" role="alert" hidden></p>
+    </form><p class="composer-note">Optional filters fill missing context. A bank or year in your question takes precedence.</p><div class="mobile-only answer-tools"><button id="mobile-library" type="button">Report library</button><button id="mobile-scope" type="button">Scope and limitations</button></div></div>
+    <section id="scope" class="scope-panel" hidden tabindex="-1"><h2>A focused research prototype</h2><p>Six official CBA and NAB reports cover FY2024 and FY2025. Prose search includes extractable text across all six reports. You can ask about report content beyond the original thirteen numerical measures. Checked calculations cover those measures, CBA investment spending and selected NAB statutory and reconciliation tables. Other tables and image-only content are not automatically calculation-ready.</p><p>CBA's financial year ends on 30 June. NAB's ends on 30 September. Similar labels do not always mean comparable measures. Explicit cross-bank comparisons are currently declined.</p><p>Checked numbers and arithmetic use source-bound Python code. Other report answers use local Qwen to select cited passages, or checked paraphrasing for definitions. A quotation is not a new calculation or proof of complete coverage. Follow-ups currently support changing the bank or year of the previous question, not unrestricted conversational memory.</p><p>This is a development prototype, not financial advice or independently certified output. Check the source before relying on an answer.</p></section>
+  </main>
+</div>
+<aside id="source-desk" class="source-desk" aria-label="Source desk" hidden tabindex="-1"><header><h2>Source desk</h2><button id="close-source" aria-label="Close source desk">Close</button></header><div id="source-content"></div></aside>
+<div class="sr-only" id="announcement" role="status" aria-live="polite"></div>
+</body></html>
