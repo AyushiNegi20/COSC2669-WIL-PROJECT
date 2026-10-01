@@ -1,0 +1,462 @@
+{
+  "question": "Why did NAB statutory operating expenses increase in FY2025?",
+  "answer": {
+    "status": "partial_answer",
+    "mode": "report_narrative",
+    "source_excerpts": [
+      {
+        "heading": "NAB FY2025 / general: Full-report prose search. Group or general disclosure. Year comparison: September 2025 v September 2024",
+        "source": {
+          "company": "NAB",
+          "document_id": "nab_ar25",
+          "document_title": "NAB FY2025 Annual Report",
+          "pdf_page": 93,
+          "report_year": 2025,
+          "report_period_end": "2025-09-30",
+          "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+          "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+          "document_role": "supporting",
+          "report_section": "Group or general disclosure"
+        },
+        "excerpts": [
+          {
+            "source_id": "nab_ar25:full:p093:b023",
+            "quote": "Operating expenses increased by $336 million or 3.4%. This was primarily driven by payroll review and remediation costs and higher personnel expenses due to an increase in average FTE and salary and related costs, together with continued investment in technology and compliance capabilities including fraud and cyber security. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations, and decreased spend associated with the acquisition, integration and closure of Group businesses, combined with lower costs related to the enforceable undertaking (EU) with AUSTRAC."
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "CBA and NAB prose search includes all six reports. Retrieved passages are not exhaustive; unvalidated tables and image-only content are not calculation-ready.",
+      "Cited passages support only what the source explicitly discloses. Quoted figures are not newly calculated results or a complete review of every report.",
+      "The movement is checked first; explanatory passages are restricted to its source report(s). Different reporting bases are not interchangeable.",
+      "For the stated FY2025 movement, checking FY2024 to FY2025 on a compatible reporting basis."
+    ],
+    "message": "NAB FY2025 reports: \"Operating expenses increased by $336 million or 3.4%. This was primarily driven by payroll review and remediation costs and higher personnel expenses due to an increase in average FTE and salary and related costs, together with continued investment in technology and compliance capabilities including fraud and cyber security. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations, and decreased spend associated with the acquisition, integration and closure of Group businesses, combined with lower costs related to the enforceable undertaking (EU) with AUSTRAC.\"",
+    "generated_explanation": {
+      "statements": [
+        {
+          "text": "NAB FY2025 reports: \"Operating expenses increased by $336 million or 3.4%. This was primarily driven by payroll review and remediation costs and higher personnel expenses due to an increase in average FTE and salary and related costs, together with continued investment in technology and compliance capabilities including fraud and cyber security. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations, and decreased spend associated with the acquisition, integration and closure of Group businesses, combined with lower costs related to the enforceable undertaking (EU) with AUSTRAC.\"",
+          "evidence_ids": [
+            "P1"
+          ],
+          "citations": [
+            {
+              "source_id": "nab_ar25:full:p093:b023",
+              "quote": "Operating expenses increased by $336 million or 3.4%. This was primarily driven by payroll review and remediation costs and higher personnel expenses due to an increase in average FTE and salary and related costs, together with continued investment in technology and compliance capabilities including fraud and cyber security. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations, and decreased spend associated with the acquisition, integration and closure of Group businesses, combined with lower costs related to the enforceable undertaking (EU) with AUSTRAC.",
+              "period_context": "Year comparison: September 2025 v September 2024",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab_ar25",
+                "document_title": "NAB FY2025 Annual Report",
+                "pdf_page": 93,
+                "report_year": 2025,
+                "report_period_end": "2025-09-30",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                "document_role": "supporting",
+                "report_section": "Group or general disclosure"
+              }
+            }
+          ],
+          "kind": "quotation"
+        }
+      ],
+      "method": "extractive_selection",
+      "validation": {
+        "literal_source_match": "passed",
+        "selection_relevance": "model_selected_not_independently_verified"
+      }
+    },
+    "important_notes": [
+      "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations."
+    ],
+    "parts": [
+      {
+        "claims": [
+          {
+            "text": "NAB Operating expenses: -10012 AUD million in FY2024, statutory Group basis.",
+            "cell": {
+              "metric": "statutory_operating_expenses",
+              "company": "NAB",
+              "value": "-10012",
+              "raw_value": "-10012",
+              "unit": "AUD million",
+              "basis": "statutory",
+              "scope": "Group",
+              "period_kind": "annual",
+              "period_end": "2024-09-30",
+              "report_year": 2025,
+              "column": 2,
+              "source_id": "nab_ar25:full:p093:statement:statutory_operating_expenses",
+              "header_ids": [],
+              "record_id": "nab_ar25:full:p093:statement:statutory_operating_expenses",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab_ar25",
+                "document_title": "NAB FY2025 Annual Report",
+                "pdf_page": 93,
+                "report_year": 2025,
+                "report_period_end": "2025-09-30",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                "document_role": "supporting",
+                "report_section": "Group or general disclosure"
+              },
+              "row_quote": "Operating expenses | FY2025: -10348 | FY2024: -10012 | AUD million | NAB Group statutory basis",
+              "binding_status": "two_pdf_extractors_agree; financial_performance_totals_reconciled"
+            },
+            "presentation": {
+              "value": "10012",
+              "representation": "expense_magnitude",
+              "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+              "transformation": "abs(source_value)",
+              "source_value": "-10012"
+            },
+            "evidence": [
+              {
+                "source_id": "nab_ar25:full:p093:statement:statutory_operating_expenses",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab_ar25",
+                  "document_title": "NAB FY2025 Annual Report",
+                  "pdf_page": 93,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                  "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                  "document_role": "supporting",
+                  "report_section": "Group or general disclosure"
+                },
+                "quote": "Operating expenses | FY2025: -10348 | FY2024: -10012 | AUD million | NAB Group statutory basis"
+              }
+            ]
+          },
+          {
+            "text": "NAB Operating expenses: -10348 AUD million in FY2025, statutory Group basis.",
+            "cell": {
+              "metric": "statutory_operating_expenses",
+              "company": "NAB",
+              "value": "-10348",
+              "raw_value": "-10348",
+              "unit": "AUD million",
+              "basis": "statutory",
+              "scope": "Group",
+              "period_kind": "annual",
+              "period_end": "2025-09-30",
+              "report_year": 2025,
+              "column": 1,
+              "source_id": "nab_ar25:full:p093:statement:statutory_operating_expenses",
+              "header_ids": [],
+              "record_id": "nab_ar25:full:p093:statement:statutory_operating_expenses",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab_ar25",
+                "document_title": "NAB FY2025 Annual Report",
+                "pdf_page": 93,
+                "report_year": 2025,
+                "report_period_end": "2025-09-30",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                "document_role": "supporting",
+                "report_section": "Group or general disclosure"
+              },
+              "row_quote": "Operating expenses | FY2025: -10348 | FY2024: -10012 | AUD million | NAB Group statutory basis",
+              "binding_status": "two_pdf_extractors_agree; financial_performance_totals_reconciled"
+            },
+            "presentation": {
+              "value": "10348",
+              "representation": "expense_magnitude",
+              "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+              "transformation": "abs(source_value)",
+              "source_value": "-10348"
+            },
+            "evidence": [
+              {
+                "source_id": "nab_ar25:full:p093:statement:statutory_operating_expenses",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab_ar25",
+                  "document_title": "NAB FY2025 Annual Report",
+                  "pdf_page": 93,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                  "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                  "document_role": "supporting",
+                  "report_section": "Group or general disclosure"
+                },
+                "quote": "Operating expenses | FY2025: -10348 | FY2024: -10012 | AUD million | NAB Group statutory basis"
+              }
+            ]
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "change",
+            "left": "10348",
+            "right": "10012",
+            "absolute_change": "336",
+            "unit": "AUD million",
+            "formula": "left - right",
+            "operand_labels": [
+              "NAB statutory_operating_expenses 2025-09-30",
+              "NAB statutory_operating_expenses 2024-09-30"
+            ],
+            "source_cells": [
+              {
+                "metric": "statutory_operating_expenses",
+                "company": "NAB",
+                "value": "-10348",
+                "raw_value": "-10348",
+                "unit": "AUD million",
+                "basis": "statutory",
+                "scope": "Group",
+                "period_kind": "annual",
+                "period_end": "2025-09-30",
+                "report_year": 2025,
+                "column": 1,
+                "source_id": "nab_ar25:full:p093:statement:statutory_operating_expenses",
+                "header_ids": [],
+                "record_id": "nab_ar25:full:p093:statement:statutory_operating_expenses",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab_ar25",
+                  "document_title": "NAB FY2025 Annual Report",
+                  "pdf_page": 93,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                  "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                  "document_role": "supporting",
+                  "report_section": "Group or general disclosure"
+                },
+                "row_quote": "Operating expenses | FY2025: -10348 | FY2024: -10012 | AUD million | NAB Group statutory basis",
+                "binding_status": "two_pdf_extractors_agree; financial_performance_totals_reconciled"
+              },
+              {
+                "metric": "statutory_operating_expenses",
+                "company": "NAB",
+                "value": "-10012",
+                "raw_value": "-10012",
+                "unit": "AUD million",
+                "basis": "statutory",
+                "scope": "Group",
+                "period_kind": "annual",
+                "period_end": "2024-09-30",
+                "report_year": 2025,
+                "column": 2,
+                "source_id": "nab_ar25:full:p093:statement:statutory_operating_expenses",
+                "header_ids": [],
+                "record_id": "nab_ar25:full:p093:statement:statutory_operating_expenses",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab_ar25",
+                  "document_title": "NAB FY2025 Annual Report",
+                  "pdf_page": 93,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                  "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                  "document_role": "supporting",
+                  "report_section": "Group or general disclosure"
+                },
+                "row_quote": "Operating expenses | FY2025: -10348 | FY2024: -10012 | AUD million | NAB Group statutory basis",
+                "binding_status": "two_pdf_extractors_agree; financial_performance_totals_reconciled"
+              }
+            ],
+            "presentations": [
+              {
+                "value": "10348",
+                "representation": "expense_magnitude",
+                "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+                "transformation": "abs(source_value)",
+                "source_value": "-10348"
+              },
+              {
+                "value": "10012",
+                "representation": "expense_magnitude",
+                "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+                "transformation": "abs(source_value)",
+                "source_value": "-10012"
+              }
+            ],
+            "source_signed_difference": "-336",
+            "arithmetic": "Python Decimal",
+            "note": "Chronological change: later minus earlier."
+          }
+        ],
+        "issues": []
+      }
+    ]
+  },
+  "narrative_request": {
+    "status": "search",
+    "requests": [
+      {
+        "topic": "general",
+        "company": "NAB",
+        "year": 2025,
+        "query": "Explain NAB FY2025 reported Why did NAB statutory operating expenses increase in FY2025? On the statutory reporting basis..",
+        "followup": "Explain NAB FY2025 disclosures relevant to: Why did NAB statutory operating expenses increase in FY2025? On the statutory reporting basis."
+      }
+    ],
+    "notes": [],
+    "comparative": true,
+    "amount_requested": false,
+    "question": "Why did NAB statutory operating expenses increase in FY2025? On the statutory reporting basis.",
+    "topic": "general",
+    "company": "NAB",
+    "year": 2025,
+    "source_documents": [
+      "nab_ar25"
+    ]
+  },
+  "research_coverage": [
+    {
+      "company": "NAB",
+      "year": 2025,
+      "topic": "general",
+      "sections": 1
+    }
+  ],
+  "research_searches": [
+    {
+      "query": "Why did NAB statutory operating expenses increase in FY2025? On the statutory reporting basis.",
+      "scope": "NAB full-report prose",
+      "relevant_sections": 1,
+      "ranked_sources": [
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab_ar25",
+            "document_title": "NAB FY2025 Annual Report",
+            "pdf_page": 93,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+            "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+            "document_role": "supporting",
+            "report_section": "Group or general disclosure"
+          },
+          "score": 10.847947912333929
+        }
+      ]
+    }
+  ],
+  "full_report_search": true,
+  "interpretation": {
+    "retrieval_question": "Explain NAB FY2025 reported Why did NAB statutory operating expenses increase in FY2025? On the statutory reporting basis..",
+    "notes": []
+  },
+  "route": "narrative",
+  "generation": {
+    "status": "source_selected",
+    "model": "qwen3:8b",
+    "method": "extractive_selection",
+    "timing": {
+      "total_duration": 1184251800,
+      "load_duration": 5723400,
+      "prompt_eval_count": 438,
+      "eval_count": 10
+    },
+    "selected_passage_ids": [
+      "P1"
+    ],
+    "missing_scopes": [],
+    "literal_source_match": true,
+    "seconds": 1.2548706000088714
+  },
+  "premise_check": [
+    {
+      "metric": "statutory_operating_expenses",
+      "matches_question": true
+    }
+  ],
+  "version": "fintrace-conversational-development",
+  "seconds": 1.5354018000070937,
+  "presentation": {
+    "paragraphs": [
+      {
+        "text": "NAB's statutory operating expenses was 10,012 AUD million for the year ended 30 September 2024 (statutory basis, Group). This shows the expense magnitude; the signed source value remains available in the workings. NAB's statutory operating expenses was 10,348 AUD million for the year ended 30 September 2025 (statutory basis, Group). This shows the expense magnitude; the signed source value remains available in the workings.",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab_ar25",
+            "document_title": "NAB FY2025 Annual Report",
+            "pdf_page": 93,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+            "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+            "document_role": "supporting",
+            "report_section": "Group or general disclosure"
+          }
+        ],
+        "kind": "numeric"
+      },
+      {
+        "text": "For NAB the measure, the comparison from 2024-09-30 to 2025-09-30 gives an increase of 336 AUD million.",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab_ar25",
+            "document_title": "NAB FY2025 Annual Report",
+            "pdf_page": 93,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+            "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+            "document_role": "supporting",
+            "report_section": "Group or general disclosure"
+          }
+        ],
+        "kind": "calculation"
+      },
+      {
+        "text": "NAB FY2025 reports: \"Operating expenses increased by $336 million or 3.4%. This was primarily driven by payroll review and remediation costs and higher personnel expenses due to an increase in average FTE and salary and related costs, together with continued investment in technology and compliance capabilities including fraud and cyber security. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations, and decreased spend associated with the acquisition, integration and closure of Group businesses, combined with lower costs related to the enforceable undertaking (EU) with AUSTRAC.\"",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab_ar25",
+            "document_title": "NAB FY2025 Annual Report",
+            "pdf_page": 93,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+            "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+            "document_role": "supporting",
+            "report_section": "Group or general disclosure"
+          }
+        ],
+        "kind": "narrative"
+      }
+    ],
+    "qualifications": [
+      "Cited passages support only what the source explicitly discloses. Quoted figures are not newly calculated results or a complete review of every report.",
+      "The movement is checked first; explanatory passages are restricted to its source report(s). Different reporting bases are not interchangeable.",
+      "For the stated FY2025 movement, checking FY2024 to FY2025 on a compatible reporting basis."
+    ],
+    "important_notes": [
+      "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations.",
+      "CBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready."
+    ],
+    "arithmetic": "deterministic",
+    "source_values_unchanged": true
+  },
+  "effective_question": "Why did NAB statutory operating expenses increase in FY2025?",
+  "ui_scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "NAB",
+      "year": "2025"
+    },
+    "summary": "NAB / FY2025",
+    "notes": [],
+    "effective_question": "Why did NAB statutory operating expenses increase in FY2025?"
+  },
+  "display_text": "Question scope: NAB / FY2025\n\nNAB's statutory operating expenses was 10,012 AUD million for the year ended 30 September 2024 (statutory basis, Group). This shows the expense magnitude; the signed source value remains available in the workings. NAB's statutory operating expenses was 10,348 AUD million for the year ended 30 September 2025 (statutory basis, Group). This shows the expense magnitude; the signed source value remains available in the workings. [NAB FY2025 Annual Report, PDF page 93]\n\nFor NAB the measure, the comparison from 2024-09-30 to 2025-09-30 gives an increase of 336 AUD million. [NAB FY2025 Annual Report, PDF page 93]\n\nNAB FY2025 reports: \"Operating expenses increased by $336 million or 3.4%. This was primarily driven by payroll review and remediation costs and higher personnel expenses due to an increase in average FTE and salary and related costs, together with continued investment in technology and compliance capabilities including fraud and cyber security. This was partially offset by productivity benefits achieved through continued process improvements and simplification of the Group’s operations, and decreased spend associated with the acquisition, integration and closure of Group businesses, combined with lower costs related to the enforceable undertaking (EU) with AUSTRAC.\" [NAB FY2025 Annual Report, PDF page 93]\n\nThese are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations.\nCBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready.\nCited passages support only what the source explicitly discloses. Quoted figures are not newly calculated results or a complete review of every report.\nThe movement is checked first; explanatory passages are restricted to its source report(s). Different reporting bases are not interchangeable.\nFor the stated FY2025 movement, checking FY2024 to FY2025 on a compatible reporting basis."
+}

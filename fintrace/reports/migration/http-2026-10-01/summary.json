@@ -1,0 +1,17 @@
+{
+  "before": {
+    "release_id": "current",
+    "unchanged": true,
+    "errors": [],
+    "quality_approved": false
+  },
+  "after": {
+    "release_id": "current",
+    "unchanged": true,
+    "errors": [],
+    "quality_approved": false
+  },
+  "http_cases": 9,
+  "checks": "passed; exposed regression, not independent accuracy",
+  "note": "All first responses are preserved. Assertions use source-checked development expectations."
+}

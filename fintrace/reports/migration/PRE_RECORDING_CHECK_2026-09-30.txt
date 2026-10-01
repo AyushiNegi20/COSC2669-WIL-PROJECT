@@ -1,0 +1,143 @@
+FinTrace pre-recording verification
+30 September 2026
+
+Purpose and boundaries
+
+Read-only verification of the current demo and presentation claims. No source,
+configuration, model, manifest, deck or historical evaluation files were changed.
+Generated test outputs were saved in new timestamped folders. No commits or pushes.
+This is an AI-assisted audit and rerun of exposed questions, not a fresh blind
+assessment, independent human audit, or user study. Review these findings as a team.
+
+Candidate
+
+Commit: 289f3a39fa8adaa83038118e7335d7d33807f2d8
+Manifest SHA256: e3345d286daf6f772150e9eca1d672b627f0d54d728ef191a55d7e1bbc66b744
+Entry point: serve_fintrace_demo.build_backend()
+Model: local Ollama qwen3:8b, config/demo_local8b.json
+Working tree clean before and after; integrity unchanged before and after runs.
+The integrity output's quality_approved=false is not a correctness score. Hash
+verification establishes unchanged files, not answer quality.
+
+Executed checks
+
+1. Python: python -X utf8 -m unittest discover -s tests
+   597 tests, 20.090 seconds, OK. Includes installation-tool tests added after
+   the earlier 584-test record. Do not add those counts together.
+2. Frontend: node --test web/ui-model.test.mjs web/scope-controls.test.mjs
+   10 tests passed, zero failures. These are unit tests, not a visual browser audit.
+3. Actual demo backend: tools/evaluate_release_candidate.py with the existing
+   FinTrace-Demo-Readiness/questions.json file. The runner passes questions and
+   scope to the backend, not expected answers. 24 first responses, zero runtime
+   errors, integrity unchanged. No evaluator reruns replaced unfavourable cases.
+4. Numerical wording: tools/evaluate_wording.py --stage numeric --families-only
+   232/232 checks passed. Historical unsupported-metric controls and narrative
+   questions are intentionally not included in this numerical-only run.
+   This tests consistency with canonical requests, not independent correctness.
+5. HTTP: tools/smoke_demo_coverage.py
+   Nine /ask requests passed the existing assertions. Frontend page, health,
+   JavaScript asset and a source PDF also served successfully. The temporary
+   server shut down after the test. No interactive visual browser audit performed.
+
+New raw outputs, relative to FinTrace-Backend
+
+reports/runs/release-20260930T090248Z/
+reports/runs/wording-20260930T090615Z/
+reports/runs/coverage-http-20260930T090812Z/
+
+24-question response review
+
+All structured numerical cell signatures matched the prior saved run, including
+company, metric, value, unit, basis, entity scope, period and report year. All
+checked calculation signatures also matched. Presentation paragraph text was
+identical on 23/24 cases; D07 changed from quoted evidence to generated wording.
+No new wrong financial figures or misleading citations were identified in this
+review. This observation applies to the reviewed sample, not arbitrary queries.
+
+The automatic statuses are unchanged: 11 source_bound_answer, 1 evidence_answer,
+5 partial_answer and 7 unable_to_verify. Status labels are not correctness grades.
+
+Content-based audit, with the rule that an answer must supply the requested core
+information and retain its relevant basis/source; verbosity alone is a caveat:
+
+15 sufficiently answered:
+D01, D02, D03, D04, D07, D08, D09, D10, D11, D12, D13, D14, D19, D20, D23.
+2 limited/partial responses: D05 and D15.
+1 refusal despite available evidence: D06.
+6 appropriate refusals under the declared product scope:
+D16, D17, D18, D21, D22, D24.
+Total: 24.
+
+Do not call this 100% accuracy or convert the categories into an accuracy headline
+without defining the denominator and treating scope limitations explicitly.
+D05 asks for a technology-versus-branches allocation not established by the
+grouped table; it is not simply a missing answerable numerical lookup.
+D16 cross-bank comparisons and D18 FY2023 are product boundaries, not proof that
+the PDFs contain no relevant information.
+
+Corrections to the earlier evaluation summary and my earlier chat feedback
+
+- D20 was discussed correctly in the original report but omitted from its
+  approximately-12 complete-answer list. It supplies the two NAB figures, a
+  577m change and comparative-vintage disclosure.
+- D13's original raw presentation already contains salary inflation, technology,
+  additional bankers, payroll remediation and productivity offsets. The summary
+  saying it gave figures but no drivers is inaccurate. The rerun's presentation
+  is identical. This is a grading correction, not a new software improvement.
+- D07's original response includes the cash-basis definition, although it opens
+  with an adjacent ROE definition and is verbose. The rerun explains cash basis
+  directly, then includes unnecessary ROE material. Under the stated core-answer
+  rule it is sufficient with a relevance/verbosity caveat, rather than unanswered.
+- Consequently the earlier chat breakdown of 13 complete, 4 partial, 1 over-refusal
+  and 6 scope refusals should not be presented as a settled audited score.
+  The 15/2/1/6 breakdown above is the corrected AI-assisted content review, not
+  an independently certified replacement score. Preserve original records and
+  have the team check these explicit classification decisions.
+
+Remaining limitations
+
+D05: Gives correct grouped investment amounts and warns that technology versus
+branches cannot be ranked separately. It is verbose and shows FY2023 comparatives
+from the FY2024 report when no year is specified.
+D06: Refuses CBA cost-to-income despite 45.7% appearing in FY2025 PDF page 18.
+D15: Supplies CET1 movement components, not the complete 12.35% to 11.70% headline.
+D07: Still includes unnecessary ROE discussion after the useful definition.
+Narrative/definition behaviour and timing can vary with the local model.
+
+Latency and recording
+
+24-question rerun median: 0.314678 seconds (includes very fast refusals).
+Maximum: 61.815220 seconds, first profit question.
+D07: 42.89 seconds; D04: 21.77 seconds.
+These request times exclude backend construction and should not be advertised as
+end-to-end startup performance. The earlier preserved run had a 178.7-second
+outlier, which remains part of the evidence. A median alone conceals that risk.
+Do not promise every answer in seven seconds. Warm the configured app before
+recording, run one request at a time, and preserve honest timing if the video is
+edited. A recorded demonstration is not a latency benchmark.
+
+Presentation examples confirmed
+
+HTTP profit question: CBA FY2025 cash profit 10,252m, continuing operations;
+statutory profit 10,116m, including discontinued operations. Both cite PDF p18.
+Do not describe their difference as only an accounting-basis difference.
+
+HTTP mentor question: Which sector did CBA invest more in FY2025?
+Total internal investment spend 2,297m; largest grouped category Productivity
+and growth 1,023m; biggest absolute increase Infrastructure and branch
+refurbishment +128m. Answer must retain internal-spending interpretation, not
+industry lending or an isolated technology budget. The response passed the
+existing HTTP regression and preserves this distinction.
+
+Customer-deposit calculation: 851,682m to 908,812m, increase 57,130m or 6.71%.
+The question file's old expected 834,259m is retained as historical evidence of
+an incorrect key; it was not used as the numerical grading target.
+
+Recommendation
+
+No new code change is needed on the evidence from this rerun. Keep the tested
+candidate unchanged for recording. Update the deck's test counts, distinguish
+regression checks from answer-quality review, disclose coverage/completeness and
+latency limits, and do not present perfect accuracy or guaranteed business gains.
+This reduces known recording risks but cannot guarantee zero surprises on every
+unseen question, another laptop, or future model run.

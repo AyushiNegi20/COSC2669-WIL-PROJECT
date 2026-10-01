@@ -1,0 +1,495 @@
+{
+  "question": "What was CBA profit in FY2025?",
+  "plan": {
+    "companies": [
+      "CBA"
+    ],
+    "value_years": [
+      2025
+    ],
+    "report_year": null,
+    "annual_report_only": false,
+    "ambiguity": null,
+    "branches": [
+      "CBA"
+    ],
+    "intent": "find",
+    "metrics": [
+      "cash_profit",
+      "statutory_npat"
+    ],
+    "definition_term": null,
+    "behavior": "answer",
+    "reason": null,
+    "original_question": "What was CBA cash profit and statutory net profit after tax in FY2025?",
+    "normalised_question": "What was CBA cash profit and statutory net profit after tax in FY2025?",
+    "corrections": [],
+    "metric_candidates": [
+      {
+        "metric": "statutory_npat",
+        "similarity": 0.5721598863601685
+      },
+      {
+        "metric": "cash_profit",
+        "similarity": 0.5133702158927917
+      },
+      {
+        "metric": "basic_cash_eps",
+        "similarity": 0.3783278465270996
+      }
+    ],
+    "metric_resolution": "explicit",
+    "needs_human_review": true,
+    "semantic_margin": 0.05878967046737671,
+    "search_question": "What was CBA cash profit and statutory net profit after tax in FY2025?\nFinancial concepts: cash profit cash earnings; statutory net profit attributable to owners",
+    "period_note": "Preserve each source period end; CBA and NAB fiscal years do not end on the same date.",
+    "version": "v9",
+    "requests": [
+      {
+        "id": "request-1",
+        "company": "CBA",
+        "metric": "cash_profit",
+        "intent": "find",
+        "scope": null,
+        "value_years": [
+          2025
+        ],
+        "report_year": null,
+        "definition_contrast": false
+      },
+      {
+        "id": "request-2",
+        "company": "CBA",
+        "metric": "statutory_npat",
+        "intent": "find",
+        "scope": null,
+        "value_years": [
+          2025
+        ],
+        "report_year": null,
+        "definition_contrast": false
+      }
+    ],
+    "constraints": {
+      "report_year": null,
+      "entity_scope": "Group",
+      "requested_years": [
+        2025
+      ],
+      "preserve_source_basis": true,
+      "preserve_period_kind": true,
+      "requires_new_calculation": false,
+      "cash_profit_cashflow_distinction": false
+    },
+    "requirements_complete": false,
+    "operation_request": {
+      "kind": "none",
+      "order": null,
+      "expense_magnitude": true,
+      "relative_percent": false
+    }
+  },
+  "operation_request": {
+    "kind": "none",
+    "order": null,
+    "expense_magnitude": true,
+    "relative_percent": false
+  },
+  "answer": {
+    "status": "source_bound_answer",
+    "mode": "source_cell_templates",
+    "parts": [
+      {
+        "request": {
+          "id": "request-1",
+          "company": "CBA",
+          "metric": "cash_profit",
+          "intent": "find",
+          "scope": null,
+          "value_years": [
+            2025
+          ],
+          "report_year": null,
+          "definition_contrast": false
+        },
+        "claims": [
+          {
+            "text": "CBA cash profit: 10,252 AUD million; annual ending 2025-06-30, cash, continuing operations.",
+            "cell": {
+              "metric": "cash_profit",
+              "company": "CBA",
+              "value": "10252",
+              "raw_value": "10,252",
+              "unit": "AUD million",
+              "basis": "cash",
+              "scope": "continuing",
+              "period_kind": "annual",
+              "period_end": "2025-06-30",
+              "report_year": 2025,
+              "column": 1,
+              "source_id": "cba25:p018:b002:r4",
+              "header_ids": [
+                "cba25:p018:b002:r0",
+                "cba25:p018:b002:r1",
+                "cba25:p018:b002:r2"
+              ],
+              "record_id": "v4:cba25:p018:b002:r4",
+              "source": {
+                "company": "CBA",
+                "document_id": "cba25",
+                "document_title": "CBA FY2025 Profit Announcement",
+                "pdf_page": 18,
+                "printed_page": {
+                  "method": "docling_footer_candidate",
+                  "reviewed": false,
+                  "value": "4"
+                },
+                "report_period_end": "2025-06-30",
+                "report_year": 2025,
+                "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+              },
+              "row_quote": "Cash net profit after tax ($M) | 10,252 | 9,836 | 4 | 5,120 | 5,132 | -",
+              "binding_status": "rule_bound_development_not_human_certified"
+            },
+            "evidence": [
+              {
+                "source_id": "cba25:p018:b002:r4",
+                "quote": "Cash net profit after tax ($M) | 10,252 | 9,836 | 4 | 5,120 | 5,132 | -",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 18,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "4"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                }
+              },
+              {
+                "source_id": "cba25:p018:b002:r0",
+                "quote": " | Full Year Ended |  |  | Half Year Ended |  | ",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 18,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "4"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                }
+              },
+              {
+                "source_id": "cba25:p018:b002:r1",
+                "quote": "Key Performance Indicators ¹ | 30 Jun 25 | 30 Jun 24 | Jun 25 vs Jun 24 % | 30 Jun 25 | 31 Dec 24 | Jun 25 vs Dec 24 %",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 18,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "4"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                }
+              },
+              {
+                "source_id": "cba25:p018:b002:r2",
+                "quote": "Group Performance from continuing operations |  |  |  |  |  | ",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 18,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "4"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                }
+              }
+            ],
+            "method": "deterministic_template_from_bound_source_cell",
+            "presentation": {
+              "value": "10252",
+              "representation": "source_signed",
+              "note": "Original source sign preserved.",
+              "transformation": "identity",
+              "source_value": "10252"
+            }
+          }
+        ],
+        "calculations": [],
+        "issues": []
+      },
+      {
+        "request": {
+          "id": "request-2",
+          "company": "CBA",
+          "metric": "statutory_npat",
+          "intent": "find",
+          "scope": null,
+          "value_years": [
+            2025
+          ],
+          "report_year": null,
+          "definition_contrast": false
+        },
+        "claims": [
+          {
+            "text": "CBA statutory net profit after tax: 10,116 AUD million; annual ending 2025-06-30, statutory, including discontinued operations.",
+            "cell": {
+              "metric": "statutory_npat",
+              "company": "CBA",
+              "value": "10116",
+              "raw_value": "10,116",
+              "unit": "AUD million",
+              "basis": "statutory",
+              "scope": "including_discontinued",
+              "period_kind": "annual",
+              "period_end": "2025-06-30",
+              "report_year": 2025,
+              "column": 1,
+              "source_id": "cba25:p018:b002:r14",
+              "header_ids": [
+                "cba25:p018:b002:r0",
+                "cba25:p018:b002:r1",
+                "cba25:p018:b002:r13"
+              ],
+              "record_id": "v4:cba25:p018:b002:r14",
+              "source": {
+                "company": "CBA",
+                "document_id": "cba25",
+                "document_title": "CBA FY2025 Profit Announcement",
+                "pdf_page": 18,
+                "printed_page": {
+                  "method": "docling_footer_candidate",
+                  "reviewed": false,
+                  "value": "4"
+                },
+                "report_period_end": "2025-06-30",
+                "report_year": 2025,
+                "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+              },
+              "row_quote": "Statutory net profit after tax ($M) | 10,116 | 9,394 | 8 | 4,982 | 5,134 | (3)",
+              "binding_status": "rule_bound_development_not_human_certified"
+            },
+            "evidence": [
+              {
+                "source_id": "cba25:p018:b002:r14",
+                "quote": "Statutory net profit after tax ($M) | 10,116 | 9,394 | 8 | 4,982 | 5,134 | (3)",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 18,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "4"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                }
+              },
+              {
+                "source_id": "cba25:p018:b002:r0",
+                "quote": " | Full Year Ended |  |  | Half Year Ended |  | ",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 18,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "4"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                }
+              },
+              {
+                "source_id": "cba25:p018:b002:r1",
+                "quote": "Key Performance Indicators ¹ | 30 Jun 25 | 30 Jun 24 | Jun 25 vs Jun 24 % | 30 Jun 25 | 31 Dec 24 | Jun 25 vs Dec 24 %",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 18,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "4"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                }
+              },
+              {
+                "source_id": "cba25:p018:b002:r13",
+                "quote": "Group Performance including discontinued operations |  |  |  |  |  | ",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 18,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "4"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                }
+              }
+            ],
+            "method": "deterministic_template_from_bound_source_cell",
+            "presentation": {
+              "value": "10116",
+              "representation": "source_signed",
+              "note": "Original source sign preserved.",
+              "transformation": "identity",
+              "source_value": "10116"
+            }
+          }
+        ],
+        "calculations": [],
+        "issues": []
+      }
+    ],
+    "issues": [],
+    "calculation_coverage": {
+      "required": 0,
+      "completed": 0
+    },
+    "warning": "Development source binding, not independently human-certified financial advice.",
+    "limitations": [
+      "Profit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable."
+    ]
+  },
+  "retrieval": {
+    "tokens": 1025,
+    "omissions": [],
+    "numeric_binding_search": "All indexed financial rows matching the requested bank and metric, followed by strict cell binding; not top-k retrieval accuracy."
+  },
+  "seconds": 0.21101489997818135,
+  "version": "fintrace-conversational-development",
+  "interpretation": {
+    "retrieval_question": "What was CBA cash profit and statutory net profit after tax in FY2025?",
+    "notes": []
+  },
+  "question_contract": {
+    "retrieval_question": "What was CBA cash profit and statutory net profit after tax in FY2025?",
+    "notes": [
+      "Profit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable."
+    ],
+    "metric_mapping": "explicit aliases only for numerical answers"
+  },
+  "binding_validation": {
+    "passed": true,
+    "issues": []
+  },
+  "route": "numeric",
+  "generation": {
+    "status": "skipped",
+    "reason": "Numbers, calculations and guards use source templates; no generative model was called."
+  },
+  "presentation": {
+    "paragraphs": [
+      {
+        "text": "CBA's cash profit was 10,252 AUD million for the year ended 30 June 2025 (cash basis, continuing operations).",
+        "citations": [
+          {
+            "company": "CBA",
+            "document_id": "cba25",
+            "document_title": "CBA FY2025 Profit Announcement",
+            "pdf_page": 18,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "4"
+            },
+            "report_period_end": "2025-06-30",
+            "report_year": 2025,
+            "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+          }
+        ],
+        "kind": "numeric"
+      },
+      {
+        "text": "CBA's statutory profit after tax was 10,116 AUD million for the year ended 30 June 2025 (statutory basis, including discontinued operations).",
+        "citations": [
+          {
+            "company": "CBA",
+            "document_id": "cba25",
+            "document_title": "CBA FY2025 Profit Announcement",
+            "pdf_page": 18,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "4"
+            },
+            "report_period_end": "2025-06-30",
+            "report_year": 2025,
+            "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+          }
+        ],
+        "kind": "numeric"
+      }
+    ],
+    "qualifications": [
+      "Profit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable."
+    ],
+    "important_notes": [],
+    "arithmetic": "deterministic",
+    "source_values_unchanged": true
+  },
+  "effective_question": "What was CBA profit in FY2025?",
+  "ui_scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "2025"
+    },
+    "summary": "CBA / FY2025",
+    "notes": [],
+    "effective_question": "What was CBA profit in FY2025?"
+  },
+  "display_text": "Question scope: CBA / FY2025\n\nCBA's cash profit was 10,252 AUD million for the year ended 30 June 2025 (cash basis, continuing operations). [CBA FY2025 Profit Announcement, PDF page 18]\n\nCBA's statutory profit after tax was 10,116 AUD million for the year ended 30 June 2025 (statutory basis, including discontinued operations). [CBA FY2025 Profit Announcement, PDF page 18]\n\nProfit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable."
+}

@@ -35,5 +35,34 @@ Use a short checkout path, such as `C:\Projects\WIL`, outside cloud-sync folders
 
 ## Verification
 
-Migration verification results are recorded after checks in the short checkout.
-They are portability and regression checks, not a new answer-accuracy score.
+Verified the WIL import commit `5dfff80` from the short local worktree
+`C:\Users\lenovo\Claude\WIL-Demo`, using the existing configured Python environment.
+This reuses dependencies and model artifacts; it is not a fresh-machine install.
+
+- Source integrity passed before copying. WIL integrity passed before and after
+  the HTTP run with the unchanged manifest and no mismatches.
+- 597 Python regression tests passed; 10 frontend unit tests passed.
+- The three existing Walert tests passed. Milestone artifacts were unchanged.
+- All nine HTTP question checks passed the existing assertions, along with
+  frontend HTML, health, JavaScript and source-PDF delivery checks.
+- The pinned local Qwen3 8B model was used. Ollama initially was not running;
+  smoke/wording runners failed at startup before answering any questions. The
+  service was started and the nine-question HTTP run then completed once.
+- Six HTTP responses were source-bound answers, two were partial answers and
+  one was an appropriate unavailable-year refusal. These status labels are not
+  an independent correctness grade. The slowest request took 87.15 seconds
+  during cold retrieval/model work. Warm-up and latency limitations still apply.
+- A file-by-file comparison found only five imported files changed: the README,
+  setup release location and three handoff/setup documents. Runtime code, tests,
+  frontend, source configuration and integrity manifest remained byte-identical.
+- No credential-pattern matches were found in the staged imported text. Only
+  tracked source files were imported; local data/models remain ignored.
+
+The first completed HTTP responses and summary are retained in
+[the migration run](../reports/migration/http-2026-10-01/summary.json).
+The existing [30 September pre-recording audit](../reports/migration/PRE_RECORDING_CHECK_2026-09-30.txt)
+is preserved separately and is not relabelled as a new run. Its 232 numerical
+wording checks were not repeated for this packaging-only import.
+
+These are portability and regression checks, not a new answer-accuracy score.
+There was no interactive visual browser audit or clean-machine installation.

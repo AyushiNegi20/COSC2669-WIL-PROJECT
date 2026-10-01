@@ -1,0 +1,106 @@
+{
+  "question": "Using Note 2, reconcile NAB FY2025 cash earnings to statutory profit attributable to owners.",
+  "route": "numeric",
+  "generation": {
+    "status": "skipped",
+    "reason": "checked_segment_reconciliation"
+  },
+  "coverage": {
+    "kind": "checked_segment_reconciliation"
+  },
+  "answer": {
+    "status": "source_bound_answer",
+    "summary_replaces_detail": true,
+    "summary_statements": [
+      {
+        "text": "NAB Group FY2025: cash earnings 7091, hedging and fair-value adjustment +28, and other non-cash items -331 sum to 6788 attributable to owners from continuing operations. Adding the signed discontinued-operations adjustment -29 gives statutory profit attributable to owners of 6759. All figures are AUD million; adjustments retain their source signs. Both equations have been checked with Decimal arithmetic.",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab_ar25",
+            "document_title": "NAB FY2025 Annual Report",
+            "pdf_page": 159,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+            "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+            "document_role": "supporting",
+            "report_section": "Group or general disclosure"
+          }
+        ],
+        "kind": "calculation"
+      }
+    ],
+    "source_excerpts": [
+      {
+        "source": {
+          "company": "NAB",
+          "document_id": "nab_ar25",
+          "document_title": "NAB FY2025 Annual Report",
+          "pdf_page": 159,
+          "report_year": 2025,
+          "report_period_end": "2025-09-30",
+          "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+          "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+          "document_role": "supporting",
+          "report_section": "Group or general disclosure"
+        },
+        "heading": "checked_segment_reconciliation",
+        "excerpts": [
+          {
+            "source_id": "nab_ar25:full:p159:checked_table",
+            "quote": "underlying profit: FY2025: 10965 AUD million\ncash earnings: FY2025: 7091 AUD million\nhedging adjustment: FY2025: 28 AUD million\nother non cash adjustments: FY2025: -331 AUD million\ncontinuing owners profit: FY2025: 6788 AUD million\ndiscontinued owners loss: FY2025: -29 AUD million\nstatutory owners profit: FY2025: 6759 AUD million"
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "Group figures, with source report year and period retained. Two extractors agree and the disclosed accounting totals reconcile."
+    ]
+  },
+  "version": "fintrace-conversational-development",
+  "seconds": 0.007729899982223287,
+  "presentation": {
+    "paragraphs": [
+      {
+        "text": "NAB Group FY2025: cash earnings 7091, hedging and fair-value adjustment +28, and other non-cash items -331 sum to 6788 attributable to owners from continuing operations. Adding the signed discontinued-operations adjustment -29 gives statutory profit attributable to owners of 6759. All figures are AUD million; adjustments retain their source signs. Both equations have been checked with Decimal arithmetic.",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab_ar25",
+            "document_title": "NAB FY2025 Annual Report",
+            "pdf_page": 159,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+            "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+            "document_role": "supporting",
+            "report_section": "Group or general disclosure"
+          }
+        ],
+        "kind": "calculation"
+      }
+    ],
+    "qualifications": [
+      "Group figures, with source report year and period retained. Two extractors agree and the disclosed accounting totals reconcile."
+    ],
+    "important_notes": [],
+    "arithmetic": "deterministic",
+    "source_values_unchanged": true
+  },
+  "effective_question": "Using Note 2, reconcile NAB FY2025 cash earnings to statutory profit attributable to owners.",
+  "ui_scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "NAB",
+      "year": "2025"
+    },
+    "summary": "NAB / FY2025",
+    "notes": [],
+    "effective_question": "Using Note 2, reconcile NAB FY2025 cash earnings to statutory profit attributable to owners."
+  },
+  "display_text": "Question scope: NAB / FY2025\n\nNAB Group FY2025: cash earnings 7091, hedging and fair-value adjustment +28, and other non-cash items -331 sum to 6788 attributable to owners from continuing operations. Adding the signed discontinued-operations adjustment -29 gives statutory profit attributable to owners of 6759. All figures are AUD million; adjustments retain their source signs. Both equations have been checked with Decimal arithmetic. [NAB FY2025 Annual Report, PDF page 159]\n\nGroup figures, with source report year and period retained. Two extractors agree and the disclosed accounting totals reconcile."
+}

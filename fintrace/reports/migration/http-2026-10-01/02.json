@@ -1,0 +1,620 @@
+{
+  "question": "Why did NAB credit impairment charge rise in FY2025?",
+  "answer": {
+    "status": "partial_answer",
+    "mode": "report_narrative",
+    "source_excerpts": [
+      {
+        "heading": "NAB FY2025 / general: Full-report prose search. Group or general disclosure. Year comparison: September 2025 v September 2024",
+        "source": {
+          "company": "NAB",
+          "document_id": "nab25",
+          "document_title": "NAB FY2025 Full Year Results",
+          "pdf_page": 14,
+          "report_year": 2025,
+          "report_period_end": "2025-09-30",
+          "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+          "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+          "document_role": "primary",
+          "report_section": "Group or general disclosure"
+        },
+        "excerpts": [
+          {
+            "source_id": "nab25:full:p014:b008",
+            "quote": "Credit impairment charge increased by $105 million or 14.4%, driven by a higher level of individually assessed credit impairment charge primarily in Corporate and Institutional Banking. This was partially offset by a lower level of collective credit impairment charge."
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "CBA and NAB prose search includes all six reports. Retrieved passages are not exhaustive; unvalidated tables and image-only content are not calculation-ready.",
+      "Cited passages support only what the source explicitly discloses. Quoted figures are not newly calculated results or a complete review of every report.",
+      "The movement is checked first; explanatory passages are restricted to its source report(s). Different reporting bases are not interchangeable.",
+      "For the stated FY2025 movement, checking FY2024 to FY2025 on a compatible reporting basis."
+    ],
+    "message": "NAB FY2025 reports: \"Credit impairment charge increased by $105 million or 14.4%, driven by a higher level of individually assessed credit impairment charge primarily in Corporate and Institutional Banking. This was partially offset by a lower level of collective credit impairment charge.\"",
+    "generated_explanation": {
+      "statements": [
+        {
+          "text": "NAB FY2025 reports: \"Credit impairment charge increased by $105 million or 14.4%, driven by a higher level of individually assessed credit impairment charge primarily in Corporate and Institutional Banking. This was partially offset by a lower level of collective credit impairment charge.\"",
+          "evidence_ids": [
+            "P1"
+          ],
+          "citations": [
+            {
+              "source_id": "nab25:full:p014:b008",
+              "quote": "Credit impairment charge increased by $105 million or 14.4%, driven by a higher level of individually assessed credit impairment charge primarily in Corporate and Institutional Banking. This was partially offset by a lower level of collective credit impairment charge.",
+              "period_context": "Year comparison: September 2025 v September 2024",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab25",
+                "document_title": "NAB FY2025 Full Year Results",
+                "pdf_page": 14,
+                "report_year": 2025,
+                "report_period_end": "2025-09-30",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+                "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                "document_role": "primary",
+                "report_section": "Group or general disclosure"
+              }
+            }
+          ],
+          "kind": "quotation"
+        }
+      ],
+      "method": "extractive_selection",
+      "validation": {
+        "literal_source_match": "passed",
+        "selection_relevance": "model_selected_not_independently_verified"
+      }
+    },
+    "important_notes": [
+      "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations."
+    ],
+    "parts": [
+      {
+        "request": {
+          "id": "request-1",
+          "company": "NAB",
+          "metric": "credit_impairment",
+          "intent": "compare",
+          "scope": null,
+          "value_years": [
+            2024,
+            2025
+          ],
+          "report_year": null,
+          "definition_contrast": false
+        },
+        "claims": [
+          {
+            "text": "NAB credit impairment charge (expense magnitude): 728 AUD million; 2024-09-30, cash, continuing. Positive expense magnitude; the source presents a deduction in brackets. Original signed value: -728.",
+            "cell": {
+              "metric": "credit_impairment",
+              "company": "NAB",
+              "value": "-728",
+              "raw_value": "(728)",
+              "unit": "AUD million",
+              "basis": "cash",
+              "scope": "continuing",
+              "period_kind": "annual",
+              "period_end": "2024-09-30",
+              "report_year": 2025,
+              "column": 2,
+              "source_id": "nab25:p013:b006:r7",
+              "header_ids": [
+                "nab25:p013:b006:r0",
+                "nab25:p013:b006:r1"
+              ],
+              "record_id": "v4:nab25:p013:b006:r7",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab25",
+                "document_title": "NAB FY2025 Full Year Results",
+                "pdf_page": 13,
+                "printed_page": {
+                  "method": "docling_footer_candidate",
+                  "reviewed": false,
+                  "value": "11"
+                },
+                "report_period_end": "2025-09-30",
+                "report_year": 2025,
+                "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+              },
+              "row_quote": "Credit impairment charge | (833) | (728) | 14.4 | (485) | (348) | 39.4",
+              "binding_status": "rule_bound_development_not_human_certified"
+            },
+            "evidence": [
+              {
+                "source_id": "nab25:p013:b006:r7",
+                "quote": "Credit impairment charge | (833) | (728) | 14.4 | (485) | (348) | 39.4",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p013:b006:r0",
+                "quote": " | Year to |  |  | Half Year to |  | ",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p013:b006:r1",
+                "quote": " | Sep 25 $m | Sep 24 $m | Sep 25 v Sep 24 % | Sep 25 $m | Mar 25 $m | Sep 25 v Mar 25 %",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              }
+            ],
+            "method": "deterministic_template_from_bound_source_cell",
+            "presentation": {
+              "value": "728",
+              "representation": "expense_magnitude",
+              "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+              "transformation": "abs(source_value)",
+              "source_value": "-728"
+            }
+          },
+          {
+            "text": "NAB credit impairment charge (expense magnitude): 833 AUD million; 2025-09-30, cash, continuing. Positive expense magnitude; the source presents a deduction in brackets. Original signed value: -833.",
+            "cell": {
+              "metric": "credit_impairment",
+              "company": "NAB",
+              "value": "-833",
+              "raw_value": "(833)",
+              "unit": "AUD million",
+              "basis": "cash",
+              "scope": "continuing",
+              "period_kind": "annual",
+              "period_end": "2025-09-30",
+              "report_year": 2025,
+              "column": 1,
+              "source_id": "nab25:p013:b006:r7",
+              "header_ids": [
+                "nab25:p013:b006:r0",
+                "nab25:p013:b006:r1"
+              ],
+              "record_id": "v4:nab25:p013:b006:r7",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab25",
+                "document_title": "NAB FY2025 Full Year Results",
+                "pdf_page": 13,
+                "printed_page": {
+                  "method": "docling_footer_candidate",
+                  "reviewed": false,
+                  "value": "11"
+                },
+                "report_period_end": "2025-09-30",
+                "report_year": 2025,
+                "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+              },
+              "row_quote": "Credit impairment charge | (833) | (728) | 14.4 | (485) | (348) | 39.4",
+              "binding_status": "rule_bound_development_not_human_certified"
+            },
+            "evidence": [
+              {
+                "source_id": "nab25:p013:b006:r7",
+                "quote": "Credit impairment charge | (833) | (728) | 14.4 | (485) | (348) | 39.4",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p013:b006:r0",
+                "quote": " | Year to |  |  | Half Year to |  | ",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p013:b006:r1",
+                "quote": " | Sep 25 $m | Sep 24 $m | Sep 25 v Sep 24 % | Sep 25 $m | Mar 25 $m | Sep 25 v Mar 25 %",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              }
+            ],
+            "method": "deterministic_template_from_bound_source_cell",
+            "presentation": {
+              "value": "833",
+              "representation": "expense_magnitude",
+              "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+              "transformation": "abs(source_value)",
+              "source_value": "-833"
+            }
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "change",
+            "left": "833",
+            "right": "728",
+            "absolute_change": "105",
+            "unit": "AUD million",
+            "formula": "left - right",
+            "operand_labels": [
+              "NAB credit_impairment 2025-09-30",
+              "NAB credit_impairment 2024-09-30"
+            ],
+            "source_cells": [
+              {
+                "metric": "credit_impairment",
+                "company": "NAB",
+                "value": "-833",
+                "raw_value": "(833)",
+                "unit": "AUD million",
+                "basis": "cash",
+                "scope": "continuing",
+                "period_kind": "annual",
+                "period_end": "2025-09-30",
+                "report_year": 2025,
+                "column": 1,
+                "source_id": "nab25:p013:b006:r7",
+                "header_ids": [
+                  "nab25:p013:b006:r0",
+                  "nab25:p013:b006:r1"
+                ],
+                "record_id": "v4:nab25:p013:b006:r7",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                },
+                "row_quote": "Credit impairment charge | (833) | (728) | 14.4 | (485) | (348) | 39.4",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              {
+                "metric": "credit_impairment",
+                "company": "NAB",
+                "value": "-728",
+                "raw_value": "(728)",
+                "unit": "AUD million",
+                "basis": "cash",
+                "scope": "continuing",
+                "period_kind": "annual",
+                "period_end": "2024-09-30",
+                "report_year": 2025,
+                "column": 2,
+                "source_id": "nab25:p013:b006:r7",
+                "header_ids": [
+                  "nab25:p013:b006:r0",
+                  "nab25:p013:b006:r1"
+                ],
+                "record_id": "v4:nab25:p013:b006:r7",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                },
+                "row_quote": "Credit impairment charge | (833) | (728) | 14.4 | (485) | (348) | 39.4",
+                "binding_status": "rule_bound_development_not_human_certified"
+              }
+            ],
+            "presentations": [
+              {
+                "value": "833",
+                "representation": "expense_magnitude",
+                "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+                "transformation": "abs(source_value)",
+                "source_value": "-833"
+              },
+              {
+                "value": "728",
+                "representation": "expense_magnitude",
+                "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+                "transformation": "abs(source_value)",
+                "source_value": "-728"
+              }
+            ],
+            "source_signed_difference": "-105",
+            "arithmetic": "Python Decimal",
+            "note": "Chronological change: later minus earlier.",
+            "relative_change_percent": "14.42307692307692307692307692"
+          }
+        ],
+        "issues": []
+      }
+    ]
+  },
+  "narrative_request": {
+    "status": "search",
+    "requests": [
+      {
+        "topic": "general",
+        "company": "NAB",
+        "year": 2025,
+        "query": "Explain NAB FY2025 reported Why did NAB credit impairment charge rise in FY2025? On the cash reporting basis..",
+        "followup": "Explain NAB FY2025 disclosures relevant to: Why did NAB credit impairment charge rise in FY2025? On the cash reporting basis."
+      }
+    ],
+    "notes": [],
+    "comparative": false,
+    "amount_requested": false,
+    "question": "Why did NAB credit impairment charge rise in FY2025? On the cash reporting basis.",
+    "topic": "general",
+    "company": "NAB",
+    "year": 2025,
+    "source_documents": [
+      "nab25"
+    ]
+  },
+  "research_coverage": [
+    {
+      "company": "NAB",
+      "year": 2025,
+      "topic": "general",
+      "sections": 1
+    }
+  ],
+  "research_searches": [
+    {
+      "query": "Why did NAB credit impairment charge rise in FY2025? On the cash reporting basis.",
+      "scope": "NAB full-report prose",
+      "relevant_sections": 1,
+      "ranked_sources": [
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 14,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "document_role": "primary",
+            "report_section": "Group or general disclosure"
+          },
+          "score": 33.31990679096995
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 26,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "document_role": "primary",
+            "report_section": "Group or general disclosure"
+          },
+          "score": 33.14591613342009
+        },
+        {
+          "source": {
+            "company": "NAB",
+            "document_id": "nab_ar25",
+            "document_title": "NAB FY2025 Annual Report",
+            "pdf_page": 93,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+            "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+            "document_role": "supporting",
+            "report_section": "Group or general disclosure"
+          },
+          "score": 32.56990679096995
+        }
+      ]
+    }
+  ],
+  "full_report_search": true,
+  "interpretation": {
+    "retrieval_question": "Explain NAB FY2025 reported Why did NAB credit impairment charge rise in FY2025? On the cash reporting basis..",
+    "notes": []
+  },
+  "route": "narrative",
+  "generation": {
+    "status": "source_selected",
+    "model": "qwen3:8b",
+    "method": "extractive_selection",
+    "timing": {
+      "total_duration": 25275709600,
+      "load_duration": 20605993300,
+      "prompt_eval_count": 374,
+      "eval_count": 10
+    },
+    "selected_passage_ids": [
+      "P1"
+    ],
+    "missing_scopes": [],
+    "literal_source_match": true,
+    "seconds": 25.34320239999215
+  },
+  "premise_check": [
+    {
+      "metric": "credit_impairment",
+      "matches_question": true
+    }
+  ],
+  "version": "fintrace-conversational-development",
+  "seconds": 87.14781850000145,
+  "presentation": {
+    "paragraphs": [
+      {
+        "text": "NAB's credit impairment charge was 728 AUD million for the year ended 30 September 2024 (cash basis, continuing operations). This shows the expense magnitude; the signed source value remains available in the workings. NAB's credit impairment charge was 833 AUD million for the year ended 30 September 2025 (cash basis, continuing operations). This shows the expense magnitude; the signed source value remains available in the workings.",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 13,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "11"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          }
+        ],
+        "kind": "numeric"
+      },
+      {
+        "text": "For NAB credit impairment charge, the comparison from 2024-09-30 to 2025-09-30 gives an increase of 105 AUD million. The relative change is +14.42% (rounded).",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 13,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "11"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          }
+        ],
+        "kind": "calculation"
+      },
+      {
+        "text": "NAB FY2025 reports: \"Credit impairment charge increased by $105 million or 14.4%, driven by a higher level of individually assessed credit impairment charge primarily in Corporate and Institutional Banking. This was partially offset by a lower level of collective credit impairment charge.\"",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 14,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf",
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "document_role": "primary",
+            "report_section": "Group or general disclosure"
+          }
+        ],
+        "kind": "narrative"
+      }
+    ],
+    "qualifications": [
+      "Cited passages support only what the source explicitly discloses. Quoted figures are not newly calculated results or a complete review of every report.",
+      "The movement is checked first; explanatory passages are restricted to its source report(s). Different reporting bases are not interchangeable.",
+      "For the stated FY2025 movement, checking FY2024 to FY2025 on a compatible reporting basis."
+    ],
+    "important_notes": [
+      "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations.",
+      "CBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready."
+    ],
+    "arithmetic": "deterministic",
+    "source_values_unchanged": true
+  },
+  "effective_question": "Why did NAB credit impairment charge rise in FY2025?",
+  "ui_scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "NAB",
+      "year": "2025"
+    },
+    "summary": "NAB / FY2025",
+    "notes": [],
+    "effective_question": "Why did NAB credit impairment charge rise in FY2025?"
+  },
+  "display_text": "Question scope: NAB / FY2025\n\nNAB's credit impairment charge was 728 AUD million for the year ended 30 September 2024 (cash basis, continuing operations). This shows the expense magnitude; the signed source value remains available in the workings. NAB's credit impairment charge was 833 AUD million for the year ended 30 September 2025 (cash basis, continuing operations). This shows the expense magnitude; the signed source value remains available in the workings. [NAB FY2025 Full Year Results, PDF page 13]\n\nFor NAB credit impairment charge, the comparison from 2024-09-30 to 2025-09-30 gives an increase of 105 AUD million. The relative change is +14.42% (rounded). [NAB FY2025 Full Year Results, PDF page 13]\n\nNAB FY2025 reports: \"Credit impairment charge increased by $105 million or 14.4%, driven by a higher level of individually assessed credit impairment charge primarily in Corporate and Institutional Banking. This was partially offset by a lower level of collective credit impairment charge.\" [NAB FY2025 Full Year Results, PDF page 14]\n\nThese are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations.\nCBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready.\nCited passages support only what the source explicitly discloses. Quoted figures are not newly calculated results or a complete review of every report.\nThe movement is checked first; explanatory passages are restricted to its source report(s). Different reporting bases are not interchangeable.\nFor the stated FY2025 movement, checking FY2024 to FY2025 on a compatible reporting basis."
+}

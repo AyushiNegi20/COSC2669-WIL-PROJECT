@@ -1,0 +1,41 @@
+{
+  "question": "What was NAB actual FY2026 profit?",
+  "answer": {
+    "status": "unable_to_verify",
+    "message": "Requested reporting period is outside FY2024/FY2025."
+  },
+  "route": "guard",
+  "generation": {
+    "status": "skipped"
+  },
+  "version": "fintrace-conversational-development",
+  "seconds": 0.0016827999788802117,
+  "presentation": {
+    "paragraphs": [
+      {
+        "text": "Requested reporting period is outside FY2024/FY2025.",
+        "citations": [],
+        "kind": "limit"
+      }
+    ],
+    "qualifications": [],
+    "important_notes": [],
+    "arithmetic": "deterministic",
+    "source_values_unchanged": true
+  },
+  "effective_question": "What was NAB actual FY2026 profit?",
+  "ui_scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "NAB",
+      "year": "all"
+    },
+    "summary": "NAB / FY2026",
+    "notes": [],
+    "effective_question": "What was NAB actual FY2026 profit?"
+  },
+  "display_text": "Question scope: NAB / FY2026\n\nRequested reporting period is outside FY2024/FY2025.\n\n"
+}

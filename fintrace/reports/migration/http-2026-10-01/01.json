@@ -1,0 +1,210 @@
+{
+  "question": "What were NAB FY2025 basic and diluted statutory earnings per share?",
+  "route": "numeric",
+  "generation": {
+    "status": "skipped",
+    "reason": "Checked source table and Python Decimal arithmetic."
+  },
+  "answer": {
+    "status": "source_bound_answer",
+    "parts": [
+      {
+        "claims": [
+          {
+            "text": "NAB Statutory earnings per share - basic (cents): 221.0 cents/share in FY2025, statutory Group basis.",
+            "cell": {
+              "metric": "basic_statutory_eps",
+              "company": "NAB",
+              "value": "221.0",
+              "raw_value": "221.0",
+              "unit": "cents/share",
+              "basis": "statutory",
+              "scope": "Group",
+              "period_kind": "annual",
+              "period_end": "2025-09-30",
+              "report_year": 2025,
+              "column": 1,
+              "source_id": "nab_ar25:full:p092:statement:basic_statutory_eps",
+              "header_ids": [],
+              "record_id": "nab_ar25:full:p092:statement:basic_statutory_eps",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab_ar25",
+                "document_title": "NAB FY2025 Annual Report",
+                "pdf_page": 92,
+                "report_year": 2025,
+                "report_period_end": "2025-09-30",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                "document_role": "supporting",
+                "report_section": "Group or general disclosure"
+              },
+              "row_quote": "Statutory earnings per share - basic (cents) | FY2025: 221.0 | FY2024: 224.6 | FY2023: 236.4 | FY2022: 214.1 | FY2021: 193.0 | cents/share | NAB Group statutory basis",
+              "binding_status": "two_pdf_extractors_agree_on_Group_EPS_year_columns"
+            },
+            "presentation": {
+              "value": "221.0",
+              "representation": "source_signed",
+              "note": "Original source sign preserved.",
+              "transformation": "identity",
+              "source_value": "221.0"
+            },
+            "evidence": [
+              {
+                "source_id": "nab_ar25:full:p092:statement:basic_statutory_eps",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab_ar25",
+                  "document_title": "NAB FY2025 Annual Report",
+                  "pdf_page": 92,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                  "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                  "document_role": "supporting",
+                  "report_section": "Group or general disclosure"
+                },
+                "quote": "Statutory earnings per share - basic (cents) | FY2025: 221.0 | FY2024: 224.6 | FY2023: 236.4 | FY2022: 214.1 | FY2021: 193.0 | cents/share | NAB Group statutory basis"
+              }
+            ]
+          }
+        ],
+        "calculations": [],
+        "issues": []
+      },
+      {
+        "claims": [
+          {
+            "text": "NAB Statutory earnings per share - diluted (cents): 219.9 cents/share in FY2025, statutory Group basis.",
+            "cell": {
+              "metric": "diluted_statutory_eps",
+              "company": "NAB",
+              "value": "219.9",
+              "raw_value": "219.9",
+              "unit": "cents/share",
+              "basis": "statutory",
+              "scope": "Group",
+              "period_kind": "annual",
+              "period_end": "2025-09-30",
+              "report_year": 2025,
+              "column": 1,
+              "source_id": "nab_ar25:full:p092:statement:diluted_statutory_eps",
+              "header_ids": [],
+              "record_id": "nab_ar25:full:p092:statement:diluted_statutory_eps",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab_ar25",
+                "document_title": "NAB FY2025 Annual Report",
+                "pdf_page": 92,
+                "report_year": 2025,
+                "report_period_end": "2025-09-30",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                "document_role": "supporting",
+                "report_section": "Group or general disclosure"
+              },
+              "row_quote": "Statutory earnings per share - diluted (cents) | FY2025: 219.9 | FY2024: 222.7 | FY2023: 228.7 | FY2022: 205.6 | FY2021: 185.2 | cents/share | NAB Group statutory basis",
+              "binding_status": "two_pdf_extractors_agree_on_Group_EPS_year_columns"
+            },
+            "presentation": {
+              "value": "219.9",
+              "representation": "source_signed",
+              "note": "Original source sign preserved.",
+              "transformation": "identity",
+              "source_value": "219.9"
+            },
+            "evidence": [
+              {
+                "source_id": "nab_ar25:full:p092:statement:diluted_statutory_eps",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab_ar25",
+                  "document_title": "NAB FY2025 Annual Report",
+                  "pdf_page": 92,
+                  "report_year": 2025,
+                  "report_period_end": "2025-09-30",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+                  "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+                  "document_role": "supporting",
+                  "report_section": "Group or general disclosure"
+                },
+                "quote": "Statutory earnings per share - diluted (cents) | FY2025: 219.9 | FY2024: 222.7 | FY2023: 228.7 | FY2022: 205.6 | FY2021: 185.2 | cents/share | NAB Group statutory basis"
+              }
+            ]
+          }
+        ],
+        "calculations": [],
+        "issues": []
+      }
+    ],
+    "limitations": [
+      "Additional statement rows were checked against two PDF extractors. Source-reported signs and Group/statutory scope are retained."
+    ]
+  },
+  "coverage": {
+    "kind": "additional_statutory_statement_rows"
+  },
+  "version": "fintrace-conversational-development",
+  "seconds": 5.163042600004701,
+  "presentation": {
+    "paragraphs": [
+      {
+        "text": "NAB's basic statutory eps was 221.0 cents/share for the year ended 30 September 2025 (statutory basis, Group).",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab_ar25",
+            "document_title": "NAB FY2025 Annual Report",
+            "pdf_page": 92,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+            "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+            "document_role": "supporting",
+            "report_section": "Group or general disclosure"
+          }
+        ],
+        "kind": "numeric"
+      },
+      {
+        "text": "NAB's diluted statutory eps was 219.9 cents/share for the year ended 30 September 2025 (statutory basis, Group).",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab_ar25",
+            "document_title": "NAB FY2025 Annual Report",
+            "pdf_page": 92,
+            "report_year": 2025,
+            "report_period_end": "2025-09-30",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-annual-report.pdf",
+            "source_sha256": "14c32ba7ecb412a55e5e83b904d1c0b6b32be753009b76627096e5a76b8a7719",
+            "document_role": "supporting",
+            "report_section": "Group or general disclosure"
+          }
+        ],
+        "kind": "numeric"
+      }
+    ],
+    "qualifications": [
+      "Additional statement rows were checked against two PDF extractors. Source-reported signs and Group/statutory scope are retained."
+    ],
+    "important_notes": [],
+    "arithmetic": "deterministic",
+    "source_values_unchanged": true
+  },
+  "effective_question": "What were NAB FY2025 basic and diluted statutory earnings per share?",
+  "ui_scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "NAB",
+      "year": "2025"
+    },
+    "summary": "NAB / FY2025",
+    "notes": [],
+    "effective_question": "What were NAB FY2025 basic and diluted statutory earnings per share?"
+  },
+  "display_text": "Question scope: NAB / FY2025\n\nNAB's basic statutory eps was 221.0 cents/share for the year ended 30 September 2025 (statutory basis, Group). [NAB FY2025 Annual Report, PDF page 92]\n\nNAB's diluted statutory eps was 219.9 cents/share for the year ended 30 September 2025 (statutory basis, Group). [NAB FY2025 Annual Report, PDF page 92]\n\nAdditional statement rows were checked against two PDF extractors. Source-reported signs and Group/statutory scope are retained."
+}

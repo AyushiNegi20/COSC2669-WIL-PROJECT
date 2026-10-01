@@ -1,0 +1,906 @@
+{
+  "question": "How did NAB net interest margin change from FY2024 to FY2025 in basis points?",
+  "answer": {
+    "status": "source_bound_answer",
+    "parts": [
+      {
+        "request": {
+          "id": "request-1",
+          "company": "NAB",
+          "metric": "nim",
+          "intent": "compare",
+          "scope": null,
+          "value_years": [
+            2024,
+            2025
+          ],
+          "report_year": null,
+          "definition_contrast": false,
+          "basis": "cash"
+        },
+        "claims": [
+          {
+            "text": "NAB net interest margin: 1.71 percent; annual ending 2024-09-30, cash, continuing operations.",
+            "cell": {
+              "metric": "nim",
+              "company": "NAB",
+              "value": "1.71",
+              "raw_value": "1.71%",
+              "unit": "percent",
+              "basis": "cash",
+              "scope": "continuing",
+              "period_kind": "annual",
+              "period_end": "2024-09-30",
+              "report_year": 2025,
+              "column": 2,
+              "source_id": "nab25:p015:b007:r13",
+              "header_ids": [
+                "nab25:p015:b007:r0",
+                "nab25:p015:b007:r1",
+                "nab25:p015:b007:r8"
+              ],
+              "record_id": "v4:nab25:p015:b007:r13",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab25",
+                "document_title": "NAB FY2025 Full Year Results",
+                "pdf_page": 15,
+                "printed_page": {
+                  "method": "docling_footer_candidate",
+                  "reviewed": false,
+                  "value": "13"
+                },
+                "report_period_end": "2025-09-30",
+                "report_year": 2025,
+                "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+              },
+              "row_quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+              "binding_status": "rule_bound_development_not_human_certified"
+            },
+            "evidence": [
+              {
+                "source_id": "nab25:p015:b007:r13",
+                "quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r0",
+                "quote": " | Year to |  |  | Half Year to |  | ",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r1",
+                "quote": " | Sep 25 | Sep 24 | Sep 25 v Sep 24 | Sep 25 | Mar 25 | Sep 25 v Mar 25",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r8",
+                "quote": "Group performance - cash earnings basis |  |  |  |  |  | ",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              }
+            ],
+            "method": "deterministic_template_from_bound_source_cell",
+            "presentation": {
+              "value": "1.71",
+              "representation": "source_signed",
+              "note": "Original source sign preserved.",
+              "transformation": "identity",
+              "source_value": "1.71"
+            }
+          },
+          {
+            "text": "NAB net interest margin: 1.74 percent; annual ending 2025-09-30, cash, continuing operations.",
+            "cell": {
+              "metric": "nim",
+              "company": "NAB",
+              "value": "1.74",
+              "raw_value": "1.74%",
+              "unit": "percent",
+              "basis": "cash",
+              "scope": "continuing",
+              "period_kind": "annual",
+              "period_end": "2025-09-30",
+              "report_year": 2025,
+              "column": 1,
+              "source_id": "nab25:p015:b007:r13",
+              "header_ids": [
+                "nab25:p015:b007:r0",
+                "nab25:p015:b007:r1",
+                "nab25:p015:b007:r8"
+              ],
+              "record_id": "v4:nab25:p015:b007:r13",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab25",
+                "document_title": "NAB FY2025 Full Year Results",
+                "pdf_page": 15,
+                "printed_page": {
+                  "method": "docling_footer_candidate",
+                  "reviewed": false,
+                  "value": "13"
+                },
+                "report_period_end": "2025-09-30",
+                "report_year": 2025,
+                "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+              },
+              "row_quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+              "binding_status": "rule_bound_development_not_human_certified"
+            },
+            "evidence": [
+              {
+                "source_id": "nab25:p015:b007:r13",
+                "quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r0",
+                "quote": " | Year to |  |  | Half Year to |  | ",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r1",
+                "quote": " | Sep 25 | Sep 24 | Sep 25 v Sep 24 | Sep 25 | Mar 25 | Sep 25 v Mar 25",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r8",
+                "quote": "Group performance - cash earnings basis |  |  |  |  |  | ",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              }
+            ],
+            "method": "deterministic_template_from_bound_source_cell",
+            "presentation": {
+              "value": "1.74",
+              "representation": "source_signed",
+              "note": "Original source sign preserved.",
+              "transformation": "identity",
+              "source_value": "1.74"
+            }
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "change",
+            "left": "1.74",
+            "right": "1.71",
+            "absolute_change": "0.03",
+            "unit": "percent",
+            "formula": "left - right",
+            "operand_labels": [
+              "NAB nim 2025-09-30",
+              "NAB nim 2024-09-30"
+            ],
+            "source_cells": [
+              {
+                "metric": "nim",
+                "company": "NAB",
+                "value": "1.74",
+                "raw_value": "1.74%",
+                "unit": "percent",
+                "basis": "cash",
+                "scope": "continuing",
+                "period_kind": "annual",
+                "period_end": "2025-09-30",
+                "report_year": 2025,
+                "column": 1,
+                "source_id": "nab25:p015:b007:r13",
+                "header_ids": [
+                  "nab25:p015:b007:r0",
+                  "nab25:p015:b007:r1",
+                  "nab25:p015:b007:r8"
+                ],
+                "record_id": "v4:nab25:p015:b007:r13",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                },
+                "row_quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              {
+                "metric": "nim",
+                "company": "NAB",
+                "value": "1.71",
+                "raw_value": "1.71%",
+                "unit": "percent",
+                "basis": "cash",
+                "scope": "continuing",
+                "period_kind": "annual",
+                "period_end": "2024-09-30",
+                "report_year": 2025,
+                "column": 2,
+                "source_id": "nab25:p015:b007:r13",
+                "header_ids": [
+                  "nab25:p015:b007:r0",
+                  "nab25:p015:b007:r1",
+                  "nab25:p015:b007:r8"
+                ],
+                "record_id": "v4:nab25:p015:b007:r13",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                },
+                "row_quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+                "binding_status": "rule_bound_development_not_human_certified"
+              }
+            ],
+            "presentations": [
+              {
+                "value": "1.74",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "1.74"
+              },
+              {
+                "value": "1.71",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "1.71"
+              }
+            ],
+            "source_signed_difference": "0.03",
+            "arithmetic": "Python Decimal",
+            "note": "Chronological change: later minus earlier.",
+            "percentage_points": "0.03",
+            "basis_points": "3.00"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "request": {
+          "id": "request-1",
+          "company": "NAB",
+          "metric": "nim",
+          "intent": "compare",
+          "scope": null,
+          "value_years": [
+            2024,
+            2025
+          ],
+          "report_year": null,
+          "definition_contrast": false,
+          "basis": "statutory"
+        },
+        "claims": [
+          {
+            "text": "NAB net interest margin: 1.71 percent; annual ending 2024-09-30, statutory, continuing operations.",
+            "cell": {
+              "metric": "nim",
+              "company": "NAB",
+              "value": "1.71",
+              "raw_value": "1.71%",
+              "unit": "percent",
+              "basis": "statutory",
+              "scope": "continuing",
+              "period_kind": "annual",
+              "period_end": "2024-09-30",
+              "report_year": 2025,
+              "column": 2,
+              "source_id": "nab25:p015:b007:r7",
+              "header_ids": [
+                "nab25:p015:b007:r0",
+                "nab25:p015:b007:r1",
+                "nab25:p015:b007:r2"
+              ],
+              "record_id": "v4:nab25:p015:b007:r7",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab25",
+                "document_title": "NAB FY2025 Full Year Results",
+                "pdf_page": 15,
+                "printed_page": {
+                  "method": "docling_footer_candidate",
+                  "reviewed": false,
+                  "value": "13"
+                },
+                "report_period_end": "2025-09-30",
+                "report_year": 2025,
+                "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+              },
+              "row_quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+              "binding_status": "rule_bound_development_not_human_certified"
+            },
+            "evidence": [
+              {
+                "source_id": "nab25:p015:b007:r7",
+                "quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r0",
+                "quote": " | Year to |  |  | Half Year to |  | ",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r1",
+                "quote": " | Sep 25 | Sep 24 | Sep 25 v Sep 24 | Sep 25 | Mar 25 | Sep 25 v Mar 25",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r2",
+                "quote": "Group performance - statutory basis |  |  |  |  |  | ",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              }
+            ],
+            "method": "deterministic_template_from_bound_source_cell",
+            "presentation": {
+              "value": "1.71",
+              "representation": "source_signed",
+              "note": "Original source sign preserved.",
+              "transformation": "identity",
+              "source_value": "1.71"
+            }
+          },
+          {
+            "text": "NAB net interest margin: 1.74 percent; annual ending 2025-09-30, statutory, continuing operations.",
+            "cell": {
+              "metric": "nim",
+              "company": "NAB",
+              "value": "1.74",
+              "raw_value": "1.74%",
+              "unit": "percent",
+              "basis": "statutory",
+              "scope": "continuing",
+              "period_kind": "annual",
+              "period_end": "2025-09-30",
+              "report_year": 2025,
+              "column": 1,
+              "source_id": "nab25:p015:b007:r7",
+              "header_ids": [
+                "nab25:p015:b007:r0",
+                "nab25:p015:b007:r1",
+                "nab25:p015:b007:r2"
+              ],
+              "record_id": "v4:nab25:p015:b007:r7",
+              "source": {
+                "company": "NAB",
+                "document_id": "nab25",
+                "document_title": "NAB FY2025 Full Year Results",
+                "pdf_page": 15,
+                "printed_page": {
+                  "method": "docling_footer_candidate",
+                  "reviewed": false,
+                  "value": "13"
+                },
+                "report_period_end": "2025-09-30",
+                "report_year": 2025,
+                "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+              },
+              "row_quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+              "binding_status": "rule_bound_development_not_human_certified"
+            },
+            "evidence": [
+              {
+                "source_id": "nab25:p015:b007:r7",
+                "quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r0",
+                "quote": " | Year to |  |  | Half Year to |  | ",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r1",
+                "quote": " | Sep 25 | Sep 24 | Sep 25 v Sep 24 | Sep 25 | Mar 25 | Sep 25 v Mar 25",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              },
+              {
+                "source_id": "nab25:p015:b007:r2",
+                "quote": "Group performance - statutory basis |  |  |  |  |  | ",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                }
+              }
+            ],
+            "method": "deterministic_template_from_bound_source_cell",
+            "presentation": {
+              "value": "1.74",
+              "representation": "source_signed",
+              "note": "Original source sign preserved.",
+              "transformation": "identity",
+              "source_value": "1.74"
+            }
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "change",
+            "left": "1.74",
+            "right": "1.71",
+            "absolute_change": "0.03",
+            "unit": "percent",
+            "formula": "left - right",
+            "operand_labels": [
+              "NAB nim 2025-09-30",
+              "NAB nim 2024-09-30"
+            ],
+            "source_cells": [
+              {
+                "metric": "nim",
+                "company": "NAB",
+                "value": "1.74",
+                "raw_value": "1.74%",
+                "unit": "percent",
+                "basis": "statutory",
+                "scope": "continuing",
+                "period_kind": "annual",
+                "period_end": "2025-09-30",
+                "report_year": 2025,
+                "column": 1,
+                "source_id": "nab25:p015:b007:r7",
+                "header_ids": [
+                  "nab25:p015:b007:r0",
+                  "nab25:p015:b007:r1",
+                  "nab25:p015:b007:r2"
+                ],
+                "record_id": "v4:nab25:p015:b007:r7",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                },
+                "row_quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              {
+                "metric": "nim",
+                "company": "NAB",
+                "value": "1.71",
+                "raw_value": "1.71%",
+                "unit": "percent",
+                "basis": "statutory",
+                "scope": "continuing",
+                "period_kind": "annual",
+                "period_end": "2024-09-30",
+                "report_year": 2025,
+                "column": 2,
+                "source_id": "nab25:p015:b007:r7",
+                "header_ids": [
+                  "nab25:p015:b007:r0",
+                  "nab25:p015:b007:r1",
+                  "nab25:p015:b007:r2"
+                ],
+                "record_id": "v4:nab25:p015:b007:r7",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                },
+                "row_quote": "Net interest margin | 1.74% | 1.71% | 3 bps | 1.78% | 1.70% | 8 bps",
+                "binding_status": "rule_bound_development_not_human_certified"
+              }
+            ],
+            "presentations": [
+              {
+                "value": "1.74",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "1.74"
+              },
+              {
+                "value": "1.71",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "1.71"
+              }
+            ],
+            "source_signed_difference": "0.03",
+            "arithmetic": "Python Decimal",
+            "note": "Chronological change: later minus earlier.",
+            "percentage_points": "0.03",
+            "basis_points": "3.00"
+          }
+        ],
+        "issues": []
+      }
+    ],
+    "message": "Net interest margin is shown by reporting basis. No choice is needed before viewing the available figures.",
+    "limitations": [
+      "NIM was unspecified. Cash and statutory variants are checked separately; only source-bound variants are displayed.",
+      "NAB FY2024 is taken from the FY2025 report's comparative column (1.71 percent). This alone does not establish that it was restated; the original disclosure may differ."
+    ]
+  },
+  "question_contract": {
+    "retrieval_question": "How did NAB net interest margin change from FY2024 to FY2025 in basis points? Include percentage change.",
+    "notes": [
+      "NIM was unspecified. Cash and statutory variants are checked separately; only source-bound variants are displayed."
+    ],
+    "metric_mapping": "explicit aliases only for numerical answers"
+  },
+  "binding_validation": {
+    "passed": true,
+    "issues": []
+  },
+  "version": "fintrace-conversational-development",
+  "seconds": 6.645978100015782,
+  "route": "numeric",
+  "generation": {
+    "status": "skipped",
+    "reason": "Numbers, calculations and guards use source templates; no generative model was called."
+  },
+  "presentation": {
+    "paragraphs": [
+      {
+        "text": "NAB's net interest margin was 1.71% for the year ended 30 September 2024 (cash basis, continuing operations). NAB's net interest margin was 1.74% for the year ended 30 September 2025 (cash basis, continuing operations).",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 15,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "13"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          }
+        ],
+        "kind": "numeric"
+      },
+      {
+        "text": "For NAB net interest margin, the comparison from 2024-09-30 to 2025-09-30 gives an increase of 0.03 percentage points. That is 3.00 basis points (signed change). This is a percentage-point change, not relative percentage growth.",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 15,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "13"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          }
+        ],
+        "kind": "calculation"
+      },
+      {
+        "text": "NAB's net interest margin was 1.71% for the year ended 30 September 2024 (statutory basis, continuing operations). NAB's net interest margin was 1.74% for the year ended 30 September 2025 (statutory basis, continuing operations).",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 15,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "13"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          }
+        ],
+        "kind": "numeric"
+      },
+      {
+        "text": "For NAB net interest margin, the comparison from 2024-09-30 to 2025-09-30 gives an increase of 0.03 percentage points. That is 3.00 basis points (signed change). This is a percentage-point change, not relative percentage growth.",
+        "citations": [
+          {
+            "company": "NAB",
+            "document_id": "nab25",
+            "document_title": "NAB FY2025 Full Year Results",
+            "pdf_page": 15,
+            "printed_page": {
+              "method": "docling_footer_candidate",
+              "reviewed": false,
+              "value": "13"
+            },
+            "report_period_end": "2025-09-30",
+            "report_year": 2025,
+            "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+            "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+          }
+        ],
+        "kind": "calculation"
+      }
+    ],
+    "qualifications": [
+      "Net interest margin is shown by reporting basis. No choice is needed before viewing the available figures.",
+      "NIM was unspecified. Cash and statutory variants are checked separately; only source-bound variants are displayed.",
+      "NAB FY2024 is taken from the FY2025 report's comparative column (1.71 percent). This alone does not establish that it was restated; the original disclosure may differ."
+    ],
+    "important_notes": [],
+    "arithmetic": "deterministic",
+    "source_values_unchanged": true
+  },
+  "effective_question": "How did NAB net interest margin change from FY2024 to FY2025 in basis points?",
+  "ui_scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "NAB",
+      "year": "all"
+    },
+    "summary": "NAB / FY2024 and FY2025",
+    "notes": [],
+    "effective_question": "How did NAB net interest margin change from FY2024 to FY2025 in basis points?"
+  },
+  "display_text": "Question scope: NAB / FY2024 and FY2025\n\nNAB's net interest margin was 1.71% for the year ended 30 September 2024 (cash basis, continuing operations). NAB's net interest margin was 1.74% for the year ended 30 September 2025 (cash basis, continuing operations). [NAB FY2025 Full Year Results, PDF page 15]\n\nFor NAB net interest margin, the comparison from 2024-09-30 to 2025-09-30 gives an increase of 0.03 percentage points. That is 3.00 basis points (signed change). This is a percentage-point change, not relative percentage growth. [NAB FY2025 Full Year Results, PDF page 15]\n\nNAB's net interest margin was 1.71% for the year ended 30 September 2024 (statutory basis, continuing operations). NAB's net interest margin was 1.74% for the year ended 30 September 2025 (statutory basis, continuing operations). [NAB FY2025 Full Year Results, PDF page 15]\n\nFor NAB net interest margin, the comparison from 2024-09-30 to 2025-09-30 gives an increase of 0.03 percentage points. That is 3.00 basis points (signed change). This is a percentage-point change, not relative percentage growth. [NAB FY2025 Full Year Results, PDF page 15]\n\nNet interest margin is shown by reporting basis. No choice is needed before viewing the available figures.\nNIM was unspecified. Cash and statutory variants are checked separately; only source-bound variants are displayed.\nNAB FY2024 is taken from the FY2025 report's comparative column (1.71 percent). This alone does not establish that it was restated; the original disclosure may differ."
+}

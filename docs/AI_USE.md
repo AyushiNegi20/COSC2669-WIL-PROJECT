@@ -4,6 +4,23 @@ This working log supports completion of the official assessment AI declaration.
 The group must review it, add any other AI use by members and follow the current
 Canvas submission instructions.
 
+## 1 October 2026: Demo repository handoff
+
+**Tool:** OpenAI Codex
+
+The project leader asked Codex to bring the existing FinTrace demo into the
+official WIL repository, preserve earlier assessment files, update installation
+instructions, run migration checks and link the resulting evidence from Trello.
+Codex copied the tracked release, updated repository and download references,
+and performed regression and integrity checks. This was a packaging and
+verification task, not a new independent evaluation or a rewrite of the answer
+pipeline. Details and limitations are in `fintrace/docs/WIL_MIGRATION.md`.
+
+This entry covers the repository handoff only. The group still needs to review
+and record the full AI assistance used during development and evaluation in its
+final Condition 3 declaration. The existing Milestone 1 declaration is historical,
+not a completed declaration for the final submission.
+
 ## 22 August 2026: Preliminary Walert reproduction
 
 **Tool:** OpenAI Codex
