@@ -6,7 +6,7 @@ import re
 from time import perf_counter
 from answer_bank_v10 import Backend as PreviousBackend
 from answer_bank_v9 import display
-from bank_contract_v12 import Planner, preflight, prepare, audit_bindings, metric_tags
+from bank_contract_v12 import Planner, preflight, prepare, audit_bindings, metric_tags, general_profit_lookup
 from bank_generation_v11 import SynthesisClient, add_generation, SYSTEM
 from bank_retrieval import ROOT, read
 
@@ -42,9 +42,15 @@ class EvidenceBackend(PreviousBackend):
                     else:
                         result = self.margin_alternatives(text) or super().answer(text)
             result['question'] = question
+            if general_profit_lookup(question):
+                result = self.profit_scope_alternatives(result, question)
             result['question_contract'] = {'retrieval_question': text, 'notes': notes,
                 'metric_mapping': 'explicit aliases only for numerical answers'}
             result['answer'].setdefault('limitations', []).extend(notes)
+            if (result['answer'].get('status') == 'source_bound_answer'
+                    and 'basic_cash_eps' in metric_tags(question)
+                    and not re.search(r'\bcash\b|\bbasic\b', question, re.I)):
+                result['answer']['status'] = 'partial_answer'
             # A later report's comparative is not necessarily a restatement.
             # Disclose vintage without asserting the original value changed.
             restated = sorted({(c['company'], int(c['period_end'][:4]), c['report_year'], str(c['value']), c['unit'])
@@ -60,6 +66,75 @@ class EvidenceBackend(PreviousBackend):
             if failures:
                 result['answer'] = {'status': 'unable_to_verify', 'message': 'Evidence did not match the question. No substituted figure is shown.', 'issues': failures}
         result.update(version=self.version, seconds=perf_counter()-start)
+        return result
+
+    def profit_scope_alternatives(self, result, question):
+        """Show every available bound scope, never a fabricated four-cell grid.
+
+        The same indexed source rows and strict binder establish each value.
+        Reference figures, model output and new arithmetic are not involved.
+        An explicitly requested scope still filters the returned variants.
+        """
+        if not result['answer'].get('parts'):
+            return result
+        engine = getattr(self.retriever, 'engine', None)
+        indexed = getattr(engine, 'records', None)
+        if not isinstance(indexed, list):
+            return result
+        from bank_retrieval_v6 import request_scopes
+        from bank_source_cells import FLOW
+        from answer_bank_v8 import cell_claim
+        from bank_operations_v9 import presentation, operation_plan
+        op = operation_plan(question)
+        parts = []
+        for original in result['answer']['parts']:
+            request = original['request']
+            if request.get('metric') not in ('cash_profit', 'statutory_npat'):
+                parts.append(original)
+                continue
+            records = sorted((r for r in indexed if r['kind'] == 'financial_row'
+                and r['source']['company'] == request['company']
+                and request['metric'] in r['metric_tags']), key=lambda r: r['chunk_id'])
+            wanted = request_scopes(question, request['metric'])
+            available = set()
+            for record in records:
+                for cell in self.binder.bind(record, request['metric']):
+                    if (int(cell.period_end[:4]) in request['value_years']
+                            and (not request.get('report_year') or cell.report_year == request['report_year'])
+                            and (cell.metric not in FLOW or cell.period_kind == 'annual')
+                            and cell.period_end[5:] == ('06-30' if cell.company == 'CBA' else '09-30')):
+                        available.add(cell.scope)
+            scopes = wanted if wanted != [None] else sorted(available,
+                key=lambda scope: (scope != 'continuing', scope))
+            if not scopes:
+                parts.append(original)
+                continue
+            for scope in scopes:
+                variant = {**request, 'scope': scope, 'id': request['id'] + '-' + scope}
+                cells, issues = self.binder.select(records, variant, question)
+                desired_unit = 'AUD billion' if re.search(r'\bin (?:aud )?billions?\b', question, re.I) else 'AUD million' if re.search(r'\bin (?:aud )?millions?\b', question, re.I) else None
+                if desired_unit and any(c.unit != desired_unit for c in cells):
+                    issues.append('Showing the disclosed unit only; requested unit conversion is not enabled.')
+                claims = []
+                for cell in cells:
+                    claim = cell_claim(cell, self.binder)
+                    claim['presentation'] = presentation(cell, op)
+                    claims.append(claim)
+                if len(cells) != len(request['value_years']):
+                    issues.append('Not every requested year has a bound value.')
+                parts.append({'request': variant, 'claims': claims, 'calculations': [], 'issues': issues})
+        answer = result['answer']
+        answer['parts'] = parts
+        if 'plan' in result:
+            result['plan']['requests'] = [deepcopy(p['request']) for p in parts]
+        useful = any(p.get('claims') for p in parts)
+        complete = bool(parts) and all(p.get('claims') and not p.get('issues') for p in parts) and not answer.get('issues')
+        answer['status'] = 'source_bound_answer' if complete else 'partial_answer' if useful else 'unable_to_verify'
+        answer['profit_scope_policy'] = 'all_available_source_bound_variants'
+        answer.setdefault('limitations', []).append(
+            'For the general profit question, available cash and statutory variants are shown with their operational scopes. '
+            'Including discontinued operations means the combined result, not discontinued businesses alone. '
+            'Compare cash and statutory figures within the same scope; no missing variant is inferred.')
         return result
 
     def lcr_period_definition(self, question):

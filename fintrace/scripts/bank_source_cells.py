@@ -10,11 +10,14 @@ from bank_retrieval_v4 import norm
 from bank_calculations import parse_number
 from bank_answer import numeric_tokens
 
-FLOW={'cash_profit','statutory_npat','operating_income','operating_expenses','credit_impairment','nim','basic_cash_eps','dividend_per_share'}
+EPS_METRICS = {'basic_cash_eps', 'diluted_cash_eps', 'basic_statutory_eps', 'diluted_statutory_eps'}
+FLOW={'cash_profit','statutory_npat','operating_income','operating_expenses','credit_impairment','nim','dividend_per_share'} | EPS_METRICS
 DEFAULT_SCOPE={'cash_profit':'continuing','statutory_npat':'including_discontinued','basic_cash_eps':'continuing',
     'operating_income':'continuing','operating_expenses':'continuing','credit_impairment':'continuing','nim':'continuing'}
 LABELS={'cash_profit':'cash profit','statutory_npat':'statutory net profit after tax',
     'basic_cash_eps':'basic cash EPS','dividend_per_share':'dividend per share',
+    'diluted_cash_eps':'diluted cash EPS', 'basic_statutory_eps':'basic statutory EPS',
+    'diluted_statutory_eps':'diluted statutory EPS',
     'operating_income':'total operating income','operating_expenses':'operating expenses',
     'credit_impairment':'credit impairment charge','nim':'net interest margin',
     'total_assets':'total Group assets','gross_loans':'gross loans and acceptances',
@@ -57,7 +60,7 @@ def column_date(text):
 def row_identity(record,metric,page):
     row=norm(record.get('row_label',''));label=norm(record['label']);body=norm(record['body'])
     scope='Group';basis='reported';native=norm(page['native_text'])
-    if metric not in record['metric_tags']: return None
+    if metric not in record['metric_tags'] and not (metric in EPS_METRICS and 'basic_cash_eps' in record['metric_tags']): return None
     if metric=='cash_profit':
         if not re.fullmatch(r'cash (?:net profit after tax m|net profit after tax|profit|earnings)(?: \d)?',row): return None
         basis='cash'
@@ -67,6 +70,15 @@ def row_identity(record,metric,page):
     elif metric=='basic_cash_eps':
         if 'basic' not in label or 'cash' not in label or 'diluted' in label: return None
         basis='basic cash'
+    elif metric in EPS_METRICS:
+        style = 'diluted' if metric.startswith('diluted') else 'basic'
+        accounting = 'statutory' if 'statutory' in metric else 'cash'
+        # The literal row must identify EPS, style and accounting basis. A
+        # nearby statutory section or generic "EPS" row is not enough.
+        if not re.search(r'earnings per share|\beps\b', label): return None
+        if not all(word in row for word in (style, accounting)): return None
+        if ('diluted' in row) != (style == 'diluted'): return None
+        basis = style + ' ' + accounting
     elif metric=='dividend_per_share':
         if not row.startswith('dividend per share') or re.search(r'interim|final',row): return None
         return 'ordinary dividend','Group'
@@ -115,7 +127,7 @@ def row_identity(record,metric,page):
         scope='continuing'
     elif metric in ('operating_income','operating_expenses','credit_impairment') and 'cash basis' in body:
         scope='continuing'
-    if metric in DEFAULT_SCOPE and scope=='Group': return None
+    if (metric in DEFAULT_SCOPE or metric in EPS_METRICS) and scope=='Group': return None
     return basis,scope
 
 
@@ -162,7 +174,7 @@ class CellBinder:
             else: kind='quarterly_average' if metric=='lcr' else 'as_at'
             # Inspect the row's own measure context and column unit, not unrelated values.
             hints=record['label']+' '+rows[di][col]
-            if metric in ('basic_cash_eps','dividend_per_share') and re.search(r'cents',hints,re.I): unit='cents/share'
+            if (metric in EPS_METRICS or metric=='dividend_per_share') and re.search(r'cents',hints,re.I): unit='cents/share'
             elif metric in ('nim','cet1','lcr') and ('%' in raw or '%' in hints or metric=='cet1'): unit='percent'
             elif re.search(r'\$\s*bn|\bbillions?\b',hints,re.I): unit='AUD billion'
             elif re.search(r'\$\s*m\b|\bmillions?\b',hints,re.I): unit='AUD million'

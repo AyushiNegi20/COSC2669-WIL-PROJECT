@@ -65,6 +65,10 @@ class Backend:
         if re.search(r'\b(?:customer|person|account holder)\b.*\bnamed\b|\b(?:individual|person|named customer)\b.*\b(?:balance|account number|transactions?)\b|\b(?:balance|transactions?)\b.*\b(?:a|an|one|named) customer\b',question,re.I):
             return stopped(question,'These are public corporate reports, not customer account records. I cannot establish an individual customer\'s balance, account number or transactions from them.')
         if self.use_cba_reports:
+            from bank_broad_questions import answer as broad_answer
+            broad = broad_answer(question, context, self.core)
+            if broad is not None:
+                return broad
             if generic_loan_lookup(question):
                 # Offer a labelled disclosed alternative, not a silent total/net
                 # alias. The existing binder must still establish the figure.

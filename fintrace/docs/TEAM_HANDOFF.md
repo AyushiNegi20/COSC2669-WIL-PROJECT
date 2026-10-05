@@ -5,11 +5,19 @@
 For the group submission use `AyushiNegi20/COSC2669-WIL-PROJECT`, with the demo
 under `fintrace/` and import tag `fintrace-demo-2026-10-01`. The historical
 candidate references below belong to the original FinTrace-Backend repository.
-See [WIL migration checks](WIL_MIGRATION.md). The runtime manifest is unchanged.
+See [WIL migration checks](WIL_MIGRATION.md).
 
-Use `main`. The current application candidate is tagged
-`demo-eval-candidate-2026-09-27`, at commit `604d4c1`. Later handoff documentation
-edits and installation tools do not change that runtime. The earlier `demo-freeze-2026-09-27` tag at
+The 5 October 2026 update includes the general-profit operational scopes and
+broad EPS, income, loans and margin routes. EPS shows available source-bound
+accounting, dilution and operational variants. Broad income and margin answers
+identify their interpretations and retain partial-coverage labels. See
+[broad-question checks](BROAD_FINANCIAL_QUESTIONS.md). This update is
+developer-regression tested, not part of the earlier independently assessed tag
+below. Restart the server after updating.
+
+Use `main` for the updated demo. The earlier independently assessed candidate is
+tagged `demo-eval-candidate-2026-09-27`, at commit `604d4c1`; that tag does not
+include the October runtime updates. The earlier `demo-freeze-2026-09-27` tag at
 `3ed019b` is retained for history. Do not launch an old versioned server just because its
 filename looks familiar. The supported entry point is `Start-FinTrace-Demo.ps1`,
 which starts `scripts/serve_fintrace_demo.py` on port 8771.
@@ -53,7 +61,7 @@ be compared with the frozen commit or the reviewed data copy first.
 
 Open http://127.0.0.1:8771/ and try:
 
-1. `What was CBA profit in FY2025?` Check labelled cash and statutory figures.
+1. `What was CBA profit in FY2025?` Check four labelled variants: cash and statutory profit, each from continuing operations and including discontinued operations. NAB shows three available variants, not an invented fourth. Specific basis or scope requests remain filtered.
 2. `Which sector did CBA invest more in FY2025?` Check the internal-spending
    interpretation, largest category and largest increase, with source pages.
 3. `How did NAB cash earnings change from FY2024 to FY2025?` Check the

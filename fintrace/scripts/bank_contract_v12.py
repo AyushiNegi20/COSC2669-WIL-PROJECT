@@ -46,8 +46,34 @@ def metric_tags(text):
     return set(explicit_metrics(normalise(text)))
 
 
+def general_profit_lookup(question):
+    """Expand operational scopes only for an unqualified numerical lookup.
+
+    Definitions, drivers, calculations and explicitly named cash/statutory
+    measures retain their existing request contracts.
+    """
+    text = normalise(question)
+    text = re.sub(r'\bnet income\b', 'profit', text, flags=re.I)
+    text = re.sub(r'\bearn\b', 'report as profit', text, flags=re.I)
+    if not re.search(PROFIT, text, re.I):
+        return False
+    if metric_tags(text).intersection({'cash_profit', 'statutory_npat', 'basic_cash_eps'}):
+        return False
+    from bank_query_routing import checked_numeric_request
+    from bank_operations_v9 import operation_plan
+    if not checked_numeric_request(text) or operation_plan(text)['kind'] != 'none':
+        return False
+    # A two-year comparison must retain compatible calculation operands rather
+    # than turn into a collection of unrelated same-year profit variants.
+    return not re.search(r'\bcompar\w*\b|\bgrew\b|\bgrow\w*\b|\brose\b|\brise\b|\bfell\b|\bfall\b', text, re.I)
+
+
 def preflight(question):
     """Scope guards precede any question expansion or model call."""
+    if (re.search(PROFIT, question, re.I)
+            and re.search(r'\b(?:discontinued operations only|only (?:the )?discontinued operations|from (?:the )?discontinued operations)\b', question, re.I)):
+        return ('A discontinued-operations-only profit is not the same as Group profit including discontinued operations. '
+                'Standalone discontinued profit is not validated here; no combined total is substituted.')
     if re.search(r'\b(?:Westpac|ANZ|BHP|Tesla)\b', question, re.I):
         return 'Requested company is outside the CBA/NAB corpus.'
     # Cross-company ranking and equivalence are not supported in the current
@@ -84,7 +110,7 @@ def prepare(question):
         text = re.sub(r'(?:not|never|haven.t|have not) (?:yet )?(?:chosen|selected|decided)|undecided|not sure which|unsure which', '', text, flags=re.I)
         notes.append('Profit was unspecified. Showing cash profit and statutory NPAT separately, with their disclosed scopes; they are not interchangeable.')
     if 'basic_cash_eps' in metric_tags(text) and not re.search(r'cash|basic', question, re.I):
-        notes.append('EPS was unspecified. Only basic cash EPS is supported here; statutory and diluted EPS have not been verified.')
+        notes.append('EPS was unspecified. This core request checks basic cash EPS only. Other EPS variants are distinct and are not included in this calculation; broad lookups have a separate source-bound alternatives route.')
     if 'nim' in metric_tags(text) and not re.search(r'cash|statutory', question, re.I):
         notes.append('NIM was unspecified. Cash and statutory variants are checked separately; only source-bound variants are displayed.')
     # A one-year growth question normally requests the preceding-year comparison.

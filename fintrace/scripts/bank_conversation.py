@@ -12,6 +12,9 @@ LABELS = {
     'operating_income': 'total operating income', 'operating_expenses': 'operating expenses',
     'credit_impairment': 'credit impairment charge', 'nim': 'net interest margin',
     'basic_cash_eps': 'basic cash earnings per share', 'dividend_per_share': 'dividend per share',
+    'diluted_cash_eps': 'diluted cash earnings per share',
+    'basic_statutory_eps': 'basic statutory earnings per share',
+    'diluted_statutory_eps': 'diluted statutory earnings per share',
     'total_assets': 'total assets', 'gross_loans': 'gross loans and acceptances',
     'customer_deposits': 'customer deposits', 'cet1': 'CET1 capital ratio', 'lcr': 'liquidity coverage ratio',
 }
