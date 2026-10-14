@@ -88,7 +88,6 @@ Yash Keswani and Hashini Santhanakrishnan.
 - [Trello board](https://trello.com/b/TlRdAYBm/cosc2669-wil-project)
 - [Milestone 1 report](docs/FinTrace_Milestone1_Report.pdf)
 - [Milestone 1 planning record and role table](docs/MILESTONE1_README.md)
-- [AI-use working log](docs/AI_USE.md)
 - [Milestone 1 Condition 3 declaration](docs/Condition3_AI_Declaration.pdf)
 
 The historical plan is retained as a record, not as the current installation
