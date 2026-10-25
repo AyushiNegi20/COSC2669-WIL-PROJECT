@@ -1,0 +1,30 @@
+% AI-assisted shared draft prepared at Ayushi's request on 25 October 2026.
+% Assigned reviewer: Guruprasad Simimath. Live screenshots captured for the report on 25 October 2026.
+\subsection{Frontend and User Workflow}
+\label{subsec:frontend_workflow}
+
+The frontend is a custom HTML, CSS and JavaScript application served by a local Python HTTP server, not Streamlit. The browser submits questions to the configured backend and renders answers, calculations, sources and limitations. Health and document-library endpoints support the connection indicator and report list~\cite{fintraceRuntime2026}.
+
+Users can enter a question directly or select optional company and financial-year filters. Filters fill missing context; a bank or year named in the question takes precedence. Users do not need to classify questions as lookups, definitions or explanations. The interface accepts up to 2,000 characters and retains up to eight successful responses in the current tab's memory. It does not provide accounts or a persistent, cross-device conversation archive.
+
+Financial labels remain visible alongside figures. Supported comparisons include Python calculation workings, and numbered citations lead to extracted evidence and the original PDF page. Copy and JSON-download controls allow response records to be inspected. These features support checking before a figure is reused in a briefing; a clickable source alone does not prove correctness or completeness.
+
+Evidence limits and partial answers remain visible rather than being hidden behind a polished paragraph. A source-selected quotation is distinguished from a newly generated explanation. This matters when relevant passages do not establish the requested ranking or causal conclusion.
+
+Figures~\ref{fig:frontend_profit} and~\ref{fig:frontend_comparison} show two live, development-exposed examples from the current interface. They illustrate labels and inspectable workings, not a new accuracy assessment or latency benchmark.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.98\linewidth]{frontend_profit.png}
+\caption[Frontend: labelled profit alternatives]{Cropped live frontend response to ``What was CBA profit in FY2025?'' Four source-bound figures distinguish cash/statutory basis and continuing/total operations. The numbered references identify CBA's FY2025 Profit Announcement, PDF page 18~\cite{fintraceCBA2025}.}
+\label{fig:frontend_profit}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.98\linewidth]{frontend_comparison.png}
+\caption[Frontend: comparison and calculation workings]{Cropped live frontend response comparing CBA continuing cash profit from FY2024 to FY2025. The expanded workings show AUD~10,252 million minus AUD~9,836 million, giving AUD~416 million; the answer reports approximately 4.23\% relative growth. Operand references lead to PDF page 18 of the FY2025 report. Screenshots are illustrative runs, not timing guarantees.}
+\label{fig:frontend_comparison}
+\end{figure}
+
+The prototype is intended for a single user on the host laptop. Its local model, evidence files and indexes require installation beyond cloning the repository. Startup and GPU contention can affect response time. Interface-state and server checks were recorded separately from financial-answer assessment; no formal accessibility audit, multi-user load test or analyst usability study is claimed.

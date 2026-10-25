@@ -1,0 +1,594 @@
+{
+  "id": "D03",
+  "question": "What dividend did CBA pay per share in 2025, and how does it compare to the year before?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "2025"
+    },
+    "summary": "CBA / FY2025",
+    "notes": [],
+    "effective_question": "What dividend did CBA pay per share in 2025, and how does it compare to the year before?"
+  },
+  "response": {
+    "question": "What dividend did CBA pay per share in 2025, and how does it compare to the year before?",
+    "plan": {
+      "companies": [
+        "CBA"
+      ],
+      "value_years": [
+        2024,
+        2025
+      ],
+      "report_year": null,
+      "annual_report_only": false,
+      "ambiguity": null,
+      "branches": [
+        "CBA"
+      ],
+      "intent": "compare",
+      "metrics": [
+        "dividend_per_share"
+      ],
+      "definition_term": null,
+      "behavior": "answer",
+      "reason": null,
+      "original_question": "What CBA dividend per share in 2025, and how does it compare to FY2024? Calculate the change from FY2024 to FY2025. Include percentage change.",
+      "normalised_question": "What CBA dividend per share in 2025, and how does it compare to FY2024? Calculate the change from FY2024 to FY2025. Include percentage change.",
+      "corrections": [],
+      "metric_candidates": [
+        {
+          "metric": "dividend_per_share",
+          "similarity": 0.6054437160491943
+        },
+        {
+          "metric": "basic_cash_eps",
+          "similarity": 0.42453843355178833
+        },
+        {
+          "metric": "cash_profit",
+          "similarity": 0.3344334363937378
+        }
+      ],
+      "metric_resolution": "explicit",
+      "needs_human_review": true,
+      "semantic_margin": 0.180905282497406,
+      "search_question": "What CBA dividend per share in 2025, and how does it compare to FY2024? Calculate the change from FY2024 to FY2025. Include percentage change.\nFinancial concepts: full year dividend per share DPS",
+      "period_note": "Preserve each source period end; CBA and NAB fiscal years do not end on the same date.",
+      "version": "v9",
+      "requests": [
+        {
+          "id": "request-1",
+          "company": "CBA",
+          "metric": "dividend_per_share",
+          "intent": "compare",
+          "scope": null,
+          "value_years": [
+            2024,
+            2025
+          ],
+          "report_year": null,
+          "definition_contrast": false
+        }
+      ],
+      "constraints": {
+        "report_year": null,
+        "entity_scope": "Group",
+        "requested_years": [
+          2024,
+          2025
+        ],
+        "preserve_source_basis": true,
+        "preserve_period_kind": true,
+        "requires_new_calculation": true,
+        "cash_profit_cashflow_distinction": false
+      },
+      "requirements_complete": false,
+      "operation_request": {
+        "kind": "change",
+        "order": null,
+        "expense_magnitude": true,
+        "relative_percent": true
+      }
+    },
+    "operation_request": {
+      "kind": "change",
+      "order": null,
+      "expense_magnitude": true,
+      "relative_percent": true
+    },
+    "answer": {
+      "status": "source_bound_answer",
+      "mode": "source_cell_templates",
+      "parts": [
+        {
+          "request": {
+            "id": "request-1",
+            "company": "CBA",
+            "metric": "dividend_per_share",
+            "intent": "compare",
+            "scope": null,
+            "value_years": [
+              2024,
+              2025
+            ],
+            "report_year": null,
+            "definition_contrast": false
+          },
+          "claims": [
+            {
+              "text": "CBA dividend per share: 465 cents/share; annual ending 2024-06-30, ordinary dividend, Group.",
+              "cell": {
+                "metric": "dividend_per_share",
+                "company": "CBA",
+                "value": "465",
+                "raw_value": "465",
+                "unit": "cents/share",
+                "basis": "ordinary dividend",
+                "scope": "Group",
+                "period_kind": "annual",
+                "period_end": "2024-06-30",
+                "report_year": 2025,
+                "column": 2,
+                "source_id": "cba25:p019:b002:r16",
+                "header_ids": [
+                  "cba25:p019:b002:r0",
+                  "cba25:p019:b002:r1",
+                  "cba25:p019:b002:r9"
+                ],
+                "record_id": "v4:cba25:p019:b002:r16",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 19,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "5"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                },
+                "row_quote": "Dividend per share - fully franked (cents) | 485 | 465 | 4 | 260 | 225 | 16",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              "evidence": [
+                {
+                  "source_id": "cba25:p019:b002:r16",
+                  "quote": "Dividend per share - fully franked (cents) | 485 | 465 | 4 | 260 | 225 | 16",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 19,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "5"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba25:p019:b002:r0",
+                  "quote": " | Full Year Ended |  |  | Half Year Ended |  | ",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 19,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "5"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba25:p019:b002:r1",
+                  "quote": "Key Performance Indicators | 30 Jun 25 | 30 Jun 24 | Jun 25 vs Jun 24 % | 30 Jun 25 | 31 Dec 24 | Jun 25 vs Dec 24 %",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 19,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "5"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba25:p019:b002:r9",
+                  "quote": "Shareholder Returns including discontinued operations |  |  |  |  |  | ",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 19,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "5"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                }
+              ],
+              "method": "deterministic_template_from_bound_source_cell",
+              "presentation": {
+                "value": "465",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "465"
+              }
+            },
+            {
+              "text": "CBA dividend per share: 485 cents/share; annual ending 2025-06-30, ordinary dividend, Group.",
+              "cell": {
+                "metric": "dividend_per_share",
+                "company": "CBA",
+                "value": "485",
+                "raw_value": "485",
+                "unit": "cents/share",
+                "basis": "ordinary dividend",
+                "scope": "Group",
+                "period_kind": "annual",
+                "period_end": "2025-06-30",
+                "report_year": 2025,
+                "column": 1,
+                "source_id": "cba25:p019:b002:r16",
+                "header_ids": [
+                  "cba25:p019:b002:r0",
+                  "cba25:p019:b002:r1",
+                  "cba25:p019:b002:r9"
+                ],
+                "record_id": "v4:cba25:p019:b002:r16",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 19,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "5"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                },
+                "row_quote": "Dividend per share - fully franked (cents) | 485 | 465 | 4 | 260 | 225 | 16",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              "evidence": [
+                {
+                  "source_id": "cba25:p019:b002:r16",
+                  "quote": "Dividend per share - fully franked (cents) | 485 | 465 | 4 | 260 | 225 | 16",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 19,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "5"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba25:p019:b002:r0",
+                  "quote": " | Full Year Ended |  |  | Half Year Ended |  | ",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 19,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "5"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba25:p019:b002:r1",
+                  "quote": "Key Performance Indicators | 30 Jun 25 | 30 Jun 24 | Jun 25 vs Jun 24 % | 30 Jun 25 | 31 Dec 24 | Jun 25 vs Dec 24 %",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 19,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "5"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba25:p019:b002:r9",
+                  "quote": "Shareholder Returns including discontinued operations |  |  |  |  |  | ",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 19,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "5"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                }
+              ],
+              "method": "deterministic_template_from_bound_source_cell",
+              "presentation": {
+                "value": "485",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "485"
+              }
+            }
+          ],
+          "calculations": [
+            {
+              "operation": "change",
+              "left": "485",
+              "right": "465",
+              "absolute_change": "20",
+              "unit": "cents/share",
+              "formula": "left - right",
+              "operand_labels": [
+                "CBA dividend_per_share 2025-06-30",
+                "CBA dividend_per_share 2024-06-30"
+              ],
+              "source_cells": [
+                {
+                  "metric": "dividend_per_share",
+                  "company": "CBA",
+                  "value": "485",
+                  "raw_value": "485",
+                  "unit": "cents/share",
+                  "basis": "ordinary dividend",
+                  "scope": "Group",
+                  "period_kind": "annual",
+                  "period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "column": 1,
+                  "source_id": "cba25:p019:b002:r16",
+                  "header_ids": [
+                    "cba25:p019:b002:r0",
+                    "cba25:p019:b002:r1",
+                    "cba25:p019:b002:r9"
+                  ],
+                  "record_id": "v4:cba25:p019:b002:r16",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 19,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "5"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  },
+                  "row_quote": "Dividend per share - fully franked (cents) | 485 | 465 | 4 | 260 | 225 | 16",
+                  "binding_status": "rule_bound_development_not_human_certified"
+                },
+                {
+                  "metric": "dividend_per_share",
+                  "company": "CBA",
+                  "value": "465",
+                  "raw_value": "465",
+                  "unit": "cents/share",
+                  "basis": "ordinary dividend",
+                  "scope": "Group",
+                  "period_kind": "annual",
+                  "period_end": "2024-06-30",
+                  "report_year": 2025,
+                  "column": 2,
+                  "source_id": "cba25:p019:b002:r16",
+                  "header_ids": [
+                    "cba25:p019:b002:r0",
+                    "cba25:p019:b002:r1",
+                    "cba25:p019:b002:r9"
+                  ],
+                  "record_id": "v4:cba25:p019:b002:r16",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 19,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "5"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  },
+                  "row_quote": "Dividend per share - fully franked (cents) | 485 | 465 | 4 | 260 | 225 | 16",
+                  "binding_status": "rule_bound_development_not_human_certified"
+                }
+              ],
+              "presentations": [
+                {
+                  "value": "485",
+                  "representation": "source_signed",
+                  "note": "Original source sign preserved.",
+                  "transformation": "identity",
+                  "source_value": "485"
+                },
+                {
+                  "value": "465",
+                  "representation": "source_signed",
+                  "note": "Original source sign preserved.",
+                  "transformation": "identity",
+                  "source_value": "465"
+                }
+              ],
+              "source_signed_difference": "20",
+              "arithmetic": "Python Decimal",
+              "note": "Chronological change: later minus earlier.",
+              "relative_change_percent": "4.301075268817204301075268817"
+            }
+          ],
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "calculation_coverage": {
+        "required": 1,
+        "completed": 1
+      },
+      "warning": "Development source binding, not independently human-certified financial advice.",
+      "limitations": [
+        "CBA FY2024 is taken from the FY2025 report's comparative column (465 cents/share). This alone does not establish that it was restated; the original disclosure may differ.",
+        "Wording interpreted as: What CBA dividend per share in 2025, and how does it compare to FY2024? Calculate the change from FY2024 to FY2025."
+      ]
+    },
+    "retrieval": {
+      "tokens": 845,
+      "omissions": [],
+      "numeric_binding_search": "All indexed financial rows matching the requested bank and metric, followed by strict cell binding; not top-k retrieval accuracy."
+    },
+    "seconds": 0.201319899992086,
+    "version": "fintrace-conversational-development",
+    "interpretation": {
+      "retrieval_question": "What CBA dividend per share in 2025, and how does it compare to FY2024? Calculate the change from FY2024 to FY2025. Include percentage change.",
+      "notes": []
+    },
+    "question_contract": {
+      "retrieval_question": "What CBA dividend per share in 2025, and how does it compare to FY2024? Calculate the change from FY2024 to FY2025. Include percentage change.",
+      "notes": [],
+      "metric_mapping": "explicit aliases only for numerical answers"
+    },
+    "binding_validation": {
+      "passed": true,
+      "issues": []
+    },
+    "route": "numeric",
+    "generation": {
+      "status": "skipped",
+      "reason": "Numbers, calculations and guards use source templates; no generative model was called."
+    },
+    "query_normalisation": {
+      "question": "What CBA dividend per share in 2025, and how does it compare to FY2024? Calculate the change from FY2024 to FY2025.",
+      "changes": [
+        {
+          "original": "dividend did CBA pay per share",
+          "normalised": "CBA dividend per share"
+        },
+        {
+          "original": "What CBA dividend per share in 2025, and how does it compare to the year before?",
+          "normalised": "What CBA dividend per share in 2025, and how does it compare to FY2024? Calculate the change from FY2024 to FY2025.",
+          "assumption": "Annual movement interpreted as FY2024 to FY2025."
+        }
+      ]
+    },
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "CBA's dividend per share was 465 cents/share for the year ended 30 June 2024 (ordinary dividend basis, Group). CBA's dividend per share was 485 cents/share for the year ended 30 June 2025 (ordinary dividend basis, Group).",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 19,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "5"
+              },
+              "report_period_end": "2025-06-30",
+              "report_year": 2025,
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+            }
+          ],
+          "kind": "numeric"
+        },
+        {
+          "text": "For CBA dividend per share, the comparison from 2024-06-30 to 2025-06-30 gives an increase of 20 cents/share. The relative change is +4.30% (rounded).",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 19,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "5"
+              },
+              "report_period_end": "2025-06-30",
+              "report_year": 2025,
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+            }
+          ],
+          "kind": "calculation"
+        }
+      ],
+      "qualifications": [
+        "CBA FY2024 is taken from the FY2025 report's comparative column (465 cents/share). This alone does not establish that it was restated; the original disclosure may differ.",
+        "Wording interpreted as: What CBA dividend per share in 2025, and how does it compare to FY2024? Calculate the change from FY2024 to FY2025."
+      ],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 0.202202499989653
+}

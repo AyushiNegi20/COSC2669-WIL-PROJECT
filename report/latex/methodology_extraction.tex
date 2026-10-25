@@ -1,0 +1,16 @@
+% Report section owner: Ayushi Negi
+% AI-assisted working draft: verify against the cited extraction records before submission.
+\subsection{PDF Extraction and Evidence Preservation}
+\label{subsec:pdf_extraction}
+
+We needed to extract more than the numbers on a page. A figure is only useful if it stays connected to its row label, year, unit and reporting basis. Each PDF is recorded with its issuer URL, document ID and SHA-256 checksum, a fingerprint that helps detect a changed file. This makes it possible to trace an answer back to the exact source used.
+
+The extraction has two layers. pypdf first reads the text already stored in all 1,021 pages of the six PDFs. Docling then identifies table structure on an initial selection of 72 financial pages covering results, reconciliations, balances and supporting notes~\cite{doclingSoftware}. These pages contain selectable text, so optical character recognition (OCR) is disabled. Docling runs locally on CPU with four threads. Completed conversions are reused only when the source, pipeline and library versions match. Selecting 72 pages kept the more expensive table processing manageable; that number was a project boundary, not a technical requirement \cite{fintraceExtraction2026}.
+
+We compared four libraries in six configurations on an 18-page development sample. The checks asked whether values followed the correct row in the correct order, not simply whether a number appeared somewhere on the page. Docling's results on this sample and its table representation supported its selection. The comparison was not a universal library ranking: the lighter table strategies were untuned and the sample also informed development. No separate, sealed extraction holdout was scored \cite{fintraceExtraction2026}.
+
+Raw converter output is kept separately from cleaned evidence. The records retain cells, merged-cell spans, headings, page references, source coordinates and correction logs. In some CBA tables, invisible trailing brackets appeared in extracted text. A targeted pdfplumber check inspects the source characters and their colours before removing a bracket. Visible brackets denoting negative values are preserved. Cases that cannot be resolved stay flagged.
+
+An additional audit scans every stored table cell. Simple numerical values are checked against the page text and the characters at their recorded coordinates. Mixed text and unresolved cases remain in a review queue. Agreement helps detect extraction inconsistencies, but does not establish that a number has been assigned the correct year, unit, basis or header \cite{fintraceExtractionFreeze2026}.
+
+Full-report prose indexing later broadened searchable text, while calculations still required checked financial values. Extraction alone does not approve a figure for arithmetic. Chart-only content and unvalidated tables remain limitations. The next stage receives the extracted evidence and source records, not the evaluation answer keys.

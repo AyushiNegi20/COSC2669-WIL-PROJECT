@@ -1,0 +1,14 @@
+% AI-assisted shared draft prepared at Ayushi's request on 25 October 2026.
+% Assigned reviewer: Janhavi Maheshwar Ghate. Verify packets and scoring with Hashini.
+\subsection{Evaluation Design and Scoring Criteria}
+\label{subsec:evaluation_design}
+
+Evaluation treated an answer as more than a matching number. A response can contain a correct value but use the wrong reporting basis, omit a requested part or cite an unrelated page. We separated retrieval, financial correctness, completeness, citation support, appropriate non-answers and latency~\cite{fintraceEval2026}.
+
+Questions covered lookups, within-bank year comparisons, calculations, definitions, management explanations and ambiguous wording. Guard cases included unavailable years, future outcomes, other companies, live prices and personal investment advice. Reference records identify the document and page, period, unit, basis and scope. Expected behaviour depends on both the question and declared coverage: an answer in the full PDF is not automatically available in the indexed or checked evidence.
+
+For answerable questions, assessments distinguish complete answers, partial answers, wrong answers and over-refusals. Appropriate non-answers concern genuinely unavailable information or a clearly stated prototype boundary. Refusal of an answerable question remains a coverage or effectiveness limitation even when it prevents fabrication. Runtime errors are separate. Correctness requires compatible periods and scopes, not matching digits alone. Completeness requires all requested parts, including both operands and a calculation when change is requested.
+
+Retrieval Hit@5 asks whether judged relevant evidence appears in the first five results; mean reciprocal rank rewards placing it earlier. Both require saved rankings and relevance judgments. They cannot be reconstructed from final citations, especially because numerical binding can consider rows outside the hybrid top-five list. Citation support instead asks whether a cited page supports the claim. Arithmetic checks inspect the formula, operands, units and rounding. Percentage-point movement is not scored as relative percentage growth.
+
+Development tests guide fixes; exposed regression sets check known behaviour. Historical assessments used separately AI-authored questions outside the runtime repository, not an external human panel. The archived question file names issuer PDFs and the development metric catalogue as reference material, so separate authorship does not establish fully blind, source-only evaluation. Once results informed changes, the questions became regression evidence. Software-test counts and HTTP success are not answer accuracy. Findings retain each run's candidate and denominator. Appropriate refusals and missed answerable questions must remain distinguishable in an unanswered rate.

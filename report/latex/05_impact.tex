@@ -1,0 +1,23 @@
+% AI-assisted shared draft prepared at Ayushi's request on 25 October 2026.
+% Assigned reviewer: Guruprasad Simimath. Verify benefit claims and link final visuals.
+\section{Impact and Significance of Results}
+\label{sec:Impact and Significance of Results}
+
+\subsection{Value for the analyst's task}
+FinTrace addresses a specific step in preparing a financial briefing: finding a result, understanding its context and checking the source before reuse. Its value is not replacing financial judgment. It brings evidence, labels and supported workings together so that an analyst has less to reconstruct from a short, unsupported answer.
+
+A user asking about profit may not know to specify cash or statutory basis and continuing or total operations. Showing available labelled alternatives reveals that choice rather than silently making it. Similarly, a within-bank comparison is more useful when its original values, formula and report version can be inspected. These functions are demonstrated in a working interface, not merely proposed.
+
+One historical 24-question assessment recorded no serious financial errors or misleading citations, but some source-answerable questions remained incomplete or were refused~\cite{fintraceReleaseReview2026}. Avoiding wrong figures matters, yet excessive refusal also imposes work on the user. The target is useful coverage with visible uncertainty, not safety measured only by how few questions receive answers.
+
+\subsection{Expected benefits and responsible use}
+Less manual searching, easier checking and fewer unnoticed reporting-basis mistakes are plausible benefits, not established user-study findings. The project does not claim a percentage reduction in analyst time, financial losses or business risk. A suitable next study would compare manual report search with FinTrace on identical briefing tasks, measuring completion time, answer quality and verification effort.
+
+Human review remains necessary before sign-off. Public reports may omit information; retrieval may miss it; relevant quotations may still fail to answer the question. Source vintage, entity boundaries and definitions must remain visible even when they make an answer longer. Historical spending does not establish future performance or investment suitability.
+
+Local inference avoids sending questions to a hosted generation service in the configured demo, but does not certify enterprise security. The prototype has no production access-control model, formal security assessment or multi-user capacity validation. Nor has a formal accessibility audit been completed. These are deployment requirements, not demonstrated features.
+
+\subsection{Priorities beyond the demonstration}
+The first priority is analyst feedback on incomplete explanations, coverage gaps and the evidence display. Improvements should be assessed on fresh questions after the candidate is fixed, with exposed cases retained as regressions. Latency also needs measurement on an uncontended system before setting operational expectations.
+
+Broader deployment requires reliable installation, monitored source updates, access controls and usability and accessibility checks. Expansion beyond banking requires new terminology and validated accounting relationships, not simply more PDFs. Keeping these priorities separate from demonstrated functionality avoids presenting a bounded source-checking assistant as general financial analysis.

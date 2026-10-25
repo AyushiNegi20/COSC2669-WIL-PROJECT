@@ -1,0 +1,314 @@
+{
+  "id": "D23",
+  "question": "What was CBA's return on equity in 2025?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "2025"
+    },
+    "summary": "CBA / FY2025",
+    "notes": [],
+    "effective_question": "What was CBA's return on equity in 2025?"
+  },
+  "response": {
+    "question": "What was CBA's return on equity in 2025?",
+    "answer": {
+      "status": "partial_answer",
+      "mode": "report_narrative",
+      "source_excerpts": [
+        {
+          "heading": "CBA FY2025 / performance: Full-report prose search. Group or general disclosure. Year comparison (prior year)",
+          "source": {
+            "company": "CBA",
+            "document_id": "cba25",
+            "document_title": "CBA FY2025 Profit Announcement",
+            "pdf_page": 26,
+            "report_year": 2025,
+            "report_period_end": "2025-06-30",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+            "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+            "report_section": "Group or general disclosure",
+            "document_role": "primary"
+          },
+          "excerpts": [
+            {
+              "source_id": "cba25:full:p026:b013",
+              "quote": "Return on equity (“cash basis”) decreased 10 basis points to 13.5% due to growth in retained profits."
+            }
+          ]
+        },
+        {
+          "heading": "CBA FY2025 / performance: Full-report prose search. Group or general disclosure. ",
+          "source": {
+            "company": "CBA",
+            "document_id": "cba25",
+            "document_title": "CBA FY2025 Profit Announcement",
+            "pdf_page": 9,
+            "report_year": 2025,
+            "report_period_end": "2025-06-30",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+            "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+            "report_section": "Group or general disclosure",
+            "document_role": "primary"
+          },
+          "excerpts": [
+            {
+              "source_id": "cba25:full:p009:b018",
+              "quote": "The Bank’s ROE remained peer leading and broadly stable at 13.5%. The final dividend was $2.60 per share, delivering a total dividend for the year of $4.85 per share, fully franked."
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "CBA and NAB prose search includes all six reports. Retrieved passages are not exhaustive; unvalidated tables and image-only content are not calculation-ready.",
+        "Reporting bases remain distinct: cash earnings and statutory profit are not interchangeable. Reasons are attributed to the report, not independently established causes."
+      ],
+      "message": "CBA FY2025 reports: \"Return on equity (“cash basis”) decreased 10 basis points to 13.5% due to growth in retained profits.\"\n\nCBA FY2025 reports: \"The Bank’s ROE remained peer leading and broadly stable at 13.5%. The final dividend was $2.60 per share, delivering a total dividend for the year of $4.85 per share, fully franked.\"",
+      "generated_explanation": {
+        "statements": [
+          {
+            "text": "CBA FY2025 reports: \"Return on equity (“cash basis”) decreased 10 basis points to 13.5% due to growth in retained profits.\"",
+            "evidence_ids": [
+              "P1"
+            ],
+            "citations": [
+              {
+                "source_id": "cba25:full:p026:b013",
+                "quote": "Return on equity (“cash basis”) decreased 10 basis points to 13.5% due to growth in retained profits.",
+                "period_context": "Year comparison (prior year)",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 26,
+                  "report_year": 2025,
+                  "report_period_end": "2025-06-30",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "report_section": "Group or general disclosure",
+                  "document_role": "primary"
+                }
+              }
+            ],
+            "kind": "quotation"
+          },
+          {
+            "text": "CBA FY2025 reports: \"The Bank’s ROE remained peer leading and broadly stable at 13.5%. The final dividend was $2.60 per share, delivering a total dividend for the year of $4.85 per share, fully franked.\"",
+            "evidence_ids": [
+              "P2"
+            ],
+            "citations": [
+              {
+                "source_id": "cba25:full:p009:b018",
+                "quote": "The Bank’s ROE remained peer leading and broadly stable at 13.5%. The final dividend was $2.60 per share, delivering a total dividend for the year of $4.85 per share, fully franked.",
+                "period_context": "",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 9,
+                  "report_year": 2025,
+                  "report_period_end": "2025-06-30",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "report_section": "Group or general disclosure",
+                  "document_role": "primary"
+                }
+              }
+            ],
+            "kind": "quotation"
+          }
+        ],
+        "method": "extractive_selection",
+        "validation": {
+          "literal_source_match": "passed",
+          "selection_relevance": "model_selected_not_independently_verified"
+        }
+      },
+      "important_notes": [
+        "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations."
+      ]
+    },
+    "narrative_request": {
+      "status": "search",
+      "requests": [
+        {
+          "topic": "performance",
+          "company": "CBA",
+          "year": 2025,
+          "query": "Explain CBA FY2025 reported annual financial results: changes in profit, income, expenses and the reported reasons.",
+          "followup": "Explain CBA FY2025 disclosures relevant to: What was CBA's return on equity in 2025?"
+        }
+      ],
+      "notes": [
+        "This highlights a reported financial change, not necessarily the largest or most important change across the full report."
+      ],
+      "comparative": false,
+      "amount_requested": false,
+      "question": "What was CBA's return on equity in 2025?",
+      "topic": "performance",
+      "company": "CBA",
+      "year": 2025,
+      "search_subject": "return on equity"
+    },
+    "research_coverage": [
+      {
+        "company": "CBA",
+        "year": 2025,
+        "topic": "performance",
+        "sections": 2
+      }
+    ],
+    "research_searches": [
+      {
+        "query": "What was CBA's return on equity in 2025?",
+        "scope": "CBA full-report prose",
+        "relevant_sections": 2,
+        "ranked_sources": [
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 149,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 15.333498658534285
+          },
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 26,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 14.849221813125514
+          },
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 9,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 2.4222966704691196
+          }
+        ]
+      }
+    ],
+    "full_report_search": true,
+    "interpretation": {
+      "retrieval_question": "Explain CBA FY2025 reported annual financial results: changes in profit, income, expenses and the reported reasons.",
+      "notes": [
+        "This highlights a reported financial change, not necessarily the largest or most important change across the full report."
+      ]
+    },
+    "route": "narrative",
+    "generation": {
+      "status": "source_selected",
+      "model": "qwen3:8b",
+      "method": "extractive_selection",
+      "timing": {
+        "total_duration": 3115006500,
+        "load_duration": 5919700,
+        "prompt_eval_count": 453,
+        "eval_count": 14
+      },
+      "selected_passage_ids": [
+        "P1",
+        "P2"
+      ],
+      "missing_scopes": [],
+      "literal_source_match": true,
+      "seconds": 3.1787767999921925
+    },
+    "intent_plan": {
+      "topic": "performance",
+      "task": "figures",
+      "subject": "return on equity",
+      "specific_amount": true,
+      "advice": false,
+      "status": "interpreted",
+      "timing": {
+        "total_duration": 4078963000,
+        "load_duration": 6169000,
+        "prompt_eval_count": 612,
+        "eval_count": 40
+      },
+      "model": "qwen3:8b"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 7.3819980999978725,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "CBA FY2025 reports: \"Return on equity (“cash basis”) decreased 10 basis points to 13.5% due to growth in retained profits.\"",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 26,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "narrative"
+        },
+        {
+          "text": "CBA FY2025 reports: \"The Bank’s ROE remained peer leading and broadly stable at 13.5%. The final dividend was $2.60 per share, delivering a total dividend for the year of $4.85 per share, fully franked.\"",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 9,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "narrative"
+        }
+      ],
+      "qualifications": [
+        "Reporting bases remain distinct: cash earnings and statutory profit are not interchangeable. Reasons are attributed to the report, not independently established causes."
+      ],
+      "important_notes": [
+        "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations.",
+        "CBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready."
+      ],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 7.3825398000190035
+}

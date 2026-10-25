@@ -1,0 +1,204 @@
+{
+  "id": "D07",
+  "question": "What does CBA mean when it says 'cash basis'?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "all"
+    },
+    "summary": "CBA / FY2024 and FY2025",
+    "notes": [],
+    "effective_question": "What does CBA mean when it says 'cash basis'?"
+  },
+  "response": {
+    "question": "What does CBA mean when it says 'cash basis'?",
+    "full_report_search": true,
+    "answer": {
+      "status": "evidence_answer",
+      "message": "Local generation was unavailable or did not pass checks. Showing the original source-based answer.\nDefinitions are grounded in the bank disclosures, not inferred from a nearby KPI.",
+      "source_excerpts": [
+        {
+          "source": {
+            "company": "CBA",
+            "document_id": "cba24",
+            "document_title": "CBA FY2024 Profit Announcement",
+            "pdf_page": 147,
+            "report_year": 2024,
+            "report_period_end": "2024-06-30",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-FY24-Profit-Announcement.pdf",
+            "source_sha256": "1ab9332c8371322b5bfb7a6da65727e0f0f7a4120cfc095923e069a320d538da",
+            "report_section": "Group or general disclosure",
+            "document_role": "primary"
+          },
+          "heading": "Full-report prose search. Group or general disclosure. ",
+          "excerpts": [
+            {
+              "source_id": "cba24:full:p147:b015",
+              "quote": "Return on equity (“cash basis”) Based on net profit after tax (“cash basis”) divided by average shareholders’ equity.",
+              "period_context": ""
+            }
+          ],
+          "retrieval_score": 21.452017828536412,
+          "retrieval_method": "full_report_bm25_definition"
+        },
+        {
+          "source": {
+            "company": "CBA",
+            "document_id": "cba24",
+            "document_title": "CBA FY2024 Profit Announcement",
+            "pdf_page": 17,
+            "report_year": 2024,
+            "report_period_end": "2024-06-30",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-FY24-Profit-Announcement.pdf",
+            "source_sha256": "1ab9332c8371322b5bfb7a6da65727e0f0f7a4120cfc095923e069a320d538da",
+            "report_section": "Group or general disclosure",
+            "document_role": "primary"
+          },
+          "heading": "Full-report prose search. Group or general disclosure. ",
+          "excerpts": [
+            {
+              "source_id": "cba24:full:p017:b001",
+              "quote": "The Profit Announcement discloses the net profit after tax on both a statutory and cash basis. The statutory basis is prepared in accordance with the Corporations Act and the Australian Accounting Standards, which comply with International Financial Reporting Standards (IFRS). The cash basis is used by management to present a clear view of the Bank’s operating results. It is not a measure based on cash accounting or cash flows. The items excluded from cash profit, such as hedging and IFRS volatility and gains or losses on acquisition, disposal, closure, capital repatriation and demerger of businesses are calculated consistently with the prior year and prior half disclosures and do not discriminate between positive and negative adjustments. A list of items excluded from cash profit is provided in the table below.",
+              "period_context": ""
+            }
+          ],
+          "retrieval_score": 11.840477503847719,
+          "retrieval_method": "full_report_bm25_definition"
+        },
+        {
+          "source": {
+            "company": "CBA",
+            "document_id": "cba25",
+            "document_title": "CBA FY2025 Profit Announcement",
+            "pdf_page": 149,
+            "report_year": 2025,
+            "report_period_end": "2025-06-30",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+            "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+            "report_section": "Group or general disclosure",
+            "document_role": "primary"
+          },
+          "heading": "Full-report prose search. Group or general disclosure. ",
+          "excerpts": [
+            {
+              "source_id": "cba25:full:p149:b017",
+              "quote": "Return on equity (“cash basis”) Based on net profit after tax (“cash basis”) divided by average shareholders’ equity.",
+              "period_context": ""
+            }
+          ],
+          "retrieval_score": 21.452017828536412,
+          "retrieval_method": "full_report_bm25_definition"
+        },
+        {
+          "source": {
+            "company": "CBA",
+            "document_id": "cba25",
+            "document_title": "CBA FY2025 Profit Announcement",
+            "pdf_page": 17,
+            "report_year": 2025,
+            "report_period_end": "2025-06-30",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+            "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+            "report_section": "Group or general disclosure",
+            "document_role": "primary"
+          },
+          "heading": "Full-report prose search. Group or general disclosure. ",
+          "excerpts": [
+            {
+              "source_id": "cba25:full:p017:b003",
+              "quote": "The Profit Announcement discloses the net profit after tax on both a statutory and cash basis. The statutory basis is prepared in accordance with the Corporations Act and the Australian Accounting Standards, which comply with International Financial Reporting Standards (IFRS). The cash basis is used by management to present a clear view of the Bank’s operating results. It is not a measure based on cash accounting or cash flows. The items excluded from cash profit, such as hedging and IFRS volatility and gains or losses on acquisition, disposal, closure, capital repatriation and demerger of businesses are calculated consistently with the prior year and prior half disclosures and do not discriminate between positive and negative adjustments. A list of items excluded from cash profit is provided in the table below.",
+              "period_context": ""
+            }
+          ],
+          "retrieval_score": 11.840477503847719,
+          "retrieval_method": "full_report_bm25_definition"
+        }
+      ],
+      "limitations": [
+        "These retrieved definitions are report-specific and do not establish equivalence unless the cited disclosure supports it."
+      ]
+    },
+    "definition_request": true,
+    "generation": {
+      "status": "fallback",
+      "reason": "timed out",
+      "model": "qwen3:8b",
+      "seconds": 35.064791599987075
+    },
+    "route": "narrative",
+    "version": "fintrace-conversational-development",
+    "seconds": 35.15314290000242,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "CBA's FY2024 report states: \"Return on equity (“cash basis”) Based on net profit after tax (“cash basis”) divided by average shareholders’ equity.\"",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba24",
+              "document_title": "CBA FY2024 Profit Announcement",
+              "pdf_page": 147,
+              "report_year": 2024,
+              "report_period_end": "2024-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-FY24-Profit-Announcement.pdf",
+              "source_sha256": "1ab9332c8371322b5bfb7a6da65727e0f0f7a4120cfc095923e069a320d538da",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "quotation"
+        },
+        {
+          "text": "CBA's FY2024 report states: \"The Profit Announcement discloses the net profit after tax on both a statutory and cash basis. The statutory basis is prepared in accordance with the Corporations Act and the Australian Accounting Standards, which comply with International Financial Reporting Standards (IFRS). The cash basis is used by management to present a clear view of the Bank’s operating results. It is not a measure based on cash accounting or cash flows. The items excluded from cash profit, such as hedging and IFRS volatility and gains or losses on acquisition, disposal, closure, capital repatriation and demerger of businesses are calculated consistently with the prior year and prior half disclosures and do not discriminate between positive and negative adjustments. A list of items excluded from cash profit is provided in the table below.\"",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba24",
+              "document_title": "CBA FY2024 Profit Announcement",
+              "pdf_page": 17,
+              "report_year": 2024,
+              "report_period_end": "2024-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy24/CBA-FY24-Profit-Announcement.pdf",
+              "source_sha256": "1ab9332c8371322b5bfb7a6da65727e0f0f7a4120cfc095923e069a320d538da",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "quotation"
+        },
+        {
+          "text": "CBA's FY2025 report states: \"Return on equity (“cash basis”) Based on net profit after tax (“cash basis”) divided by average shareholders’ equity.\"",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 149,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "quotation"
+        }
+      ],
+      "qualifications": [
+        "Local generation was unavailable or did not pass checks. Showing the original source-based answer.\nDefinitions are grounded in the bank disclosures, not inferred from a nearby KPI.",
+        "These retrieved definitions are report-specific and do not establish equivalence unless the cited disclosure supports it."
+      ],
+      "important_notes": [
+        "CBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready."
+      ],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 35.1537062000134
+}

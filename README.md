@@ -67,7 +67,8 @@ or credentials. See the [setup guide](fintrace/docs/SETUP.md) for details.
 | [Known limitations](fintrace/docs/LIMITATIONS.md) | Coverage and answer-quality boundaries |
 | [Evaluator handoff](fintrace/docs/EVALUATOR_HANDOFF.md) | Use the configured demo, preserve first responses and score evidence |
 | [walert_reproduction/](walert_reproduction/) | Preliminary BM25 reproduction, tests and results |
-| [docs/](docs/) | Milestone 1 submission and AI-use records |
+| [docs/](docs/) | Historical Milestone 1 plan, with links to preserved submission and AI-use records |
+| [Written-report evidence](report/README.md) | Report sources, historical response archive, scoring reconciliation and submission checks |
 
 From `fintrace/`, run the regression suites with:
 
@@ -86,9 +87,9 @@ Ayushi Negi, Janhavi Maheshwar Ghate, Shriram Varadarajan, Guruprasad Simimath,
 Yash Keswani and Hashini Santhanakrishnan.
 
 - [Trello board](https://trello.com/b/TlRdAYBm/cosc2669-wil-project)
-- [Milestone 1 report](docs/FinTrace_Milestone1_Report.pdf)
+- [Milestone 1 report](https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/4105f980a8622163ac346ea4d1c3e89f83014b0d/docs/FinTrace_Milestone1_Report.pdf)
 - [Milestone 1 planning record and role table](docs/MILESTONE1_README.md)
-- [Milestone 1 Condition 3 declaration](docs/Condition3_AI_Declaration.pdf)
+- [Milestone 1 Condition 3 declaration](https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/4105f980a8622163ac346ea4d1c3e89f83014b0d/docs/Condition3_AI_Declaration.pdf)
 
 The historical plan is retained as a record, not as the current installation
 guide or final contribution statement. Final contributions and the assessment

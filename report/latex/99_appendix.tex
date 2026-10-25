@@ -1,0 +1,66 @@
+% Coordinator: Ayushi Negi. Each member must write their own reflection.
+\section{Project Evidence and Individual Reflections}
+\label{app:project_evidence}
+
+\subsection{Repositories and coordination}
+The group submission repository is \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT}{COSC2669-WIL-PROJECT}. It contains the imported FinTrace application under \texttt{fintrace/}, the preliminary Walert reproduction and Milestone~1 records. Its \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/main/fintrace/docs/WIL_MIGRATION.md}{migration record} identifies the imported release and verification scope.
+
+The public WIL runtime has been aligned with original backend checkpoint \texttt{449c4ba}; its \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/report/IMPLEMENTATION_CHECKPOINT.md}{checkpoint record} explains the import and WIL-specific setup paths. Necessary evidence is available in the public repository without private development-repository access. Evaluation results retain their original candidate identifiers; an older assessment is not presented as a score for this revision.
+
+Coordination records are on the \href{https://trello.com/b/TlRdAYBm/cosc2669-wil-project}{WIL Project~9 Trello board}. The report is written in the \href{https://www.overleaf.com/project/6a825099db573616c529838b}{shared Overleaf project}, retaining version history. Current card status shows the state of a task; commits and run records establish the content and timing of technical changes.
+
+\subsection{Failure analysis and evaluation provenance}
+The \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/fintrace/docs/BANKING_PDF_EXTRACTION.md}{extraction comparison} showed why finding the digits was not enough. On the development sample, tools could recover a value in page text but fail to preserve its row relationship. This led to structure-aware extraction and separate checks of source characters and financial context. Because the sample also informed the fixes, it cannot establish accuracy on unseen pages.
+
+The \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/fintrace/reports/coverage/REVIEW.md}{coverage review} challenged another assumption: a missing answer did not mean the PDF was missing. All six reports already had extractable text. Gaps also came from restrictive numerical scope, routing and paragraphs split across layout blocks. The response was to improve those stages while keeping calculations limited to checked values, rather than treating every extracted table as reliable.
+
+A third lesson came from a CBA customer-deposits answer key. The expectation used AUD~834,259 million for FY2024, while the FY2025 report's comparative column showed AUD~851,682 million. Comparing that column with FY2025 deposits of AUD~908,812 million gives a change of AUD~57,130 million, about 6.71\%. The \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/fintrace/reports/coverage/RELEASE_CANDIDATE.md}{source-based review} preserved the original expectation and explained the reporting-version difference. The lesson was to check the key as well as the system: a disagreement should be resolved from the source, not by changing the output until it matches a number.
+
+The \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/tree/report-submission-2026-10-25/report/evidence/historical-release-20260926T233529Z}{historical assessment packet} preserves 24 first responses, original expectations, the companion review and file hashes. Its reconciliation names all question IDs and explicitly leaves D20 outside a completeness category rather than inventing a score. The original expectations include the deposits-key error and an unsupported restatement label; these are retained with explanatory notes, not silently corrected. Because the question file also names the development metric catalogue as reference material, this is not presented as fully blind, source-only assessment.
+
+\subsection{Runtime settings and reproducibility}
+\label{app:runtime_details}
+The report's numerical and prose paths use the same recorded local configuration, not a hosted API. The generation model is Qwen3 8B, Q4\_K\_M, through Ollama. Its context setting is 16,384 tokens. Task-specific output caps are 900 tokens for drafts, 160 for passage selection, 220 for intent planning and 400 for support review. Sampling settings include temperature 0.7, top-p 0.8 and top-k 20. A 35-second timeout is per call, not a whole-answer guarantee. These are application settings, not claims about a model's maximum possible context.
+
+Structured dense retrieval uses Qwen3-Embedding-0.6B with float32 CUDA inference and exact similarity over local NumPy vectors. Reciprocal rank fusion uses rank constant 60. Embedding inputs are checked against a configured 32,768-token ceiling; the subsequent structured evidence pack has a separate budget of about 2,048 tokens. Child and parent chunk ceilings are 2,400 and 10,000 UTF-8 bytes, with at most three table rows in a child. Bytes and tokens are not interchangeable.
+
+Configuration, source checksums, model revisions and integrity records are retained in the public WIL copy. Raw financial evidence and model files are supplied through the manifest-pinned setup process, not embedded in the report. The release manifest detects changes; it does not certify financial correctness. Current source and regression checks do not replace fresh assessment of a fixed candidate.
+
+\subsection{AI-assisted editing example}
+\label{app:ai_process}
+\textbf{Before:} The draft solution description said the system declined questions ``when the reports can't support an answer.''
+
+\textbf{After:} The report distinguishes evidence retrieved or checked by the prototype from information that may exist elsewhere in the PDFs: ``When evidence is insufficient, the response describes the limitation rather than claiming the full report lacks an answer.''
+
+\textbf{Annotation:} AI feedback identified that a retrieval miss does not establish absence from a report. The revised wording narrows the claim to the available evidence, consistent with the coverage failures we investigated. Selecting the bounded scope and accepting or rejecting revisions remain group decisions. AI also contributed substantive code, evaluation and report drafts; this wording example is not the full extent of its use. The repository's \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/report/AI_USE.md}{AI-use account} and accompanying Condition~3 declaration must be read together.
+
+% Remaining submission actions: each member confirms actual contributions and
+% completes their own reflection; the group agrees the contribution sheet and
+% final Condition 3 form. Leave the five sections below for their owners.
+
+\subsection{Ayushi Negi: Individual Reflection}
+% AI-assisted reflection drafted earlier in this chat; inserted at Ayushi's request on 25 October 2026.
+As project lead, I worked across development, evaluation and coordination. I reviewed the pipeline from source selection and PDF extraction through to chunking, retrieval, answer generation and the frontend. I also helped investigate failed answers, prepare the demonstration and organise the final report.
+
+My biggest challenge was knowing when FinTrace was good enough. Each round of testing uncovered another gap, and I sometimes felt that improving the system meant adding more features or trying a stronger model. Over time, I realised that a fluent answer could still be based on the wrong evidence. The important question was not simply whether the model sounded convincing, but whether it had answered the actual question with the right financial context.
+
+The CBA profit example made this clear. Returning two correct figures could still be incomplete when the report contained four relevant variants. Similarly, making the full reports searchable improved coverage, but did not automatically make every table reliable for calculations. These experiences helped me distinguish retrieval, correctness and completeness instead of treating them as one measure of success.
+
+I used AI tools to explore approaches and assist with implementation and evaluation. However, repeated suggestions also expanded the scope and created more back and forth. I learned to ask for evidence, preserve failed responses and judge changes against a fixed set of requirements.
+
+Leading the project also showed me that taking on more work myself is not always the best way to coordinate a team. Next time, I would agree on smaller deliverables, clearer ownership and completion evidence earlier. I would also protect an unseen evaluation set and set release criteria sooner, so we could improve the system without continually moving the finish line.
+
+\subsection{Yash Keswani: Individual Reflection}
+% Yash: write your own reflection here.
+
+\subsection{Shriram Varadarajan: Individual Reflection}
+% Shriram: write your own reflection here.
+
+\subsection{Guruprasad Simimath: Individual Reflection}
+% Guruprasad: write your own reflection here.
+
+\subsection{Janhavi Maheshwar Ghate: Individual Reflection}
+% Janhavi: write your own reflection here.
+
+\subsection{Hashini Santhanakrishnan: Individual Reflection}
+% Hashini: write your own reflection here.

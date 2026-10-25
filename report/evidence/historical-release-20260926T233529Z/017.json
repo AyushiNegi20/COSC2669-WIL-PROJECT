@@ -1,0 +1,44 @@
+{
+  "id": "D17",
+  "question": "What will CBA's profit be next year?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "all"
+    },
+    "summary": "CBA / Period as specified in the question",
+    "notes": [],
+    "effective_question": "What will CBA's profit be next year?"
+  },
+  "response": {
+    "question": "What will CBA's profit be next year?",
+    "answer": {
+      "status": "unable_to_verify",
+      "message": "The reports cannot establish a future realised financial outcome."
+    },
+    "route": "guard",
+    "generation": {
+      "status": "skipped"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 0.001415100006852299,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "The reports cannot establish a future realised financial outcome.",
+          "citations": [],
+          "kind": "limit"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 0.0015468999918084592
+}

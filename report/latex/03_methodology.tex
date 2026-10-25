@@ -1,0 +1,21 @@
+% AI-assisted overview and figure integration, 25 October 2026.
+% Methodology coordinator: Ayushi Negi. Review with the assigned section reviewers.
+\section{Methodology}
+\label{sec:Methodology}
+
+Figure~\ref{fig:fintrace_architecture} summarises the preparation and answer paths. Structured financial evidence and full-report prose are searched differently. Source identifiers connect both paths to the original reports; evaluation keys are not runtime evidence.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.98\linewidth,height=0.78\textheight,keepaspectratio]{fintrace_architecture.pdf}
+\caption[FinTrace architecture]{FinTrace architecture at implementation checkpoint \texttt{449c4ba}. Structured keyword and dense retrieval is separate from full-report prose search. Supported figures use source-cell binding and Python arithmetic; Qwen3 8B through Ollama supports definitions and passage selection. Dashed connections represent evidence supplied to the appropriate question path. Source checks do not establish complete coverage~\cite{fintraceRuntime2026}.}
+\label{fig:fintrace_architecture}
+\end{figure}
+
+\input{methodology_data}
+\input{methodology_extraction}
+\input{methodology_retrieval}
+\input{methodology_answers}
+\input{methodology_frontend}
+\input{methodology_evaluation_design}
+\input{methodology_evaluation_procedure}

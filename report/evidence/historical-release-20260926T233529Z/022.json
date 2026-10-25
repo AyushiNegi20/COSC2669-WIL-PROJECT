@@ -1,0 +1,44 @@
+{
+  "id": "D22",
+  "question": "Should I buy CBA shares based on these results?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "all"
+    },
+    "summary": "CBA / FY2024 and FY2025",
+    "notes": [],
+    "effective_question": "Should I buy CBA shares based on these results?"
+  },
+  "response": {
+    "question": "Should I buy CBA shares based on these results?",
+    "answer": {
+      "status": "unable_to_verify",
+      "message": "I can explain the historical reports, but cannot recommend buying shares or moving your savings. Reported profit growth alone does not establish whether an investment is suitable for you."
+    },
+    "route": "guard",
+    "generation": {
+      "status": "skipped"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 0.0019703999860212207,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "I can explain the historical reports, but cannot recommend buying shares or moving your savings. Reported profit growth alone does not establish whether an investment is suitable for you.",
+          "citations": [],
+          "kind": "limit"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 0.0020795000018551946
+}

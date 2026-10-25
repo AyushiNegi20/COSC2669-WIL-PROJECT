@@ -1,0 +1,45 @@
+{
+  "id": "D16",
+  "question": "Which bank was more profitable in 2025, CBA or NAB?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "all",
+      "year": "2025"
+    },
+    "summary": "CBA and NAB / FY2025",
+    "notes": [],
+    "effective_question": "Which bank was more profitable in 2025, CBA or NAB?"
+  },
+  "response": {
+    "question": "Which bank was more profitable in 2025, CBA or NAB?",
+    "answer": {
+      "status": "unable_to_verify",
+      "message": "Cross-company comparison, ranking or equivalence across CBA and NAB is not supported in the current scope. Ask about one bank at a time."
+    },
+    "route": "guard",
+    "generation": {
+      "status": "skipped",
+      "reason": "Numbers, calculations and guards use source templates; no generative model was called."
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 0.20366620001732372,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "Cross-company comparison, ranking or equivalence across CBA and NAB is not supported in the current scope. Ask about one bank at a time.",
+          "citations": [],
+          "kind": "limit"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 0.2037764000124298
+}

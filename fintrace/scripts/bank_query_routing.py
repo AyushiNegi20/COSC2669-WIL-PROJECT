@@ -69,6 +69,37 @@ def known_measure(question):
     return bool(metric_tags(question) or re.search(r'\b(?:profit|NPAT|earnings|net income)\b', question, re.I))
 
 
+def reporting_limit(question, plan):
+    """Explain an existing period/prediction refusal, never override a guard."""
+    reasons = {
+        'Requested reporting period is outside FY2024/FY2025.',
+        'The reports cannot establish a future realised financial outcome.',
+    }
+    if plan.get('behavior') != 'abstain' or plan.get('reason') not in reasons:
+        return None
+    # A polite request to show a historical result is not a prediction.
+    future_will = re.search(r'\bwill\b(?!\s+you\b).*\b(?:profit|earnings|earn|pay|dividend|be)\b', question, re.I)
+    prediction = bool(future_will or re.search(
+        r'\b(?:predict\w*|forecast\w*|projected|expected|next year|future)\b', question, re.I))
+    if prediction:
+        return {
+            'message': "I can't reliably predict that financial result from these reports. "
+                       'They cover FY2024 and FY2025 and provide historical results, '
+                       'not a verified answer to this prediction. I can show the reported '
+                       'results and their year-on-year changes instead.',
+            'interpretation': 'This question asks for a prediction rather than a reported historical result.',
+            'limitation': 'Historical figures and year-on-year changes alone do not establish future profit, dividends or other financial outcomes.',
+        }
+    years = ', '.join('FY' + str(y) for y in plan.get('value_years', []) if y not in (2024, 2025))
+    return {
+        'message': (years or 'The requested reporting period') + ' is outside the FY2024 and FY2025 reports available to FinTrace. '
+                   'I cannot verify the requested result from this knowledge base. '
+                   'I can help with the available FY2024 and FY2025 results instead.',
+        'interpretation': 'This is a request for a reported result outside the available reporting years, not necessarily a prediction.',
+        'limitation': 'This is a knowledge-base coverage limit. It does not mean the result is unpublished or unknowable from other sources.',
+    }
+
+
 def explanation_subject(question):
     """Literal subject matching for prose relevance, never a numerical alias."""
     if not re.search(r'\bwhy\b|\breasons?\b|\bdrivers?\b|\bfactors?\b|\bexplain\b', question, re.I):

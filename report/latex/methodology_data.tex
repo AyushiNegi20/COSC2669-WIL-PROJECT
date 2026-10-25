@@ -1,0 +1,10 @@
+% AI-assisted shared draft prepared at Ayushi's request on 25 October 2026.
+% Assigned reviewer: Yash Keswani. Verify sources before approval; this is not personal authorship evidence.
+\subsection{Data Sources and Scope}
+\label{subsec:data_sources}
+
+The knowledge base contains six official issuer reports for Commonwealth Bank of Australia (CBA) and National Australia Bank (NAB), covering FY2024 and FY2025. These comprise two CBA Profit Announcements, two NAB full-year results releases and two NAB Annual Reports, totalling 1,021 PDF pages. The source manifest records each document's title, issuer URL, reporting period and checksum~\cite{fintraceSources2026}. Results releases concentrate performance tables and management commentary~\cite{fintraceCBA2025,nabResults2025}; the NAB annual reports provide supporting accounting notes and reconciliations~\cite{nabAnnual2025}.
+
+Banking provided a manageable domain with repeated measures and public evidence against which answers could be checked. Two years allow historical comparisons within a bank. However, CBA's year ends on 30 June and NAB's on 30 September: an identical financial-year label does not establish identical reporting periods. The prototype declines explicit cross-bank comparisons rather than treating them as directly comparable.
+
+All reports received native-text extraction. An initial selection of 72 pages supported detailed structured extraction and checking; later indexing expanded searchable prose across the full reports. These are different coverage levels. Searchable text does not make every chart or table reliable enough for calculations. The original thirteen measure families defined a starting numerical scope, not a claim that other financial information was absent.

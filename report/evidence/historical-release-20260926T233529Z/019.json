@@ -1,0 +1,294 @@
+{
+  "id": "D19",
+  "question": "According to NAB's FY2024 results, what was its net operating income that year?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "NAB",
+      "year": "2024"
+    },
+    "summary": "NAB / FY2024",
+    "notes": [],
+    "effective_question": "According to NAB's FY2024 results, what was its net operating income that year?"
+  },
+  "response": {
+    "question": "According to NAB's FY2024 results, what was its net operating income that year?",
+    "plan": {
+      "companies": [
+        "NAB"
+      ],
+      "value_years": [
+        2024
+      ],
+      "report_year": 2024,
+      "annual_report_only": false,
+      "ambiguity": null,
+      "branches": [
+        "NAB"
+      ],
+      "intent": "find",
+      "metrics": [
+        "operating_income"
+      ],
+      "definition_term": null,
+      "behavior": "answer",
+      "reason": null,
+      "original_question": "According to NAB's FY2024 results, what was its total operating income that year?",
+      "normalised_question": "According to NAB's FY2024 results, what was its total operating income that year?",
+      "corrections": [],
+      "metric_candidates": [
+        {
+          "metric": "operating_income",
+          "similarity": 0.4384753108024597
+        },
+        {
+          "metric": "operating_expenses",
+          "similarity": 0.41075995564460754
+        },
+        {
+          "metric": "cash_profit",
+          "similarity": 0.36150872707366943
+        }
+      ],
+      "metric_resolution": "explicit",
+      "needs_human_review": true,
+      "semantic_margin": 0.027715355157852173,
+      "search_question": "According to NAB's FY2024 results, what was its total operating income that year?\nFinancial concepts: total net operating income",
+      "period_note": "Preserve each source period end; CBA and NAB fiscal years do not end on the same date.",
+      "version": "v9",
+      "requests": [
+        {
+          "id": "request-1",
+          "company": "NAB",
+          "metric": "operating_income",
+          "intent": "find",
+          "scope": null,
+          "value_years": [
+            2024
+          ],
+          "report_year": 2024,
+          "definition_contrast": false
+        }
+      ],
+      "constraints": {
+        "report_year": 2024,
+        "entity_scope": "Group",
+        "requested_years": [
+          2024
+        ],
+        "preserve_source_basis": true,
+        "preserve_period_kind": true,
+        "requires_new_calculation": false,
+        "cash_profit_cashflow_distinction": false
+      },
+      "requirements_complete": false,
+      "operation_request": {
+        "kind": "none",
+        "order": null,
+        "expense_magnitude": true,
+        "relative_percent": false
+      }
+    },
+    "operation_request": {
+      "kind": "none",
+      "order": null,
+      "expense_magnitude": true,
+      "relative_percent": false
+    },
+    "answer": {
+      "status": "source_bound_answer",
+      "mode": "source_cell_templates",
+      "parts": [
+        {
+          "request": {
+            "id": "request-1",
+            "company": "NAB",
+            "metric": "operating_income",
+            "intent": "find",
+            "scope": null,
+            "value_years": [
+              2024
+            ],
+            "report_year": 2024,
+            "definition_contrast": false
+          },
+          "claims": [
+            {
+              "text": "NAB total operating income: 20,250 AUD million; annual ending 2024-09-30, cash, continuing operations.",
+              "cell": {
+                "metric": "operating_income",
+                "company": "NAB",
+                "value": "20250",
+                "raw_value": "20,250",
+                "unit": "AUD million",
+                "basis": "cash",
+                "scope": "continuing",
+                "period_kind": "annual",
+                "period_end": "2024-09-30",
+                "report_year": 2024,
+                "column": 1,
+                "source_id": "nab24:p013:b006:r4",
+                "header_ids": [
+                  "nab24:p013:b006:r0",
+                  "nab24:p013:b006:r1"
+                ],
+                "record_id": "v4:nab24:p013:b006:r4",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab24",
+                  "document_title": "NAB FY2024 Full Year Results",
+                  "pdf_page": 13,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2024-09-30",
+                  "report_year": 2024,
+                  "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                },
+                "row_quote": "Net operating income | 20,250 | 20,654 | (2.0) | 10,112 | 10,138 | (0.3)",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              "evidence": [
+                {
+                  "source_id": "nab24:p013:b006:r4",
+                  "quote": "Net operating income | 20,250 | 20,654 | (2.0) | 10,112 | 10,138 | (0.3)",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab24",
+                    "document_title": "NAB FY2024 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2024-09-30",
+                    "report_year": 2024,
+                    "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab24:p013:b006:r0",
+                  "quote": " | Year to |  |  | Half Year to |  | ",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab24",
+                    "document_title": "NAB FY2024 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2024-09-30",
+                    "report_year": 2024,
+                    "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab24:p013:b006:r1",
+                  "quote": " | Sep 24 $m | Sep 23 $m | Sep 24 v Sep 23 % | Sep 24 $m | Mar 24 $m | Sep 24 v Mar 24 %",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab24",
+                    "document_title": "NAB FY2024 Full Year Results",
+                    "pdf_page": 13,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2024-09-30",
+                    "report_year": 2024,
+                    "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+                  }
+                }
+              ],
+              "method": "deterministic_template_from_bound_source_cell",
+              "presentation": {
+                "value": "20250",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "20250"
+              }
+            }
+          ],
+          "calculations": [],
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "calculation_coverage": {
+        "required": 0,
+        "completed": 0
+      },
+      "warning": "Development source binding, not independently human-certified financial advice.",
+      "limitations": []
+    },
+    "retrieval": {
+      "tokens": 1008,
+      "omissions": [],
+      "numeric_binding_search": "All indexed financial rows matching the requested bank and metric, followed by strict cell binding; not top-k retrieval accuracy."
+    },
+    "seconds": 0.1294050000142306,
+    "version": "fintrace-conversational-development",
+    "interpretation": {
+      "retrieval_question": "According to NAB's FY2024 results, what was its total operating income that year?",
+      "notes": []
+    },
+    "question_contract": {
+      "retrieval_question": "According to NAB's FY2024 results, what was its total operating income that year?",
+      "notes": [],
+      "metric_mapping": "explicit aliases only for numerical answers"
+    },
+    "binding_validation": {
+      "passed": true,
+      "issues": []
+    },
+    "route": "numeric",
+    "generation": {
+      "status": "skipped",
+      "reason": "Numbers, calculations and guards use source templates; no generative model was called."
+    },
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "NAB's total operating income was 20,250 AUD million for the year ended 30 September 2024 (cash basis, continuing operations).",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab24",
+              "document_title": "NAB FY2024 Full Year Results",
+              "pdf_page": 13,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "11"
+              },
+              "report_period_end": "2024-09-30",
+              "report_year": 2024,
+              "source_sha256": "ceaa0f2fce690e383db933eef0234607e4604cbf26fa597300a42d760dd1bfce",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2024-full-year-results.pdf"
+            }
+          ],
+          "kind": "numeric"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 0.12978370001656003
+}

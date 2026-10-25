@@ -1,0 +1,121 @@
+{
+  "id": "D06",
+  "question": "What was CBA's cost-to-income ratio in 2025?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "2025"
+    },
+    "summary": "CBA / FY2025",
+    "notes": [],
+    "effective_question": "What was CBA's cost-to-income ratio in 2025?"
+  },
+  "response": {
+    "question": "What was CBA's cost-to-income ratio in 2025?",
+    "answer": {
+      "status": "unable_to_verify",
+      "message": "This highlights a reported financial change, not necessarily the largest or most important change across the full report. I could not retrieve sufficiently relevant commentary for this question from the searchable report evidence. This does not establish that the full reports contain no answer. No unsupported change or ranking has been inferred.",
+      "limitations": [
+        "CBA and NAB prose search includes all six reports. Retrieved passages are not exhaustive; unvalidated tables and image-only content are not calculation-ready.",
+        "Reporting bases remain distinct: cash earnings and statutory profit are not interchangeable. Reasons are attributed to the report, not independently established causes."
+      ]
+    },
+    "narrative_request": {
+      "status": "search",
+      "requests": [
+        {
+          "topic": "performance",
+          "company": "CBA",
+          "year": 2025,
+          "query": "Explain CBA FY2025 reported annual financial results: changes in profit, income, expenses and the reported reasons.",
+          "followup": "Explain CBA FY2025 disclosures relevant to: What was CBA's cost-to-income ratio in 2025?"
+        }
+      ],
+      "notes": [
+        "This highlights a reported financial change, not necessarily the largest or most important change across the full report."
+      ],
+      "comparative": false,
+      "amount_requested": false,
+      "question": "What was CBA's cost-to-income ratio in 2025?",
+      "topic": "performance",
+      "company": "CBA",
+      "year": 2025,
+      "search_subject": "cost-to-income ratio"
+    },
+    "research_coverage": [
+      {
+        "company": "CBA",
+        "year": 2025,
+        "topic": "performance",
+        "sections": 0
+      }
+    ],
+    "research_searches": [
+      {
+        "query": "What was CBA's cost-to-income ratio in 2025?",
+        "scope": "CBA full-report prose",
+        "relevant_sections": 0,
+        "ranked_sources": []
+      },
+      {
+        "query": "Explain CBA FY2025 reported annual financial results: changes in profit, income, expenses and the reported reasons.",
+        "relevant_sections": 0
+      },
+      {
+        "query": "Explain CBA FY2025 disclosures relevant to: What was CBA's cost-to-income ratio in 2025?",
+        "relevant_sections": 0
+      }
+    ],
+    "full_report_search": true,
+    "interpretation": {
+      "retrieval_question": "Explain CBA FY2025 reported annual financial results: changes in profit, income, expenses and the reported reasons.",
+      "notes": [
+        "This highlights a reported financial change, not necessarily the largest or most important change across the full report."
+      ]
+    },
+    "route": "guard",
+    "generation": {
+      "status": "skipped",
+      "reason": "Numbers, calculations and guards use source templates; no generative model was called."
+    },
+    "intent_plan": {
+      "topic": "performance",
+      "task": "figures",
+      "subject": "cost-to-income ratio",
+      "specific_amount": true,
+      "advice": false,
+      "status": "interpreted",
+      "timing": {
+        "total_duration": 4422349300,
+        "load_duration": 6535600,
+        "prompt_eval_count": 613,
+        "eval_count": 41
+      },
+      "model": "qwen3:8b"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 4.720039300009375,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "This highlights a reported financial change, not necessarily the largest or most important change across the full report. I could not retrieve sufficiently relevant commentary for this question from the searchable report evidence. This does not establish that the full reports contain no answer. No unsupported change or ranking has been inferred.",
+          "citations": [],
+          "kind": "limit"
+        }
+      ],
+      "qualifications": [
+        "Reporting bases remain distinct: cash earnings and statutory profit are not interchangeable. Reasons are attributed to the report, not independently established causes."
+      ],
+      "important_notes": [
+        "CBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready."
+      ],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 4.720299399981741
+}

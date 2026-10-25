@@ -7,7 +7,7 @@ from answer_bank_release import Backend as PreviousBackend
 from bank_answer_first import available_context
 from bank_contract_v12 import metric_tags
 from bank_conversation import present
-from bank_query_routing import normalise_query, checked_numeric_request, definition_request, explanation_subject, generic_loan_lookup
+from bank_query_routing import normalise_query, checked_numeric_request, definition_request, explanation_subject, generic_loan_lookup, reporting_limit
 
 
 def stopped(question, message, status='unable_to_verify'):
@@ -54,6 +54,12 @@ class Backend:
         if re.search(r'\b(?:should|would|can) I\b|\brecommend\b',question,re.I) and re.search(r'\bshares?\b|\bstocks?\b|\binvest\w*\b|\bsavings\b',question,re.I):
             return stopped(question,'I can explain the historical reports, but cannot recommend buying shares or moving your savings. Reported profit growth alone does not establish whether an investment is suitable for you.')
         if context['plan']['behavior'] == 'abstain':
+            limit = reporting_limit(question, context['plan'])
+            if limit:
+                result = stopped(question, limit['message'])
+                result['interpretation'] = {'notes': [limit['interpretation']]}
+                result['answer']['limitations'] = [limit['limitation']]
+                return result
             return stopped(question, context['plan']['reason'])
         if re.search(r'\bpayback\b|\bpaid back\b|\bpay(?:s|ing)? (?:itself|back)\b|\breturn on investment\b|\bROI\b',question,re.I):
             return stopped(question,'I cannot verify project payback or return-on-investment rankings from the checked evidence. That requires project-level costs, benefits and timing. Spending amounts or spending growth are not a substitute for investment returns.')

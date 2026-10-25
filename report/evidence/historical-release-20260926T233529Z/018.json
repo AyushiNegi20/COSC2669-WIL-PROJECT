@@ -1,0 +1,44 @@
+{
+  "id": "D18",
+  "question": "What was CBA's profit in FY2023?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "all"
+    },
+    "summary": "CBA / FY2023",
+    "notes": [],
+    "effective_question": "What was CBA's profit in FY2023?"
+  },
+  "response": {
+    "question": "What was CBA's profit in FY2023?",
+    "answer": {
+      "status": "unable_to_verify",
+      "message": "Requested reporting period is outside FY2024/FY2025."
+    },
+    "route": "guard",
+    "generation": {
+      "status": "skipped"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 0.0014059999957680702,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "Requested reporting period is outside FY2024/FY2025.",
+          "citations": [],
+          "kind": "limit"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 0.0015472000231966376
+}

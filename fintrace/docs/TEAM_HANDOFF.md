@@ -2,7 +2,14 @@
 
 ## Which version to use
 
-For the group submission use `AyushiNegi20/COSC2669-WIL-PROJECT`, with the demo
+For the written-report snapshot, use tag `report-submission-2026-10-25` in
+the WIL repository and run from `fintrace/`. It includes the 13 October
+reporting-year/prediction explanation update. See the
+[checkpoint and verification record](../../report/IMPLEMENTATION_CHECKPOINT.md).
+Older tags and candidate IDs below remain historical provenance, not a quality
+approval for the current version.
+
+For the original group demo import use `AyushiNegi20/COSC2669-WIL-PROJECT`, with the demo
 under `fintrace/` and import tag `fintrace-demo-2026-10-01`. The historical
 candidate references below belong to the original FinTrace-Backend repository.
 See [WIL migration checks](WIL_MIGRATION.md).

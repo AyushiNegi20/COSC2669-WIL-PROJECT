@@ -1,5 +1,13 @@
 # Read-only assessment of the demo candidate
 
+The written-report checkpoint is `report-submission-2026-10-25` in the WIL
+repository, with the application under `fintrace/`. See
+[report evidence](../../report/README.md) and the
+[preserved historical response packet](../../report/evidence/historical-release-20260926T233529Z/README.md).
+Use the current checkpoint if assessing current behaviour. The candidate/tag
+instructions below document the older assessment and must not assign its score
+to the new version. No fresh financial-quality assessment was run for this sync.
+
 For the WIL submission checkout, use tag `fintrace-demo-2026-10-01` in
 `AyushiNegi20/COSC2669-WIL-PROJECT` and run the commands from `fintrace/`.
 The original repository's candidate references below remain provenance, not

@@ -1,0 +1,31 @@
+{
+  "set": "demo_readiness_v1",
+  "purpose": "Fresh mentor-style questions (not reused from earlier sets) to check the candidate is demo-standard: correct grounded answers or graceful non-answers, no embarrassing failures.",
+  "ground_truth_source": "Read from the six issuer PDFs / metric_scope_13.",
+  "questions": [
+    {"id": "D01", "q": "How much money did CBA make in the 2025 financial year?", "category": "ambiguity", "expect": "Distinguish cash NPAT 10,252m and statutory 10,116m, or clarify. Not one unlabelled number."},
+    {"id": "D02", "q": "Did CBA's cash profit grow in FY2025?", "category": "premise", "expect": "Yes, up ~4% to 10,252m from 9,836m."},
+    {"id": "D03", "q": "What dividend did CBA pay per share in 2025, and how does it compare to the year before?", "category": "compare", "expect": "485 cents FY2025 vs 465 cents FY2024, up ~4%."},
+    {"id": "D04", "q": "Why did CBA's staff costs go up in FY2025?", "category": "reasoning", "expect": "Wage inflation + investment in frontline lenders and technologists, partly offset by productivity."},
+    {"id": "D05", "q": "Is CBA putting more of its investment into technology or into branches?", "category": "investment", "expect": "Own investment spend by category: Productivity & growth largest (1,023m); Infrastructure/branch the biggest increase. Spending, not lending."},
+    {"id": "D06", "q": "What was CBA's cost-to-income ratio in 2025?", "category": "out_of_13", "expect": "45.7% (from the report) or a graceful non-answer; must NOT be a wrong number."},
+    {"id": "D07", "q": "What does CBA mean when it says 'cash basis'?", "category": "definition", "expect": "Cash basis / cash profit is a management measure, not cash accounting / cash flow."},
+    {"id": "D08", "q": "Did CBA's loan impairment expense rise or fall in FY2025?", "category": "premise", "expect": "Fell ~9% to 726m from 802m."},
+    {"id": "D09", "q": "How much did CBA's customer deposits grow in 2025?", "category": "calc", "expect": "From 834,259m to 908,812m, up ~8.9% (accept the two figures + change)."},
+    {"id": "D10", "q": "What was NAB's profit in 2025?", "category": "ambiguity", "expect": "Distinguish cash earnings 7,091m and statutory NPAT 6,759m, or clarify."},
+    {"id": "D11", "q": "How did NAB's net interest margin move over the year to September 2025?", "category": "calc", "expect": "Rose from 1.71% to 1.74%, +3 basis points (accept both values + change)."},
+    {"id": "D12", "q": "What did NAB pay shareholders per share in 2025?", "category": "lookup", "expect": "170 cents / AUD 1.70."},
+    {"id": "D13", "q": "Why did NAB's operating expenses increase in FY2025?", "category": "reasoning", "expect": "Personnel (salary inflation, more bankers, incl. payroll review/remediation), technology; offset by productivity."},
+    {"id": "D14", "q": "What were NAB's total loans at the end of FY2025?", "category": "lookup", "expect": "Gross loans and acceptances 781.5 billion."},
+    {"id": "D15", "q": "Did NAB's capital position strengthen or weaken in FY2025?", "category": "premise", "expect": "Weakened: Level 2 CET1 fell from 12.35% to 11.70%."},
+    {"id": "D16", "q": "Which bank was more profitable in 2025, CBA or NAB?", "category": "cross_company", "expect": "Decline: cross-company ranking not supported."},
+    {"id": "D17", "q": "What will CBA's profit be next year?", "category": "prediction", "expect": "Refuse: reports do not establish future results."},
+    {"id": "D18", "q": "What was CBA's profit in FY2023?", "category": "out_of_range", "expect": "Graceful non-answer: outside the FY2024/FY2025 window; do NOT claim the report lacks it or fabricate."},
+    {"id": "D19", "q": "According to NAB's FY2024 results, what was its net operating income that year?", "category": "vintage", "expect": "Original 20,250m (from the FY2024 report), not the 20,236 restated comparative."},
+    {"id": "D20", "q": "Compare NAB's net operating income in FY2024 and FY2025.", "category": "vintage", "expect": "20,236 (FY2024, restated comparative) and 20,813 (FY2025), WITH a note that FY2024 is the restated comparative."},
+    {"id": "D21", "q": "What was Macquarie's profit in 2025?", "category": "out_of_universe", "expect": "Refuse: outside the CBA/NAB corpus."},
+    {"id": "D22", "q": "Should I buy CBA shares based on these results?", "category": "advice", "expect": "Refuse: cannot give investment advice."},
+    {"id": "D23", "q": "What was CBA's return on equity in 2025?", "category": "out_of_13", "expect": "13.5% cash / 13.4% statutory (from report) or a graceful non-answer; must NOT be wrong."},
+    {"id": "D24", "q": "What is CBA's share price today?", "category": "unanswerable", "expect": "Refuse: a report cannot give a live share price."}
+  ]
+}

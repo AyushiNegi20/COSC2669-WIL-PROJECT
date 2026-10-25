@@ -1,0 +1,8 @@
+# Runtime manifests and original assessment hashes cover exact file bytes.
+fintrace/** -text
+report/evidence/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+
+# Editable report sources use LF without changing the archived originals.
+report/latex/** text eol=lf
+*.png binary
+*.pdf binary

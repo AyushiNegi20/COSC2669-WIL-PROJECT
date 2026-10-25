@@ -1,0 +1,548 @@
+{
+  "id": "D08",
+  "question": "Did CBA's loan impairment expense rise or fall in FY2025?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "2025"
+    },
+    "summary": "CBA / FY2025",
+    "notes": [],
+    "effective_question": "Did CBA's loan impairment expense rise or fall in FY2025?"
+  },
+  "response": {
+    "question": "Did CBA's loan impairment expense rise or fall in FY2025?",
+    "plan": {
+      "companies": [
+        "CBA"
+      ],
+      "value_years": [
+        2024,
+        2025
+      ],
+      "report_year": null,
+      "annual_report_only": false,
+      "ambiguity": null,
+      "branches": [
+        "CBA"
+      ],
+      "intent": "compare",
+      "metrics": [
+        "credit_impairment"
+      ],
+      "definition_term": null,
+      "behavior": "answer",
+      "reason": null,
+      "original_question": "Did CBA's loan impairment expense rise or fall in FY2025? Calculate the change from FY2024 to FY2025. Include percentage change.",
+      "normalised_question": "Did CBA's loan impairment expense rise or fall in FY2025? Calculate the change from FY2024 to FY2025. Include percentage change.",
+      "corrections": [],
+      "metric_candidates": [
+        {
+          "metric": "credit_impairment",
+          "similarity": 0.6266508102416992
+        },
+        {
+          "metric": "gross_loans",
+          "similarity": 0.4899637699127197
+        },
+        {
+          "metric": "operating_income",
+          "similarity": 0.33701008558273315
+        }
+      ],
+      "metric_resolution": "explicit",
+      "needs_human_review": true,
+      "semantic_margin": 0.1366870403289795,
+      "search_question": "Did CBA's loan impairment expense rise or fall in FY2025? Calculate the change from FY2024 to FY2025. Include percentage change.\nFinancial concepts: credit loan impairment charge",
+      "period_note": "Preserve each source period end; CBA and NAB fiscal years do not end on the same date.",
+      "version": "v9",
+      "requests": [
+        {
+          "id": "request-1",
+          "company": "CBA",
+          "metric": "credit_impairment",
+          "intent": "compare",
+          "scope": null,
+          "value_years": [
+            2024,
+            2025
+          ],
+          "report_year": null,
+          "definition_contrast": false
+        }
+      ],
+      "constraints": {
+        "report_year": null,
+        "entity_scope": "Group",
+        "requested_years": [
+          2024,
+          2025
+        ],
+        "preserve_source_basis": true,
+        "preserve_period_kind": true,
+        "requires_new_calculation": true,
+        "cash_profit_cashflow_distinction": false
+      },
+      "requirements_complete": false,
+      "operation_request": {
+        "kind": "change",
+        "order": null,
+        "expense_magnitude": true,
+        "relative_percent": true
+      }
+    },
+    "operation_request": {
+      "kind": "change",
+      "order": null,
+      "expense_magnitude": true,
+      "relative_percent": true
+    },
+    "answer": {
+      "status": "source_bound_answer",
+      "mode": "source_cell_templates",
+      "parts": [
+        {
+          "request": {
+            "id": "request-1",
+            "company": "CBA",
+            "metric": "credit_impairment",
+            "intent": "compare",
+            "scope": null,
+            "value_years": [
+              2024,
+              2025
+            ],
+            "report_year": null,
+            "definition_contrast": false
+          },
+          "claims": [
+            {
+              "text": "CBA credit impairment charge (expense magnitude): 802 AUD million; 2024-06-30, cash, continuing. Positive expense magnitude; the source presents a deduction in brackets. Original signed value: -802.",
+              "cell": {
+                "metric": "credit_impairment",
+                "company": "CBA",
+                "value": "-802",
+                "raw_value": "(802)",
+                "unit": "AUD million",
+                "basis": "cash",
+                "scope": "continuing",
+                "period_kind": "annual",
+                "period_end": "2024-06-30",
+                "report_year": 2025,
+                "column": 2,
+                "source_id": "cba25:p027:b003:r7",
+                "header_ids": [
+                  "cba25:p027:b003:r0",
+                  "cba25:p027:b003:r1"
+                ],
+                "record_id": "v4:cba25:p027:b003:r7",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 27,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                },
+                "row_quote": "Loan impairment expense | (726) | (802) | (9) | (406) | (320) | 27",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              "evidence": [
+                {
+                  "source_id": "cba25:p027:b003:r7",
+                  "quote": "Loan impairment expense | (726) | (802) | (9) | (406) | (320) | 27",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 27,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba25:p027:b003:r0",
+                  "quote": " | Full Year Ended (\"cash basis\") |  |  | Half Year Ended (\"cash basis\") |  | ",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 27,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba25:p027:b003:r1",
+                  "quote": "Group Performance Summary | 30 Jun 25 $M | 30 Jun 24 $M | Jun 25 vs Jun 24 % | 30 Jun 25 $M | 31 Dec 24 $M | Jun 25 vs Dec 24 %",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 27,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                }
+              ],
+              "method": "deterministic_template_from_bound_source_cell",
+              "presentation": {
+                "value": "802",
+                "representation": "expense_magnitude",
+                "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+                "transformation": "abs(source_value)",
+                "source_value": "-802"
+              }
+            },
+            {
+              "text": "CBA credit impairment charge (expense magnitude): 726 AUD million; 2025-06-30, cash, continuing. Positive expense magnitude; the source presents a deduction in brackets. Original signed value: -726.",
+              "cell": {
+                "metric": "credit_impairment",
+                "company": "CBA",
+                "value": "-726",
+                "raw_value": "(726)",
+                "unit": "AUD million",
+                "basis": "cash",
+                "scope": "continuing",
+                "period_kind": "annual",
+                "period_end": "2025-06-30",
+                "report_year": 2025,
+                "column": 1,
+                "source_id": "cba25:p027:b003:r7",
+                "header_ids": [
+                  "cba25:p027:b003:r0",
+                  "cba25:p027:b003:r1"
+                ],
+                "record_id": "v4:cba25:p027:b003:r7",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 27,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "11"
+                  },
+                  "report_period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                },
+                "row_quote": "Loan impairment expense | (726) | (802) | (9) | (406) | (320) | 27",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              "evidence": [
+                {
+                  "source_id": "cba25:p027:b003:r7",
+                  "quote": "Loan impairment expense | (726) | (802) | (9) | (406) | (320) | 27",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 27,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba25:p027:b003:r0",
+                  "quote": " | Full Year Ended (\"cash basis\") |  |  | Half Year Ended (\"cash basis\") |  | ",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 27,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                },
+                {
+                  "source_id": "cba25:p027:b003:r1",
+                  "quote": "Group Performance Summary | 30 Jun 25 $M | 30 Jun 24 $M | Jun 25 vs Jun 24 % | 30 Jun 25 $M | 31 Dec 24 $M | Jun 25 vs Dec 24 %",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 27,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  }
+                }
+              ],
+              "method": "deterministic_template_from_bound_source_cell",
+              "presentation": {
+                "value": "726",
+                "representation": "expense_magnitude",
+                "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+                "transformation": "abs(source_value)",
+                "source_value": "-726"
+              }
+            }
+          ],
+          "calculations": [
+            {
+              "operation": "change",
+              "left": "726",
+              "right": "802",
+              "absolute_change": "-76",
+              "unit": "AUD million",
+              "formula": "left - right",
+              "operand_labels": [
+                "CBA credit_impairment 2025-06-30",
+                "CBA credit_impairment 2024-06-30"
+              ],
+              "source_cells": [
+                {
+                  "metric": "credit_impairment",
+                  "company": "CBA",
+                  "value": "-726",
+                  "raw_value": "(726)",
+                  "unit": "AUD million",
+                  "basis": "cash",
+                  "scope": "continuing",
+                  "period_kind": "annual",
+                  "period_end": "2025-06-30",
+                  "report_year": 2025,
+                  "column": 1,
+                  "source_id": "cba25:p027:b003:r7",
+                  "header_ids": [
+                    "cba25:p027:b003:r0",
+                    "cba25:p027:b003:r1"
+                  ],
+                  "record_id": "v4:cba25:p027:b003:r7",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 27,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  },
+                  "row_quote": "Loan impairment expense | (726) | (802) | (9) | (406) | (320) | 27",
+                  "binding_status": "rule_bound_development_not_human_certified"
+                },
+                {
+                  "metric": "credit_impairment",
+                  "company": "CBA",
+                  "value": "-802",
+                  "raw_value": "(802)",
+                  "unit": "AUD million",
+                  "basis": "cash",
+                  "scope": "continuing",
+                  "period_kind": "annual",
+                  "period_end": "2024-06-30",
+                  "report_year": 2025,
+                  "column": 2,
+                  "source_id": "cba25:p027:b003:r7",
+                  "header_ids": [
+                    "cba25:p027:b003:r0",
+                    "cba25:p027:b003:r1"
+                  ],
+                  "record_id": "v4:cba25:p027:b003:r7",
+                  "source": {
+                    "company": "CBA",
+                    "document_id": "cba25",
+                    "document_title": "CBA FY2025 Profit Announcement",
+                    "pdf_page": 27,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "11"
+                    },
+                    "report_period_end": "2025-06-30",
+                    "report_year": 2025,
+                    "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                    "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+                  },
+                  "row_quote": "Loan impairment expense | (726) | (802) | (9) | (406) | (320) | 27",
+                  "binding_status": "rule_bound_development_not_human_certified"
+                }
+              ],
+              "presentations": [
+                {
+                  "value": "726",
+                  "representation": "expense_magnitude",
+                  "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+                  "transformation": "abs(source_value)",
+                  "source_value": "-726"
+                },
+                {
+                  "value": "802",
+                  "representation": "expense_magnitude",
+                  "note": "Positive expense magnitude; the source presents a deduction in brackets.",
+                  "transformation": "abs(source_value)",
+                  "source_value": "-802"
+                }
+              ],
+              "source_signed_difference": "76",
+              "arithmetic": "Python Decimal",
+              "note": "Chronological change: later minus earlier.",
+              "relative_change_percent": "-9.476309226932668329177057357"
+            }
+          ],
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "calculation_coverage": {
+        "required": 1,
+        "completed": 1
+      },
+      "warning": "Development source binding, not independently human-certified financial advice.",
+      "limitations": [
+        "CBA FY2024 is taken from the FY2025 report's comparative column (-802 AUD million). This alone does not establish that it was restated; the original disclosure may differ.",
+        "Wording interpreted as: Did CBA's loan impairment expense rise or fall in FY2025? Calculate the change from FY2024 to FY2025."
+      ]
+    },
+    "retrieval": {
+      "tokens": 1089,
+      "omissions": [],
+      "numeric_binding_search": "All indexed financial rows matching the requested bank and metric, followed by strict cell binding; not top-k retrieval accuracy."
+    },
+    "seconds": 178.69685030000983,
+    "version": "fintrace-conversational-development",
+    "interpretation": {
+      "retrieval_question": "Did CBA's loan impairment expense rise or fall in FY2025? Calculate the change from FY2024 to FY2025. Include percentage change.",
+      "notes": []
+    },
+    "question_contract": {
+      "retrieval_question": "Did CBA's loan impairment expense rise or fall in FY2025? Calculate the change from FY2024 to FY2025. Include percentage change.",
+      "notes": [],
+      "metric_mapping": "explicit aliases only for numerical answers"
+    },
+    "binding_validation": {
+      "passed": true,
+      "issues": []
+    },
+    "route": "numeric",
+    "generation": {
+      "status": "skipped",
+      "reason": "Numbers, calculations and guards use source templates; no generative model was called."
+    },
+    "query_normalisation": {
+      "question": "Did CBA's loan impairment expense rise or fall in FY2025? Calculate the change from FY2024 to FY2025.",
+      "changes": [
+        {
+          "original": "Did CBA's loan impairment expense rise or fall in FY2025?",
+          "normalised": "Did CBA's loan impairment expense rise or fall in FY2025? Calculate the change from FY2024 to FY2025.",
+          "assumption": "Annual movement interpreted as FY2024 to FY2025."
+        }
+      ]
+    },
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "CBA's credit impairment charge was 802 AUD million for the year ended 30 June 2024 (cash basis, continuing operations). This shows the expense magnitude; the signed source value remains available in the workings. CBA's credit impairment charge was 726 AUD million for the year ended 30 June 2025 (cash basis, continuing operations). This shows the expense magnitude; the signed source value remains available in the workings.",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 27,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "11"
+              },
+              "report_period_end": "2025-06-30",
+              "report_year": 2025,
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+            }
+          ],
+          "kind": "numeric"
+        },
+        {
+          "text": "For CBA credit impairment charge, the comparison from 2024-06-30 to 2025-06-30 gives a decrease of 76 AUD million. The relative change is -9.48% (rounded).",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 27,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "11"
+              },
+              "report_period_end": "2025-06-30",
+              "report_year": 2025,
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf"
+            }
+          ],
+          "kind": "calculation"
+        }
+      ],
+      "qualifications": [
+        "CBA FY2024 is taken from the FY2025 report's comparative column (-802 AUD million). This alone does not establish that it was restated; the original disclosure may differ.",
+        "Wording interpreted as: Did CBA's loan impairment expense rise or fall in FY2025? Calculate the change from FY2024 to FY2025."
+      ],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 178.69737809998333
+}

@@ -1,0 +1,18 @@
+% AI-assisted shared draft prepared at Ayushi's request on 25 October 2026.
+% Assigned reviewer: Shriram Varadarajan. Confirm active implementation and citations.
+\subsection{Chunking, Indexing and Retrieval}
+\label{subsec:chunking_retrieval}
+
+A useful financial chunk needs more than a nearby number. Splitting a table between its row label and year column can retain the digits while changing what an answer appears to mean. FinTrace therefore uses document structure as the starting point for checked financial evidence rather than cutting every fixed number of words~\cite{fintraceRetrieval2026}.
+
+The chunk builder preserves headings, text blocks and table relationships. Table-row evidence carries relevant column headers and source context. Prose follows text boundaries, with oversized blocks split at sentence or word boundaries. Smaller child chunks support precise matching; parent records retain broader context and dependencies. Configured ceilings are 2,400 UTF-8 bytes per child and 10,000 per parent, with at most three table rows in a child. These are byte limits, not token counts. Nearby footnotes can be context, but proximity alone does not establish which figure they qualify. Ambiguous table evidence is quarantined rather than promoted into calculation-ready material.
+
+Each unit retains identifiers for its bank, report, reporting year, PDF page, source blocks or rows and parent. Units, basis, scope and report vintage are carried where resolved. These fields support filtering and let citations identify a PDF page even when printed numbering differs. Context enrichment makes a short row searchable without inventing missing headers.
+
+Two search paths are maintained. Structured evidence combines BM25 keyword retrieval with dense retrieval using Qwen3-Embedding-0.6B~\cite{qwenEmbedding}. BM25 rewards informative shared terms; dense representations can match related wording. Reciprocal rank fusion combines their rankings. Dense vectors are local NumPy arrays searched by exact similarity, not a hosted database. Tokenizer checks constrain embedding inputs, and answer evidence has a separate packing budget. Appendix~\ref{app:runtime_details} records the settings; an entire report is not supplied to the model.
+
+Full-report prose instead uses lexical ranking with contextual and phrase signals, followed by local-model passage selection. It is not a dense index of all 1,021 pages. This broadens access to explanations without validating every table for numerical use.
+
+Numerical lookup considers indexed financial rows matching the bank and measure rather than relying only on hybrid top-five results. Strict binding then checks row identity, native digits, period, unit, basis, scope, vintage and conflicts. Housing lending must not become total loans, and net interest income must not become net interest margin. Explicit question constraints take precedence over optional interface filters~\cite{fintraceRuntime2026}.
+
+Fixed-size splitting and additional reranking were considered, but choices were guided by observed failures rather than assumed sophistication. Historical development checks informed chunk and query handling; they are not blind estimates of current accuracy. Retrieval relevance, correct cell binding and answer completeness remain separate outcomes. A correct citation can identify useful evidence while leaving a multi-part question only partly answered. Missing retrieved evidence likewise does not establish that information is absent from the PDF.

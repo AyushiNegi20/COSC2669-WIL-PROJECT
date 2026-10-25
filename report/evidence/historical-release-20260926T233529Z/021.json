@@ -1,0 +1,44 @@
+{
+  "id": "D21",
+  "question": "What was Macquarie's profit in 2025?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "all",
+      "year": "2025"
+    },
+    "summary": "Company as specified in the question / FY2025",
+    "notes": [],
+    "effective_question": "What was Macquarie's profit in 2025?"
+  },
+  "response": {
+    "question": "What was Macquarie's profit in 2025?",
+    "answer": {
+      "status": "unable_to_verify",
+      "message": "Requested company is outside the CBA/NAB corpus."
+    },
+    "route": "guard",
+    "generation": {
+      "status": "skipped"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 0.0016362999740522355,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "Requested company is outside the CBA/NAB corpus.",
+          "citations": [],
+          "kind": "limit"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 0.0018004000012297183
+}

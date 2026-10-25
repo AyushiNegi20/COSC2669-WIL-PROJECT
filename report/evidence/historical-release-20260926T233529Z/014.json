@@ -1,0 +1,339 @@
+{
+  "id": "D14",
+  "question": "What were NAB's total loans at the end of FY2025?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "NAB",
+      "year": "2025"
+    },
+    "summary": "NAB / FY2025",
+    "notes": [],
+    "effective_question": "What were NAB's total loans at the end of FY2025?"
+  },
+  "response": {
+    "question": "What were NAB's total loans at the end of FY2025?",
+    "plan": {
+      "companies": [
+        "NAB"
+      ],
+      "value_years": [
+        2025
+      ],
+      "report_year": null,
+      "annual_report_only": false,
+      "ambiguity": null,
+      "branches": [
+        "NAB"
+      ],
+      "intent": "find",
+      "metrics": [
+        "gross_loans"
+      ],
+      "definition_term": null,
+      "behavior": "answer",
+      "reason": null,
+      "original_question": "What were NAB's gross loans and acceptances at the end of FY2025?",
+      "normalised_question": "What were NAB's gross loans and acceptances at the end of FY2025?",
+      "corrections": [],
+      "metric_candidates": [
+        {
+          "metric": "gross_loans",
+          "similarity": 0.6818438768386841
+        },
+        {
+          "metric": "credit_impairment",
+          "similarity": 0.2925565838813782
+        },
+        {
+          "metric": "lcr",
+          "similarity": 0.2665751576423645
+        }
+      ],
+      "metric_resolution": "explicit",
+      "needs_human_review": true,
+      "semantic_margin": 0.3892872929573059,
+      "search_question": "What were NAB's gross loans and acceptances at the end of FY2025?\nFinancial concepts: gross loans and acceptances",
+      "period_note": "Preserve each source period end; CBA and NAB fiscal years do not end on the same date.",
+      "version": "v9",
+      "requests": [
+        {
+          "id": "request-1",
+          "company": "NAB",
+          "metric": "gross_loans",
+          "intent": "find",
+          "scope": null,
+          "value_years": [
+            2025
+          ],
+          "report_year": null,
+          "definition_contrast": false
+        }
+      ],
+      "constraints": {
+        "report_year": null,
+        "entity_scope": "Group",
+        "requested_years": [
+          2025
+        ],
+        "preserve_source_basis": true,
+        "preserve_period_kind": true,
+        "requires_new_calculation": false,
+        "cash_profit_cashflow_distinction": false
+      },
+      "requirements_complete": false,
+      "operation_request": {
+        "kind": "none",
+        "order": null,
+        "expense_magnitude": true,
+        "relative_percent": false
+      }
+    },
+    "operation_request": {
+      "kind": "none",
+      "order": null,
+      "expense_magnitude": true,
+      "relative_percent": false
+    },
+    "answer": {
+      "status": "source_bound_answer",
+      "mode": "source_cell_templates",
+      "parts": [
+        {
+          "request": {
+            "id": "request-1",
+            "company": "NAB",
+            "metric": "gross_loans",
+            "intent": "find",
+            "scope": null,
+            "value_years": [
+              2025
+            ],
+            "report_year": null,
+            "definition_contrast": false
+          },
+          "claims": [
+            {
+              "text": "NAB gross loans and acceptances: 781.5 AUD billion; as at ending 2025-09-30, gross before impairment allowances, Group.",
+              "cell": {
+                "metric": "gross_loans",
+                "company": "NAB",
+                "value": "781.5",
+                "raw_value": "781.5",
+                "unit": "AUD billion",
+                "basis": "gross before impairment allowances",
+                "scope": "Group",
+                "period_kind": "as_at",
+                "period_end": "2025-09-30",
+                "report_year": 2025,
+                "column": 1,
+                "source_id": "nab25:p015:b007:r20",
+                "header_ids": [
+                  "nab25:p015:b007:r0",
+                  "nab25:p015:b007:r1",
+                  "nab25:p015:b007:r8",
+                  "nab25:p015:b007:r19"
+                ],
+                "record_id": "v4:nab25:p015:b007:r20",
+                "source": {
+                  "company": "NAB",
+                  "document_id": "nab25",
+                  "document_title": "NAB FY2025 Full Year Results",
+                  "pdf_page": 15,
+                  "printed_page": {
+                    "method": "docling_footer_candidate",
+                    "reviewed": false,
+                    "value": "13"
+                  },
+                  "report_period_end": "2025-09-30",
+                  "report_year": 2025,
+                  "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                  "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                },
+                "row_quote": "Gross loans and acceptances (GLAs) | 781.5 | 738.2 | 5.9% | 781.5 | 756.3 | 3.3%",
+                "binding_status": "rule_bound_development_not_human_certified"
+              },
+              "evidence": [
+                {
+                  "source_id": "nab25:p015:b007:r20",
+                  "quote": "Gross loans and acceptances (GLAs) | 781.5 | 738.2 | 5.9% | 781.5 | 756.3 | 3.3%",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab25",
+                    "document_title": "NAB FY2025 Full Year Results",
+                    "pdf_page": 15,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "13"
+                    },
+                    "report_period_end": "2025-09-30",
+                    "report_year": 2025,
+                    "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab25:p015:b007:r0",
+                  "quote": " | Year to |  |  | Half Year to |  | ",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab25",
+                    "document_title": "NAB FY2025 Full Year Results",
+                    "pdf_page": 15,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "13"
+                    },
+                    "report_period_end": "2025-09-30",
+                    "report_year": 2025,
+                    "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab25:p015:b007:r1",
+                  "quote": " | Sep 25 | Sep 24 | Sep 25 v Sep 24 | Sep 25 | Mar 25 | Sep 25 v Mar 25",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab25",
+                    "document_title": "NAB FY2025 Full Year Results",
+                    "pdf_page": 15,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "13"
+                    },
+                    "report_period_end": "2025-09-30",
+                    "report_year": 2025,
+                    "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab25:p015:b007:r8",
+                  "quote": "Group performance - cash earnings basis |  |  |  |  |  | ",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab25",
+                    "document_title": "NAB FY2025 Full Year Results",
+                    "pdf_page": 15,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "13"
+                    },
+                    "report_period_end": "2025-09-30",
+                    "report_year": 2025,
+                    "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                  }
+                },
+                {
+                  "source_id": "nab25:p015:b007:r19",
+                  "quote": "Volumes ($bn) |  |  |  |  |  | ",
+                  "source": {
+                    "company": "NAB",
+                    "document_id": "nab25",
+                    "document_title": "NAB FY2025 Full Year Results",
+                    "pdf_page": 15,
+                    "printed_page": {
+                      "method": "docling_footer_candidate",
+                      "reviewed": false,
+                      "value": "13"
+                    },
+                    "report_period_end": "2025-09-30",
+                    "report_year": 2025,
+                    "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+                    "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+                  }
+                }
+              ],
+              "method": "deterministic_template_from_bound_source_cell",
+              "presentation": {
+                "value": "781.5",
+                "representation": "source_signed",
+                "note": "Original source sign preserved.",
+                "transformation": "identity",
+                "source_value": "781.5"
+              }
+            }
+          ],
+          "calculations": [],
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "calculation_coverage": {
+        "required": 0,
+        "completed": 0
+      },
+      "warning": "Development source binding, not independently human-certified financial advice.",
+      "limitations": [],
+      "important_notes": [
+        "For \"total loans\", the disclosed measure shown is gross loans and acceptances, before impairment allowances. This is not a net-loan total; a different definition needs its own evidence."
+      ]
+    },
+    "retrieval": {
+      "tokens": 734,
+      "omissions": [],
+      "numeric_binding_search": "All indexed financial rows matching the requested bank and metric, followed by strict cell binding; not top-k retrieval accuracy."
+    },
+    "seconds": 0.15454810002120212,
+    "version": "fintrace-conversational-development",
+    "interpretation": {
+      "retrieval_question": "What were NAB's gross loans and acceptances at the end of FY2025?",
+      "notes": []
+    },
+    "question_contract": {
+      "retrieval_question": "What were NAB's gross loans and acceptances at the end of FY2025?",
+      "notes": [],
+      "metric_mapping": "explicit aliases only for numerical answers"
+    },
+    "binding_validation": {
+      "passed": true,
+      "issues": []
+    },
+    "route": "numeric",
+    "generation": {
+      "status": "skipped",
+      "reason": "Numbers, calculations and guards use source templates; no generative model was called."
+    },
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "NAB's gross loans and acceptances were 781.5 AUD billion as at 30 September 2025 (gross before impairment allowances basis, Group).",
+          "citations": [
+            {
+              "company": "NAB",
+              "document_id": "nab25",
+              "document_title": "NAB FY2025 Full Year Results",
+              "pdf_page": 15,
+              "printed_page": {
+                "method": "docling_footer_candidate",
+                "reviewed": false,
+                "value": "13"
+              },
+              "report_period_end": "2025-09-30",
+              "report_year": 2025,
+              "source_sha256": "df0445a6cd5413b6e778cd347537d3008bf74a99fc1fa19c85b263e71b32cf7c",
+              "source_url": "https://www.nab.com.au/content/dam/nab/documents/reports/corporate/2025-full-year-results-management-discussion-and-analysis.pdf"
+            }
+          ],
+          "kind": "numeric"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [
+        "For \"total loans\", the disclosed measure shown is gross loans and acceptances, before impairment allowances. This is not a net-loan total; a different definition needs its own evidence."
+      ],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 0.1550058999855537
+}

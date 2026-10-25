@@ -1,0 +1,94 @@
+\documentclass[a4paper, table, 11pt]{article}
+\input{00_macros}
+\newcommand\reporttitle{Work Integrated Learning Project: Written Report}
+\newcommand\reportsubtitle{COSC2669\\Case Studies in Data Science\\2026}
+\newcommand\groupnumber{\textbf{WIL Project 9}}
+\newcommand\groupmentor{Mentor: Syeda Khan}
+\newcommand\logopath{img/rmit-university-logo-png-transparent.png}
+\newcommand\placeanddate{School of Computing Technologies \\ RMIT University \\ 2026}
+\newcommand{\authorlist}{}
+\newcommand{\addauthor}[2]{\gappto\authorlist{#1 & #2 \\}}
+\pagestyle{fancy}
+\lhead{\groupnumber}
+\rhead{FinTrace: Written Report}
+\setlength{\headheight}{14pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\footrulewidth}{0.4pt}
+\cfoot{Page \thepage}
+\begin{document}
+\addauthor{Ayushi Negi}{s4196173}
+\addauthor{Janhavi Maheshwar Ghate}{s4188725}
+\addauthor{Shriram Varadarajan}{s4162697}
+\addauthor{Guruprasad Simimath}{s4188084}
+\addauthor{Yash Keswani}{s4177991}
+\addauthor{Hashini Santhanakrishnan}{s4163868}
+\begin{titlepage}
+\centering
+\begin{tikzpicture}
+    \node[inner sep=0pt] (logo) at (0,0)
+        {\includegraphics[width=.3\textwidth]{\logopath}};
+    \node[text width=0.5\textwidth, right=of logo](title){\sffamily\huge\reporttitle};
+    \node[text width=0.5\textwidth, yshift=0.75cm, below=of title](subtitle){\sffamily\Large\reportsubtitle};
+    \gettikzxy{(subtitle.south)}{\subtitlex}{\subtitley}
+    \gettikzxy{(title.north)}{\titlex}{\titley}
+    \draw[line width=1mm]($(logo.east)!0.5!(title.west)$) +(0,\subtitley) -- +(0,\titley);
+\end{tikzpicture}
+\vspace*{\stretch{1}}
+{\sffamily\Large\textbf{FinTrace: Making Sense of Bank Reports}\par}
+\vspace{0.6cm}
+{\sffamily\Large\groupnumber\par}
+\vspace{0.5cm}
+{\sffamily\large\groupmentor\par}
+\vspace{1.5cm}
+\begin{table}[H]
+    \centering\sffamily\large
+    \begin{tabu} to 0.8\linewidth {cc}
+        \textbf{Full Name} & \textbf{Student ID} \\
+        \hline
+        \authorlist
+    \end{tabu}
+\end{table}
+\vfill
+{\small\href{https://www.overleaf.com/project/6a825099db573616c529838b}{Shared Overleaf project and version history}\par}
+\vspace{0.5cm}
+{\sffamily\Large\placeanddate}
+\end{titlepage}
+\newpage
+\pagenumbering{roman}
+\section*{Executive Summary}
+\addcontentsline{toc}{section}{Executive Summary}
+\input{01_exec_summary}
+\newpage
+\addcontentsline{toc}{section}{Contents}
+\tableofcontents\thispagestyle{empty}
+\newpage
+\listoffigures\thispagestyle{empty}
+\vspace{1.2em}
+\listoftables\thispagestyle{empty}
+\newpage
+\pagenumbering{arabic}
+\input{02_problem}
+\input{03_methodology}
+\input{04_findings}
+\input{05_impact}
+\input{06_project_management}
+\clearpage
+\begin{center}
+    \noindent\textcolor{purple}{\emph{-- Content below this line does not count for the page/word limit. --}}
+\end{center}
+\section*{Declaration of Use of Generative AI}
+We used ChatGPT/Codex and Claude for explanations of RAG and evaluation, project and presentation brainstorming, code generation and debugging, test preparation, assessment support, diagrams, report drafting and wording revision. This was substantive assistance, not only grammar correction. AI also helped draft the executive summary, technical sections and Ayushi's reflection. The other members' reflections remain for their own completion and review.
+
+Some evaluation questions and judgments were produced by separate AI agents. They are identified as AI-assisted assessments, not an independent human panel. Retained source pages, first responses, calculations and version records support specific findings; automated self-review does not establish correctness. Once assessment questions informed a fix, they were treated as exposed regression material.
+
+We remain responsible for the decisions, interpretation and submitted account of contributions. The use above is disclosed using the AI Attribution Toolkit approach and is not a claim that every purpose was permitted. Any permission questions must be resolved against the assessment conditions with the teaching team. Appendix~\ref{app:ai_process} gives a concrete editing example; the public repository retains the fuller use account.
+
+I certify that the submission of this assignment is incomplete without the submission of the completed \textbf{Condition 3 Bounded Process AI Declaration Form} (templates available in the specification of the assignment on Canvas).
+\begin{acks}
+We acknowledge the Wurundjeri people of the Kulin Nation, the Traditional Owners of the land on which RMIT's Melbourne City campus stands, and pay our respects to Elders past and present. We thank our mentor, Syeda Khan, and the teaching team for feedback on scope, reasoning questions and evidence-based evaluation. We also acknowledge the maintainers of Walert and the open-source tools used in the prototype, and CBA and NAB for the public reports used as source material.
+\end{acks}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{99_references,FINTRACE_REFERENCE_ADDITIONS}
+\appendix
+\input{99_appendix}
+\end{document}

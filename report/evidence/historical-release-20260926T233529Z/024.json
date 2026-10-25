@@ -1,0 +1,44 @@
+{
+  "id": "D24",
+  "question": "What is CBA's share price today?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "all"
+    },
+    "summary": "CBA / Period as specified in the question",
+    "notes": [],
+    "effective_question": "What is CBA's share price today?"
+  },
+  "response": {
+    "question": "What is CBA's share price today?",
+    "answer": {
+      "status": "unable_to_verify",
+      "message": "Historical financial reports do not establish a live share price."
+    },
+    "route": "guard",
+    "generation": {
+      "status": "skipped"
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 0.0018757999932859093,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "Historical financial reports do not establish a live share price.",
+          "citations": [],
+          "kind": "limit"
+        }
+      ],
+      "qualifications": [],
+      "important_notes": [],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 0.0021010000200476497
+}

@@ -1,0 +1,11 @@
+% AI-assisted shared draft, prepared at Ayushi's request on 25 October 2026.
+% Review with the group alongside the findings and final AI declaration.
+Financial analysts reviewing bank results need more than a plausible number. They need to know its reporting period, units, accounting basis and source before using it in a briefing. FinTrace is a test-driven retrieval-augmented generation prototype designed to support that checking task, using six official CBA and NAB reports covering FY2024 and FY2025.
+
+The system preserves table context and source identifiers during extraction, then uses separate retrieval and answer paths. Structured financial evidence supports checked lookups and within-bank comparisons, with Python calculating changes from compatible source values. Full-report prose search supports definitions and management commentary, using local Qwen3 8B through Ollama for bounded language tasks. The browser interface presents labelled answers, calculation workings, source-page links and evidence limitations. It does not provide forecasts, live prices or personalised investment advice.
+
+Development was guided by failures at each stage rather than the fluency of the final answer alone. Testing exposed wrong-metric associations, incomplete explanations, missing profit variants and reporting-version differences. One apparent system error was traced to an answer key using a different comparative figure. These findings shaped source checks, scope handling and regression tests.
+
+A historical assessment of 24 first responses recorded no serious financial errors, misleading citations or runtime errors, but included partial answers and an answerable refusal. One response took approximately 178 seconds. These results concern that frozen candidate, not every later revision, and do not establish 100\% complete accuracy. Exposed development checks are reported separately from fresh assessments.
+
+FinTrace demonstrates traceable financial lookups and supported calculations in a working local prototype. Easier verification and reduced manual searching are expected benefits, not measured analyst time savings. The next priorities are analyst feedback, more complete explanations, targeted coverage and latency improvements, followed by a fresh assessment of a fixed candidate. Human review remains necessary before financial sign-off.

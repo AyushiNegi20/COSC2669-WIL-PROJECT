@@ -1,0 +1,54 @@
+% Report section owner: Ayushi Negi.
+% AI-assisted working draft. Confirm completed contributions and mentoring/board evidence with the team.
+% The allocation below is not verified authorship of every implementation module.
+\section{Project Management}
+\label{sec:Project Management}
+
+\subsection{Organisation and responsibilities}
+Our six-member group organised the project around data, retrieval, answer production, the user workflow, evaluation and integration. Ayushi led coordination and reviewed the pipeline from source selection through to final answers, bringing gaps back into development discussions. Table~\ref{tab:report_responsibilities} sets out the agreed workstreams and writing responsibilities. These allocations describe who reviews and explains each area; completed contributions are recorded separately in the contribution sheet.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Team workstreams and final-report responsibilities.}
+\label{tab:report_responsibilities}
+\begin{tabular}{p{0.27\textwidth}p{0.65\textwidth}}
+\toprule
+Member & Responsibility \\
+\midrule
+Ayushi Negi & Coordination, development and evaluation review, extraction, problem definition, project management and final integration; screenshots and architecture. \\
+Yash Keswani & Data scope and answer-generation workstream; document source selection, answer paths and model configuration. \\
+Shriram Varadarajan & Retrieval workstream; document chunking, indexing, search decisions and evidence handoff. \\
+Guruprasad Simimath & Frontend workstream; explain the user workflow and supplied visuals, business impact, limitations and future improvements. \\
+Janhavi Maheshwar Ghate & CBA evaluation workstream; document evaluation design, scoring criteria and CBA findings. \\
+Hashini Santhanakrishnan & NAB evaluation workstream; document procedure, validity safeguards and NAB findings. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+We shared progress through Trello and group chat. GitHub holds the implementation and preliminary Walert work, while Overleaf keeps the report and its editing history. The links are in Appendix~\ref{app:project_evidence}. Responsibilities changed from the Milestone~1 plan as the scope became clearer, so the final contribution record needs to reflect work actually completed, not just the original allocation.
+
+\subsection{Planning, progress checks and review}
+The early Walert exercise gave us a starting point for separating retrieval quality from the decision not to answer. We rebuilt a BM25 baseline and assessed supplied Walert outputs; we did not reproduce its full Falcon pipeline. The retained \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/walert_reproduction/RESULTS.md}{preliminary results} informed the later focus on both useful evidence and honest non-answers.
+
+In Sprint~5, from 21 to 27~September, review focused on reliable figures, traceable sources and realistic questions. Trello and chat updates served as progress checks: an issue was raised, the relevant workstream was discussed and a fix was checked against the original question and earlier cases. This kept the work in small reviewable increments, although the records do not establish a formal daily stand-up schedule.
+
+The \href{https://trello.com/c/akurkkvG}{Sprint~5 review card} links the technical chronology and records that broader reasoning and behavioural follow-up remained unfinished at the sprint boundary. That work carried into Sprint~6. Some cards were added retrospectively, so their sprint labels organise the work but do not prove when a meeting or code change happened. Dated commits and saved run files provide the technical timeline.
+
+\subsection{Iteration through observed failures}
+Our review loop was straightforward: ask a question, keep the response, inspect the cited page and work out where the answer went wrong. A miss could come from extraction, retrieval, interpretation, financial binding or presentation. We therefore checked the failing stage before deciding whether the next change should involve the evidence, routing, calculation or model.
+
+The September extraction work compared table representations and added a logged correction for invisible brackets. Investment questions revealed another issue: the largest spending category is not necessarily the category with the largest annual increase. The checked investment path now keeps those answers separate. Reviewing comparisons also showed that an earlier-year figure taken from a later report needs its source version explained; it should not automatically be described as restated \cite{fintraceExtraction2026,fintraceCandidate2026}.
+
+On 27~September, the coverage follow-up separated full-report reading from the checked numerical catalogue. It added NAB statement and reconciliation paths and repaired paragraphs split across PDF layout blocks. On 4--5~October, wording checks extended general-profit and EPS answers to the available labelled variants. The 13~October change distinguished a missing historical year from a request to predict future profit. Each change addressed an observed problem without implying that every report question was now covered \cite{fintraceCoverage2026,fintraceBroad2026,fintraceHistory2026}.
+
+We retained failed responses and used exposed questions as regression cases. Separately authored assessment sets were kept outside the runtime index and tied to the candidate they tested. Once a result informed a fix, that set was no longer unseen. This prevented later versions from inheriting an earlier score without being assessed again.
+
+\subsection{Mentor feedback, retrospective and delivery}
+Mentor feedback on reasoning and behavioural questions pushed us beyond exact metric names. We tested wording such as where CBA was investing, then checked whether the evidence supported spending, lending or a ranking of categories. This made interpretation part of the review rather than assuming a relevant passage answered the question.
+
+The retrospective recorded on the Sprint~5 review card identifies three lessons: retain failed responses, test realistic wording and freeze a stable demo rather than keep expanding it. The record was clarified on 2~October; it does not give an exact retrospective meeting date. A practical consequence was to prioritise bounded fixes and leave explanation, coverage and latency improvements visible in the \href{https://trello.com/c/6hV8pwiq}{post-demo backlog}. Reliable evidence handling mattered more than making every answer sound fluent.
+
+Guruprasad, Yash, Shriram and Hashini contributed to the presentation slides, and Ayushi and Janhavi handled recording. Ayushi coordinated submission. The \href{https://trello.com/c/PA5l3gfM}{presentation-deck card} and \href{https://trello.com/c/aexWs4nM}{pre-recording checks} provide delivery evidence. Separate subsection files support report review without replacing one another's work. Ayushi prepared the architecture diagram, captured the frontend examples and integrated the AI-assisted section drafts and executive summary. The workstream table is a review allocation, not a claim that each member independently authored that implementation or draft.
+
+The submission check reconciled the public repository with the report's implementation checkpoint and retained evaluation artifacts outside the runtime index. The final contribution sheet still requires the group's confirmation, and five personal reflections remain for their owners. A working demo does not establish completed individual contributions; these remaining confirmations cannot be inferred from code tests or assigned roles.

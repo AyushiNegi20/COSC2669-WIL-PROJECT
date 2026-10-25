@@ -1,0 +1,198 @@
+{
+  "id": "D04",
+  "question": "Why did CBA's staff costs go up in FY2025?",
+  "scope": {
+    "selected": {
+      "company": "all",
+      "year": "all"
+    },
+    "effective": {
+      "company": "CBA",
+      "year": "2025"
+    },
+    "summary": "CBA / FY2025",
+    "notes": [],
+    "effective_question": "Why did CBA's staff costs go up in FY2025?"
+  },
+  "response": {
+    "question": "Why did CBA's staff costs go up in FY2025?",
+    "answer": {
+      "status": "partial_answer",
+      "mode": "report_narrative",
+      "source_excerpts": [
+        {
+          "heading": "CBA FY2025 / general: Full-report prose search. Group or general disclosure. Year comparison (prior year)",
+          "source": {
+            "company": "CBA",
+            "document_id": "cba25",
+            "document_title": "CBA FY2025 Profit Announcement",
+            "pdf_page": 31,
+            "report_year": 2025,
+            "report_period_end": "2025-06-30",
+            "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+            "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+            "report_section": "Group or general disclosure",
+            "document_role": "primary"
+          },
+          "excerpts": [
+            {
+              "source_id": "cba25:full:p031:b022",
+              "quote": "Staff expenses increased by $522 million or 7% to $7,970 million, driven by wage inflation and further investment in additional frontline lenders and technologists, partly offset by productivity initiatives. The average number of FTE increased by 727 from 49,269 to 49,996, primarily due to the Bank’s investment in its technology and engineering capabilities, insourcing to reduce reliance on external vendors and an increase in retail, business and NZ lenders, partly offset by the completion of the PT Bank Commonwealth (PTBC) sale in FY24."
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "CBA and NAB prose search includes all six reports. Retrieved passages are not exhaustive; unvalidated tables and image-only content are not calculation-ready.",
+        "Cited passages support only what the source explicitly discloses. Quoted figures are not newly calculated results or a complete review of every report."
+      ],
+      "message": "CBA FY2025 reports: \"Staff expenses increased by $522 million or 7% to $7,970 million, driven by wage inflation and further investment in additional frontline lenders and technologists, partly offset by productivity initiatives. The average number of FTE increased by 727 from 49,269 to 49,996, primarily due to the Bank’s investment in its technology and engineering capabilities, insourcing to reduce reliance on external vendors and an increase in retail, business and NZ lenders, partly offset by the completion of the PT Bank Commonwealth (PTBC) sale in FY24.\"",
+      "generated_explanation": {
+        "statements": [
+          {
+            "text": "CBA FY2025 reports: \"Staff expenses increased by $522 million or 7% to $7,970 million, driven by wage inflation and further investment in additional frontline lenders and technologists, partly offset by productivity initiatives. The average number of FTE increased by 727 from 49,269 to 49,996, primarily due to the Bank’s investment in its technology and engineering capabilities, insourcing to reduce reliance on external vendors and an increase in retail, business and NZ lenders, partly offset by the completion of the PT Bank Commonwealth (PTBC) sale in FY24.\"",
+            "evidence_ids": [
+              "P1"
+            ],
+            "citations": [
+              {
+                "source_id": "cba25:full:p031:b022",
+                "quote": "Staff expenses increased by $522 million or 7% to $7,970 million, driven by wage inflation and further investment in additional frontline lenders and technologists, partly offset by productivity initiatives. The average number of FTE increased by 727 from 49,269 to 49,996, primarily due to the Bank’s investment in its technology and engineering capabilities, insourcing to reduce reliance on external vendors and an increase in retail, business and NZ lenders, partly offset by the completion of the PT Bank Commonwealth (PTBC) sale in FY24.",
+                "period_context": "Year comparison (prior year)",
+                "source": {
+                  "company": "CBA",
+                  "document_id": "cba25",
+                  "document_title": "CBA FY2025 Profit Announcement",
+                  "pdf_page": 31,
+                  "report_year": 2025,
+                  "report_period_end": "2025-06-30",
+                  "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+                  "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+                  "report_section": "Group or general disclosure",
+                  "document_role": "primary"
+                }
+              }
+            ],
+            "kind": "quotation"
+          }
+        ],
+        "method": "extractive_selection",
+        "validation": {
+          "literal_source_match": "passed",
+          "selection_relevance": "model_selected_not_independently_verified"
+        }
+      },
+      "important_notes": [
+        "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations."
+      ]
+    },
+    "narrative_request": {
+      "status": "search",
+      "requests": [
+        {
+          "topic": "general",
+          "company": "CBA",
+          "year": 2025,
+          "query": "Explain CBA FY2025 reported Why did CBA's staff costs go up in FY2025?.",
+          "followup": "Explain CBA FY2025 disclosures relevant to: Why did CBA's staff costs go up in FY2025?"
+        }
+      ],
+      "notes": [],
+      "comparative": false,
+      "amount_requested": false,
+      "question": "Why did CBA's staff costs go up in FY2025?",
+      "topic": "general",
+      "company": "CBA",
+      "year": 2025
+    },
+    "research_coverage": [
+      {
+        "company": "CBA",
+        "year": 2025,
+        "topic": "general",
+        "sections": 1
+      }
+    ],
+    "research_searches": [
+      {
+        "query": "Why did CBA's staff costs go up in FY2025?",
+        "scope": "CBA full-report prose",
+        "relevant_sections": 1,
+        "ranked_sources": [
+          {
+            "source": {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 31,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            },
+            "score": 11.080072170120694
+          }
+        ]
+      }
+    ],
+    "full_report_search": true,
+    "interpretation": {
+      "retrieval_question": "Explain CBA FY2025 reported Why did CBA's staff costs go up in FY2025?.",
+      "notes": []
+    },
+    "route": "narrative",
+    "generation": {
+      "status": "source_selected",
+      "model": "qwen3:8b",
+      "method": "extractive_selection",
+      "timing": {
+        "total_duration": 1819512500,
+        "load_duration": 6865100,
+        "prompt_eval_count": 435,
+        "eval_count": 9
+      },
+      "selected_passage_ids": [
+        "P1"
+      ],
+      "missing_scopes": [],
+      "literal_source_match": true,
+      "seconds": 1.8787552999856416
+    },
+    "version": "fintrace-conversational-development",
+    "seconds": 1.946710600022925,
+    "presentation": {
+      "paragraphs": [
+        {
+          "text": "CBA FY2025 reports: \"Staff expenses increased by $522 million or 7% to $7,970 million, driven by wage inflation and further investment in additional frontline lenders and technologists, partly offset by productivity initiatives. The average number of FTE increased by 727 from 49,269 to 49,996, primarily due to the Bank’s investment in its technology and engineering capabilities, insourcing to reduce reliance on external vendors and an increase in retail, business and NZ lenders, partly offset by the completion of the PT Bank Commonwealth (PTBC) sale in FY24.\"",
+          "citations": [
+            {
+              "company": "CBA",
+              "document_id": "cba25",
+              "document_title": "CBA FY2025 Profit Announcement",
+              "pdf_page": 31,
+              "report_year": 2025,
+              "report_period_end": "2025-06-30",
+              "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/full-year-profit-announcement.pdf",
+              "source_sha256": "e2e911ab4feda08dfa6dde6c20f0915bf3522ea141383b21f3a6a682ca464a3f",
+              "report_section": "Group or general disclosure",
+              "document_role": "primary"
+            }
+          ],
+          "kind": "narrative"
+        }
+      ],
+      "qualifications": [
+        "Cited passages support only what the source explicitly discloses. Quoted figures are not newly calculated results or a complete review of every report."
+      ],
+      "important_notes": [
+        "These are selected report passages, not an exhaustive review or a newly inferred causal explanation. Quoted amounts are not new calculations.",
+        "CBA and NAB prose search includes all six reports' extractable text. Retrieved passages are not an exhaustive review; unvalidated tables and image-only content are not calculation-ready."
+      ],
+      "arithmetic": "deterministic",
+      "source_values_unchanged": true
+    }
+  },
+  "seconds": 1.947065400017891
+}

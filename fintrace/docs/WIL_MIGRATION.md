@@ -1,5 +1,11 @@
 # WIL demo import
 
+This page preserves the 1 October import record below. The written-report
+runtime was subsequently aligned with backend checkpoint `449c4ba` on
+25 October; see the [current checkpoint record](../../report/IMPLEMENTATION_CHECKPOINT.md)
+and [submission checks](../../report/SUBMISSION_CHECKS.md). The historical
+manifest hash below is not the current installer checksum.
+
 ## Provenance
 
 Imported on 1 October 2026 from
