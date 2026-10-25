@@ -93,14 +93,35 @@ def verify(source=None, write_hashes=False, git_ref=None):
             links_checked += 1
             if not (ROOT / target.rstrip('),.;')).exists():
                 errors.append('Missing public evidence target: ' + target)
+    snapshot = json.loads((REPORT / 'OVERLEAF_SOURCE_SNAPSHOT.json').read_text('utf-8'))
+    for name, expected in snapshot['files_sha256'].items():
+        path = REPORT / 'latex' / name
+        if not path.is_file() or digest(path) != expected:
+            errors.append('Overleaf report snapshot differs: ' + name)
+
     appendix = (REPORT / 'latex/99_appendix.tex').read_text('utf-8')
-    for name in ('Yash Keswani', 'Shriram Varadarajan', 'Guruprasad Simimath',
+    reflection_sections = 0
+    for name in ('Ayushi Negi', 'Yash Keswani', 'Shriram Varadarajan', 'Guruprasad Simimath',
                  'Janhavi Maheshwar Ghate', 'Hashini Santhanakrishnan'):
-        after = appendix.split(r'\subsection{' + name + ': Individual Reflection}', 1)[1]
+        marker = r'\subsection{' + name + ': Individual Reflection}'
+        if marker not in appendix:
+            errors.append('Missing reflection section: ' + name)
+            continue
+        after = appendix.split(marker, 1)[1]
         section = after.split(r'\subsection{', 1)[0]
-        if '\n' not in section or any(line.strip() and not line.lstrip().startswith('%')
-                                      for line in section.splitlines()):
-            errors.append('An owner reflection was filled unexpectedly: ' + name)
+        if not any(line.strip() and not line.lstrip().startswith('%')
+                   for line in section.splitlines()):
+            errors.append('Empty reflection section: ' + name)
+        else:
+            reflection_sections += 1
+
+    main_report = '\n'.join(path.read_text('utf-8') for path in (REPORT / 'latex').glob('*.tex')
+                            if path.name != '99_appendix.tex')
+    if any(commit in main_report for commit in ('aa7fef9', '449c4ba', 'fab4ca9')):
+        errors.append('Technical commit identifiers remain outside the appendix')
+    findings = (REPORT / 'latex/04_findings.tex').read_text('utf-8')
+    if 'not a new accuracy estimate for the final implementation' not in findings:
+        errors.append('Historical evaluation/version distinction is missing')
 
     result = {
         'errors': errors, 'historical_responses': len(responses),
@@ -109,7 +130,9 @@ def verify(source=None, write_hashes=False, git_ref=None):
         'manifest_listed_code_files_checked': code_files,
         'report_public_link_targets_checked': links_checked,
         'runtime_manifest_sha256': digest(manifest_path),
-        'remaining_owner_reflections': 5,
+        'overleaf_snapshot_files_checked': len(snapshot['files_sha256']),
+        'reflection_sections_present': reflection_sections,
+        'reflection_owner_approval_verified': False,
         'new_model_accuracy_assessment': False,
         'local_data_and_models_verified_by_this_script': False,
     }

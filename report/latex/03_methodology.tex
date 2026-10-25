@@ -3,12 +3,12 @@
 \section{Methodology}
 \label{sec:Methodology}
 
-Figure~\ref{fig:fintrace_architecture} summarises the preparation and answer paths. Structured financial evidence and full-report prose are searched differently. Source identifiers connect both paths to the original reports; evaluation keys are not runtime evidence.
+The final implementation is available in the group's \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT}{WIL project repository}. FinTrace uses separate processes for preparing documents, retrieving evidence and producing answers. Figure~\ref{fig:fintrace_architecture} shows how structured financial tables and prose from the full reports reach the appropriate answer process. Both retain references to their sources. Evaluation questions and expected answers are kept outside the evidence used by the application.
 
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.98\linewidth,height=0.78\textheight,keepaspectratio]{fintrace_architecture.pdf}
-\caption[FinTrace architecture]{FinTrace architecture at implementation checkpoint \texttt{449c4ba}. Structured keyword and dense retrieval is separate from full-report prose search. Supported figures use source-cell binding and Python arithmetic; Qwen3 8B through Ollama supports definitions and passage selection. Dashed connections represent evidence supplied to the appropriate question path. Source checks do not establish complete coverage~\cite{fintraceRuntime2026}.}
+\caption[FinTrace architecture]{Architecture of the final FinTrace implementation. Technical version details are recorded in Appendix~\ref{app:implementation_versions}. Structured evidence combines keyword and semantic retrieval, while prose uses keyword search followed by local model passage selection. Supported numerical answers link values to source cells and use Python for arithmetic. Qwen3 8B through Ollama supports passage selection and definitions. Dashed connections show evidence supplied to the relevant answer process~\cite{fintraceRuntime2026}.}
 \label{fig:fintrace_architecture}
 \end{figure}
 

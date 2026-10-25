@@ -1,13 +1,23 @@
 # FinTrace written report and evidence
 
 The report is maintained in the [original shared Overleaf project](https://www.overleaf.com/project/6a825099db573616c529838b),
-which retains the authoring history. The `latex/` directory is a submission-review
-snapshot, not a replacement project or evidence that every member authored it.
-Five individual reflection sections are deliberately left for their owners.
+which retains the authoring history. The `latex/` directory contains the latest
+report source snapshot, synchronised with Overleaf on 25 October 2026. It is not
+a replacement project or evidence that every member authored it. All six
+reflection sections contain AI-assisted drafts; members remain responsible for
+reviewing and confirming their own accounts.
+
+The main report refers to the final WIL implementation. Appendix A.1 records the
+exact implementation and evaluation versions. The 24-question assessment was
+run on an earlier version and is not presented as a fresh accuracy estimate for
+the final code. The existing `report-submission-2026-10-25` tag preserves the
+implementation and historical evidence snapshot; `main` includes these later
+report revisions. [The source snapshot record](OVERLEAF_SOURCE_SNAPSHOT.json)
+lists the files copied from Overleaf and their checksums.
 
 ## Evidence map
 
-- [Implementation checkpoint](IMPLEMENTATION_CHECKPOINT.md): the backend source
+- [Implementation version record](IMPLEMENTATION_CHECKPOINT.md): the backend source
   revision represented by the public WIL application, with verification limits.
 - [Historical 24-response packet](evidence/historical-release-20260926T233529Z/README.md):
   unaltered first responses, original questions, companion review, hashes and an
@@ -32,8 +42,8 @@ or checking hashes does not establish fresh financial-answer accuracy.
 
 1. Each member reviews their assigned technical account and confirms completed
    contributions. Role allocation alone is not proof of implementation authorship.
-2. The other five members add their own reflections in Overleaf. Ayushi's
-   AI-assisted reflection is already included for her review.
+2. Each member reviews and personalises their reflection in Overleaf, retaining
+   only activities and learning they can confirm. Draft text is not owner approval.
 3. Complete and agree the written-report contribution sheet and Condition 3
    declaration. Confirm any permission questions with the teaching team; a
    disclosure is not permission for an otherwise excluded use.
@@ -42,5 +52,6 @@ or checking hashes does not establish fresh financial-answer accuracy.
    The declaration and contribution PDFs from the earlier presentation are not
    automatically the written-report forms.
 
-The report snapshot is AI-assisted. Comments and review notes deliberately keep
-remaining human confirmations visible rather than pretending approval occurred.
+The report snapshot is AI-assisted. The separate Condition 3 declaration and
+the short acknowledgement in the report disclose substantive assistance.
+No repository or automated check establishes the group's final approval.

@@ -4,50 +4,50 @@
 \section{Findings}
 \label{sec:Findings}
 
-\subsection{What the recorded evaluations establish}
-The results support a bounded reliability argument, not universal accuracy. Table~\ref{tab:evaluation_checkpoints} reconciles the historical review of 24 first responses from candidate \texttt{aa7fef9}. The public packet retains the original responses, questions and AI-assisted review~\cite{fintraceReleaseReview2026}. This report describes later implementation checkpoint \texttt{449c4ba}, not a newly assessed candidate with the same score.
+\subsection{Recorded financial answer assessment}
+Table~\ref{tab:evaluation_checkpoints} summarises a recorded assessment of 24 first responses from an earlier version of FinTrace. The archived evidence contains the original questions, responses and AI-assisted review~\cite{fintraceReleaseReview2026}. The final implementation in the WIL project repository includes subsequent improvements checked through development and regression testing. The assessment below therefore describes the earlier evaluated version, not a new accuracy estimate for the final implementation. Appendix~\ref{app:implementation_versions} identifies both versions and the supporting records.
 
 \begin{table}[htbp]
 \centering
 \small
-\caption{Historical 24-response review: exact named categories, not current accuracy.}
+\caption{Recorded assessment outcomes for 24 questions on an earlier software version.}
 \label{tab:evaluation_checkpoints}
 \renewcommand{\arraystretch}{1.15}
 \begin{tabular}{p{0.48\linewidth}p{0.12\linewidth}p{0.29\linewidth}}
 \hline
 \raggedright\textbf{Recorded category} & \raggedright\textbf{Count / 24} & \raggedright\textbf{Question IDs} \tabularnewline
 \hline
-\raggedright Explicitly listed as correct and sufficiently complete & 12 & \raggedright D01--04, D08--12, D14, D19, D23 \tabularnewline
+\raggedright Listed as correct and sufficiently complete & 12 & \raggedright D01--04, D08--12, D14, D19, D23 \tabularnewline
 \raggedright Partial or limited & 4 & \raggedright D05, D07, D13, D15 \tabularnewline
-\raggedright Over-refusal of an answerable item & 1 & D06 \tabularnewline
+\raggedright Declined an answerable question & 1 & D06 \tabularnewline
 \raggedright Appropriate non-answer within declared scope & 6 & \raggedright D16--18, D21--22, D24 \tabularnewline
-\raggedright Correct vintage example; completeness not categorised & 1 & D20 \tabularnewline
+\raggedright Correct report version; completeness not categorised & 1 & D20 \tabularnewline
 \hline
 \textbf{Total} & \textbf{24} & D01--D24 \tabularnewline
 \hline
 \end{tabular}
 \end{table}
 
-The review recorded zero serious financial errors, misleading citations or runtime errors; these are separate checks, not additional outcome categories. D20 was discussed but not assigned a completeness category, so no exhaustive accuracy percentage is inferred. These historical judgments also predate the later expansion of generic-profit alternatives. Reference-key corrections and AI-assisted assessment limit the result's independence.
+The review recorded no serious financial errors, misleading citations or runtime errors. These are separate checks rather than additional response categories. D20 was discussed as a correct report-version example but was not assigned a completeness category, so an overall complete-answer accuracy percentage is not inferred. The assessment also preceded the expansion of general profit alternatives. Corrections to reference answers and the use of AI-assisted judgments limit its independence.
 
-Development evidence is separate: 584 Python tests, ten frontend tests and 232 supported numerical wording checks passed. Another 24-response development run recorded seven unable-to-verify statuses (29.2\%: six boundary cases and one answerable refusal) and five partial statuses~\cite{fintraceCandidate2026}. Statuses and software checks are not financial correctness scores and are not pooled with Table~\ref{tab:evaluation_checkpoints}.
+Development checks provide a separate body of evidence: 584 Python tests, ten frontend tests and 232 supported numerical wording checks passed. Another session of 24 development questions recorded seven unable-to-verify responses (29.2\%: six boundary cases and one answerable refusal) and five partial responses~\cite{fintraceCandidate2026}. These software checks and response statuses are not combined with the financial assessment in Table~\ref{tab:evaluation_checkpoints}.
 
-\subsection{Preliminary retrieval baseline}
-The preliminary Walert exercise rebuilt BM25 search over 120 FAQ passages. Across 96 answerable questions, it achieved Hit@5 of 80.21\%, MRR of 0.6408 and nDCG@5 of 0.4190. Hit@5 was 82.14\% for 84 known/paraphrased questions and 66.67\% for twelve inferred questions. This wording gap helped motivate testing indirect requests rather than only exact metric names. Supplied Walert generation outputs were rescored, not regenerated; the full Falcon-7B pipeline was not reproduced~\cite{fintraceWalert2026}. These results concern a different corpus and task, so they are not a financial-answer baseline that FinTrace has beaten. A matched end-to-end ablation of the latest financial candidate remains a limitation.
+\subsection{Preliminary retrieval results}
+The initial Walert exercise rebuilt BM25 retrieval over 120 FAQ passages. Across 96 answerable questions, Hit@5 was 80.21\%, MRR was 0.6408 and nDCG@5 was 0.4190. Hit@5 reached 82.14\% for 84 known or paraphrased questions but 66.67\% for twelve inferred questions. This difference motivated testing requests that did not repeat the source terminology. Supplied Walert generation outputs were rescored rather than regenerated; the full Falcon-7B pipeline was not reproduced~\cite{fintraceWalert2026}. Because this exercise used a different corpus and task, it is not evidence that FinTrace outperformed a financial RAG baseline. A comparison of complete approaches on the same financial questions remains future work.
 
-\subsection{CBA: context, calculation and source checking}
-CBA cases show why correctness and completeness need separate treatment. A general profit question initially returned cash and statutory alternatives, but later review identified four relevant FY2025 variants: continuing cash profit of AUD~10,252 million, total cash profit of AUD~10,253 million, continuing statutory profit of AUD~10,133 million and total statutory profit of AUD~10,116 million~\cite{fintraceCBA2025}. Totals include discontinued operations; they are not discontinued-only results. The later source-bound update is implementation evidence, not a result from the earlier 24-question assessment.
+\subsection{CBA findings}
+CBA examples demonstrate the distinction between correctness and completeness. A general profit question initially returned cash and statutory alternatives. Later review identified four relevant FY2025 figures: continuing cash profit of AUD~10,252 million, total cash profit of AUD~10,253 million, continuing statutory profit of AUD~10,133 million and total statutory profit of AUD~10,116 million~\cite{fintraceCBA2025}. Totals include discontinued operations; they are not the results of discontinued operations alone. The later change added these source-linked alternatives and is reported separately from the earlier 24-question assessment.
 
-The historical release review accepted the continuing cash-profit comparison: AUD~9,836 million to AUD~10,252 million gives AUD~416 million, approximately 4.2\%. It also accepted the distinction between the largest investment-spending category, productivity and growth, and the largest increase, infrastructure and branch refurbishment. However, the investment response was verbose and included FY2023 context outside the requested window. Correct evidence did not automatically produce a concise answer.
+The earlier review accepted the continuing cash profit comparison from AUD~9,836 million to AUD~10,252 million, an increase of AUD~416 million or approximately 4.2\%. It also correctly distinguished productivity and growth as the largest category of investment spending from infrastructure and branch refurbishment as the category with the largest increase. However, that response was verbose and included FY2023 information outside the requested period, showing that relevant evidence did not necessarily produce a focused answer.
 
-A customer-deposits disagreement exposed a reference-key problem. The initial expectation used AUD~834,259 million, while the FY2025 report's FY2024 comparative column showed AUD~851,682 million. With FY2025 deposits of AUD~908,812 million, the compatible change is AUD~57,130 million, about 6.71\%. The original key was preserved and source headers were inspected rather than forcing a match~\cite{fintraceCandidate2026}. Evaluation assumptions required checking as carefully as system outputs.
+Investigating a disagreement about customer deposits revealed a reference-answer error. The expectation used AUD~834,259 million, while the FY2025 report showed AUD~851,682 million in its FY2024 comparative column. Using that comparable value with FY2025 deposits of AUD~908,812 million gives a change of AUD~57,130 million, about 6.71\%. The original expectation was retained and the source headers were inspected before resolving the difference~\cite{fintraceCandidate2026}. This demonstrated that evaluation references require checking as carefully as system outputs.
 
-\subsection{NAB: distinctions and incomplete explanations}
-The historical review found labelled cash and statutory alternatives and correct supported calculations. A NIM movement of 0.03 percentage points was not presented as 3\% relative growth. Report-version disclosure also distinguished original FY2024 net operating income of AUD~20,250 million from the FY2025 report's comparative value of AUD~20,236 million, without automatically calling it a restatement~\cite{fintraceReleaseReview2026}.
+\subsection{NAB findings}
+The earlier review found correctly labelled cash and statutory alternatives and supported calculations. A net interest margin (NIM) movement of 0.03 percentage points was distinguished from 3\% relative growth. The responses also distinguished FY2024 net operating income of AUD~20,250 million in the original report from AUD~20,236 million in the FY2025 comparative column, without automatically describing the difference as a restatement~\cite{fintraceReleaseReview2026}.
 
-Several responses remained incomplete. A question about why operating expenses rose returned figures and change without management's drivers. A capital-strength question retrieved CET1 commentary but omitted the headline movement from 12.35\% to 11.70\%. Cost-to-income was refused despite being available in the report. These are coverage or effectiveness failures, not proof that the information was absent. Later checked annual-report table paths widened coverage, but exposed follow-up questions cannot establish fresh generalisation performance~\cite{fintraceCoverage2026}.
+Other responses were incomplete. A question about rising operating expenses returned figures and a change but omitted management's explanations. A question about capital strength retrieved commentary on Common Equity Tier 1 (CET1) capital but omitted the movement from 12.35\% to 11.70\%. The system declined cost-to-income information that was available in the report. These cases indicate coverage or effectiveness gaps rather than absence of information. Subsequent checks of further annual report tables widened coverage, but questions already used in development cannot establish performance on unseen requests~\cite{fintraceCoverage2026}.
 
-\subsection{Answerability, latency and project questions}
-In the 24-question historical review, six cases concerning cross-bank comparison, prediction, an excluded year, another bank, personal advice and live price received appropriate non-answers under the declared boundaries. No runtime errors or model/excerpt fallbacks occurred. Most numerical answers were reported as sub-second, but one comparison took approximately 178 seconds and a further answer about 35 seconds. These observations demonstrate variable latency, not a response-time guarantee~\cite{fintraceReleaseReview2026}.
+\subsection{Overall findings and limitations}
+In the recorded 24-question assessment, six cases involving comparisons between banks, prediction, an excluded year, another bank, personal advice and live prices received appropriate responses within the declared boundaries. There were no runtime errors or model-to-excerpt fallbacks. Most numerical answers took less than a second, although one comparison took approximately 178 seconds and another answer about 35 seconds~\cite{fintraceReleaseReview2026}.
 
-The project questions are therefore answered unevenly. FinTrace can locate and label supported figures and calculate compatible within-bank changes. Explanations and definitions are report-grounded but less consistently complete than checked numerical answers. Source links and explicit limits make verification possible, while the key-correction case demonstrates why evaluation assumptions also need scrutiny. Whether these functions reduce analyst effort remains unmeasured. No current bank-specific aggregate accuracy is claimed without a fully adjudicated, version-matched set.
+The findings show that FinTrace can locate and label supported figures and calculate compatible changes within a bank. Definitions and explanations are grounded in report evidence but are less consistently complete. Source links and visible workings support review, while the reference-answer correction demonstrates the need to investigate apparent failures. The assessment does not establish analyst time savings or current accuracy for each bank without a fully reviewed question set matched to the version assessed.

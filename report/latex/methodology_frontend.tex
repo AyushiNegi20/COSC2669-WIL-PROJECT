@@ -1,30 +1,28 @@
 % AI-assisted shared draft prepared at Ayushi's request on 25 October 2026.
 % Assigned reviewer: Guruprasad Simimath. Live screenshots captured for the report on 25 October 2026.
-\subsection{Frontend and User Workflow}
+\subsection{Frontend and user workflow}
 \label{subsec:frontend_workflow}
 
-The frontend is a custom HTML, CSS and JavaScript application served by a local Python HTTP server, not Streamlit. The browser submits questions to the configured backend and renders answers, calculations, sources and limitations. Health and document-library endpoints support the connection indicator and report list~\cite{fintraceRuntime2026}.
+The frontend is a custom HTML, CSS and JavaScript application connected to the RAG pipeline through a local Python HTTP server. It displays answers, calculations, source references and evidence limitations. Health checks support the connection indicator, while the document library endpoint provides the report list~\cite{fintraceRuntime2026}.
 
-Users can enter a question directly or select optional company and financial-year filters. Filters fill missing context; a bank or year named in the question takes precedence. Users do not need to classify questions as lookups, definitions or explanations. The interface accepts up to 2,000 characters and retains up to eight successful responses in the current tab's memory. It does not provide accounts or a persistent, cross-device conversation archive.
+Users can ask a question directly or select optional bank and financial year filters. A bank or year named in the question takes precedence; filters supply missing context. Users do not need to classify their request as a lookup, definition or explanation. The interface accepts up to 2,000 characters and retains up to eight successful responses in the current browser tab. This history is not a persistent account or an archive available on other devices.
 
-Financial labels remain visible alongside figures. Supported comparisons include Python calculation workings, and numbered citations lead to extracted evidence and the original PDF page. Copy and JSON-download controls allow response records to be inspected. These features support checking before a figure is reused in a briefing; a clickable source alone does not prove correctness or completeness.
+Financial labels remain visible beside figures. Supported comparisons show their calculation workings, and numbered references lead to extracted evidence and the original PDF page. Responses can be copied or downloaded as JSON, a structured format for inspecting the result. These controls let an analyst examine how an answer was produced rather than relying on its wording alone.
 
-Evidence limits and partial answers remain visible rather than being hidden behind a polished paragraph. A source-selected quotation is distinguished from a newly generated explanation. This matters when relevant passages do not establish the requested ranking or causal conclusion.
-
-Figures~\ref{fig:frontend_profit} and~\ref{fig:frontend_comparison} show two live, development-exposed examples from the current interface. They illustrate labels and inspectable workings, not a new accuracy assessment or latency benchmark.
+Partial answers and evidence limitations are displayed explicitly. A quotation selected from a report is distinguished from a generated explanation because a relevant passage may not establish a requested ranking or cause. Figures~\ref{fig:frontend_profit} and~\ref{fig:frontend_comparison} illustrate two live examples already used during development. They demonstrate the interface rather than provide a new accuracy or latency assessment.
 
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.98\linewidth]{frontend_profit.png}
-\caption[Frontend: labelled profit alternatives]{Cropped live frontend response to ``What was CBA profit in FY2025?'' Four source-bound figures distinguish cash/statutory basis and continuing/total operations. The numbered references identify CBA's FY2025 Profit Announcement, PDF page 18~\cite{fintraceCBA2025}.}
+\caption[Frontend: labelled profit alternatives]{Live interface response to ``What was CBA profit in FY2025?'' Four figures linked to source cells distinguish cash/statutory basis and continuing/total operations. The numbered references identify CBA's FY2025 Profit Announcement, PDF page 18~\cite{fintraceCBA2025}.}
 \label{fig:frontend_profit}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.98\linewidth]{frontend_comparison.png}
-\caption[Frontend: comparison and calculation workings]{Cropped live frontend response comparing CBA continuing cash profit from FY2024 to FY2025. The expanded workings show AUD~10,252 million minus AUD~9,836 million, giving AUD~416 million; the answer reports approximately 4.23\% relative growth. Operand references lead to PDF page 18 of the FY2025 report. Screenshots are illustrative runs, not timing guarantees.}
+\caption[Frontend: comparison and calculation workings]{Live interface comparison of CBA continuing cash profit from FY2024 to FY2025. The expanded workings show AUD~10,252 million minus AUD~9,836 million, giving AUD~416 million; the answer reports approximately 4.23\% relative growth. Operand references lead to PDF page 18 of the FY2025 report. Screenshots are illustrative runs, not timing guarantees.}
 \label{fig:frontend_comparison}
 \end{figure}
 
-The prototype is intended for a single user on the host laptop. Its local model, evidence files and indexes require installation beyond cloning the repository. Startup and GPU contention can affect response time. Interface-state and server checks were recorded separately from financial-answer assessment; no formal accessibility audit, multi-user load test or analyst usability study is claimed.
+The prototype runs locally for a single user. Its evidence, models and indexes require installation beyond cloning the repository. Model startup and competition for GPU resources can affect response time. Checks of interface state and server behaviour were recorded separately from financial answer assessment. Formal accessibility, multi-user load and analyst usability studies remain future work.

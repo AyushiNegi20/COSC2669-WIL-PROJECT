@@ -1,0 +1,36 @@
+{
+  "source_overleaf_url": "https://www.overleaf.com/project/6a825099db573616c529838b",
+  "synchronised_date": "2026-10-25",
+  "source_comparison": "All 18 text sources match the live Overleaf copy after normalising line endings and ignoring trailing blank lines. Architecture PDF is the same file uploaded and visually verified in Overleaf.",
+  "recorded_overleaf_compile": {
+    "errors": 0,
+    "warnings": 0,
+    "total_pdf_pages": 27,
+    "counted_pages": 20,
+    "excluded_content_starts_physical_page": 21
+  },
+  "runtime_changed": false,
+  "historical_evaluation_changed": false,
+  "owner_reflection_approval_verified": false,
+  "files_sha256": {
+    "00_main.tex": "c766d54c39efa281447dcff8340f42183667a2e17f130cd5865fded9fb1031f9",
+    "01_exec_summary.tex": "a71540f03aac6aa77fe3cee07137d0a28c0cb4afb84310fe623f0c0eb1bc0eb5",
+    "02_problem.tex": "40229eea51172315e7184dbb31c69b294e17492472403286bdf2a007adce4aa5",
+    "03_methodology.tex": "77feabb8d578eecb3ebcc34401db9d395b182fa2373c3f4f49281762ccd42e74",
+    "methodology_data.tex": "c12baa3a91eb328052dc10cf9d69c1119a86c4f99733a7c07d5d29384b2757fb",
+    "methodology_extraction.tex": "eb8e51b0c80f4f8b259cf0f26d2561b6da756946932581e6ba4a2eb44686eada",
+    "methodology_retrieval.tex": "4fa246cb58575965e97f10d1a761961ebeff871baf1e6d16f86ff441d22787bc",
+    "methodology_answers.tex": "f2508cd1b421ccd057f36e673a32aa8e2fc7435d97ca8e8527630c5fa8c7863e",
+    "methodology_frontend.tex": "03583018d4c2c321a62021e92618153678e3b7b75e0baf292fa20cb16c92cab1",
+    "methodology_evaluation_design.tex": "17f9378941695993d2e65dfb0537a946a079e0df6e404238f8e357c08678d309",
+    "methodology_evaluation_procedure.tex": "d6cdcbf56ca0162a906db2564cd448f33e49569c68a79cd14e1412b93b0606f6",
+    "04_findings.tex": "6f38025cf25d628bf42a8f6fa512b9d16c3aa52bee5919fc3ee8f69442dd8f9a",
+    "05_impact.tex": "9b9d3d9eaf98f88daa204b0ffad99438709281225ab52fecdf9ecba133311965",
+    "06_project_management.tex": "74aef7e1d9550db162d891b0e5d2e9f951899e34242fc230be0a7d1807a37bcd",
+    "99_appendix.tex": "67cc07eb51d1c8b9bff0f7134c341bde87e4bd83b06a0f0c6f77602be83ed7ac",
+    "00_macros.tex": "a1d107d5ac31427c4b61eb1e84fbaa657de0e638b1a79862a1816a1a5f2da573",
+    "99_references.bib": "26f64ec0c8db98744d3eb1b8da88fc8a039a1686903bb8cf2d8fa7b8d7157871",
+    "FINTRACE_REFERENCE_ADDITIONS.bib": "2a2824ca7d41689c89293037c2f9acee4a64f28689f07dc83c9099d2e8c83d8f",
+    "fintrace_architecture.pdf": "862179ccb4dd66b96cf4d0bc95665b315f9f25497c8d2557a9f5522dbce68951"
+  }
+}

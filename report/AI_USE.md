@@ -8,9 +8,13 @@ agents also authored and assessed some question sets. These are not external
 human-panel judgments, and model self-review is not independent verification.
 
 The written report's technical sections, executive summary, architecture,
-editing and Ayushi's reflection received substantive AI assistance. The report
-does not claim that all wording or implementation was independently written by
-students. Members must verify the account of their work and write or approve
+editing and Ayushi's reflection received substantive AI assistance. On 25 October
+2026, AI-assisted starting drafts were also added for the other five members,
+based on assigned report sections rather than verified personal experiences.
+Visible draft banners were removed during formatting, but the reflections
+remain AI-assisted drafts requiring each member's revision and confirmation.
+The report does not claim that all wording or implementation was independently
+written by students. Members must verify the account of their work and write or approve
 their own personal reflections; an agreed role is not proof of a completed task.
 
 The project scope, selection decisions and acceptance of revisions remain the

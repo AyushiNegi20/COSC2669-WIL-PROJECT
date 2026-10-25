@@ -2,10 +2,13 @@
 \section{Project Evidence and Individual Reflections}
 \label{app:project_evidence}
 
-\subsection{Repositories and coordination}
+\subsection{Repositories, version records and coordination}
+\label{app:implementation_versions}
 The group submission repository is \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT}{COSC2669-WIL-PROJECT}. It contains the imported FinTrace application under \texttt{fintrace/}, the preliminary Walert reproduction and Milestone~1 records. Its \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/main/fintrace/docs/WIL_MIGRATION.md}{migration record} identifies the imported release and verification scope.
 
-The public WIL runtime has been aligned with original backend checkpoint \texttt{449c4ba}; its \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/report/IMPLEMENTATION_CHECKPOINT.md}{checkpoint record} explains the import and WIL-specific setup paths. Necessary evidence is available in the public repository without private development-repository access. Evaluation results retain their original candidate identifiers; an older assessment is not presented as a score for this revision.
+\textbf{Final implementation.} The report's implementation reference is the public WIL repository snapshot tagged \texttt{report-submission-2026-10-25}, corresponding to WIL commit \texttt{fab4ca9}. Its FinTrace application matches the recorded backend version \texttt{449c4ba}. The \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/report/IMPLEMENTATION_CHECKPOINT.md}{version record} explains the imported implementation and setup paths. These identifiers locate the code described in the report; they are not quality scores.
+
+\textbf{Evaluated version.} The 24-question financial assessment in Section~\ref{sec:Findings} used the earlier backend version \texttt{aa7fef9}, with first responses retained in the \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/tree/report-submission-2026-10-25/report/evidence/historical-release-20260926T233529Z}{assessment archive}. Subsequent fixes were checked through development and regression testing, but the earlier assessment is not presented as a fresh evaluation of the final implementation. The necessary implementation and evaluation evidence is available in the public WIL repository without access to the private development repository.
 
 Coordination records are on the \href{https://trello.com/b/TlRdAYBm/cosc2669-wil-project}{WIL Project~9 Trello board}. The report is written in the \href{https://www.overleaf.com/project/6a825099db573616c529838b}{shared Overleaf project}, retaining version history. Current card status shows the state of a task; commits and run records establish the content and timing of technical changes.
 
@@ -14,17 +17,17 @@ The \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submi
 
 The \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/fintrace/reports/coverage/REVIEW.md}{coverage review} challenged another assumption: a missing answer did not mean the PDF was missing. All six reports already had extractable text. Gaps also came from restrictive numerical scope, routing and paragraphs split across layout blocks. The response was to improve those stages while keeping calculations limited to checked values, rather than treating every extracted table as reliable.
 
-A third lesson came from a CBA customer-deposits answer key. The expectation used AUD~834,259 million for FY2024, while the FY2025 report's comparative column showed AUD~851,682 million. Comparing that column with FY2025 deposits of AUD~908,812 million gives a change of AUD~57,130 million, about 6.71\%. The \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/fintrace/reports/coverage/RELEASE_CANDIDATE.md}{source-based review} preserved the original expectation and explained the reporting-version difference. The lesson was to check the key as well as the system: a disagreement should be resolved from the source, not by changing the output until it matches a number.
+A further lesson came from the expected answer for CBA customer deposits. The expectation used AUD~834,259 million for FY2024, while the FY2025 report's comparative column showed AUD~851,682 million. Comparing that column with FY2025 deposits of AUD~908,812 million gives a change of AUD~57,130 million, about 6.71\%. The \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/fintrace/reports/coverage/RELEASE_CANDIDATE.md}{source-based review} preserved the original expectation and explained the reporting-version difference. The lesson was to check the key as well as the system: a disagreement should be resolved from the source, not by changing the output until it matches a number.
 
-The \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/tree/report-submission-2026-10-25/report/evidence/historical-release-20260926T233529Z}{historical assessment packet} preserves 24 first responses, original expectations, the companion review and file hashes. Its reconciliation names all question IDs and explicitly leaves D20 outside a completeness category rather than inventing a score. The original expectations include the deposits-key error and an unsupported restatement label; these are retained with explanatory notes, not silently corrected. Because the question file also names the development metric catalogue as reference material, this is not presented as fully blind, source-only assessment.
+The \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/tree/report-submission-2026-10-25/report/evidence/historical-release-20260926T233529Z}{historical assessment packet} preserves 24 first responses, original expectations, the companion review and file hashes. Its reconciliation names all question IDs and explicitly leaves D20 outside a completeness category rather than inventing a score. The original expectations include the deposits-key error and an unsupported restatement label; these are retained with explanatory notes, not silently corrected. The question file also names the development metric catalogue as reference material. The assessment is therefore not presented as entirely unseen or based only on the source reports.
 
 \subsection{Runtime settings and reproducibility}
 \label{app:runtime_details}
-The report's numerical and prose paths use the same recorded local configuration, not a hosted API. The generation model is Qwen3 8B, Q4\_K\_M, through Ollama. Its context setting is 16,384 tokens. Task-specific output caps are 900 tokens for drafts, 160 for passage selection, 220 for intent planning and 400 for support review. Sampling settings include temperature 0.7, top-p 0.8 and top-k 20. A 35-second timeout is per call, not a whole-answer guarantee. These are application settings, not claims about a model's maximum possible context.
+Numerical and prose responses use the recorded local application configuration rather than a hosted API. The generation model is Qwen3 8B, Q4\_K\_M, through Ollama. Its context setting is 16,384 tokens. Task-specific output caps are 900 tokens for drafts, 160 for passage selection, 220 for intent planning and 400 for support review. Sampling settings include temperature 0.7, top-p 0.8 and top-k 20. The 35-second timeout applies to each model call rather than the complete response. These settings describe the application rather than the model's maximum supported context.
 
 Structured dense retrieval uses Qwen3-Embedding-0.6B with float32 CUDA inference and exact similarity over local NumPy vectors. Reciprocal rank fusion uses rank constant 60. Embedding inputs are checked against a configured 32,768-token ceiling; the subsequent structured evidence pack has a separate budget of about 2,048 tokens. Child and parent chunk ceilings are 2,400 and 10,000 UTF-8 bytes, with at most three table rows in a child. Bytes and tokens are not interchangeable.
 
-Configuration, source checksums, model revisions and integrity records are retained in the public WIL copy. Raw financial evidence and model files are supplied through the manifest-pinned setup process, not embedded in the report. The release manifest detects changes; it does not certify financial correctness. Current source and regression checks do not replace fresh assessment of a fixed candidate.
+Configuration, source checksums, model revisions and integrity records are retained in the public WIL copy. Financial evidence and model files are supplied through a setup process that checks them against recorded file hashes. They are not embedded in the report. The release manifest detects changes; it does not certify financial correctness. Source and regression checks do not replace assessment on new questions after the software version has been fixed.
 
 \subsection{AI-assisted editing example}
 \label{app:ai_process}
@@ -34,15 +37,14 @@ Configuration, source checksums, model revisions and integrity records are retai
 
 \textbf{Annotation:} AI feedback identified that a retrieval miss does not establish absence from a report. The revised wording narrows the claim to the available evidence, consistent with the coverage failures we investigated. Selecting the bounded scope and accepting or rejecting revisions remain group decisions. AI also contributed substantive code, evaluation and report drafts; this wording example is not the full extent of its use. The repository's \href{https://github.com/AyushiNegi20/COSC2669-WIL-PROJECT/blob/report-submission-2026-10-25/report/AI_USE.md}{AI-use account} and accompanying Condition~3 declaration must be read together.
 
-% Remaining submission actions: each member confirms actual contributions and
-% completes their own reflection; the group agrees the contribution sheet and
-% final Condition 3 form. Leave the five sections below for their owners.
+% Teammate reflections below are AI-assisted starting drafts based on assigned report sections.
+% Each member must confirm completed work, personalise the account and approve it before submission.
 
 \subsection{Ayushi Negi: Individual Reflection}
 % AI-assisted reflection drafted earlier in this chat; inserted at Ayushi's request on 25 October 2026.
 As project lead, I worked across development, evaluation and coordination. I reviewed the pipeline from source selection and PDF extraction through to chunking, retrieval, answer generation and the frontend. I also helped investigate failed answers, prepare the demonstration and organise the final report.
 
-My biggest challenge was knowing when FinTrace was good enough. Each round of testing uncovered another gap, and I sometimes felt that improving the system meant adding more features or trying a stronger model. Over time, I realised that a fluent answer could still be based on the wrong evidence. The important question was not simply whether the model sounded convincing, but whether it had answered the actual question with the right financial context.
+My biggest challenge was knowing when FinTrace was good enough. Each round of testing uncovered another gap. I sometimes felt that improving the system meant adding more features or trying a stronger model. Over time, I realised that a fluent answer could still be based on the wrong evidence. The important question was not simply whether the model sounded convincing, but whether it had answered the actual question with the right financial context.
 
 The CBA profit example made this clear. Returning two correct figures could still be incomplete when the report contained four relevant variants. Similarly, making the full reports searchable improved coverage, but did not automatically make every table reliable for calculations. These experiences helped me distinguish retrieval, correctness and completeness instead of treating them as one measure of success.
 
@@ -51,16 +53,46 @@ I used AI tools to explore approaches and assist with implementation and evaluat
 Leading the project also showed me that taking on more work myself is not always the best way to coordinate a team. Next time, I would agree on smaller deliverables, clearer ownership and completion evidence earlier. I would also protect an unseen evaluation set and set release criteria sooner, so we could improve the system without continually moving the finish line.
 
 \subsection{Yash Keswani: Individual Reflection}
-% Yash: write your own reflection here.
+My assigned report sections cover the source reports, PDF extraction and answer generation. These stages connect the financial documents to the final response, so their relationships matter as much as the tools used.
+
+The extraction work highlights why a number must retain its year, unit and reporting basis to remain meaningful. The initial checks on selected pages and the later prose search across the full reports serve different purposes. Wider coverage helps find explanations, but it does not make every extracted table safe for calculations.
+
+Another important distinction is between selecting evidence and writing an answer. A stronger model can produce clearer wording while still using the wrong evidence. The project therefore links values to source cells and uses Python for supported calculations, with Qwen helping select and explain passages. A model therefore needs to be assessed for reliability and response time rather than selected by size alone.
+
+In a future project, I would define the extraction checks and record model settings earlier.
 
 \subsection{Shriram Varadarajan: Individual Reflection}
-% Shriram: write your own reflection here.
+My assigned report section focuses on chunking, indexing and retrieval. The central challenge is finding evidence that answers the actual question while retaining its financial meaning.
+
+The pipeline demonstrates the importance of preserving table structure when creating chunks. A value needs its row label, year column, unit and reporting basis. Small searchable chunks can help locate a relevant item, while their parent context helps explain what that item means. Metadata identifying the company, period and source page also reduces the risk of using a plausible figure from the wrong context.
+
+Structured evidence and prose from the full reports follow different search paths. This makes it important to describe the implemented system accurately rather than call every search hybrid retrieval. It also shows that semantic search needs to be evaluated on relevant questions rather than assumed to improve retrieval.
+
+For a future iteration, I would compare retrieval methods on the same set of indirect questions and retain their ranked results.
 
 \subsection{Guruprasad Simimath: Individual Reflection}
-% Guruprasad: write your own reflection here.
+My assigned sections cover the frontend workflow, business impact and practical limitations. These areas connect the technical pipeline to the analyst's decision about whether an answer is useful enough to investigate or reuse.
+
+The profit example illustrates why interface design is more than appearance. Four relevant figures need clear labels for cash or statutory basis and continuing or total operations. A short answer without those distinctions could be easy to read but incomplete. Source links and calculation workings give the user a way to inspect the answer instead of relying only on confident wording.
+
+The business impact discussion requires a distinction between demonstrated functions and expected benefits. The prototype demonstrates source checking and supported calculations, but that does not prove measured time savings or lower analyst error rates. Those benefits would need a user study. Similarly, a local demo for a single user is not evidence of readiness for wider deployment.
+
+In future work, I would involve intended users earlier and test whether they understand partial answers and evidence limits.
 
 \subsection{Janhavi Maheshwar Ghate: Individual Reflection}
-% Janhavi: write your own reflection here.
+My assigned report responsibility covers the evaluation framework and CBA findings. The main issue is deciding what a successful answer means. Correct figures, complete answers, relevant sources and appropriate refusals are related, but they are not interchangeable.
+
+The CBA cases make this distinction concrete. Two correctly labelled profit figures can still leave out relevant alternatives. The disagreement about customer deposits also shows why the answer key needs checking: a difference between report versions can make an expected figure unsuitable for a particular comparison. The source headers and reporting period matter as much as the digits.
+
+Another important reporting decision is keeping software tests separate from assessment of financial answers. Passing hundreds of regression checks does not establish universal accuracy. Historical results must retain their candidate version, denominator and limitations, including AI-assisted judgments. Once questions have guided fixes, they are regression material rather than an untouched assessment set.
+
+Next time, I would agree the scoring categories and protect unseen questions earlier.
 
 \subsection{Hashini Santhanakrishnan: Individual Reflection}
-% Hashini: write your own reflection here.
+My assigned report sections cover NAB findings and evaluation validity. A central challenge is distinguishing an incorrect answer from an incomplete explanation, an unsupported request or a retrieval gap. Treating all of these as the same failure would hide useful information about the system.
+
+The NAB examples highlight how easily financial context changes an answer. Cash earnings and statutory profit are different measures, while a change in net interest margin should be expressed in percentage points. A later report's comparative value may differ from the earlier publication, so the source version must be disclosed without automatically calling the difference a restatement.
+
+The assessment procedure also needs to inspect the whole response. An earlier evaluation adapter overlooked calculations stored outside the prose, demonstrating that the evaluation tools also require checking. Preserving first responses, checking the configured backend and recording latency separately make the findings easier to audit. None of these steps makes AI-assisted scoring equivalent to independent human review.
+
+For future work, I would use a shared scoring guide and record disagreements explicitly.
